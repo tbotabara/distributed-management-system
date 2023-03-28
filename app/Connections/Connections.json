@@ -1,0 +1,34 @@
+{
+  "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
+        "dataSources": {
+          "claims": {
+            "tableName": "3c33d2c3-45f6-4d5f-931e-d2230113a66b"
+          },
+          "users": {
+            "tableName": "a1e367f9-f944-44c2-97d7-c8631d1d0937"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "users",
+      "claims"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
+  }
+}
