@@ -1,8 +1,8 @@
-"landing_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"draft_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
-    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+    ScreenContainer1_1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -10,7 +10,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        HeaderContainer1_1 As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
@@ -23,7 +23,7 @@
             PaddingRight: =20
             ZIndex: =2
 
-            Image2 As image:
+            Image2_1 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -32,7 +32,7 @@
                 PaddingRight: =20
                 ZIndex: =1
 
-            dashboard_btn As button:
+            dashboard_btn_1 As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(0, 0, 0, 1)
@@ -42,14 +42,14 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen)
+                OnSelect: =Navigate(draft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =15
                 Text: ="Dashboard"
                 Width: =115
                 ZIndex: =2
 
-            draft_btn As button:
+            draft_btn_1 As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(0, 0, 0, 1)
@@ -59,14 +59,14 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen)
+                OnSelect: =Navigate(draft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =15
                 Text: ="Draft"
                 Width: =115
                 ZIndex: =3
 
-            Rectangle7 As rectangle:
+            Rectangle7_1 As rectangle:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Fill: =RGBA(0, 0, 0, 0)
@@ -74,7 +74,7 @@
                 Height: =75
                 ZIndex: =4
 
-            Label5 As label:
+            Label5_1 As label:
                 Align: =Align.Right
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
@@ -84,7 +84,7 @@
                 Text: =var_current_user
                 ZIndex: =5
 
-            logout_btn As button:
+            logout_btn_1 As button:
                 Align: =Align.Right
                 AlignInContainer: =AlignInContainer.Center
                 Color: =RGBA(0, 0, 0, 1)
@@ -102,7 +102,7 @@
                 Text: ="Logout"
                 ZIndex: =6
 
-        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+        MainSectionContainer1_1 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -112,7 +112,7 @@
             PaddingTop: =20
             ZIndex: =3
 
-            Import1 As import:
+            Import1_1 As import:
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(164, 38, 44, 1)
@@ -123,7 +123,7 @@
                 Width: =180
                 ZIndex: =1
 
-        FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        FooterContainer1_1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75
             LayoutMinHeight: =100
