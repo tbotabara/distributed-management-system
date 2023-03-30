@@ -1,5 +1,5 @@
-<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="PowerApp-&gt;ParseJSON,Applytoeach" xmlns="http://wadl.dev.java.net/2009/02">
-  <doc title="PowerApp -&gt; Parse JSON,Apply to each" />
+<application xmlns:xml="http://www.w3.org/XML/1998/namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:service="https://europe-001.azure-apim.net/apim/logicflows" xmlns:siena="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11" siena:serviceId="UploadExcel" xmlns="http://wadl.dev.java.net/2009/02">
+  <doc title="UploadExcel" />
   <grammars>
     <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <object name="ManualTriggerInput" />

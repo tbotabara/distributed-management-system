@@ -20,6 +20,7 @@
     "Image2_1": 27,
     "Import1": 22,
     "Import1_1": 34,
+    "Import1_2": 39,
     "Label5": 19,
     "Label5_1": 31,
     "landing_screen": 12,
@@ -42,11 +43,11 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 02:29:11",
+  "HeaderLastSavedDateTimeUTC": "03/30/2023 03:17:54",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "14772f81-7593-4cd6-a70d-3a44addffde0": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/84A64F6446D7437B9A3224ADDB90BC39-ED7DF927E0D9EF7D\"",
-    "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\""
+    "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "fd4ad2dd-6ec4-4b15-85a2-db85dbf42381": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/84A64F6446D7437B9A3224ADDB90BC39-ED7DF927E0D9EF7D\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -62,7 +63,7 @@
   "OrderDataSource": {
     "CustomGallerySample": 2,
     "ExcelCollection": 3,
-    "PowerApp->ParseJSON,Applytoeach": 0,
+    "UploadExcel": 0,
     "users": 1
   },
   "OrderGroupControls": {
@@ -74,12 +75,12 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "addMedia": 6,
+    "addMedia": 8,
     "button": 5,
     "checkbox": 4,
-    "groupContainer": 7,
+    "groupContainer": 6,
     "image": 1,
-    "import": 8,
+    "import": 7,
     "label": 3,
     "rectangle": 0,
     "text": 2
@@ -123,6 +124,17 @@
         "Version": "1.330"
       }
     },
+    "Import1_2": {
+      "Data": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": []
+        },
+        "Version": "1.330"
+      }
+    },
     "Label5": {},
     "Label5_1": {},
     "landing_screen": {},
@@ -145,46 +157,48 @@
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {
     "Import1": {},
-    "Import1_1": {}
+    "Import1_1": {},
+    "Import1_2": {}
   },
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
-    "AddMediaButton1": 0,
-    "AddMediaWithImage1": 0,
+    "AddMediaButton1": 22,
+    "AddMediaWithImage1": 20,
     "App": 0,
     "dashboard_btn": 12,
-    "dashboard_btn_1": 23,
+    "dashboard_btn_1": 27,
     "draft_btn": 13,
-    "draft_btn_1": 24,
+    "draft_btn_1": 28,
     "draft_screen": 0,
-    "FooterContainer1": 18,
-    "FooterContainer1_1": 29,
+    "FooterContainer1": 19,
+    "FooterContainer1_1": 33,
     "forgot_pswrd": 5,
     "HeaderContainer1": 9,
-    "HeaderContainer1_1": 20,
+    "HeaderContainer1_1": 24,
     "Image1": 2,
     "Image2": 10,
-    "Image2_1": 21,
+    "Image2_1": 25,
     "Import1": 17,
-    "Import1_1": 28,
+    "Import1_1": 32,
+    "Import1_2": 18,
     "Label5": 14,
-    "Label5_1": 25,
+    "Label5_1": 29,
     "landing_screen": 0,
     "login_btn": 7,
     "login_screen": 0,
     "logout_btn": 15,
-    "logout_btn_1": 26,
+    "logout_btn_1": 30,
     "MainSectionContainer1": 16,
-    "MainSectionContainer1_1": 27,
+    "MainSectionContainer1_1": 31,
     "password_txt": 4,
     "Rectangle1": 0,
     "Rectangle2": 1,
     "Rectangle7": 11,
-    "Rectangle7_1": 22,
+    "Rectangle7_1": 26,
     "remember_cb": 6,
     "ScreenContainer1": 8,
-    "ScreenContainer1_1": 19,
-    "UploadedImage1": 0,
+    "ScreenContainer1_1": 23,
+    "UploadedImage1": 21,
     "username_txt": 3
   },
   "ResourcesJsonIndices": {
@@ -201,7 +215,7 @@
       "checkbox": 1,
       "groupContainer": 8,
       "image": 3,
-      "import": 2,
+      "import": 3,
       "label": 3,
       "rectangle": 4,
       "screen": 3,
