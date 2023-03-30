@@ -359,6 +359,7 @@
             ZIndex: =15
 
         CustomerRequestedETA_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="CustomerRequestedETA"
             FieldName: ="CustomerRequestedETA"
@@ -367,7 +368,7 @@
             LayoutHeight: =Parent.Height
             Order: =10
             Text: =ThisItem.CustomerRequestedETA
-            Width: =100
+            Width: =250
             X: =0
             Y: =0
             ZIndex: =16
@@ -389,6 +390,7 @@
             ZIndex: =17
 
         DestinationCountry_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="DestinationCountry"
             FieldName: ="DestinationCountry"
@@ -397,7 +399,7 @@
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.DestinationCountry
-            Width: =100
+            Width: =223
             X: =0
             Y: =0
             ZIndex: =18
@@ -465,6 +467,7 @@
             ZIndex: =22
 
         ProductDescription_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="ProductDescription"
             FieldName: ="ProductDescription"
@@ -473,7 +476,7 @@
             LayoutHeight: =Parent.Height
             Order: =8
             Text: =ThisItem.ProductDescription
-            Width: =100
+            Width: =226
             X: =0
             Y: =0
             ZIndex: =23
@@ -509,6 +512,7 @@
             ZIndex: =25
 
         TotalCasesForClaim_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="TotalCasesForClaim"
             FieldName: ="TotalCasesForClaim"
@@ -517,7 +521,7 @@
             LayoutHeight: =Parent.Height
             Order: =18
             Text: =ThisItem.TotalCasesForClaim
-            Width: =100
+            Width: =240
             X: =0
             Y: =0
             ZIndex: =26
