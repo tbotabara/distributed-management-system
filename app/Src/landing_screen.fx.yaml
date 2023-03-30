@@ -45,7 +45,6 @@
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(landing_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =15
                 Text: ="Dashboard"
                 Width: =115
                 ZIndex: =2
@@ -63,7 +62,6 @@
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(draft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =15
                 Text: ="Draft"
                 Width: =115
                 ZIndex: =3
@@ -100,7 +98,6 @@
                 LayoutMinWidth: =115
                 OnSelect: =Navigate(login_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =15
                 Text: ="Logout"
                 ZIndex: =6
 
