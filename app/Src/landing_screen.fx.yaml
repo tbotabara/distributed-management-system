@@ -254,12 +254,6 @@
                     Y: =256
                     ZIndex: =13
 
-            FormViewer1 As formViewer:
-                BorderColor: =RGBA(89, 0, 0, 1)
-                LayoutMinHeight: =250
-                LayoutMinWidth: =400
-                ZIndex: =3
-
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75
