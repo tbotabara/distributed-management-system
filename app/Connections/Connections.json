@@ -14,9 +14,6 @@
     "datasets": {
       "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
         "dataSources": {
-          "customer_claims": {
-            "tableName": "f922ddd0-c285-46cd-b4ee-2ac548858c5a"
-          },
           "users": {
             "tableName": "a1e367f9-f944-44c2-97d7-c8631d1d0937"
           }
@@ -24,8 +21,7 @@
       }
     },
     "dataSources": [
-      "users",
-      "customer_claims"
+      "users"
     ],
     "dependencies": {},
     "dependents": [
