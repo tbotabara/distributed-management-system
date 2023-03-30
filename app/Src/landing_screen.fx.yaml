@@ -261,37 +261,6 @@
                     Y: =40
                     ZIndex: =14
 
-                    UploadedImage1 As image:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Height: =58
-                        Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-                        ImagePosition: =ImagePosition.Fill
-                        Width: =475
-                        X: =40
-                        Y: =89
-                        ZIndex: =15
-
-                    AddMediaButton1 As addMedia:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        ChangePictureText: =Concatenate(AddMediaButton1.FileName, " selected")
-                        Color: =RGBA(0, 0, 0, 1)
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =96
-                        Size: =15
-                        Text: ="Browse and Select Claim File for Upload"
-                        Width: =475
-                        X: =40
-                        Y: =70
-                        ZIndex: =16
-
-            FormViewer1 As formViewer:
-                BorderColor: =RGBA(89, 0, 0, 1)
-                LayoutMinHeight: =250
-                LayoutMinWidth: =400
-                ZIndex: =3
-
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75
