@@ -1,228 +1,26 @@
 {
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
-  "ControlUniqueIds": {
-    "AddMediaButton1": 37,
-    "AddMediaWithImage1": 38,
-    "App": 1,
-    "dashboard_btn": 17,
-    "dashboard_btn_1": 29,
-    "draft_btn": 18,
-    "draft_btn_1": 30,
-    "draft_screen": 24,
-    "FooterContainer1": 23,
-    "FooterContainer1_1": 35,
-    "forgot_pswrd": 9,
-    "HeaderContainer1": 14,
-    "HeaderContainer1_1": 26,
-    "Image1": 6,
-    "Image2": 15,
-    "Image2_1": 27,
-    "Import1": 22,
-    "Import1_1": 34,
-    "Import1_2": 39,
-    "Label5": 19,
-    "Label5_1": 31,
-    "landing_screen": 12,
-    "login_btn": 11,
-    "login_screen": 3,
-    "logout_btn": 20,
-    "logout_btn_1": 32,
-    "MainSectionContainer1": 21,
-    "MainSectionContainer1_1": 33,
-    "password_txt": 8,
-    "Rectangle1": 4,
-    "Rectangle2": 5,
-    "Rectangle7": 16,
-    "Rectangle7_1": 28,
-    "remember_cb": 10,
-    "ScreenContainer1": 13,
-    "ScreenContainer1_1": 25,
-    "UploadedImage1": 36,
-    "username_txt": 7
-  },
+  "ControlUniqueIds": {},
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 03:17:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
-  "LocalConnectionIDReferences": {
-    "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
-    "fd4ad2dd-6ec4-4b15-85a2-db85dbf42381": "\"/providers/Microsoft.PowerApps/apis/shared_logicflows/connections/84A64F6446D7437B9A3224ADDB90BC39-ED7DF927E0D9EF7D\""
-  },
+  "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "Kelloggs_login": "2e810758-1a31-4bdb-b479-c140ab096f5c.JPG",
-    "Kellogs.KelloggLogo650x366": "9c0b5377-f10a-4cc1-a342-9cc51d90d394.png"
-  },
-  "LocalResourceRootPaths": {
-    "Kelloggs_login": "https://docserverpwaprodneu.blob.core.windows.net/e429826a-9783-4627-8365-e901dc340426-1/resource/Assets0Images02e810758-1a31-4bdb-b479-c140ab096f5c.JPG?sv=2018-03-28&sr=b&sig=J%2F34hkjomyhFcpon%2B8lTf6qTMAzbgae5oFetGHrrAIw%3D&spr=https&se=2023-03-31T01%3A57%3A03Z&sp=r",
-    "Kellogs.KelloggLogo650x366": "https://docserverpwaprodneu.blob.core.windows.net/e429826a-9783-4627-8365-e901dc340426-1/resource/Assets0Images09c0b5377-f10a-4cc1-a342-9cc51d90d394.png?sv=2018-03-28&sr=b&sig=vYrsAJGcS3btjgTCxBfHzuft%2BKTorTh7rQAPntQtC%2B8%3D&spr=https&se=2023-03-31T01%3A57%3A03Z&sp=r"
-  },
+  "LocalResourceFileNames": {},
+  "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {
-    "CustomGallerySample": 2,
-    "ExcelCollection": 3,
-    "UploadExcel": 0,
-    "users": 1
-  },
-  "OrderGroupControls": {
-    "AddMediaWithImage1": {
-      "AddMediaButton1": 1,
-      "UploadedImage1": 0
-    }
-  },
+  "OrderDataSource": {},
+  "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {
-    "addMedia": 8,
-    "button": 5,
-    "checkbox": 4,
-    "groupContainer": 6,
-    "image": 1,
-    "import": 7,
-    "label": 3,
-    "rectangle": 0,
-    "text": 2
-  },
-  "OverridablePropertiesEntry": {
-    "AddMediaButton1": {},
-    "AddMediaWithImage1": {},
-    "App": {},
-    "dashboard_btn": {},
-    "dashboard_btn_1": {},
-    "draft_btn": {},
-    "draft_btn_1": {},
-    "draft_screen": {},
-    "FooterContainer1": {},
-    "FooterContainer1_1": {},
-    "forgot_pswrd": {},
-    "HeaderContainer1": {},
-    "HeaderContainer1_1": {},
-    "Image1": {},
-    "Image2": {},
-    "Image2_1": {},
-    "Import1": {
-      "Data": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": []
-        },
-        "Version": "1.330"
-      }
-    },
-    "Import1_1": {
-      "Data": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": []
-        },
-        "Version": "1.330"
-      }
-    },
-    "Import1_2": {
-      "Data": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": []
-        },
-        "Version": "1.330"
-      }
-    },
-    "Label5": {},
-    "Label5_1": {},
-    "landing_screen": {},
-    "login_btn": {},
-    "login_screen": {},
-    "logout_btn": {},
-    "logout_btn_1": {},
-    "MainSectionContainer1": {},
-    "MainSectionContainer1_1": {},
-    "password_txt": {},
-    "Rectangle1": {},
-    "Rectangle2": {},
-    "Rectangle7": {},
-    "Rectangle7_1": {},
-    "remember_cb": {},
-    "ScreenContainer1": {},
-    "ScreenContainer1_1": {},
-    "UploadedImage1": {},
-    "username_txt": {}
-  },
-  "PCFDynamicSchemaForIRRetrievalEntry": {
-    "Import1": {},
-    "Import1_1": {},
-    "Import1_2": {}
-  },
+  "OrderXMLTemplate": {},
+  "OverridablePropertiesEntry": {},
+  "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
-  "PublishOrderIndices": {
-    "AddMediaButton1": 22,
-    "AddMediaWithImage1": 20,
-    "App": 0,
-    "dashboard_btn": 12,
-    "dashboard_btn_1": 27,
-    "draft_btn": 13,
-    "draft_btn_1": 28,
-    "draft_screen": 0,
-    "FooterContainer1": 19,
-    "FooterContainer1_1": 33,
-    "forgot_pswrd": 5,
-    "HeaderContainer1": 9,
-    "HeaderContainer1_1": 24,
-    "Image1": 2,
-    "Image2": 10,
-    "Image2_1": 25,
-    "Import1": 17,
-    "Import1_1": 32,
-    "Import1_2": 18,
-    "Label5": 14,
-    "Label5_1": 29,
-    "landing_screen": 0,
-    "login_btn": 7,
-    "login_screen": 0,
-    "logout_btn": 15,
-    "logout_btn_1": 30,
-    "MainSectionContainer1": 16,
-    "MainSectionContainer1_1": 31,
-    "password_txt": 4,
-    "Rectangle1": 0,
-    "Rectangle2": 1,
-    "Rectangle7": 11,
-    "Rectangle7_1": 26,
-    "remember_cb": 6,
-    "ScreenContainer1": 8,
-    "ScreenContainer1_1": 23,
-    "UploadedImage1": 21,
-    "username_txt": 3
-  },
-  "ResourcesJsonIndices": {
-    "Image-Kelloggs_login": 1,
-    "Image-Kellogs.KelloggLogo650x366": 2,
-    "Image-SampleImage": 0
-  },
+  "PublishOrderIndices": {},
+  "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
-  "TemplateVersions": {},
-  "VolatileProperties": {
-    "AnalysisLoadTime": 0.1821208,
-    "ControlCount": {
-      "button": 7,
-      "checkbox": 1,
-      "groupContainer": 8,
-      "image": 3,
-      "import": 3,
-      "label": 3,
-      "rectangle": 4,
-      "screen": 3,
-      "text": 2
-    },
-    "DeserializationLoadTime": 1.6288567,
-    "ErrorCount": 0
-  },
-  "WasLocalDatabaseReferencesEmpty": true
+  "TemplateVersions": {}
 }
