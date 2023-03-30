@@ -26,7 +26,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ActualETA_Column1",
-      "ParentIndex": 1,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -119,7 +119,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ActualETD_Column1",
-      "ParentIndex": 3,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -604,7 +604,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "BL#_Column1",
-      "ParentIndex": 4,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -735,7 +735,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -948,7 +948,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ClaimType_Column1",
-      "ParentIndex": 5,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1041,7 +1041,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container#_Column1",
-      "ParentIndex": 6,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1785,7 +1785,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DataTable2",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2020,7 +2020,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "dd_",
-      "ParentIndex": 4,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2269,7 +2269,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DDRF#_Column1",
-      "ParentIndex": 8,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2363,7 +2363,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "DestinationCountry_Column1",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2837,7 +2837,14 @@
         "ZIndex",
         "BorderThickness",
         "FocusedBorderThickness",
-        "Size",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Size",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Italic",
         "Underline",
         "Strikethrough",
@@ -2870,7 +2877,7 @@
       "Properties": [
         {
           "Category": "Data",
-          "NameMap": "{\"Value\":\"Value\"}",
+          "NameMap": "{\"Value\":\"Status\"}",
           "PropertyName": "Items",
           "RuleProviderType": "Unknown"
         },
@@ -3166,7 +3173,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dropdown3",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4070,7 +4077,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "InvoiceDate_Column1",
-      "ParentIndex": 0,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4163,7 +4170,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "KelloggCode_Column1",
-      "ParentIndex": 9,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4349,7 +4356,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "KelloggPO#_Column1",
-      "ParentIndex": 11,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4442,7 +4449,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "KelloggSO#_Column1",
-      "ParentIndex": 12,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4951,7 +4958,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_ClaimType1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5213,7 +5220,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_ClaimType2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5475,7 +5482,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_SearchKeyword",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5737,7 +5744,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_Status",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6525,7 +6532,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ProductDescription_Column1",
-      "ParentIndex": 13,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6623,7 +6630,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Quantity_Column1",
-      "ParentIndex": 14,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7022,7 +7029,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "SSCC#_Column1",
-      "ParentIndex": 15,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7141,7 +7148,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TextInput2",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7365,7 +7372,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TotalCasesForClaim_Column1",
-      "ParentIndex": 16,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
