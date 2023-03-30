@@ -330,8 +330,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =16
-            Text: |-
-                =ThisItem.'BL#'
+            Text: =ThisItem.'BL Number'
             Width: =100
             X: =0
             Y: =0
@@ -360,8 +359,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =15
-            Text: |-
-                =ThisItem.'Container#'
+            Text: =ThisItem.'Container Number'
             Width: =100
             X: =0
             Y: =0
@@ -391,8 +389,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =19
-            Text: |-
-                =ThisItem.'DDRF#'
+            Text: =ThisItem.'DDRF Number'
             Width: =100
             X: =0
             Y: =0
@@ -407,7 +404,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.DestinationCountry
+            Text: =ThisItem.DestinationCountry.Value
             Width: =223
             X: =0
             Y: =0
@@ -436,8 +433,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =13
-            Text: |-
-                =ThisItem.'KelloggInv#'
+            Text: =ThisItem.'Kellogg Invoice Number'
             Width: =100
             X: =0
             Y: =0
@@ -452,8 +448,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =5
-            Text: |-
-                =ThisItem.'KelloggPO#'
+            Text: =ThisItem.'Kellogg PO Number'
             Width: =100
             X: =884
             Y: =0
@@ -468,8 +463,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =4
-            Text: |-
-                =ThisItem.'KelloggSO#'
+            Text: =ThisItem.'Kellogg SO Number'
             Width: =100
             X: =0
             Y: =0
@@ -513,8 +507,7 @@
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =17
-            Text: |-
-                =ThisItem.'SSCC#'
+            Text: =ThisItem.'SSCC Number'
             Width: =100
             X: =0
             Y: =0
