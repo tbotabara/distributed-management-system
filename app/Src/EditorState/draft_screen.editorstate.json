@@ -2610,8 +2610,7 @@
         },
         "ZIndex",
         "BorderThickness",
-        "FocusedBorderThickness",
-        "OnSelect"
+        "FocusedBorderThickness"
       ],
       "DynamicProperties": [
         {
@@ -2751,11 +2750,6 @@
         {
           "Category": "Design",
           "PropertyName": "FocusedBorderThickness",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
