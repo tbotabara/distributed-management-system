@@ -2,10 +2,11 @@
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
-    "AddMediaButton1": 18,
-    "AddMediaWithImage1": 35,
+    "AddMediaButton1": 48,
+    "AddMediaWithImage1": 49,
     "App": 1,
     "Button1": 45,
+    "Button2": 50,
     "Container1": 28,
     "dashboard_btn": 23,
     "dashboard_btn_1": 8,
@@ -23,7 +24,6 @@
     "Image1": 39,
     "Image2": 21,
     "Image2_1": 6,
-    "Import1": 32,
     "Import1_1": 13,
     "Label5": 25,
     "Label5_1": 10,
@@ -43,12 +43,12 @@
     "ScreenContainer1": 19,
     "ScreenContainer1_1": 4,
     "TextInput2": 29,
-    "UploadedImage1": 16,
+    "UploadedImage1": 47,
     "username_txt": 40
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 04:02:32",
+  "HeaderLastSavedDateTimeUTC": "03/30/2023 04:09:25",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
@@ -68,6 +68,7 @@
   "OrderDataSource": {
     "CustomGallerySample": 1,
     "DropDownSample": 2,
+    "ExcelCollection": 4,
     "UploadExcel": 0,
     "users": 3
   },
@@ -81,14 +82,14 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "addMedia": 6,
-    "button": 3,
+    "button": 2,
     "checkbox": 9,
     "dropdown": 8,
     "groupContainer": 0,
     "image": 1,
     "import": 5,
     "label": 4,
-    "rectangle": 2,
+    "rectangle": 3,
     "text": 7
   },
   "OverridablePropertiesEntry": {
@@ -96,6 +97,7 @@
     "AddMediaWithImage1": {},
     "App": {},
     "Button1": {},
+    "Button2": {},
     "Container1": {},
     "dashboard_btn": {},
     "dashboard_btn_1": {},
@@ -113,17 +115,6 @@
     "Image1": {},
     "Image2": {},
     "Image2_1": {},
-    "Import1": {
-      "Data": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": []
-        },
-        "Version": "1.330"
-      }
-    },
     "Import1_1": {
       "Data": {
         "Type": {
@@ -157,54 +148,53 @@
     "username_txt": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {
-    "Import1": {},
     "Import1_1": {}
   },
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
-    "AddMediaButton1": 17,
-    "AddMediaWithImage1": 19,
+    "AddMediaButton1": 0,
+    "AddMediaWithImage1": 0,
     "App": 0,
-    "Button1": 0,
-    "Container1": 29,
-    "dashboard_btn": 25,
-    "dashboard_btn_1": 9,
-    "DataTable2": 16,
-    "draft_btn": 26,
-    "draft_btn_1": 10,
+    "Button1": 18,
+    "Button2": 0,
+    "Container1": 17,
+    "dashboard_btn": 12,
+    "dashboard_btn_1": 27,
+    "DataTable2": 23,
+    "draft_btn": 13,
+    "draft_btn_1": 28,
     "draft_screen": 2,
-    "Dropdown2": 32,
-    "Dropdown3": 33,
+    "Dropdown2": 21,
+    "Dropdown3": 20,
     "FooterContainer1": 22,
-    "FooterContainer1_1": 6,
-    "forgot_pswrd": 41,
-    "HeaderContainer1": 20,
-    "HeaderContainer1_1": 4,
-    "Image1": 38,
-    "Image2": 23,
-    "Image2_1": 7,
-    "Import1": 34,
-    "Import1_1": 13,
-    "Label5": 27,
-    "Label5_1": 11,
+    "FooterContainer1_1": 34,
+    "forgot_pswrd": 5,
+    "HeaderContainer1": 9,
+    "HeaderContainer1_1": 25,
+    "Image1": 2,
+    "Image2": 10,
+    "Image2_1": 26,
+    "Import1_1": 33,
+    "Label5": 14,
+    "Label5_1": 30,
     "landing_screen": 14,
-    "login_btn": 43,
+    "login_btn": 7,
     "login_screen": 35,
-    "logout_btn": 28,
-    "logout_btn_1": 12,
-    "MainSectionContainer1": 21,
-    "MainSectionContainer1_1": 5,
-    "password_txt": 40,
-    "Rectangle1": 36,
-    "Rectangle2": 37,
-    "Rectangle7": 24,
-    "Rectangle7_1": 8,
-    "remember_cb": 42,
-    "ScreenContainer1": 18,
-    "ScreenContainer1_1": 3,
-    "TextInput2": 31,
-    "UploadedImage1": 15,
-    "username_txt": 39
+    "logout_btn": 15,
+    "logout_btn_1": 31,
+    "MainSectionContainer1": 16,
+    "MainSectionContainer1_1": 32,
+    "password_txt": 4,
+    "Rectangle1": 0,
+    "Rectangle2": 1,
+    "Rectangle7": 11,
+    "Rectangle7_1": 29,
+    "remember_cb": 6,
+    "ScreenContainer1": 8,
+    "ScreenContainer1_1": 24,
+    "TextInput2": 19,
+    "UploadedImage1": 0,
+    "username_txt": 3
   },
   "ResourcesJsonIndices": {
     "Image-Kelloggs_login": 1,
@@ -231,7 +221,7 @@
       "text": 3
     },
     "DeserializationLoadTime": 1.2246332,
-    "ErrorCount": 0
+    "ErrorCount": 1
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

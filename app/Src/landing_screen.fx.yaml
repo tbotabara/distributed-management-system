@@ -180,21 +180,55 @@
                     Y: =136
                     ZIndex: =3
 
-                Import1 As import:
+                Button1 As button:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     Fill: =RGBA(164, 38, 44, 1)
-                    Height: =90
+                    FontWeight: =FontWeight.Semibold
+                    Height: =35
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: =ClearCollect(ExcelCollection, AddMediaButton1.Media);
                     Size: =15
-                    Text: ="Document Upload"
+                    Text: ="Select File"
                     Width: =526
                     X: =40
-                    Y: =22
-                    ZIndex: =4
+                    Y: =20
+                    ZIndex: =5
 
-                Button1 As button:
+                AddMediaWithImage1 As group:
+                    Height: =5
+                    Width: =5
+                    X: =60
+                    Y: =60
+                    ZIndex: =6
+
+                    UploadedImage1 As image:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        Height: =50
+                        Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+                        ImagePosition: =ImagePosition.Fill
+                        Width: =526
+                        X: =40
+                        Y: =AddMediaButton1.Y
+                        ZIndex: =7
+
+                    AddMediaButton1 As addMedia:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =46
+                        Size: =25
+                        Text: =""
+                        Width: =526
+                        X: =40
+                        Y: =55
+                        ZIndex: =8
+
+                Button2 As button:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -202,11 +236,13 @@
                     FontWeight: =FontWeight.Semibold
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: |
+                        =UploadExcel.Run(JSON(ExcelCollection, JSONFormat.IncludeBinaryData))
                     Size: =15
-                    Text: ="Button"
-                    X: =60
-                    Y: =60
-                    ZIndex: =5
+                    Text: ="Upload"
+                    X: =579
+                    Y: =36
+                    ZIndex: =9
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
@@ -246,33 +282,4 @@
         X: =65
         Y: =294
         ZIndex: =2
-
-    AddMediaWithImage1 As group:
-        Height: =5
-        Width: =5
-        X: =40
-        Y: =40
-        ZIndex: =2
-
-        UploadedImage1 As image:
-            BorderColor: =RGBA(89, 0, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledFill: =RGBA(244, 244, 244, 1)
-            Height: =136
-            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
-            ImagePosition: =ImagePosition.Fill
-            Width: =328
-            X: =652
-            Y: =54
-            ZIndex: =3
-
-        AddMediaButton1 As addMedia:
-            BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =RGBA(0, 0, 0, 1)
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =136
-            Size: =25
-            X: =652
-            Y: =54
-            ZIndex: =4
 
