@@ -14,6 +14,9 @@
     "datasets": {
       "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
         "dataSources": {
+          "customer_claims": {
+            "tableName": "f922ddd0-c285-46cd-b4ee-2ac548858c5a"
+          },
           "users": {
             "tableName": "a1e367f9-f944-44c2-97d7-c8631d1d0937"
           }
@@ -21,53 +24,13 @@
       }
     },
     "dataSources": [
-      "users"
+      "users",
+      "customer_claims"
     ],
     "dependencies": {},
     "dependents": [
       "fd4ad2dd-6ec4-4b15-85a2-db85dbf42381"
     ],
     "id": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
-  },
-  "fd4ad2dd-6ec4-4b15-85a2-db85dbf42381": {
-    "connectionParameters": {
-      "logicAppHostType": "ARM",
-      "workFlowCallbackUri": "https://prod-197.westeurope.logic.azure.com:443/workflows/491a789f975e4810967ee0c728136544/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=khMAhLxzyVUzat0PtQCP6mNBYFGmsHlk-2QFmOKRUA4",
-      "workflowEndpoint": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-c60753f4a9204c19afa2163fe6e8d066/providers/Microsoft.Logic/workflows/84a64f64-46d7-437b-9a32-24addb90bc39",
-      "workflowName": "84a64f64-46d7-437b-9a32-24addb90bc39",
-      "workflowPath": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-c60753f4a9204c19afa2163fe6e8d066/providers/Microsoft.Logic/workflows/84a64f64-46d7-437b-9a32-24addb90bc39"
-    },
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": {
-          "value": "shared_sharepointonline"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "84a64f64-46d7-437b-9a32-24addb90bc39"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_sharepointonline": {
-          "value": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "84a64f64-46d7-437b-9a32-24addb90bc39"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "UploadExcel"
-    ],
-    "dependencies": {
-      "shared_sharepointonline": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
-    },
-    "dependents": [],
-    "id": "fd4ad2dd-6ec4-4b15-85a2-db85dbf42381"
   }
 }
