@@ -1,0 +1,16 @@
+[
+  {
+    "Data": "[{\"Claim Type\":\"Product Damages\"},{\"Claim Type\":\"Product Shortages/Discrepancies\"},{\"Claim Type\":\"Demmurage And Detention\"},{\"Claim Type\":\"Importation Changes\"},{\"Claim Type\":\"Shelf Life\"},{\"Claim Type\":\"Import Duties And Taxes\"},{\"Claim Type\":\"Local Registration And Stickering Charges\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "ClaimType",
+    "OrderedColumnNames": [
+      "Claim Type"
+    ],
+    "OriginalName": "ClaimType",
+    "OriginalSchema": "*['Claim Type':s]",
+    "Schema": "*['Claim Type':s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]
