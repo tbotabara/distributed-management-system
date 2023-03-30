@@ -18,10 +18,22 @@
             "tableName": "a1e367f9-f944-44c2-97d7-c8631d1d0937"
           }
         }
+      },
+      "https://apcdeloitte.sharepoint.com/sites/PowerAppLearning": {
+        "dataSources": {
+          "Claim": {
+            "tableName": "cb49f5d9-c69e-4749-850c-8f0356386d2c"
+          },
+          "Claim Attachments": {
+            "tableName": "6f5e3f69-a53d-4540-903b-aeeb8df5a4ac"
+          }
+        }
       }
     },
     "dataSources": [
-      "users"
+      "users",
+      "Claim",
+      "Claim Attachments"
     ],
     "dependencies": {},
     "dependents": [
