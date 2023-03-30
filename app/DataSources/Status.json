@@ -1,0 +1,16 @@
+[
+  {
+    "Data": "[{\"Status\":\"New\"},{\"Status\":\"Approved By BU\"},{\"Status\":\"Rejected\"},{\"Status\":\"Approved By PIO SPOC\"},{\"Status\":\"Approved By Finance\"},{\"Status\":\"Processed\"},{\"Status\":\"Draft\"},{\"Status\":\"Rejected By BU\"},{\"Status\":\"Rejected By PIO SPOC\"}]",
+    "IsSampleData": false,
+    "IsWritable": false,
+    "Name": "Status",
+    "OrderedColumnNames": [
+      "Status"
+    ],
+    "OriginalName": "Status",
+    "OriginalSchema": "*[Status:s]",
+    "Schema": "*[Status:s]",
+    "Token": "dummyToken",
+    "Type": "StaticDataSourceInfo"
+  }
+]

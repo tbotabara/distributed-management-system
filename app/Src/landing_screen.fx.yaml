@@ -123,7 +123,7 @@
                     BorderColor: =RGBA(89, 0, 0, 1)
                     BorderThickness: =2
                     Color: =RGBA(0, 0, 0, 1)
-                    Default: ="Text input"
+                    Default: =""
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
@@ -132,8 +132,8 @@
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(222, 179, 184, 1)
                     Size: =13
-                    X: =40
-                    Y: =136
+                    X: =41
+                    Y: =256
                     ZIndex: =1
 
                 Dropdown2 As dropdown:
@@ -149,13 +149,13 @@
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(222, 179, 184, 1)
-                    Items: =DropDownSample
+                    Items: =Status
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
                     SelectionFill: =RGBA(164, 38, 44, 1)
-                    Size: =13
-                    X: =752
-                    Y: =136
+                    Size: =12
+                    X: =769
+                    Y: =256
                     ZIndex: =2
 
                 Dropdown3 As dropdown:
@@ -176,9 +176,9 @@
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
                     SelectionFill: =RGBA(164, 38, 44, 1)
-                    Size: =13
-                    X: =392
-                    Y: =136
+                    Size: =12
+                    X: =409
+                    Y: =256
                     ZIndex: =3
 
                 Button2 As button:
@@ -194,7 +194,7 @@
                     Text: ="Upload Claim"
                     Width: =328
                     X: =591
-                    Y: =65
+                    Y: =98
                     ZIndex: =9
 
                 dd_ As dropdown:
@@ -215,9 +215,9 @@
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
                     SelectionFill: =RGBA(164, 38, 44, 1)
-                    Size: =13
+                    Size: =12
                     X: =591
-                    Y: =17
+                    Y: =52
                     ZIndex: =10
 
                 AttachmentControl As attachments:
@@ -250,6 +250,12 @@
                     Y: =17
                     ZIndex: =11
 
+            FormViewer1 As formViewer:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                LayoutMinHeight: =250
+                LayoutMinWidth: =400
+                ZIndex: =3
+
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75
@@ -272,7 +278,7 @@
         HeadingFont: =Font.'Open Sans'
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =13
-        Height: =332
+        Height: =278
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(222, 179, 184, .2)
         InputFill: =RGBA(255, 255, 255, 1)
@@ -285,9 +291,9 @@
         SelectedColor: =RGBA(0, 0, 0, 1)
         SelectedFill: =RGBA(164, 38, 44, .2)
         Size: =13
-        Width: =1260
-        X: =65
-        Y: =294
+        Width: =1240
+        X: =60
+        Y: =406
         ZIndex: =2
 
         ActualETA_Column1 As dataTableColumn.textualColumn:
@@ -452,7 +458,7 @@
             Text: |-
                 =ThisItem.'KelloggPO#'
             Width: =100
-            X: =0
+            X: =884
             Y: =0
             ZIndex: =21
 
@@ -545,4 +551,51 @@
             X: =0
             Y: =0
             ZIndex: =27
+
+    lbl_SearchKeyword As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =38
+        Size: =13
+        Text: ="Search PO/Inv/Cont/CIN/Cust Ref."
+        Width: =320
+        X: =60
+        Y: =312
+        ZIndex: =3
+
+    lbl_ClaimType1 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =38
+        Size: =13
+        Text: ="Claim Type"
+        Width: =320
+        X: =428
+        Y: =312
+        ZIndex: =4
+
+    lbl_ClaimType2 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Size: =13
+        Text: ="Claim Type"
+        Width: =142
+        X: =612
+        Y: =105
+        ZIndex: =5
+
+    lbl_Status As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Height: =38
+        Size: =13
+        Text: ="Status"
+        Width: =320
+        X: =790
+        Y: =312
+        ZIndex: =6
 
