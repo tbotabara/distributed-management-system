@@ -42,7 +42,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(draft_screen)
+                OnSelect: =Navigate(landing_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =15
                 Text: ="Dashboard"
