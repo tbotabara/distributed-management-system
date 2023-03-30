@@ -35,6 +35,7 @@
     "Image2": 18,
     "Image2_1": 6,
     "Import1_1": 13,
+    "InvoiceDate_Column1": 72,
     "KelloggCode_Column1": 63,
     "KelloggInv#_Column1": 64,
     "KelloggPO#_Column1": 65,
@@ -69,7 +70,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "03/30/2023 05:10:51",
+  "HeaderLastSavedDateTimeUTC": "03/30/2023 05:15:30",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/7659bf70bc4f4e669eaa1c4c5ad397e9\"",
@@ -159,6 +160,7 @@
         "Version": "1.330"
       }
     },
+    "InvoiceDate_Column1": {},
     "KelloggCode_Column1": {},
     "KelloggInv#_Column1": {},
     "KelloggPO#_Column1": {},
@@ -229,6 +231,7 @@
     "Image2": 10,
     "Image2_1": 47,
     "Import1_1": 54,
+    "InvoiceDate_Column1": 0,
     "KelloggCode_Column1": 37,
     "KelloggInv#_Column1": 38,
     "KelloggPO#_Column1": 39,

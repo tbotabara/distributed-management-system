@@ -266,7 +266,7 @@
         HeadingFont: =Font.'Open Sans'
         HeadingFontWeight: =FontWeight.Normal
         HeadingSize: =13
-        Height: =356
+        Height: =332
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(222, 179, 184, .2)
         InputFill: =RGBA(255, 255, 255, 1)
@@ -291,7 +291,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =4
+            Order: =12
             Text: =ThisItem.ActualETA
             Width: =100
             X: =0
@@ -305,7 +305,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =5
+            Order: =11
             Text: =ThisItem.ActualETD
             Width: =100
             X: =0
@@ -320,7 +320,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =7
+            Order: =16
             Text: |-
                 =ThisItem.'BL#'
             Width: =100
@@ -350,7 +350,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =8
+            Order: =15
             Text: |-
                 =ThisItem.'Container#'
             Width: =100
@@ -365,7 +365,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =9
+            Order: =10
             Text: =ThisItem.CustomerRequestedETA
             Width: =100
             X: =0
@@ -380,7 +380,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =10
+            Order: =19
             Text: |-
                 =ThisItem.'DDRF#'
             Width: =100
@@ -409,7 +409,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =11
+            Order: =7
             Text: =ThisItem.KelloggCode
             Width: =100
             X: =0
@@ -424,7 +424,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =12
+            Order: =13
             Text: |-
                 =ThisItem.'KelloggInv#'
             Width: =100
@@ -440,7 +440,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =13
+            Order: =5
             Text: |-
                 =ThisItem.'KelloggPO#'
             Width: =100
@@ -456,7 +456,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =14
+            Order: =4
             Text: |-
                 =ThisItem.'KelloggSO#'
             Width: =100
@@ -471,7 +471,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =15
+            Order: =8
             Text: =ThisItem.ProductDescription
             Width: =100
             X: =0
@@ -485,7 +485,7 @@
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =16
+            Order: =9
             Text: =ThisItem.Quantity
             Width: =100
             X: =0
@@ -521,4 +521,18 @@
             X: =0
             Y: =0
             ZIndex: =26
+
+        InvoiceDate_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="InvoiceDate"
+            FieldName: ="InvoiceDate"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.InvoiceDate
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =27
 
