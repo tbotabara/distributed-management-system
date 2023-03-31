@@ -67,12 +67,24 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": {
+          "value": "shared_sharepointonline"
+        },
+        "696214df-110a-42b6-a5cc-8496442561f7": {
+          "value": "shared_excelonlinebusiness"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "84a64f64-46d7-437b-9a32-24addb90bc39"
         }
       },
       "parameterHintsV2": {
+        "shared_excelonlinebusiness": {
+          "value": "696214df-110a-42b6-a5cc-8496442561f7"
+        },
+        "shared_sharepointonline": {
+          "value": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
+        },
         "workflowEntityId": {},
         "workflowName": {
           "value": "84a64f64-46d7-437b-9a32-24addb90bc39"
