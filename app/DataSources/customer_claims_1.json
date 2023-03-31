@@ -25,6 +25,7 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
+      "CIN": "CIN",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
       "Editor": "Modified By",
@@ -60,7 +61,7 @@
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "customer_claims",
+    "Name": "customer_claims_1",
     "Type": "ConnectedDataSourceInfo"
   }
 ]
