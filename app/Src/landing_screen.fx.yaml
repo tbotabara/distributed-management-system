@@ -143,11 +143,14 @@
                     FontWeight: =FontWeight.Semibold
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    OnSelect: =UploadExcelFile.Run(AddMediaButton1.FileName, JSON(AddMediaButton1.Media,JSONFormat.IncludeBinaryData))
+                    OnSelect: |-
+                        =Set(varFromAttachmentControl, JSON(Image3.Image, JSONFormat.IncludeBinaryData));
+                        Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len(varFromAttachmentControl) - Find(",", varFromAttachmentControl)-2));
+                        UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only)
                     Size: =15
                     Text: ="Upload Claim"
                     Width: =328
-                    X: =591
+                    X: =609
                     Y: =98
                     ZIndex: =9
 
@@ -266,6 +269,17 @@
                     X: =964
                     Y: =28
                     ZIndex: =17
+
+                Image3 As image:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Height: =92
+                    Image: =Last(AttachmentControl.Attachments).Value
+                    Visible: =false
+                    X: =206
+                    Y: =50
+                    ZIndex: =18
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
@@ -420,7 +434,7 @@
             Order: =1
             Text: =ThisItem.DestinationCountry.Value
             Width: =223
-            X: =0
+            X: =39
             Y: =0
             ZIndex: =18
 
