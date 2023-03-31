@@ -145,8 +145,9 @@
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
                     OnSelect: |-
                         =Set(varFromAttachmentControl, JSON(Image3.Image, JSONFormat.IncludeBinaryData));
-                        Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len(varFromAttachmentControl) - Find(",", varFromAttachmentControl)-2));
-                        UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only)
+                        Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len(varFromAttachmentControl) - Find(",", varFromAttachmentControl)-1));
+                        UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only);
+                        Reset(AttachmentControl) 
                     Size: =15
                     Text: ="Upload Claim"
                     Width: =328
@@ -267,18 +268,6 @@
                     X: =206
                     Y: =50
                     ZIndex: =18
-
-                Label1 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Height: =90
-                    Size: =13
-                    Text: =varBase64Only
-                    Width: =402
-                    X: =887
-                    Y: =52
-                    ZIndex: =19
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
