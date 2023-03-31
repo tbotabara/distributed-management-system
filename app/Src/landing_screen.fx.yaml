@@ -296,7 +296,7 @@
         HoverFill: =RGBA(222, 179, 184, .2)
         InputFill: =RGBA(255, 255, 255, 1)
         InvertedColor: =RGBA(255, 255, 255, 1)
-        Items: =Claim
+        Items: =customer_claims_1
         LinkColor: =RGBA(0, 134, 208, 1)
         PrimaryColor1: =RGBA(164, 38, 44, 1)
         PrimaryColor2: =RGBA(89, 0, 0, 1)
@@ -309,254 +309,342 @@
         Y: =406
         ZIndex: =2
 
-        ActualETA_Column1 As dataTableColumn.textualColumn:
+        Title_Column2 As dataTableColumn.textualColumn:
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="ActualETA"
-            FieldName: ="ActualETA"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =12
-            Text: =ThisItem.ActualETA
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =10
-
-        ActualETD_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="ActualETD"
-            FieldName: ="ActualETD"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =11
-            Text: =ThisItem.ActualETD
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =11
-
-        "'BL#_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="BL#"
-            FieldName: ="BL_x0023_"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =16
-            Text: =ThisItem.'BL Number'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =13
-
-        ClaimType_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="ClaimType"
-            FieldName: ="ClaimType"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =2
-            Text: =ThisItem.ClaimType.Value
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =14
-
-        "'Container#_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="Container#"
-            FieldName: ="Container_x0023_"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =15
-            Text: =ThisItem.'Container Number'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =15
-
-        CustomerRequestedETA_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="CustomerRequestedETA"
-            FieldName: ="CustomerRequestedETA"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =10
-            Text: =ThisItem.CustomerRequestedETA
-            Width: =250
-            X: =0
-            Y: =0
-            ZIndex: =16
-
-        "'DDRF#_Column1' As dataTableColumn.textualColumn":
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="DDRF#"
-            FieldName: ="DDRF_x0023_"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =19
-            Text: =ThisItem.'DDRF Number'
-            Width: =100
-            X: =0
-            Y: =0
-            ZIndex: =17
-
-        DestinationCountry_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="DestinationCountry"
-            FieldName: ="DestinationCountry"
+            FieldDisplayName: ="Title"
+            FieldName: ="Title"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =1
-            Text: =ThisItem.DestinationCountry.Value
-            Width: =223
-            X: =39
-            Y: =0
-            ZIndex: =18
-
-        KelloggCode_Column1 As dataTableColumn.textualColumn:
-            DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="KelloggCode"
-            FieldName: ="KelloggCode"
-            FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
-            LayoutHeight: =Parent.Height
-            Order: =7
-            Text: =ThisItem.KelloggCode
+            Text: =ThisItem.Title
             Width: =100
             X: =0
             Y: =0
             ZIndex: =19
 
-        "'KelloggInv#_Column1' As dataTableColumn.textualColumn":
+        "'Destination Country_Column2' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="KelloggInv#"
-            FieldName: ="KelloggInv_x0023_"
+            FieldDisplayName: ="Destination Country"
+            FieldName: ="field_1"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
+            IsHyperlink: =false
             LayoutHeight: =Parent.Height
-            Order: =13
-            Text: =ThisItem.'Kellogg Invoice Number'
+            Order: =2
+            Text: =ThisItem.'Destination Country'
             Width: =100
             X: =0
             Y: =0
             ZIndex: =20
 
-        "'KelloggPO#_Column1' As dataTableColumn.textualColumn":
+        "'Claim Type_Column2' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="KelloggPO#"
-            FieldName: ="KelloggPO_x0023_"
+            FieldDisplayName: ="Claim Type"
+            FieldName: ="field_2"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =5
-            Text: =ThisItem.'Kellogg PO Number'
+            Order: =3
+            Text: =ThisItem.'Claim Type'.Value
             Width: =100
-            X: =884
+            X: =0
             Y: =0
             ZIndex: =21
 
-        "'KelloggSO#_Column1' As dataTableColumn.textualColumn":
+        "'Customer PO_Column2' As dataTableColumn.numberColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="KelloggSO#"
-            FieldName: ="KelloggSO_x0023_"
-            FieldVariantName: ="textualColumn"
+            FieldDisplayName: ="Customer PO"
+            FieldName: ="field_3"
+            FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
             Order: =4
-            Text: =ThisItem.'Kellogg SO Number'
+            Text: =ThisItem.'Customer PO'
             Width: =100
             X: =0
             Y: =0
             ZIndex: =22
 
-        ProductDescription_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
+        "'Kellogg SO#_Column2' As dataTableColumn.numberColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="ProductDescription"
-            FieldName: ="ProductDescription"
-            FieldVariantName: ="textualColumn"
+            FieldDisplayName: |-
+                ="Kellogg SO#"
+            FieldName: ="field_4"
+            FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =8
-            Text: =ThisItem.ProductDescription
-            Width: =226
+            Order: =5
+            Text: |-
+                =ThisItem.'Kellogg SO#'
+            Width: =100
             X: =0
             Y: =0
             ZIndex: =23
 
-        Quantity_Column1 As dataTableColumn.textualColumn:
+        "'Kellogg PO#_Column2' As dataTableColumn.numberColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="Quantity"
-            FieldName: ="Quantity_x0028_cs_x0029_"
-            FieldVariantName: ="textualColumn"
+            FieldDisplayName: |-
+                ="Kellogg PO#"
+            FieldName: ="field_5"
+            FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =9
-            Text: =ThisItem.Quantity
+            Order: =6
+            Text: |-
+                =ThisItem.'Kellogg PO#'
             Width: =100
             X: =0
             Y: =0
             ZIndex: =24
 
-        "'SSCC#_Column1' As dataTableColumn.textualColumn":
+        "'Kellogg Code_Column2' As dataTableColumn.numberColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: |-
-                ="SSCC#"
-            FieldName: ="SSCC_x0023_"
-            FieldVariantName: ="textualColumn"
+            FieldDisplayName: ="Kellogg Code"
+            FieldName: ="field_6"
+            FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =17
-            Text: =ThisItem.'SSCC Number'
+            Order: =7
+            Text: =ThisItem.'Kellogg Code'
             Width: =100
             X: =0
             Y: =0
             ZIndex: =25
 
-        TotalCasesForClaim_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
+        "'Product Description _Column2' As dataTableColumn.textualColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="TotalCasesForClaim"
-            FieldName: ="TotalCasesForClaim"
+            FieldDisplayName: ="Product Description "
+            FieldName: ="field_7"
             FieldVariantName: ="textualColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =18
-            Text: =ThisItem.TotalCasesForClaim
-            Width: =240
+            Order: =8
+            Text: =ThisItem.'Product Description '
+            Width: =100
             X: =0
             Y: =0
             ZIndex: =26
 
-        InvoiceDate_Column1 As dataTableColumn.textualColumn:
+        "'Quantity (cs)_Column2' As dataTableColumn.numberColumn":
             DisplayMode: =DisplayMode.Edit
-            FieldDisplayName: ="InvoiceDate"
-            FieldName: ="InvoiceDate"
-            FieldVariantName: ="textualColumn"
+            FieldDisplayName: ="Quantity (cs)"
+            FieldName: ="field_8"
+            FieldVariantName: ="numberColumn"
             Height: =Parent.Height
             LayoutHeight: =Parent.Height
-            Order: =14
-            Text: =ThisItem.InvoiceDate
+            Order: =9
+            Text: =ThisItem.'Quantity (cs)'
             Width: =100
             X: =0
             Y: =0
             ZIndex: =27
+
+        "'Customer Requested ETA_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Customer Requested ETA"
+            FieldName: ="field_9"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =10
+            Text: =ThisItem.'Customer Requested ETA'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =28
+
+        "'Actual ETD_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Actual ETD"
+            FieldName: ="field_10"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =11
+            Text: =ThisItem.'Actual ETD'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =29
+
+        "'Actual ETA_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Actual ETA"
+            FieldName: ="field_11"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =12
+            Text: =ThisItem.'Actual ETA'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =30
+
+        "'Kellogg Inv #_Column2' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="Kellogg Inv #"
+            FieldName: ="field_12"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =13
+            Text: |-
+                =ThisItem.'Kellogg Inv #'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =31
+
+        "'Invoice Date_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Invoice Date"
+            FieldName: ="field_13"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =14
+            Text: =ThisItem.'Invoice Date'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =32
+
+        "'Container #_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="Container #"
+            FieldName: ="field_14"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =15
+            Text: |-
+                =ThisItem.'Container #'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =33
+
+        "'BL#_Column3' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="BL#"
+            FieldName: ="field_15"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =16
+            Text: |-
+                =ThisItem.'BL#'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =34
+
+        "'SSCC#_Column3' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="SSCC#"
+            FieldName: ="field_16"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =17
+            Text: |-
+                =ThisItem.'SSCC#'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =35
+
+        "'Total cases for Claim_Column2' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Total cases for Claim"
+            FieldName: ="field_17"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =18
+            Text: =ThisItem.'Total cases for Claim'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =36
+
+        "'DDRF#_Column3' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: |-
+                ="DDRF#"
+            FieldName: ="field_18"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =19
+            Text: |-
+                =ThisItem.'DDRF#'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =37
+
+        Status_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Status"
+            FieldName: ="field_19"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =20
+            Text: =ThisItem.Status.Value
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =38
+
+        "'Approved Cases_Column2' As dataTableColumn.numberColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Approved Cases"
+            FieldName: ="field_20"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =21
+            Text: =ThisItem.'Approved Cases'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =39
+
+        "'Customer Comment_Column2' As dataTableColumn.textualColumn":
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Customer Comment"
+            FieldName: ="field_21"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =22
+            Text: =ThisItem.'Customer Comment'
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =40
+
+        Attachments_Column2 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Attachments"
+            FieldName: ="{Attachments}"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =23
+            Text: =ThisItem.Attachments
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =41
 
     lbl_SearchKeyword As label:
         BorderColor: =RGBA(89, 0, 0, 1)
