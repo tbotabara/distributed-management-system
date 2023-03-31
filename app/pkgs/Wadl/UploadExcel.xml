@@ -2,7 +2,12 @@
   <doc title="UploadExcel" />
   <grammars>
     <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <object name="ManualTriggerInput" />
+      <string name="ManualTriggerInput_Createfile_FileName_def" />
+      <string name="ManualTriggerInput_Createfile_FileContent_def" />
+      <object name="ManualTriggerInput">
+        <property name="Createfile_FileName" type="string" />
+        <property name="Createfile_FileContent" type="string" />
+      </object>
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-001.azure-apim.net/apim/logicflows">
@@ -14,7 +19,10 @@
           <param style="query" name="api-version" type="xs:string" required="true" fixed="2015-02-01-preview">
             <doc title="The api version" />
           </param>
-          <representation mediaType="application/json" />
+          <representation mediaType="application/json">
+            <param style="plain" name="Createfile_FileName" path="/Createfile_FileName" type="xs:string" required="true" />
+            <param style="plain" name="Createfile_FileContent" path="/Createfile_FileContent" type="xs:string" required="true" />
+          </representation>
         </request>
       </method>
     </resource>

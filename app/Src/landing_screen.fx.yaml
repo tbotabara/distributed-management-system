@@ -150,8 +150,8 @@
                     Size: =15
                     Text: ="Upload Claim"
                     Width: =328
-                    X: =609
-                    Y: =98
+                    X: =438
+                    Y: =102
                     ZIndex: =9
 
                 dd_ As dropdown:
@@ -173,7 +173,7 @@
                     PressedFill: =RGBA(89, 0, 0, 1)
                     SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =12
-                    X: =591
+                    X: =438
                     Y: =52
                     ZIndex: =10
 
@@ -257,19 +257,6 @@
                     Y: =256
                     ZIndex: =13
 
-                AddMediaButton1 As addMedia:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    ChangePictureText: =AddMediaButton1.FileName
-                    Color: =RGBA(251, 251, 251, 1)
-                    Fill: =RGBA(164, 38, 44, 1)
-                    Height: =88
-                    Size: =25
-                    Text: ="Upload file"
-                    Width: =337
-                    X: =964
-                    Y: =28
-                    ZIndex: =17
-
                 Image3 As image:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -280,6 +267,18 @@
                     X: =206
                     Y: =50
                     ZIndex: =18
+
+                Label1 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =90
+                    Size: =13
+                    Text: =varBase64Only
+                    Width: =402
+                    X: =887
+                    Y: =52
+                    ZIndex: =19
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
@@ -601,8 +600,8 @@
         Size: =13
         Text: ="Claim Type"
         Width: =142
-        X: =612
-        Y: =105
+        X: =460
+        Y: =100
         ZIndex: =5
 
     lbl_Status As label:
