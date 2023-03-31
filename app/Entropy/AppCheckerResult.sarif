@@ -95,243 +95,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": "Claim_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "DisplayName",
-                "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Claim_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 61,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "DataSourceInfo([@Claim_1],DataSourceInfo.DisplayName,\"Title\")"
-                  }
-                }
-              },
-              "properties": {
-                "member": "DisplayName",
-                "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataSourceInfo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".CustomerPO"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 17,
-                  "snippet": {
-                    "text": "Claim_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "MaxLength",
-                "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Claim_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 61,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "DataSourceInfo([@Claim_1], DataSourceInfo.MaxLength, \"Title\")"
-                  }
-                }
-              },
-              "properties": {
-                "member": "MaxLength",
-                "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "DataSourceInfo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DisplayName"
                 }
               ],
@@ -592,6 +355,243 @@
           "message": {
             "arguments": [
               "Choices"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 17,
+                  "snippet": {
+                    "text": "Claim_1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayName",
+                "module": "dashboardclaimdetail_screen",
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Claim_1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DisplayName",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 61,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataSourceInfo([@Claim_1],DataSourceInfo.DisplayName,\"Title\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "DisplayName",
+                "module": "dashboardclaimdetail_screen",
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSourceInfo"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidArgs-Func",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 8,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "ThisItem"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "dashboardclaimdetail_screen",
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "ThisItem"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.Default",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 11,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": ".CustomerPO"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Default",
+                "module": "dashboardclaimdetail_screen",
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 17,
+                  "snippet": {
+                    "text": "Claim_1"
+                  }
+                }
+              },
+              "properties": {
+                "member": "MaxLength",
+                "module": "dashboardclaimdetail_screen",
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Claim_1"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.MaxLength",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 61,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "DataSourceInfo([@Claim_1], DataSourceInfo.MaxLength, \"Title\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "MaxLength",
+                "module": "dashboardclaimdetail_screen",
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "DataSourceInfo"
             ],
             "id": "issue"
           },
@@ -5162,19 +5162,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DataCardValue1.AccessibleLabel"
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DataCardValue2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DataCardValue1.AccessibleLabel",
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DataCardValue2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DataCardValue1"
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DataCardValue2"
               }
             }
           ],
@@ -5192,19 +5192,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DataCardValue2.AccessibleLabel"
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DataCardValue1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DataCardValue2.AccessibleLabel",
+                  "fullyQualifiedName": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DataCardValue1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "dashboardclaimdetail_screen",
-                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.'Destination Country_DataCard1'.DataCardValue2"
+                "type": "dashboardclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.Container2.Form1.CustomerPO_DataCard1.DataCardValue1"
               }
             }
           ],
