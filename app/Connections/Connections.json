@@ -19,8 +19,7 @@
     },
     "dataSources": [
       "Claim Document",
-      "customer_claims_1",
-      "Claim Document Type"
+      "customer_claims_1"
     ],
     "dependencies": {},
     "dependents": [
@@ -128,6 +127,31 @@
     "dependencies": {},
     "dependents": [],
     "id": "7515b6ee-efc6-4098-8f1c-6c832a908684"
+  },
+  "8b52b43c-d21e-4f2a-8535-a5fa79b5befe": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
+        "dataSources": {
+          "Claim Attachment": {
+            "tableName": "d7374508-e628-455b-b9f5-479bf7240d74"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Claim Attachment"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "8b52b43c-d21e-4f2a-8535-a5fa79b5befe"
   },
   "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d": {
     "connectionParameters": {
