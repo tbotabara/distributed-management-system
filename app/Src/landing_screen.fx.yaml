@@ -404,20 +404,24 @@
                     ZIndex: =17
 
                     Label1_9 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Country"
-                        Width: =125
+                        Width: =128
                         X: =63
                         Y: =324
                         ZIndex: =8
 
                     Label1_10 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="CIN"
                         Width: =90
@@ -426,9 +430,11 @@
                         ZIndex: =9
 
                     Label1_11 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Claim Type"
                         Width: =164
@@ -437,9 +443,11 @@
                         ZIndex: =10
 
                     Label1_12 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Kellogg PO"
                         X: =445
@@ -447,9 +455,11 @@
                         ZIndex: =11
 
                     Label1_13 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Invoice Number"
                         X: =595
@@ -457,9 +467,11 @@
                         ZIndex: =12
 
                     Label1_14 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Total Cases for Claim"
                         X: =745
@@ -467,9 +479,11 @@
                         ZIndex: =13
 
                     Label1_15 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Claim Date"
                         X: =895
@@ -477,20 +491,24 @@
                         ZIndex: =14
 
                     Label1_16 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Status"
-                        Width: =124
+                        Width: =137
                         X: =1045
                         Y: =324
                         ZIndex: =15
 
                     Label1_17 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
+                        BorderColor: =RGBA(234, 234, 234, 1)
+                        BorderThickness: =1
+                        Color: =RGBA(234, 234, 234, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
+                        Fill: =RGBA(164, 38, 44, 1)
                         Size: =13
                         Text: ="Comments"
                         Width: =124
