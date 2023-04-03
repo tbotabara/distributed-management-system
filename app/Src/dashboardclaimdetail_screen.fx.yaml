@@ -2026,6 +2026,7 @@
                     FontWeight: =FontWeight.Semibold
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: =Remove(customer_claims_1, SummaryGallery.Selected); If (IsEmpty(Errors(customer_claims_1, SummaryGallery.Selected)), Back())
                     Size: =15
                     Text: ="Delete"
                     X: =837
