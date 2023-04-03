@@ -175,7 +175,7 @@
 
                         DataCardKey2 As label:
                             Color: |
-                                =If(ThisItem.Created > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,RGBA(255,0,0,1),RGBA(0, 0, 0, 1))
+                                =If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,RGBA(255,0,0,1),RGBA(0, 0, 0, 1))
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =37
                             Size: =12
@@ -210,7 +210,7 @@
                             DisabledColor: =RGBA(244, 244, 244, 1)
                             Height: =32
                             Icon: =Icon.Warning
-                            Visible: =If(ThisItem.Created > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
+                            Visible: =If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
                             Width: =30
                             X: =11
                             Y: =10
