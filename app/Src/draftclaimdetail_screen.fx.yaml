@@ -2505,6 +2505,7 @@
             PaddingTop: =0
             Size: =10
             Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+            Tooltip: ="Download this file"
             Underline: =true
             Width: =170
             X: =7
@@ -2559,6 +2560,7 @@
             PaddingTop: =0
             Size: =10
             Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+            Tooltip: ="Download this file"
             Underline: =true
             Width: =170
             X: =7
