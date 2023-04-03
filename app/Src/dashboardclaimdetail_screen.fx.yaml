@@ -2242,7 +2242,7 @@
     "AttachmentGallery As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(89, 0, 0, 1)
         Height: =528
-        Items: ='Claim Attachment'
+        Items: =Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.'CIN (Title)')
         Layout: =Layout.Vertical
         TemplatePadding: =0
         TemplateSize: =76
