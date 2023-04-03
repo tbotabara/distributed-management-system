@@ -20,7 +20,7 @@ UploadAttachmentScreen As screen:
                     contentBytes: Value,
                     name: Name
                 }}));
-            
+            Reset(FileAttachment);
                 Back()
         Size: =15
         Text: ="Save"
