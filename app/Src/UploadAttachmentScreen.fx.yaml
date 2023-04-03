@@ -22,8 +22,8 @@ UploadAttachmentScreen As screen:
                 }}));
             Reset(FileAttachment);
             Refresh('Gallery_Supporting Documents'.AllItems);
-            Refresh('Gallery_DamageImage'.AllItems);
-            Refresh('Gallery_WHReceipt'.AllItems);
+            Refresh(Gallery_DamageImage.AllItems);
+            Refresh(Gallery_WHReceipt.AllItems);
                 Back()
         Size: =15
         Text: ="Save"
