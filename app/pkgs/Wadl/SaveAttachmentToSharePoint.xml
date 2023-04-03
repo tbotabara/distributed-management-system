@@ -9,9 +9,11 @@
         <property name="contentBytes" typeRef="ManualTriggerInput_file_def_contentBytes_def" />
       </object>
       <string name="ManualTriggerInput_text_def" />
+      <number name="ManualTriggerInput_number_def" />
       <object name="ManualTriggerInput">
         <property name="file" typeRef="ManualTriggerInput_file_def" />
         <property name="text" type="string" />
+        <property name="number" type="number" />
       </object>
       <object name="ResponseActionOutput" />
       <object name="Run_responses_default_def" />
@@ -32,6 +34,9 @@
             </param>
             <param style="plain" name="text" path="/text" type="xs:string" required="true">
               <doc title="ParentID" />
+            </param>
+            <param style="plain" name="number" path="/number" type="xs:double" required="true">
+              <doc title="DocumentTypeID" />
             </param>
           </representation>
         </request>
