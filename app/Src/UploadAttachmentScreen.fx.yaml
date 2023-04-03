@@ -47,16 +47,14 @@ UploadAttachmentScreen As screen:
         ZIndex: =3
 
     DataCardKey95 As label:
-        AutoHeight: =true
         Color: =RGBA(89, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
-        Height: =34
+        Height: =66
         Size: =13
         Text: =
-        Width: =Parent.Width - 60
+        Width: =1278
         Wrap: =false
-        X: =50
-        Y: =30
+        X: =26
         ZIndex: =7
 
     FileAttachment As attachments:
@@ -82,24 +80,23 @@ UploadAttachmentScreen As screen:
         PressedFill: =RGBA(89, 0, 0, 1)
         Tooltip: =
         Width: =1278
-        X: =24
-        Y: =30
+        X: =26
+        Y: =66
         ZIndex: =8
 
     ErrorMessage78 As label:
-        AutoHeight: =true
         Color: =RGBA(168, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Semibold
-        Height: =10
+        Height: =47
         Live: =Live.Assertive
         PaddingBottom: =0
         PaddingLeft: =0
         PaddingRight: =0
         PaddingTop: =0
         Text: =
-        Width: =Parent.Width - 60
-        X: =50
-        Y: =FileAttachment.Y + FileAttachment.Height
+        Width: =1278
+        X: =26
+        Y: =391
         ZIndex: =9
 
