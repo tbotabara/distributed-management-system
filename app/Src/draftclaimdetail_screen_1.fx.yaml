@@ -2272,7 +2272,9 @@
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =45
             Icon: =Icon.Trash
-            OnSelect: =Select(Parent)
+            OnSelect: |-
+                =Remove('Claim Attachment',ThisItem);
+                Refresh('Claim Attachment');
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -2509,6 +2511,13 @@
                 }}));
             Reset(FileAttachment_1);
                 UpdateContext({ShowPopup: false});
+            
+            // Assume that we have a gallery control named "MyGallery" with a template that includes an image control
+            
+            // Refresh the data source
+            Refresh('Claim Attachment');
+            
+            // Refresh the gallery to reflect any changes to the item template
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
