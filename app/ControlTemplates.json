@@ -209,31 +209,6 @@
     "OverridableProperties": {},
     "Version": "2.2.2"
   },
-  "import": {
-    "CustomGroupControlTemplateName": "",
-    "FirstParty": true,
-    "Id": "http://microsoft.com/appmagic/import",
-    "IsComponentTemplate": false,
-    "IsCustomGroupControlTemplate": false,
-    "IsPcfControl": false,
-    "IsPremiumPcfControl": false,
-    "IsWidgetTemplate": true,
-    "LastModifiedTimestamp": "0",
-    "Name": "import",
-    "OverridableProperties": {
-      "Data": {
-        "Type": {
-          "EnumString": "",
-          "Kind": "Table",
-          "Name": "Root",
-          "Type": []
-        },
-        "Version": "1.330"
-      }
-    },
-    "PCFDynamicSchemaForIRRetrieval": {},
-    "Version": "2.1.0"
-  },
   "label": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
