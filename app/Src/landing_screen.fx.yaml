@@ -381,6 +381,7 @@
                         )
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
+                    OnSelect: =Navigate(dashboardclaimdetail_screen)
                     TemplateSize: =58
                     Transition: =Transition.Pop
                     Width: =1280
@@ -545,7 +546,7 @@
                     Height: =115
                     Size: =13
                     Text: =varOverflowText
-                    Visible: =fal
+                    Visible: =false
                     Width: =255
                     X: =26
                     Y: =64
