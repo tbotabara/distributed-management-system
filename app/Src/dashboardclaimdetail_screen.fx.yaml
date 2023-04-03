@@ -292,7 +292,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Cust. PO"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -380,7 +380,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Kellogg SO"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -468,7 +468,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Kellogg PO"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -730,7 +730,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Status"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -819,8 +819,8 @@
                             Color: =RGBA(89, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
-                            Size: =13
-                            Text: =Parent.DisplayName
+                            Size: =12
+                            Text: ="Order Quantity (Cases)"
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -905,13 +905,13 @@
                             AutoHeight: =true
                             Color: =RGBA(89, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =34
+                            Height: =31
                             Size: =13
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
+                            Text: ="Cust. Requested ETA"
+                            Width: =194
                             Wrap: =false
                             X: =30
-                            Y: =10
+                            Y: =15
                             ZIndex: =1
 
                         DataCardValue10 As datepicker:
@@ -1247,7 +1247,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Kellogg Invoice No."
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -1419,7 +1419,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Container No."
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -1508,7 +1508,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="BL No."
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -1597,7 +1597,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="SSCC No."
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
@@ -1686,7 +1686,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
-                            Text: =Parent.DisplayName
+                            Text: ="Cust. Ref/DDRF No."
                             Width: =Parent.Width - 60
                             Wrap: =false
                             X: =30
