@@ -5,57 +5,7 @@
         =UpdateContext({KelloggPOError: false});
         UpdateContext({SSCCError: false});
         UpdateContext({ClaimETAError: false});
-        Set(ShowPopup,false)
-
-    "Gallery_WHReceipt_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Height: =61
-        Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Warehouse Receipts"),"Created",SortOrder.Descending))
-        Layout: =Layout.Vertical
-        TemplatePadding: =0
-        TemplateSize: =51
-        Width: =282
-        X: =30
-        Y: =184
-        ZIndex: =1
-
-        label_FileName_3 As label:
-            Color: =RGBA(0, 0, 0, 1)
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            FontWeight: =FontWeight.Semibold
-            Height: =38
-            Italic: =true
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =10
-            Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
-            Width: =170
-            X: =7
-            Y: =6
-            ZIndex: =1
-
-        NextArrow1_3 As icon.ChevronRight:
-            AccessibleLabel: =Self.Tooltip
-            BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =RGBA(89, 0, 0, 1)
-            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-            DisabledColor: =RGBA(244, 244, 244, 1)
-            Height: =45
-            Icon: =Icon.Trash
-            OnSelect: =Select(Parent)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Tooltip: ="View item details"
-            Width: =32
-            X: =177
-            Y: =2
-            ZIndex: =2
+        UpdateContext({ShowPopup: false})
 
     ScreenContainer1_3 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -63,7 +13,7 @@
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         Width: =Parent.Width
-        ZIndex: =2
+        ZIndex: =1
 
         HeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =RGBA(166, 166, 166, 1)
@@ -2258,7 +2208,7 @@
         Width: =172
         X: =325
         Y: =105
-        ZIndex: =3
+        ZIndex: =2
 
     Label4_1 As label:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2271,7 +2221,7 @@
         Width: =217
         X: =30
         Y: =91
-        ZIndex: =4
+        ZIndex: =3
 
     Label6_3 As label:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2282,7 +2232,7 @@
         Width: =132
         X: =30
         Y: =157
-        ZIndex: =5
+        ZIndex: =4
 
     "Gallery_DamageImage_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2294,7 +2244,7 @@
         Width: =282
         X: =30
         Y: =272
-        ZIndex: =6
+        ZIndex: =5
 
         label_FileName_4 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -2343,7 +2293,7 @@
         Width: =145
         X: =30
         Y: =247
-        ZIndex: =7
+        ZIndex: =6
 
     "'Gallery_Supporting Documents_1' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2355,7 +2305,7 @@
         Width: =282
         X: =30
         Y: =360
-        ZIndex: =8
+        ZIndex: =7
 
         label_FileName_5 As label:
             Color: =RGBA(0, 0, 0, 1)
@@ -2404,7 +2354,7 @@
         Width: =157
         X: =30
         Y: =333
-        ZIndex: =9
+        ZIndex: =8
 
     Icon_AddWHReceipt_1 As icon.AddDocument:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2414,8 +2364,8 @@
         Height: =45
         Icon: =Icon.AddDocument
         OnSelect: |-
-            =Set(ShowPopup, true);
-            Set(TypeNumber, GetDocumentTypeID.Run("Warehouse Receipts").documenttypeid);
+            =UpdateContext({ShowPopup: true});
+            UpdateContext({TypeNumber: 1})
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
@@ -2424,7 +2374,7 @@
         Width: =32
         X: =155
         Y: =154
-        ZIndex: =10
+        ZIndex: =9
 
     Icon_Add_ImageDamage_1 As icon.AddDocument:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2434,8 +2384,8 @@
         Height: =45
         Icon: =Icon.AddDocument
         OnSelect: |-
-            =Set(ShowPopup, true);
-            Set(TypeNumber, GetDocumentTypeID.Run("Images Of Damages").documenttypeid);
+            =UpdateContext({ShowPopup: true});
+            UpdateContext({TypeNumber: 2})
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
@@ -2444,7 +2394,7 @@
         Width: =32
         X: =162
         Y: =242
-        ZIndex: =11
+        ZIndex: =10
 
     Icon_Add_SupportingDocs_1 As icon.AddDocument:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2454,8 +2404,8 @@
         Height: =45
         Icon: =Icon.AddDocument
         OnSelect: |-
-            =Set(ShowPopup, true);
-            Set(TypeNumber, GetDocumentTypeID.Run("Supporting Documents").documenttypeid);
+            =UpdateContext({ShowPopup: true});
+            UpdateContext({TypeNumber: 3})
         PaddingBottom: =10
         PaddingLeft: =10
         PaddingRight: =10
@@ -2464,7 +2414,7 @@
         Width: =32
         X: =175
         Y: =330
-        ZIndex: =12
+        ZIndex: =11
 
     cont_PopupGrey As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2473,17 +2423,17 @@
         Visible: =ShowPopup
         Width: =1366
         Y: =74
-        ZIndex: =13
+        ZIndex: =12
 
     cont_Attachment As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =RGBA(255, 255, 255, 1)
         Height: =364
-        Visible: =show
+        Visible: =ShowPopup
         Width: =806
         X: =280
         Y: =202
-        ZIndex: =14
+        ZIndex: =13
 
     FileAttachment_1 As attachments:
         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2512,7 +2462,7 @@
         Width: =448
         X: =312
         Y: =242
-        ZIndex: =15
+        ZIndex: =14
 
     CancelUpload_1 As button:
         BorderColor: =RGBA(164, 38, 44, 100)
@@ -2536,7 +2486,7 @@
         Width: =125
         X: =455
         Y: =383
-        ZIndex: =16
+        ZIndex: =15
 
     SaveDocument_1 As button:
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -2558,10 +2508,7 @@
                     name: Name
                 }}));
             Reset(FileAttachment_1);
-            Refresh('Gallery_Supporting Documents'.AllItems);
-            Refresh('Gallery_DamageImage'.AllItems);
-            Refresh('Gallery_WHReceipt'.AllItems);
-                Back()
+                UpdateContext({ShowPopup: false});
         RadiusBottomLeft: =0
         RadiusBottomRight: =0
         RadiusTopLeft: =0
@@ -2572,5 +2519,58 @@
         Width: =126
         X: =312
         Y: =383
+        ZIndex: =16
+
+    "Gallery_WHReceipt_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Height: =61
+        Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Warehouse Receipts"),"Created",SortOrder.Descending))
+        Layout: =Layout.Vertical
+        OnSelect: =Set(RecordToRemove, ThisItem);
+        TemplatePadding: =0
+        TemplateSize: =51
+        Width: =282
+        X: =30
+        Y: =184
         ZIndex: =17
+
+        label_FileName_3 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            Italic: =true
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+            Width: =170
+            X: =7
+            Y: =6
+            ZIndex: =1
+
+        NextArrow1_3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =45
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =Remove('Claim Attachment',ThisItem);
+                Refresh('Claim Attachment');
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =32
+            X: =177
+            Y: =2
+            ZIndex: =2
 
