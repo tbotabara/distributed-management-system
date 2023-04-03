@@ -148,7 +148,7 @@
                         Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len
                         (varFromAttachmentControl) - Find(",", varFromAttachmentControl)-1));
                         
-                        UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only);
+                        ClearCollect(return, UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only));
                         
                         Reset(AttachmentControl);
                         Reset(Gallery4_1)
@@ -309,7 +309,7 @@
                         Height: =58
                         OnSelect: =Select(Parent)
                         Size: =13
-                        Text: =ThisItem.CIN
+                        Text: =ThisItem.Title
                         Width: =90
                         X: =160
                         ZIndex: =3
