@@ -14,7 +14,7 @@ UploadAttachmentScreen As screen:
         Size: =15
         Text: ="Save"
         X: =44
-        Y: =522
+        Y: =460
         ZIndex: =2
 
     CancelUpload As button:
@@ -29,7 +29,7 @@ UploadAttachmentScreen As screen:
         Size: =15
         Text: ="Cancel"
         X: =224
-        Y: =522
+        Y: =460
         ZIndex: =3
 
     DataCardKey95 As label:
@@ -69,7 +69,7 @@ UploadAttachmentScreen As screen:
         Tooltip: =
         Width: =Parent.Width - 60
         X: =44
-        Y: =191
+        Y: =128
         ZIndex: =8
 
     ErrorMessage78 As label:
@@ -99,7 +99,7 @@ UploadAttachmentScreen As screen:
         Width: =30
         Wrap: =false
         X: =20
-        Y: =DataCardKey95.Y
+        Y: =55
         ZIndex: =10
 
     Label3 As label:
@@ -127,7 +127,7 @@ UploadAttachmentScreen As screen:
         HoverFill: =RGBA(222, 179, 184, 1)
         Size: =13
         Width: =506
-        X: =44
-        Y: =95
+        X: =160
+        Y: =21
         ZIndex: =12
 

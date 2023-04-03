@@ -424,7 +424,7 @@
                         Height: =58
                         OnSelect: =Select(Parent)
                         Size: =13
-                        Text: =ThisItem.Title
+                        Text: =ThisItem.'CIN (Title)'
                         Width: =90
                         X: =160
                         ZIndex: =3
