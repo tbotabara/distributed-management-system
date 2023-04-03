@@ -128,6 +128,8 @@
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DataSource: =customer_claims_1
                     Item: =Gallery4_1.Selected
+                    NumberOfColumns: =1
+                    SnapToColumns: =false
                     Width: =972
                     X: =40
                     Y: =40
@@ -141,7 +143,7 @@
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"Title")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =99
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "Title")
                         Required: =false
                         Update: =DataCardValue1.Text
@@ -233,9 +235,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_1")
                         Required: =false
                         Update: =DataCardValue2.Text
-                        Width: =324
-                        X: =1
-                        Y: =0
+                        Width: =972
+                        X: =0
+                        Y: =1
                         ZIndex: =2
 
                         DataCardKey2 As label:
@@ -320,9 +322,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue3.Selected
-                        Width: =324
-                        X: =2
-                        Y: =0
+                        Width: =972
+                        X: =0
+                        Y: =2
                         ZIndex: =2
 
                         DataCardKey3 As label:
@@ -411,9 +413,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_3")
                         Required: =false
                         Update: =DataCardValue4.Text
-                        Width: =324
-                        X: =0
-                        Y: =1
+                        Width: =972
+                        X: =1
+                        Y: =0
                         ZIndex: =2
 
                         DataCardKey4 As label:
@@ -499,9 +501,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue5.Text)
-                        Width: =324
-                        X: =1
-                        Y: =1
+                        Width: =972
+                        X: =2
+                        Y: =0
                         ZIndex: =2
 
                         DataCardKey5 As label:
@@ -587,9 +589,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue6.Text)
-                        Width: =324
-                        X: =2
-                        Y: =1
+                        Width: =972
+                        X: =3
+                        Y: =0
                         ZIndex: =2
 
                         DataCardKey6 As label:
@@ -674,9 +676,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue7.Text)
-                        Width: =324
-                        X: =0
-                        Y: =2
+                        Width: =972
+                        X: =4
+                        Y: =0
                         ZIndex: =2
 
                         DataCardKey7 As label:
@@ -762,9 +764,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_7")
                         Required: =false
                         Update: =DataCardValue8.Text
-                        Width: =324
-                        X: =1
-                        Y: =2
+                        Width: =972
+                        X: =5
+                        Y: =0
                         ZIndex: =2
 
                         DataCardKey8 As label:
@@ -849,9 +851,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue9.Text)
-                        Width: =324
-                        X: =2
-                        Y: =2
+                        Width: =972
+                        X: =0
+                        Y: =8
                         ZIndex: =2
 
                         DataCardKey9 As label:
@@ -936,9 +938,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue10.SelectedDate
-                        Width: =324
+                        Width: =972
                         X: =0
-                        Y: =3
+                        Y: =9
                         ZIndex: =2
 
                         DataCardKey10 As label:
@@ -1019,9 +1021,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue11.SelectedDate
-                        Width: =324
-                        X: =1
-                        Y: =3
+                        Width: =972
+                        X: =0
+                        Y: =10
                         ZIndex: =2
 
                         DataCardKey11 As label:
@@ -1102,9 +1104,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue12.SelectedDate
-                        Width: =324
-                        X: =2
-                        Y: =3
+                        Width: =972
+                        X: =0
+                        Y: =11
                         ZIndex: =2
 
                         DataCardKey12 As label:
@@ -1186,9 +1188,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue13.Text)
-                        Width: =324
+                        Width: =972
                         X: =0
-                        Y: =4
+                        Y: =12
                         ZIndex: =2
 
                         DataCardKey13 As label:
@@ -1273,9 +1275,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue14.SelectedDate
-                        Width: =324
-                        X: =1
-                        Y: =4
+                        Width: =972
+                        X: =0
+                        Y: =13
                         ZIndex: =2
 
                         DataCardKey14 As label:
@@ -1358,9 +1360,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_14")
                         Required: =false
                         Update: =DataCardValue15.Text
-                        Width: =324
-                        X: =2
-                        Y: =4
+                        Width: =972
+                        X: =0
+                        Y: =14
                         ZIndex: =2
 
                         DataCardKey15 As label:
@@ -1447,9 +1449,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_15")
                         Required: =false
                         Update: =DataCardValue16.Text
-                        Width: =324
+                        Width: =972
                         X: =0
-                        Y: =5
+                        Y: =15
                         ZIndex: =2
 
                         DataCardKey16 As label:
@@ -1536,9 +1538,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_16")
                         Required: =false
                         Update: =DataCardValue17.Text
-                        Width: =324
-                        X: =1
-                        Y: =5
+                        Width: =972
+                        X: =0
+                        Y: =16
                         ZIndex: =2
 
                         DataCardKey17 As label:
@@ -1623,9 +1625,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue18.Text)
-                        Width: =324
-                        X: =2
-                        Y: =5
+                        Width: =972
+                        X: =0
+                        Y: =17
                         ZIndex: =2
 
                         DataCardKey18 As label:
@@ -1712,9 +1714,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_18")
                         Required: =false
                         Update: =DataCardValue19.Text
-                        Width: =324
+                        Width: =972
                         X: =0
-                        Y: =6
+                        Y: =18
                         ZIndex: =2
 
                         DataCardKey19 As label:
@@ -1799,9 +1801,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue20.Selected
-                        Width: =324
-                        X: =1
-                        Y: =6
+                        Width: =972
+                        X: =0
+                        Y: =19
                         ZIndex: =2
 
                         DataCardKey20 As label:
@@ -1889,9 +1891,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue21.Text)
-                        Width: =324
-                        X: =2
-                        Y: =6
+                        Width: =972
+                        X: =0
+                        Y: =20
                         ZIndex: =2
 
                         DataCardKey21 As label:
@@ -1977,9 +1979,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_21")
                         Required: =false
                         Update: =DataCardValue22.Text
-                        Width: =324
+                        Width: =972
                         X: =0
-                        Y: =7
+                        Y: =21
                         ZIndex: =2
 
                         DataCardKey22 As label:
@@ -2065,9 +2067,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "CIN")
                         Required: =false
                         Update: =DataCardValue23.Text
-                        Width: =324
-                        X: =1
-                        Y: =7
+                        Width: =972
+                        X: =0
+                        Y: =22
                         ZIndex: =2
 
                         DataCardKey23 As label:
@@ -2153,9 +2155,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "Errors")
                         Required: =false
                         Update: =DataCardValue24.Text
-                        Width: =324
-                        X: =2
-                        Y: =7
+                        Width: =972
+                        X: =0
+                        Y: =23
                         ZIndex: =2
 
                         DataCardKey24 As label:
