@@ -127,13 +127,13 @@
                 ClaimForm As form:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DataSource: =customer_claims_1
-                    Height: =440
+                    Height: =315
                     Item: =SummaryGallery.Selected
                     NumberOfColumns: =1
                     SnapToColumns: =false
                     Width: =972
                     X: =40
-                    Y: =87
+                    Y: =209
                     ZIndex: =1
 
                     Created_DataCard2 As typedDataCard.textualViewCard:
@@ -2080,9 +2080,93 @@
                     Icon: =Icon.Cancel
                     OnSelect: =Navigate(draft_screen)
                     Width: =30
-                    X: =978
-                    Y: =10
+                    X: =982
+                    Y: =27
                     ZIndex: =3
+
+                ErrorExpand As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =150
+                    Width: =742
+                    X: =213
+                    Y: =42
+                    ZIndex: =4
+
+                ErrorKelloggPO As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Size: =13
+                    Text: |-
+                        ="Claim submission for PO# " & DataCardValue6.Text & " is a duplicate entry."
+                    Width: =711
+                    X: =246
+                    Y: =42
+                    ZIndex: =5
+
+                ErrorSSCC As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Size: =13
+                    Text: |-
+                        ="Claim submission for PO# " & DataCardValue6.Text & " with SSCC# " & DataCardValue17.Text &" has been submitted as part of another claim."
+                    Width: =712
+                    X: =246
+                    Y: =92
+                    ZIndex: =6
+
+                ErrorETA As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =50
+                    Size: =13
+                    Text: |-
+                        ="Claim submission for PO# " & DataCardValue6.Text & " is more than 30 days from ETA."
+                    Width: =712
+                    X: =246
+                    Y: =142
+                    ZIndex: =7
+
+                Icon5 As icon.Warning:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(255, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =32
+                    Icon: =Icon.Warning
+                    Width: =34
+                    X: =213
+                    Y: =51
+                    ZIndex: =8
+
+                Icon5_1 As icon.Warning:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(255, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =32
+                    Icon: =Icon.Warning
+                    Width: =34
+                    X: =213
+                    Y: =96
+                    ZIndex: =9
+
+                Icon5_2 As icon.Warning:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(255, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =32
+                    Icon: =Icon.Warning
+                    Width: =34
+                    X: =213
+                    Y: =151
+                    ZIndex: =10
 
         FooterContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
@@ -2158,12 +2242,12 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
-        Height: =32
-        Size: =25
+        Height: =39
+        Size: =20
         Text: ="Claim Detail"
-        Width: =264
-        X: =381
-        Y: =126
+        Width: =172
+        X: =355
+        Y: =132
         ZIndex: =2
 
     Label4 As label:
