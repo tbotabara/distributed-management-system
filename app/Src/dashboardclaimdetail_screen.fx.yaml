@@ -2239,16 +2239,75 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =4
 
-    AttachmentGallery As gallery.galleryVertical:
+    "AttachmentGallery As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
         BorderColor: =RGBA(89, 0, 0, 1)
-        DelayItemLoading: =true
-        Height: =358
-        Items: ='Claim Document'
+        Height: =528
+        Items: ='Claim Attachment'
         Layout: =Layout.Vertical
-        LoadingSpinner: =LoadingSpinner.Data
-        TemplateSize: =347
-        Width: =302
-        X: =8
-        Y: =179
+        TemplatePadding: =0
+        TemplateSize: =76
+        Width: =282
+        X: =30
+        Y: =149
         ZIndex: =1
+
+        Title5 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =28
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =13
+            Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+            VerticalAlign: =VerticalAlign.Top
+            Width: =212
+            X: =32
+            Y: =16
+            ZIndex: =1
+
+        Subtitle5 As label:
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =10
+            Text: =ThisItem.'Document Type'.Value
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =32
+            Y: =Title5.Y + Title5.Height + 4
+            ZIndex: =2
+
+    Icon2 As icon.Add:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =32
+        Icon: =Icon.Add
+        OnSelect: =Navigate(UploadAttachmentScreen,ScreenTransition.CoverRight)
+        Tooltip: ="Add new attachment"
+        Width: =32
+        X: =262
+        Y: =100
+        ZIndex: =2
+
+    Label2 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Size: =13
+        Text: ="Attachment List"
+        X: =30
+        Y: =96
+        ZIndex: =3
 
