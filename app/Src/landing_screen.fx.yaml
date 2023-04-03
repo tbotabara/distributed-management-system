@@ -511,21 +511,6 @@
                         Y: =17
                         ZIndex: =11
 
-                Label2 As label:
-                    Align: =Align.Center
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    FontWeight: =FontWeight.Semibold
-                    Height: =274
-                    Size: =13
-                    Text: ="No records"
-                    Visible: =CountRows(Gallery4_1.AllItems) = 0
-                    Width: =1280
-                    X: =26
-                    Y: =324
-                    ZIndex: =18
-
                 combo_status As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
