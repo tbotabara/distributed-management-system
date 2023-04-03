@@ -127,13 +127,29 @@
                 ClaimForm As form:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DataSource: =customer_claims_1
+                    Height: =488
                     Item: =SummaryGallery.Selected
                     NumberOfColumns: =1
                     SnapToColumns: =false
                     Width: =972
                     X: =40
-                    Y: =40
+                    Y: =87
                     ZIndex: =1
+
+                    Created_DataCard1 As typedDataCard.textualViewCard:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="Created"
+                        Default: =ThisItem.Created
+                        DisplayMode: =DisplayMode.Edit
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"Created")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =126
+                        Required: =false
+                        Width: =243
+                        X: =4
+                        Y: =0
+                        ZIndex: =1
 
                     "'CIN (Title)_DataCard1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -147,7 +163,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "Title")
                         Required: =false
                         Update: =DataCardValue1.Text
-                        Width: =324
+                        Width: =243
                         X: =0
                         Y: =0
                         ZIndex: =2
@@ -174,7 +190,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: =DisplayMode.Disabled
                             FocusedBorderThickness: =4
                             HoverBorderColor: =RGBA(89, 0, 0, 1)
                             HoverColor: =RGBA(0, 0, 0, 1)
@@ -235,7 +251,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_3")
                         Required: =false
                         Update: =DataCardValue4.Text
-                        Width: =972
+                        Width: =243
                         X: =1
                         Y: =0
                         ZIndex: =2
@@ -262,7 +278,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =Parent.DisplayMode
+                            DisplayMode: =DisplayMode.Disabled
                             FocusedBorderThickness: =4
                             HoverBorderColor: =RGBA(89, 0, 0, 1)
                             HoverColor: =RGBA(0, 0, 0, 1)
@@ -323,7 +339,7 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue5.Text)
-                        Width: =972
+                        Width: =243
                         X: =2
                         Y: =0
                         ZIndex: =2
@@ -411,7 +427,7 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue6.Text)
-                        Width: =972
+                        Width: =243
                         X: =3
                         Y: =0
                         ZIndex: =2
@@ -495,11 +511,11 @@
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"field_6")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =99
                         Required: =false
                         Update: =Value(DataCardValue7.Text)
-                        Width: =972
-                        X: =4
+                        Width: =243
+                        X: =5
                         Y: =0
                         ZIndex: =2
 
@@ -582,12 +598,12 @@
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"field_7")
                         Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
+                        Height: =99
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_7")
                         Required: =false
                         Update: =DataCardValue8.Text
-                        Width: =972
-                        X: =5
+                        Width: =486
+                        X: =6
                         Y: =0
                         ZIndex: =2
 
@@ -662,94 +678,6 @@
                             Y: =DataCardKey8.Y
                             ZIndex: =4
 
-                    "'Destination Country_DataCard1' As typedDataCard.textualEditCard":
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="field_1"
-                        Default: =ThisItem.'Destination Country'
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"field_1")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_1")
-                        Required: =false
-                        Update: =DataCardValue2.Text
-                        Width: =972
-                        X: =0
-                        Y: =1
-                        ZIndex: =2
-
-                        DataCardKey2 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =34
-                            Size: =13
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue2 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            BorderThickness: =2
-                            Color: =RGBA(0, 0, 0, 1)
-                            Default: =Parent.Default
-                            DelayOutput: =true
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =Parent.DisplayMode
-                            FocusedBorderThickness: =4
-                            HoverBorderColor: =RGBA(89, 0, 0, 1)
-                            HoverColor: =RGBA(0, 0, 0, 1)
-                            HoverFill: =RGBA(222, 179, 184, 1)
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =13
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey2.Y + DataCardKey2.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage2 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(168, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue2.Y + DataCardValue2.Height
-                            ZIndex: =3
-
-                        StarVisible2 As label:
-                            Align: =Align.Center
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =DataCardKey2.Height
-                            Size: =13
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey2.Y
-                            ZIndex: =4
-
                     "'Claim Type_DataCard1' As typedDataCard.comboBoxEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -761,9 +689,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue3.Selected
-                        Width: =972
-                        X: =0
-                        Y: =2
+                        Width: =243
+                        X: =1
+                        Y: =10
                         ZIndex: =2
 
                         DataCardKey3 As label:
@@ -851,9 +779,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue9.Text)
-                        Width: =972
-                        X: =0
-                        Y: =8
+                        Width: =243
+                        X: =1
+                        Y: =2
                         ZIndex: =2
 
                         DataCardKey9 As label:
@@ -938,9 +866,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue10.SelectedDate
-                        Width: =972
-                        X: =0
-                        Y: =9
+                        Width: =243
+                        X: =2
+                        Y: =2
                         ZIndex: =2
 
                         DataCardKey10 As label:
@@ -1021,9 +949,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue11.SelectedDate
-                        Width: =972
-                        X: =0
-                        Y: =10
+                        Width: =243
+                        X: =3
+                        Y: =2
                         ZIndex: =2
 
                         DataCardKey11 As label:
@@ -1104,9 +1032,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue12.SelectedDate
-                        Width: =972
-                        X: =0
-                        Y: =11
+                        Width: =243
+                        X: =2
+                        Y: =10
                         ZIndex: =2
 
                         DataCardKey12 As label:
@@ -1188,9 +1116,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue13.Text)
-                        Width: =972
-                        X: =0
-                        Y: =12
+                        Width: =243
+                        X: =3
+                        Y: =10
                         ZIndex: =2
 
                         DataCardKey13 As label:
@@ -1275,9 +1203,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue14.SelectedDate
-                        Width: =972
-                        X: =0
-                        Y: =13
+                        Width: =243
+                        X: =4
+                        Y: =10
                         ZIndex: =2
 
                         DataCardKey14 As label:
@@ -1360,8 +1288,8 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_14")
                         Required: =false
                         Update: =DataCardValue15.Text
-                        Width: =972
-                        X: =0
+                        Width: =243
+                        X: =243
                         Y: =14
                         ZIndex: =2
 
@@ -1449,9 +1377,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_15")
                         Required: =false
                         Update: =DataCardValue16.Text
-                        Width: =972
-                        X: =0
-                        Y: =15
+                        Width: =243
+                        X: =486
+                        Y: =14
                         ZIndex: =2
 
                         DataCardKey16 As label:
@@ -1538,9 +1466,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_16")
                         Required: =false
                         Update: =DataCardValue17.Text
-                        Width: =972
-                        X: =0
-                        Y: =16
+                        Width: =243
+                        X: =729
+                        Y: =14
                         ZIndex: =2
 
                         DataCardKey17 As label:
@@ -1625,7 +1553,7 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue18.Text)
-                        Width: =972
+                        Width: =243
                         X: =0
                         Y: =17
                         ZIndex: =2
@@ -1714,9 +1642,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_18")
                         Required: =false
                         Update: =DataCardValue19.Text
-                        Width: =972
-                        X: =0
-                        Y: =18
+                        Width: =243
+                        X: =-1
+                        Y: =17
                         ZIndex: =2
 
                         DataCardKey19 As label:
@@ -1801,9 +1729,9 @@
                         Height: =50
                         Required: =false
                         Update: =DataCardValue20.Selected
-                        Width: =972
+                        Width: =243
                         X: =0
-                        Y: =19
+                        Y: =2
                         ZIndex: =2
 
                         DataCardKey20 As label:
@@ -1891,9 +1819,9 @@
                         Height: =50
                         Required: =false
                         Update: =Value(DataCardValue21.Text)
-                        Width: =972
-                        X: =0
-                        Y: =20
+                        Width: =243
+                        X: =1
+                        Y: =17
                         ZIndex: =2
 
                         DataCardKey21 As label:
@@ -1979,9 +1907,9 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_21")
                         Required: =false
                         Update: =DataCardValue22.Text
-                        Width: =972
+                        Width: =243
                         X: =0
-                        Y: =21
+                        Y: =22
                         ZIndex: =2
 
                         DataCardKey22 As label:
@@ -2053,182 +1981,6 @@
                             Width: =30
                             Wrap: =false
                             Y: =DataCardKey22.Y
-                            ZIndex: =4
-
-                    CIN2_DataCard1 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="CIN"
-                        Default: =ThisItem.CIN2
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"CIN")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "CIN")
-                        Required: =false
-                        Update: =DataCardValue23.Text
-                        Width: =972
-                        X: =0
-                        Y: =22
-                        ZIndex: =2
-
-                        DataCardKey23 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =34
-                            Size: =13
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue23 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            BorderThickness: =2
-                            Color: =RGBA(0, 0, 0, 1)
-                            Default: =Parent.Default
-                            DelayOutput: =true
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =Parent.DisplayMode
-                            FocusedBorderThickness: =4
-                            HoverBorderColor: =RGBA(89, 0, 0, 1)
-                            HoverColor: =RGBA(0, 0, 0, 1)
-                            HoverFill: =RGBA(222, 179, 184, 1)
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =13
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey23.Y + DataCardKey23.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage23 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(168, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue23.Y + DataCardValue23.Height
-                            ZIndex: =3
-
-                        StarVisible23 As label:
-                            Align: =Align.Center
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =DataCardKey23.Height
-                            Size: =13
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey23.Y
-                            ZIndex: =4
-
-                    Errors_DataCard1 As typedDataCard.textualEditCard:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="Errors"
-                        Default: =ThisItem.Errors
-                        DisplayMode: =Parent.DisplayMode
-                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"Errors")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "Errors")
-                        Required: =false
-                        Update: =DataCardValue24.Text
-                        Width: =972
-                        X: =0
-                        Y: =23
-                        ZIndex: =2
-
-                        DataCardKey24 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =34
-                            Size: =13
-                            Text: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            Wrap: =false
-                            X: =30
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue24 As text:
-                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                            BorderThickness: =2
-                            Color: =RGBA(0, 0, 0, 1)
-                            Default: =Parent.Default
-                            DelayOutput: =true
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =Parent.DisplayMode
-                            FocusedBorderThickness: =4
-                            HoverBorderColor: =RGBA(89, 0, 0, 1)
-                            HoverColor: =RGBA(0, 0, 0, 1)
-                            HoverFill: =RGBA(222, 179, 184, 1)
-                            MaxLength: =Parent.MaxLength
-                            PaddingLeft: =5
-                            RadiusBottomLeft: =0
-                            RadiusBottomRight: =0
-                            RadiusTopLeft: =0
-                            RadiusTopRight: =0
-                            Size: =13
-                            Tooltip: =Parent.DisplayName
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardKey24.Y + DataCardKey24.Height + 5
-                            ZIndex: =2
-
-                        ErrorMessage24 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(168, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            FontWeight: =FontWeight.Semibold
-                            Height: =10
-                            Live: =Live.Assertive
-                            PaddingBottom: =0
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Text: =Parent.Error
-                            Visible: =Parent.DisplayMode=DisplayMode.Edit
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =DataCardValue24.Y + DataCardValue24.Height
-                            ZIndex: =3
-
-                        StarVisible24 As label:
-                            Align: =Align.Center
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =DataCardKey24.Height
-                            Size: =13
-                            Text: ="*"
-                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                            Width: =30
-                            Wrap: =false
-                            Y: =DataCardKey24.Y
                             ZIndex: =4
 
         FooterContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
@@ -2305,9 +2057,11 @@
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
-        Size: =13
-        Text: ="Attachment List"
-        X: =30
-        Y: =96
-        ZIndex: =3
+        Height: =32
+        Size: =25
+        Text: ="Claim Detail"
+        Width: =264
+        X: =381
+        Y: =126
+        ZIndex: =2
 
