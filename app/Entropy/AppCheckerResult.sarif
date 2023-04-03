@@ -1704,6 +1704,96 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ClaimETAError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ClaimETAError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClaimETAError",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.KelloggPOError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.KelloggPOError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "KelloggPOError",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.SSCCError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.SSCCError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SSCCError",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.Item"
                 }
               ],
@@ -1727,7 +1817,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -1757,37 +1847,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ErrorContainer.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ErrorContainer.Visible",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ErrorContainer"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 4
+          "ruleIndex": 5
         }
       ],
       "tool": {
@@ -1865,6 +1925,23 @@
                 "level": "Medium",
                 "primaryCategory": "accessibility",
                 "whyFix": "People who use the keyboard with your app will not be able to access this element without a tab stop."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             },
             {
