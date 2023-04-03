@@ -168,7 +168,25 @@
                         Height: =58
                         OnSelect: =Select(Parent)
                         Size: =13
-                        Text: =ThisItem.CIN
+                        Text: |-
+                            =If(
+                                Label8.Text = "Product Damages",
+                                Concatenate(
+                                    "DMG-000",
+                                    ThisItem.CIN
+                                ),
+                                Label8.Text = "Product Shortages/Discrepancies",
+                                Concatenate(
+                                    "PSD-000",
+                                    ThisItem.CIN
+                                ),
+                                Label8.Text = "Shelf Life",
+                                Concatenate(
+                                    "SHL-000",
+                                    ThisItem.CIN
+                                ),
+                                ThisItem.CIN
+                            )
                         Width: =90
                         X: =160
                         ZIndex: =3
@@ -227,7 +245,7 @@
                         Height: =58
                         OnSelect: =Select(Parent)
                         Size: =13
-                        Text: =ThisItem.'Claim Status'
+                        Text: =ThisItem.'Claim Status'.Value
                         Width: =124
                         X: =1014
                         ZIndex: =8
