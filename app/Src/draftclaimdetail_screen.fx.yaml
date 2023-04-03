@@ -1,4 +1,4 @@
-"dashboardclaimdetail_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"draftclaimdetail_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
@@ -59,7 +59,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(dashboardclaimdetail_screen)
+                OnSelect: =Navigate(draftclaimdetail_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =15
                 Text: ="Draft"
@@ -152,15 +152,14 @@
                         ZIndex: =1
 
                         DataCardKey2 As label:
-                            AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Height: =34
+                            Height: =37
                             Size: =12
                             Text: ="Claim Submission Date"
-                            Width: =Parent.Width - 60
+                            Width: =186
                             Wrap: =false
-                            X: =30
+                            X: =41
                             Y: =10
                             ZIndex: =1
 
@@ -181,6 +180,19 @@
                             Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                             ZIndex: =2
 
+                        Icon4 As icon.Warning:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =32
+                            Icon: =Icon.Warning
+                            Visible: =If(LookUp(customer_claims_1, Created= ThisItem.Created, ID) > 1 ,false,true)
+                            Width: =30
+                            X: =11
+                            Y: =10
+                            ZIndex: =3
+
                     "'CIN (Title)_DataCard1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -200,7 +212,7 @@
 
                         DataCardKey1 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -288,7 +300,7 @@
 
                         DataCardKey4 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -376,7 +388,7 @@
 
                         DataCardKey5 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -464,12 +476,12 @@
 
                         DataCardKey6 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
                             Text: ="Kellogg PO"
-                            Width: =Parent.Width - 60
+                            Width: =182
                             Wrap: =false
                             X: =30
                             Y: =10
@@ -533,6 +545,19 @@
                             Y: =DataCardKey6.Y
                             ZIndex: =4
 
+                        Icon4_1 As icon.Warning:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =32
+                            Icon: =Icon.Warning
+                            Visible: |-
+                                =If(LookUp(customer_claims_1, field_5= ThisItem.'Kellogg PO#', ID) > 1 ,false,true)
+                            Width: =30
+                            Y: =12
+                            ZIndex: =5
+
                     "'Kellogg Code_DataCard1' As typedDataCard.numberEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -551,7 +576,7 @@
 
                         DataCardKey7 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -639,7 +664,7 @@
 
                         DataCardKey8 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -726,7 +751,7 @@
 
                         DataCardKey20 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -816,7 +841,7 @@
 
                         DataCardKey9 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =12
@@ -903,7 +928,7 @@
 
                         DataCardKey10 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =31
                             Size: =13
@@ -986,7 +1011,7 @@
 
                         DataCardKey11 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1069,7 +1094,7 @@
 
                         DataCardKey3 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1159,7 +1184,7 @@
 
                         DataCardKey12 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1243,7 +1268,7 @@
 
                         DataCardKey13 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1330,7 +1355,7 @@
 
                         DataCardKey14 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1415,7 +1440,7 @@
 
                         DataCardKey15 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1504,7 +1529,7 @@
 
                         DataCardKey16 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1593,7 +1618,7 @@
 
                         DataCardKey17 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1662,6 +1687,19 @@
                             Y: =DataCardKey17.Y
                             ZIndex: =4
 
+                        Icon4_2 As icon.Warning:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(255, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =32
+                            Icon: =Icon.Warning
+                            Visible: |-
+                                =If(LookUp(customer_claims_1, field_16= ThisItem.'SSCC#', ID) > 1 ,false,true)
+                            Width: =30
+                            Y: =12
+                            ZIndex: =5
+
                     "'DDRF#_DataCard1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -1682,7 +1720,7 @@
 
                         DataCardKey19 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1769,7 +1807,7 @@
 
                         DataCardKey18 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1856,7 +1894,7 @@
 
                         DataCardKey21 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -1944,7 +1982,7 @@
 
                         DataCardKey22 As label:
                             AutoHeight: =true
-                            Color: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =34
                             Size: =13
@@ -2040,7 +2078,7 @@
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =37
                     Icon: =Icon.Cancel
-                    OnSelect: =Navigate(landing_screen)
+                    OnSelect: =Navigate(draft_screen)
                     Width: =30
                     X: =978
                     Y: =10
