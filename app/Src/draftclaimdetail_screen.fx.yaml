@@ -2477,68 +2477,6 @@
                     Y: =269
                     ZIndex: =40
 
-                    label_FileName_2 As label:
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FontWeight: =FontWeight.Semibold
-                        Height: =38
-                        Italic: =true
-                        OnSelect: =
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =10
-                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
-                        Tooltip: ="Download this file"
-                        Width: =170
-                        X: =7
-                        Y: =6
-                        ZIndex: =1
-
-                    iconDownload_SD As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =45
-                        Icon: =Icon.Download
-                        OnSelect: |-
-                            =Download("https://apcdeloitte.sharepoint.com/:i:/r/sites/Kellogg36/Claim%20Attachment/" & ThisItem.'File name with extension')
-                        PaddingBottom: =10
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        PaddingTop: =10
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =32
-                        X: =177
-                        Y: =2
-                        ZIndex: =2
-
-                    iconDelete_SD As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =45
-                        Icon: =Icon.Trash
-                        OnSelect: |-
-                            =Remove('Claim Attachment',ThisItem);
-                            Refresh('Claim Attachment');
-                        PaddingBottom: =10
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        PaddingTop: =10
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =32
-                        X: =209
-                        Y: =2
-                        ZIndex: =3
-
                 "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -2551,68 +2489,6 @@
                     Y: =181
                     ZIndex: =41
 
-                    label_FileName_1 As label:
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FontWeight: =FontWeight.Semibold
-                        Height: =38
-                        Italic: =true
-                        OnSelect: =
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =10
-                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
-                        Tooltip: ="Download this file"
-                        Width: =170
-                        X: =7
-                        Y: =6
-                        ZIndex: =1
-
-                    iconDownload_DI As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =45
-                        Icon: =Icon.Download
-                        OnSelect: |-
-                            =Download("https://apcdeloitte.sharepoint.com/:i:/r/sites/Kellogg36/Claim%20Attachment/" & ThisItem.'File name with extension')
-                        PaddingBottom: =10
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        PaddingTop: =10
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =32
-                        X: =177
-                        Y: =2
-                        ZIndex: =2
-
-                    iconDelete_DI As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =45
-                        Icon: =Icon.Trash
-                        OnSelect: |-
-                            =Remove('Claim Attachment',ThisItem);
-                            Refresh('Claim Attachment');
-                        PaddingBottom: =10
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        PaddingTop: =10
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =32
-                        X: =209
-                        Y: =2
-                        ZIndex: =3
-
                 "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -2624,68 +2500,6 @@
                     X: =30
                     Y: =93
                     ZIndex: =42
-
-                    label_FileName As label:
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FontWeight: =FontWeight.Semibold
-                        Height: =38
-                        Italic: =true
-                        OnSelect: =
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =10
-                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
-                        Tooltip: ="Download this file"
-                        Width: =170
-                        X: =7
-                        Y: =6
-                        ZIndex: =1
-
-                    iconDelete_WHR As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =45
-                        Icon: =Icon.Trash
-                        OnSelect: |-
-                            =Remove('Claim Attachment',ThisItem);
-                            Refresh('Claim Attachment');
-                        PaddingBottom: =10
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        PaddingTop: =10
-                        TabIndex: =0
-                        Tooltip: ="Remove this file"
-                        Width: =32
-                        X: =209
-                        Y: =2
-                        ZIndex: =2
-
-                    iconDownload_WHR As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(89, 0, 0, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =45
-                        Icon: =Icon.Download
-                        OnSelect: |-
-                            =Download("https://apcdeloitte.sharepoint.com/:i:/r/sites/Kellogg36/Claim%20Attachment/" & ThisItem.'File name with extension')
-                        PaddingBottom: =10
-                        PaddingLeft: =10
-                        PaddingRight: =10
-                        PaddingTop: =10
-                        TabIndex: =0
-                        Tooltip: ="Remove this file"
-                        Width: =32
-                        X: =177
-                        Y: =2
-                        ZIndex: =3
 
                 Rectangle3 As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
