@@ -1720,7 +1720,8 @@
                             Visible: |-
                                 =If(CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text)) >1 ,true,false)
                             Width: =30
-                            Y: =12
+                            X: =117
+                            Y: =10
                             ZIndex: =5
 
                     "'DDRF#_DataCard1' As typedDataCard.textualEditCard":
