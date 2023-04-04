@@ -155,7 +155,11 @@
                         Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len
                         (varFromAttachmentControl) - Find(",", varFromAttachmentControl)-1));
                         
-                        ClearCollect(return, UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only));
+                        Set(varFlowResponse, UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only));
+                        
+                        Set(varInsertedItems, varFlowResponse.inserteditems);
+                        
+                        Notify("Inserted items: " & varInsertedItems, NotificationType.Success);
                         
                         Reset(AttachmentControl);
                         Refresh(customer_claims_1)
@@ -378,7 +382,7 @@
                     Items: |-
                         =Sort(
                             Filter(
-                                FilteredClaims,
+                                customer_claims_1,
                                 input_search.Text in 'CIN (Title)' || 
                                 input_search.Text in 'Kellogg PO#' || 
                                 input_search.Text in 'Kellogg Inv #' || 
