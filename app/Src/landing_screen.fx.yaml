@@ -81,7 +81,7 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Size: =13
-                Text: =var_current_user
+                Text: ="Distributor"
                 ZIndex: =5
 
             logout_btn As button:
