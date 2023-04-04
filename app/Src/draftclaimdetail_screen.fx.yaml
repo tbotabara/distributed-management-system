@@ -2360,24 +2360,11 @@
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
+                    Visible: =!IsBlank('Gallery_Supporting Documents')
                     Width: =282
                     X: =30
                     Y: =269
                     ZIndex: =16
-
-                    Label5_6 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        Italic: =true
-                        OnSelect: =Select(Parent)
-                        Size: =10
-                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
-                        Width: =181
-                        Y: =9
-                        ZIndex: =1
 
                     Icon8_2 As icon.Download:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2392,7 +2379,7 @@
                         Width: =25
                         X: =181
                         Y: =14
-                        ZIndex: =2
+                        ZIndex: =1
 
                     Icon9_2 As icon.Trash:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2408,6 +2395,20 @@
                         Width: =30
                         X: =206
                         Y: =14
+                        ZIndex: =2
+
+                    Label5_6 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Width: =181
+                        Y: =8
                         ZIndex: =3
 
                 "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
@@ -2417,24 +2418,11 @@
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
+                    Visible: =!IsBlank(Gallery_DamageImage)
                     Width: =282
                     X: =30
                     Y: =181
                     ZIndex: =17
-
-                    Label5_5 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        FontWeight: =FontWeight.Bold
-                        Height: =34
-                        Italic: =true
-                        OnSelect: =Select(Parent)
-                        Size: =10
-                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
-                        Width: =181
-                        Y: =9
-                        ZIndex: =1
 
                     Icon8_1 As icon.Download:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2449,7 +2437,7 @@
                         Width: =25
                         X: =181
                         Y: =14
-                        ZIndex: =2
+                        ZIndex: =1
 
                     Icon9_1 As icon.Trash:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2465,6 +2453,20 @@
                         Width: =30
                         X: =206
                         Y: =14
+                        ZIndex: =2
+
+                    Label5_5 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Width: =181
+                        Y: =9
                         ZIndex: =3
 
                 "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
@@ -2474,6 +2476,7 @@
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
+                    Visible: =!IsBlank(Gallery_WHReceipt)
                     Width: =282
                     X: =30
                     Y: =93
@@ -2488,7 +2491,7 @@
                         Italic: =true
                         OnSelect: =Select(Parent)
                         Size: =10
-                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
                         Width: =181
                         Y: =6
                         ZIndex: =1
