@@ -2216,7 +2216,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "//421\r\nIf(\r\n    (ContainerErrorKelloggPO.Visible And !ContainerErrorSSCC.Visible And !ContainerErrorETA.Visible),\r\n    365,\r\n    (ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And !ContainerErrorETA.Visible),\r\n    309,\r\n    (ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And ContainerErrorETA.Visible),\r\n    253,\r\n    421\r\n)",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ZIndex",
         {
           "AFDDataSourceName": "",
@@ -3132,7 +3139,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(LookUp(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text, ID) > 1 ,56,0)\r\n",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "LayoutMode",
         "LayoutDirection",
@@ -3268,7 +3282,14 @@
         "X",
         "Y",
         "Width",
-        "Height",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "If(LookUp(customer_claims_1, 'SSCC#' = DataCardValue17.Text, ID) > 1 ,56,0)\r\n",
+          "InvariantPropertyName": "Height",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "LayoutMode",
         "LayoutDirection",
@@ -7529,7 +7550,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey2",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -27436,7 +27457,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon4",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
