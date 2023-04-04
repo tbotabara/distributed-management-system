@@ -2114,7 +2114,7 @@
                         =If(CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text)) >1 ,true,false)
                     Width: =875
                     X: =91
-                    Y: =45
+                    Y: =64
                     ZIndex: =18
 
                     ErrorKelloggPO As label:
@@ -2149,7 +2149,7 @@
                         If(CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text)) >1 , true, false)
                     Width: =861
                     X: =91
-                    Y: =79
+                    Y: =95
                     ZIndex: =23
 
                     IconErrorSSCC As icon.Warning:
@@ -2184,7 +2184,7 @@
                         If(DateValue(DataCardValue2.Text)>(DateAdd(DataCardValue12.SelectedDate, 30,TimeUnit.Days)),true,false)
                     Width: =875
                     X: =91
-                    Y: =109
+                    Y: =127
                     ZIndex: =24
 
                     IconErrorETA As icon.Warning:
