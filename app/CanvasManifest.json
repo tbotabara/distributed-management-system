@@ -106,7 +106,7 @@
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "PIO Claims Management - MH",
+    "AppName": "PIO Claims Management",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -119,8 +119,8 @@
   "ScreenOrder": [
     "login_screen",
     "landing_screen",
-    "draft_screen",
     "nabila_test_draft",
+    "draft_screen",
     "draftclaimdetail_screen",
     "Screen1"
   ]

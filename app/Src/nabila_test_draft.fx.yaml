@@ -1,4 +1,462 @@
 "nabila_test_draft As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: =
+
+    ScreenContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =20
+            PaddingRight: =20
+            ZIndex: =2
+
+            Image2_3 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='Kellogs.KelloggLogo650x366'
+                PaddingRight: =20
+                ZIndex: =1
+
+            dashboard_btn_3 As button:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(0, 0, 0, 0)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(164, 38, 44, 1)
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
+                OnSelect: =Navigate(nabila_test_draft)
+                PressedFill: =ColorFade(Self.Fill, -15%)
+                Text: ="Dashboard"
+                Width: =115
+                ZIndex: =2
+
+            draft_btn_3 As button:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BorderThickness: =1
+                Color: =RGBA(184, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                HoverColor: =RGBA(164, 38, 44, 1)
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
+                OnSelect: =Navigate(draft_screen)
+                PressedFill: =ColorFade(Self.Fill, -15%)
+                Text: ="Draft"
+                Width: =115
+                ZIndex: =3
+
+            Rectangle7_3 As rectangle:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FillPortions: =9
+                Height: =75
+                ZIndex: =4
+
+            Icon6_2 As icon.Person:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Person
+                Width: =20
+                ZIndex: =5
+
+            Label5_7 As label:
+                Align: =Align.Right
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Size: =13
+                Text: |
+                    =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
+                Width: =100
+                ZIndex: =6
+
+            Icon5_2 As icon.Leave:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Leave
+                OnSelect: =Navigate(login_screen)
+                ZIndex: =7
+
+        MainSectionContainer1_3 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(243, 246, 248, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =20
+            PaddingTop: =20
+            ZIndex: =3
+
+            Container1_2 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =300
+                ZIndex: =2
+
+                input_search_1 As text:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 0, 0, 1)
+                    Default: =""
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    FocusedBorderThickness: =4
+                    Height: =36
+                    HintText: ="Search PO/Inv/Cont/CIN/Cust Ref."
+                    HoverBorderColor: =RGBA(89, 0, 0, 1)
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    Size: =13
+                    Width: =631
+                    X: =27
+                    Y: =74
+                    ZIndex: =1
+
+                Label7 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    FontWeight: =FontWeight.Bold
+                    Size: =25
+                    Text: ="Submit New Claim"
+                    Width: =344
+                    X: =27
+                    ZIndex: =3
+
+                Container2 As groupContainer.verticalAutoLayoutContainer:
+                    Height: =425
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutOverflowX: =LayoutOverflow.Scroll
+                    Width: =1280
+                    X: =27
+                    Y: =145
+                    ZIndex: =4
+
+                    DraftSummaryGallery As gallery.galleryVertical:
+                        AlignInContainer: =AlignInContainer.SetByContainer
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        DelayItemLoading: =true
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =425
+                        Items: =customer_claims_1
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        LoadingSpinner: =LoadingSpinner.Data
+                        OnSelect: =Navigate(draftclaimdetail_screen)
+                        TemplateSize: =58
+                        Transition: =Transition.Pop
+                        Width: =3100
+                        X: =27
+                        Y: =145
+                        ZIndex: =1
+
+                        lbl_tbl_CIN As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'CIN (Title)'
+                            Width: =125
+                            X: =39
+                            ZIndex: =2
+
+                        lbl_tbl_ClaimType As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =57
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Claim Type'.Value
+                            Width: =223
+                            X: =145
+                            Y: =1
+                            ZIndex: =3
+
+                        lbl_tbl_CustPO As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Customer PO'
+                            Width: =164
+                            X: =382
+                            ZIndex: =4
+
+                        lbl_tbl_KelloggSO As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Kellogg SO#'
+                            X: =519
+                            ZIndex: =5
+
+                        lbl_tbl_KelloggPO As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Kellogg PO#'
+                            X: =638
+                            ZIndex: =6
+
+                        lbl_tbl_KelloggCode As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Kellogg Code'
+                            Width: =174
+                            X: =767
+                            ZIndex: =7
+
+                        lbl_tbl_ProductDescription As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Product Description '
+                            Width: =228
+                            X: =906
+                            ZIndex: =8
+
+                        lbl_tbl_Quantity As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Invoice Date'
+                            X: =1134
+                            ZIndex: =9
+
+                        lbl_tbl_CustomerRequestedETA As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =57
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Customer Requested ETA'
+                            Width: =116
+                            X: =lbl_tbl_Quantity.X+lbl_tbl_ProductDescription.Width
+                            Y: =1
+                            ZIndex: =10
+
+                        Icon1_2 As icon.Error:
+                            BorderColor: =RGBA(255, 0, 0, 1)
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =24
+                            Icon: =Icon.Error
+                            OnSelect: |-
+                                =Set(varOverflowText, ThisItem.Errors);
+                                Notify(varOverflowText)
+                            Tooltip: =ThisItem.Errors
+                            Visible: =!IsBlank(ThisItem.Errors)
+                            Width: =27
+                            Y: =17
+                            ZIndex: =11
+
+                        lbl_tbl_ActualETD As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =57
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Actual ETD'
+                            Width: =132
+                            X: =lbl_tbl_CustomerRequestedETA.X+lbl_tbl_Quantity.Width
+                            Y: =1
+                            ZIndex: =12
+
+                        lbl_tbl_ActualETA As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Actual ETA'
+                            X: =lbl_tbl_ActualETD.X + lbl_tbl_ActualETD.Width
+                            ZIndex: =13
+
+                        lbl_tbl_KelloggInvNo As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Kellogg Inv #'
+                            X: =lbl_tbl_ActualETA.X+lbl_tbl_ActualETA.Width
+                            ZIndex: =14
+
+                        lbl_tbl_InvDate As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Invoice Date'
+                            X: =lbl_tbl_KelloggInvNo.X+lbl_tbl_KelloggInvNo.Width
+                            ZIndex: =15
+
+                        lbl_tbl_ContainerNo As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Container #'
+                            X: =lbl_tbl_InvDate.X + lbl_tbl_InvDate.Width
+                            ZIndex: =16
+
+                        lbl_tbl_BLNo As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =57
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'BL#'
+                            X: =lbl_tbl_ContainerNo.X + lbl_tbl_ContainerNo.Width
+                            Y: =1
+                            ZIndex: =17
+
+                        lbl_tbl_SSCCNo As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'SSCC#'
+                            X: =lbl_tbl_BLNo.X+lbl_tbl_BLNo.Width
+                            ZIndex: =18
+
+                        lbl_tbl_TotalCases As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Total cases for Claim'
+                            X: =lbl_tbl_SSCCNo.X + lbl_tbl_SSCCNo.Width
+                            ZIndex: =19
+
+                        lb_tbl_DDRF As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'DDRF#'
+                            X: =lbl_tbl_TotalCases.X + lbl_tbl_TotalCases.Width
+                            ZIndex: =20
+
+                        lbl_tbl_ClaimSubmissionDate As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.Created
+                            X: =lb_tbl_DDRF.X+lb_tbl_DDRF.Width
+                            ZIndex: =21
+
+                        lbl_tbl_ClaimStatus As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =57
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Claim Status'.Value
+                            Width: =168
+                            X: =lbl_tbl_ClaimSubmissionDate.X + lb_tbl_DDRF.Width
+                            Y: =1
+                            ZIndex: =22
+
+        FooterContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
+
+    Icon2_1 As icon.HorizontalLine:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(184, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =20
+        Icon: =Icon.HorizontalLine
+        Width: =60
+        X: =232
+        Y: =62
+        ZIndex: =13
 
