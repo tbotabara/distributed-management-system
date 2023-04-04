@@ -1,6 +1,7 @@
 "landing_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: =
 
     ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -379,20 +380,30 @@
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =274
-                    Items: |
+                    Items: |-
                         =Sort(
-                            Filter(
-                                Filter(
+                            If(
+                                CountRows(
                                     Filter(
                                         customer_claims_1,
-                                        (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value)
-                                    ),
+                                        StartsWith('CIN (Title)', input_search.Text) ||
+                                        StartsWith('Kellogg PO#', input_search.Text) ||
+                                        StartsWith('Kellogg Inv #', input_search.Text) ||
+                                        StartsWith('Container #', input_search.Text),
+                                        (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
+                                        (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
+                                    )
+                                ) = 0,
+                                customer_claims_1,
+                                Filter(
+                                    customer_claims_1,
+                                    StartsWith('CIN (Title)', input_search.Text) ||
+                                    StartsWith('Kellogg PO#', input_search.Text) ||
+                                    StartsWith('Kellogg Inv #', input_search.Text) ||
+                                    StartsWith('Container #', input_search.Text),
+                                    (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
                                     (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
-                                ),
-                                StartsWith('CIN (Title)', input_search.Text) ||
-                                StartsWith('Kellogg PO#', input_search.Text) ||
-                                StartsWith('Kellogg Inv #', input_search.Text) ||
-                                StartsWith('Container #', input_search.Text)
+                                )
                             ),
                             'CIN (Title)', SortOrder.Descending
                         )
@@ -570,29 +581,6 @@
                     X: =25
                     Y: =324
                     ZIndex: =21
-
-                Button4 As button:
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(164, 38, 44, 1)
-                    FontWeight: =FontWeight.Semibold
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    OnSelect: |-
-                        =ClearCollect(
-                            FilteredClaims,
-                            Filter(
-                                customer_claims_1,
-                                (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
-                                (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
-                            )
-                        )
-                    Size: =15
-                    Text: ="Filter Records"
-                    X: =1145
-                    Y: =216
-                    ZIndex: =22
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0

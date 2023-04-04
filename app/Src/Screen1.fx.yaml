@@ -10,7 +10,7 @@ Screen1 As screen:
         FontWeight: =FontWeight.Semibold
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-        OnSelect: =Set('TypeNumber',GetDocumentTypeID.Run('TypeNumber').documenttypeid);
+        OnSelect: =Set(TypeNumber,GetDocumentTypeID.Run(TypeNumber).documenttypeid);
         Size: =15
         Text: ="Button"
         X: =40
