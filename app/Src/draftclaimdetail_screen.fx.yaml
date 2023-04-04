@@ -2080,7 +2080,7 @@
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    HoverFill: =ColorFade(RGBA(116,116,116,1), -20%)
                     OnSelect: =Navigate(draft_screen)
                     Size: =15
                     Text: ="Cancel"
@@ -2096,7 +2096,7 @@
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =37
                     Icon: =Icon.Cancel
-                    OnSelect: =Navigate(draft_screen)
+                    OnSelect: =Back();ScreenTransition.Fade
                     Width: =30
                     X: =1276
                     Y: =14
@@ -2109,14 +2109,14 @@
                     Width: =875
                     X: =374
                     Y: =51
-                    ZIndex: =18
+                    ZIndex: =4
 
                     ErrorKelloggPO As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Height: =19
-                        Size: =12
+                        Size: =11
                         Text: |-
                             ="Claim submission for PO# " & DataCardValue6.Text & " is a duplicate entry."
                         Visible: =ContainerErrorKelloggPO.Visible
@@ -2144,7 +2144,7 @@
                     Width: =861
                     X: =374
                     Y: =81
-                    ZIndex: =23
+                    ZIndex: =5
 
                     IconErrorSSCC As icon.Warning:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2163,7 +2163,7 @@
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Height: =19
-                        Size: =12
+                        Size: =11
                         Text: |-
                             ="Claim submission for PO# " & DataCardValue6.Text & " with SSCC# " & DataCardValue17.Text &" has been submitted as part of another claim."
                         Visible: =ContainerErrorSSCC.Visible
@@ -2179,7 +2179,7 @@
                     Width: =875
                     X: =374
                     Y: =112
-                    ZIndex: =24
+                    ZIndex: =6
 
                     IconErrorETA As icon.Warning:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2198,7 +2198,7 @@
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         Height: =19
-                        Size: =12
+                        Size: =11
                         Text: |-
                             ="Claim submission for PO# " & DataCardValue6.Text & " is more than 30 days from ETA."
                         Visible: =ContainerErrorETA.Visible
@@ -2206,24 +2206,25 @@
                         X: =34
                         ZIndex: =2
 
-                Button3_2 As button:
+                button_Submit As button:
                     BorderColor: =ColorFade(RGBA(54,176,75,1), -15%)
                     BorderThickness: =0
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =If(IsBlank(Gallery_WHReceipt) || IsBlank(Gallery_DamageImage), DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(54, 176, 75, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =51
                     HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    HoverFill: =ColorFade(RGBA(54,176,75,1), -20%)
                     OnSelect: =SubmitForm(ClaimForm);Navigate(draft_screen)
                     Size: =15
                     Text: ="Submit"
                     Width: =139
                     X: =845
                     Y: =533
-                    ZIndex: =26
+                    ZIndex: =7
 
                 Button3_3 As button:
                     BorderColor: =ColorFade(RGBA(255,0,0,1), -15%)
@@ -2235,26 +2236,26 @@
                     FontWeight: =FontWeight.Semibold
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    HoverFill: =ColorFade(RGBA(255,0,0,1), -20%)
                     OnSelect: =Remove(customer_claims_1, SummaryGallery.Selected); If (IsEmpty(Errors(customer_claims_1, SummaryGallery.Selected)), Back())
                     Size: =15
                     Text: ="Delete"
                     Width: =137
                     X: =1013
                     Y: =533
-                    ZIndex: =27
+                    ZIndex: =8
 
                 Label4 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Bold
-                    Height: =66
+                    Height: =51
                     Size: =16
                     Text: ="Attachment List"
-                    Width: =217
+                    Width: =216
                     X: =30
-                    ZIndex: =28
+                    ZIndex: =9
 
                 Label6 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2266,7 +2267,7 @@
                     Width: =132
                     X: =30
                     Y: =66
-                    ZIndex: =29
+                    ZIndex: =10
 
                 Label6_1 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2278,7 +2279,7 @@
                     Width: =145
                     X: =30
                     Y: =156
-                    ZIndex: =30
+                    ZIndex: =11
 
                 Label6_2 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2290,7 +2291,7 @@
                     Width: =157
                     X: =30
                     Y: =242
-                    ZIndex: =31
+                    ZIndex: =12
 
                 Icon_AddWHReceipt As icon.AddDocument:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2310,7 +2311,7 @@
                     Width: =32
                     X: =155
                     Y: =63
-                    ZIndex: =32
+                    ZIndex: =13
 
                 Icon_Add_ImageDamage As icon.AddDocument:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2330,7 +2331,7 @@
                     Width: =32
                     X: =155
                     Y: =153
-                    ZIndex: =33
+                    ZIndex: =14
 
                 Icon_Add_SupportingDocs As icon.AddDocument:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2350,7 +2351,186 @@
                     Width: =32
                     X: =175
                     Y: =239
-                    ZIndex: =34
+                    ZIndex: =15
+
+                "'Gallery_Supporting Documents' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Height: =61
+                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Supporting Documents"),"Created",SortOrder.Descending))
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =51
+                    Width: =282
+                    X: =30
+                    Y: =269
+                    ZIndex: =16
+
+                    Label5_6 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Width: =181
+                        Y: =9
+                        ZIndex: =1
+
+                    Icon8_2 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =14
+                        ZIndex: =2
+
+                    Icon9_2 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =14
+                        ZIndex: =3
+
+                "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Height: =61
+                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Images Of Damages"),"Created",SortOrder.Descending))
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =51
+                    Width: =282
+                    X: =30
+                    Y: =181
+                    ZIndex: =17
+
+                    Label5_5 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Width: =181
+                        Y: =9
+                        ZIndex: =1
+
+                    Icon8_1 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =14
+                        ZIndex: =2
+
+                    Icon9_1 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =14
+                        ZIndex: =3
+
+                "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Height: =61
+                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Warehouse Receipts"),"Created",SortOrder.Descending))
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =51
+                    Width: =282
+                    X: =30
+                    Y: =93
+                    ZIndex: =18
+
+                    Label5 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Width: =181
+                        Y: =6
+                        ZIndex: =1
+
+                    Icon8 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =9
+                        ZIndex: =2
+
+                    Icon9 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =9
+                        ZIndex: =3
+
+                Rectangle3 As rectangle:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Fill: =RGBA(243, 246, 248, 1)
+                    Height: =598
+                    Width: =10
+                    X: =337
+                    ZIndex: =19
 
                 cont_PopupGrey As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2358,7 +2538,7 @@
                     Height: =598
                     Visible: =ShowPopup
                     Width: =1330
-                    ZIndex: =35
+                    ZIndex: =20
 
                 cont_Attachment As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2368,7 +2548,7 @@
                     Width: =806
                     X: =280
                     Y: =131
-                    ZIndex: =36
+                    ZIndex: =21
 
                 FileAttachment As attachments:
                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -2398,32 +2578,7 @@
                     Width: =448
                     X: =312
                     Y: =171
-                    ZIndex: =37
-
-                CancelUpload As button:
-                    BorderColor: =RGBA(164, 38, 44, 100)
-                    Color: =RGBA(164, 38, 44, 1)
-                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    DisabledFill: =RGBA(244, 244, 244, 1)
-                    Fill: =RGBA(255, 255, 255, 1)
-                    FontWeight: =FontWeight.Semibold
-                    Height: =50
-                    HoverColor: =RGBA(255, 255, 255, 1)
-                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                    OnSelect: |-
-                        =UpdateContext({ShowPopup: false});
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
-                    Size: =15
-                    Text: ="Cancel"
-                    Visible: =ShowPopup
-                    Width: =125
-                    X: =455
-                    Y: =312
-                    ZIndex: =38
+                    ZIndex: =22
 
                 SaveDocument As button:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -2463,51 +2618,32 @@
                     Width: =126
                     X: =312
                     Y: =312
-                    ZIndex: =39
+                    ZIndex: =23
 
-                "'Gallery_Supporting Documents' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Height: =61
-                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Supporting Documents"),"Created",SortOrder.Descending))
-                    Layout: =Layout.Vertical
-                    TemplatePadding: =0
-                    TemplateSize: =51
-                    Width: =282
-                    X: =30
-                    Y: =269
-                    ZIndex: =40
-
-                "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Height: =61
-                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Images Of Damages"),"Created",SortOrder.Descending))
-                    Layout: =Layout.Vertical
-                    TemplatePadding: =0
-                    TemplateSize: =51
-                    Width: =282
-                    X: =30
-                    Y: =181
-                    ZIndex: =41
-
-                "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Height: =61
-                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = SummaryGallery.Selected.CIN2 && 'Document Type'.Value = "Warehouse Receipts"),"Created",SortOrder.Descending))
-                    Layout: =Layout.Vertical
-                    TemplatePadding: =0
-                    TemplateSize: =51
-                    Width: =282
-                    X: =30
-                    Y: =93
-                    ZIndex: =42
-
-                Rectangle3 As rectangle:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Fill: =RGBA(243, 246, 248, 1)
-                    Height: =598
-                    Width: =10
-                    X: =337
-                    ZIndex: =43
+                CancelUpload As button:
+                    BorderColor: =RGBA(164, 38, 44, 100)
+                    Color: =RGBA(164, 38, 44, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(255, 255, 255, 1)
+                    FontWeight: =FontWeight.Semibold
+                    Height: =50
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup: false});
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Size: =15
+                    Text: ="Cancel"
+                    Visible: =ShowPopup
+                    Width: =125
+                    X: =455
+                    Y: =312
+                    ZIndex: =24
 
         FooterContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0

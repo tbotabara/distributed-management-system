@@ -8,11 +8,6 @@
         <property name="Createfile_FileName" type="string" />
         <property name="Createfile_FileContent" type="string" />
       </object>
-      <number name="ResponseActionOutput_inserteditems_def" />
-      <object name="ResponseActionOutput">
-        <property name="inserteditems" type="number" />
-      </object>
-      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-001.azure-apim.net/apim/logicflows">
@@ -29,9 +24,6 @@
             <param style="plain" name="Createfile_FileContent" path="/Createfile_FileContent" type="xs:string" required="true" />
           </representation>
         </request>
-        <response>
-          <representation mediaType="application/json" element="service:ResponseActionOutput" />
-        </response>
       </method>
     </resource>
   </resources>
