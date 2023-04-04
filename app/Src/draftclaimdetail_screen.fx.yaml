@@ -2096,7 +2096,7 @@
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =37
                     Icon: =Icon.Cancel
-                    OnSelect: =Navigate(draft_screen)
+                    OnSelect: =Back();ScreenTransition.Fade
                     Width: =30
                     X: =1276
                     Y: =14
@@ -2249,10 +2249,10 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     FontWeight: =FontWeight.Bold
-                    Height: =66
+                    Height: =51
                     Size: =16
                     Text: ="Attachment List"
-                    Width: =217
+                    Width: =216
                     X: =30
                     ZIndex: =28
 
@@ -2477,6 +2477,51 @@
                     Y: =269
                     ZIndex: =40
 
+                    Label5_6 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Width: =181
+                        Y: =9
+                        ZIndex: =1
+
+                    Icon8_2 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =14
+                        ZIndex: =2
+
+                    Icon9_2 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =14
+                        ZIndex: =3
+
                 "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -2489,6 +2534,51 @@
                     Y: =181
                     ZIndex: =41
 
+                    Label5_5 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Width: =181
+                        Y: =9
+                        ZIndex: =1
+
+                    Icon8_1 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =14
+                        ZIndex: =2
+
+                    Icon9_1 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =14
+                        ZIndex: =3
+
                 "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -2500,6 +2590,51 @@
                     X: =30
                     Y: =93
                     ZIndex: =42
+
+                    Label5 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.Title)
+                        Width: =181
+                        Y: =6
+                        ZIndex: =1
+
+                    Icon8 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =9
+                        ZIndex: =2
+
+                    Icon9 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =9
+                        ZIndex: =3
 
                 Rectangle3 As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
