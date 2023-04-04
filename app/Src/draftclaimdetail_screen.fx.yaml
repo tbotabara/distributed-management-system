@@ -2171,7 +2171,8 @@
 
                 ContainerErrorETA As groupContainer.manualLayoutContainer:
                     Height: =If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,56,0)
-                    Visible: =If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
+                    Visible: |
+                        =If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
                     Width: =750
                     X: =216
                     Y: =142
