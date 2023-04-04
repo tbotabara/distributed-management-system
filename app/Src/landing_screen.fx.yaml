@@ -375,17 +375,14 @@
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =274
-                    Items: |
+                    Items: |-
                         =Sort(
-                            Filter(customer_claims_1,
-                                Or(
-                                    input_search.Text in 'CIN (Title)',
-                                    input_search.Text in 'Kellogg PO#',
-                                    input_search.Text in 'Kellogg Inv #',
-                                    input_search.Text in 'Container #'
-                                ) &&
-                                (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
-                                (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
+                            Filter(
+                                FilteredClaims,
+                                input_search.Text in 'CIN (Title)' || 
+                                input_search.Text in 'Kellogg PO#' || 
+                                input_search.Text in 'Kellogg Inv #' || 
+                                input_search.Text in 'Container #'
                             ),
                             'CIN (Title)', SortOrder.Descending
                         )
