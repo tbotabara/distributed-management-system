@@ -155,19 +155,311 @@
                     X: =27
                     ZIndex: =3
 
-                Container2 As groupContainer.verticalAutoLayoutContainer:
-                    Height: =425
+                ContainerDraftSummaryGallery As groupContainer.verticalAutoLayoutContainer:
+                    Height: =419
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowX: =LayoutOverflow.Scroll
                     Width: =1280
                     X: =27
-                    Y: =145
+                    Y: =122
                     ZIndex: =4
+
+                    ContainerDraftSummaryHeader As groupContainer.manualLayoutContainer:
+                        FillPortions: =0
+                        Height: =61
+                        LayoutMinHeight: =60
+                        LayoutMinWidth: =3330
+                        Width: =DraftSummaryGallery.Width
+                        X: =27
+                        Y: =138
+                        ZIndex: =1
+
+                        Label_CIN As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="CIN"
+                            Width: =143
+                            X: =1
+                            Y: =1
+                            ZIndex: =1
+
+                        Label_ClaimType As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Claim Type"
+                            Width: =225
+                            X: =143
+                            Y: =1
+                            ZIndex: =2
+
+                        Label_CustomerPO As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Customer PO"
+                            Width: =144
+                            X: =368
+                            Y: =1
+                            ZIndex: =3
+
+                        Label_KelloggSO As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Kellogg SO"
+                            Width: =144
+                            X: =Label_CustomerPO.X+Label_CustomerPO.Width
+                            Y: =1
+                            ZIndex: =4
+
+                        Label_KelloggPO As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Kellogg PO"
+                            Width: =144
+                            X: =Label_KelloggSO.X+Label_KelloggSO.Width
+                            Y: =1
+                            ZIndex: =5
+
+                        Label_KelloggCode As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Kellogg Code"
+                            Width: =144
+                            X: =Label_KelloggPO.X+Label_CustomerPO.Width
+                            Y: =1
+                            ZIndex: =6
+
+                        Label_ProductDescription As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Product Description"
+                            Width: =228
+                            X: =Label_KelloggCode.X+Label_KelloggCode.Width
+                            Y: =1
+                            ZIndex: =7
+
+                        Label_Quantity As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Quantity"
+                            Width: =144
+                            X: =Label_ProductDescription.X+Label_ProductDescription.Width
+                            Y: =1
+                            ZIndex: =8
+
+                        Label_CustomerRequestedETA As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Customer Requested ETA"
+                            Width: |
+                                =Label_ProductDescription.Width
+                            X: =Label_Quantity.X+Label_Quantity.Width
+                            Y: =1
+                            ZIndex: =9
+
+                        Label_ActualETD As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Actual ETD"
+                            Width: =144
+                            X: =Label_CustomerRequestedETA.X+Label_CustomerRequestedETA.Width
+                            Y: =1
+                            ZIndex: =10
+
+                        Label_ActualETA As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Actual ETA"
+                            Width: =144
+                            X: =Label_ActualETD.X+Label_ActualETD.Width
+                            Y: =1
+                            ZIndex: =11
+
+                        Label_KelloggInvNo As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Kellogg Invoice Number"
+                            Width: =206
+                            X: =Label_ActualETA.X+Label_ActualETA.Width
+                            Y: =1
+                            ZIndex: =12
+
+                        Label_InvDate As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Invoice Date"
+                            Width: =144
+                            X: =Label_KelloggInvNo.X+Label_KelloggInvNo.Width
+                            Y: =1
+                            ZIndex: =13
+
+                        Label_ContainerNo As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Kellogg SO"
+                            Width: =144
+                            X: =Label_InvDate.X+Label_InvDate.Width
+                            Y: =1
+                            ZIndex: =14
+
+                        Label_BLNo As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="BL Number"
+                            Width: =144
+                            X: =Label_ContainerNo.X+Label_ContainerNo.Width
+                            Y: =1
+                            ZIndex: =15
+
+                        Label_SSCCNo As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="SSCC Number"
+                            Width: =144
+                            X: =Label_BLNo.X+Label_BLNo.Width
+                            Y: =1
+                            ZIndex: =16
+
+                        Label_TotalCases As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Total Cases For Claim"
+                            Width: =192
+                            X: =Label_SSCCNo.X+Label_SSCCNo.Width
+                            Y: =1
+                            ZIndex: =17
+
+                        Label_DDRF As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Cust. Ref/DDRF No."
+                            Width: =176
+                            X: =Label_TotalCases.X+Label_TotalCases.Width
+                            Y: =1
+                            ZIndex: =18
+
+                        Label_ClaimSubmissionDate As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Claim Submission Date"
+                            Width: =204
+                            X: =Label_DDRF.X+Label_DDRF.Width
+                            Y: =1
+                            ZIndex: =19
+
+                        Label_ClaimStatus As label:
+                            BorderColor: =RGBA(149, 149, 149, 1)
+                            BorderThickness: =1
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Fill: =RGBA(255, 255, 255, 1)
+                            Height: =60
+                            Size: =13
+                            Text: ="Status"
+                            Width: =144
+                            X: =Label_ClaimSubmissionDate.X+Label_ClaimSubmissionDate.Width
+                            Y: =1
+                            ZIndex: =20
 
                     DraftSummaryGallery As gallery.galleryVertical:
                         AlignInContainer: =AlignInContainer.SetByContainer
-                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderColor: =RGBA(211, 211, 211, 1)
+                        BorderThickness: =2
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =425
@@ -177,12 +469,13 @@
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
                         OnSelect: =Navigate(draftclaimdetail_screen)
+                        ShowNavigation: =true
                         TemplateSize: =58
                         Transition: =Transition.Pop
-                        Width: =3100
+                        Width: =3330
                         X: =27
                         Y: =145
-                        ZIndex: =1
+                        ZIndex: =2
 
                         lbl_tbl_CIN As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
@@ -217,8 +510,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Customer PO'
-                            Width: =164
-                            X: =382
+                            Width: =Label_CustomerPO.Width
+                            X: =Label_CustomerPO.X
                             ZIndex: =4
 
                         lbl_tbl_KelloggSO As label:
@@ -230,7 +523,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'Kellogg SO#'
-                            X: =519
+                            Width: =Label_KelloggSO.Width
+                            X: =Label_KelloggSO.X
                             ZIndex: =5
 
                         lbl_tbl_KelloggPO As label:
@@ -242,7 +536,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'Kellogg PO#'
-                            X: =638
+                            Width: =Label_KelloggPO.Width
+                            X: =Label_KelloggPO.X
                             ZIndex: =6
 
                         lbl_tbl_KelloggCode As label:
@@ -253,8 +548,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Kellogg Code'
-                            Width: =174
-                            X: =767
+                            Width: =Label_KelloggCode.Width
+                            X: =Label_KelloggCode.X
                             ZIndex: =7
 
                         lbl_tbl_ProductDescription As label:
@@ -265,8 +560,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Product Description '
-                            Width: =228
-                            X: =906
+                            Width: =Label_ProductDescription.Width
+                            X: =Label_ProductDescription.X
                             ZIndex: =8
 
                         lbl_tbl_Quantity As label:
@@ -276,8 +571,9 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: =ThisItem.'Invoice Date'
-                            X: =1134
+                            Text: =ThisItem.'Quantity (cs)'
+                            Width: =Label_Quantity.Width
+                            X: =Label_Quantity.X
                             ZIndex: =9
 
                         lbl_tbl_CustomerRequestedETA As label:
@@ -288,8 +584,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Customer Requested ETA'
-                            Width: =116
-                            X: =lbl_tbl_Quantity.X+lbl_tbl_ProductDescription.Width
+                            Width: =Label_CustomerRequestedETA.Width
+                            X: =Label_CustomerRequestedETA.X
                             Y: =1
                             ZIndex: =10
 
@@ -317,8 +613,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Actual ETD'
-                            Width: =132
-                            X: =lbl_tbl_CustomerRequestedETA.X+lbl_tbl_Quantity.Width
+                            Width: =Label_ActualETD.Width
+                            X: =Label_ActualETD.X
                             Y: =1
                             ZIndex: =12
 
@@ -330,7 +626,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Actual ETA'
-                            X: =lbl_tbl_ActualETD.X + lbl_tbl_ActualETD.Width
+                            Width: =Label_ActualETA.Width
+                            X: =Label_ActualETA.X
                             ZIndex: =13
 
                         lbl_tbl_KelloggInvNo As label:
@@ -342,7 +639,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'Kellogg Inv #'
-                            X: =lbl_tbl_ActualETA.X+lbl_tbl_ActualETA.Width
+                            Width: =Label_KelloggInvNo.Width
+                            X: =Label_KelloggInvNo.X
                             ZIndex: =14
 
                         lbl_tbl_InvDate As label:
@@ -353,7 +651,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Invoice Date'
-                            X: =lbl_tbl_KelloggInvNo.X+lbl_tbl_KelloggInvNo.Width
+                            Width: =Label_InvDate.Width
+                            X: =Label_InvDate.X
                             ZIndex: =15
 
                         lbl_tbl_ContainerNo As label:
@@ -365,7 +664,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'Container #'
-                            X: =lbl_tbl_InvDate.X + lbl_tbl_InvDate.Width
+                            Width: =Label_ContainerNo.Width
+                            X: =Label_ContainerNo.X
                             ZIndex: =16
 
                         lbl_tbl_BLNo As label:
@@ -377,7 +677,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'BL#'
-                            X: =lbl_tbl_ContainerNo.X + lbl_tbl_ContainerNo.Width
+                            Width: =Label_BLNo.Width
+                            X: =Label_BLNo.X
                             Y: =1
                             ZIndex: =17
 
@@ -390,7 +691,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'SSCC#'
-                            X: =lbl_tbl_BLNo.X+lbl_tbl_BLNo.Width
+                            Width: =Label_SSCCNo.Width
+                            X: =Label_SSCCNo.X
                             ZIndex: =18
 
                         lbl_tbl_TotalCases As label:
@@ -401,10 +703,11 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Total cases for Claim'
-                            X: =lbl_tbl_SSCCNo.X + lbl_tbl_SSCCNo.Width
+                            Width: =Label_TotalCases.Width
+                            X: =Label_TotalCases.X
                             ZIndex: =19
 
-                        lb_tbl_DDRF As label:
+                        lbl_tbl_DDRF As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -413,7 +716,8 @@
                             Size: =13
                             Text: |-
                                 =ThisItem.'DDRF#'
-                            X: =lbl_tbl_TotalCases.X + lbl_tbl_TotalCases.Width
+                            Width: =Label_DDRF.Width
+                            X: =Label_DDRF.X
                             ZIndex: =20
 
                         lbl_tbl_ClaimSubmissionDate As label:
@@ -424,7 +728,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.Created
-                            X: =lb_tbl_DDRF.X+lb_tbl_DDRF.Width
+                            Width: =Label_ClaimSubmissionDate.Width
+                            X: =Label_ClaimSubmissionDate.X
                             ZIndex: =21
 
                         lbl_tbl_ClaimStatus As label:
@@ -435,8 +740,8 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Claim Status'.Value
-                            Width: =168
-                            X: =lbl_tbl_ClaimSubmissionDate.X + lb_tbl_DDRF.Width
+                            Width: =Label_ClaimStatus.Width
+                            X: =Label_ClaimStatus.X
                             Y: =1
                             ZIndex: =22
 
