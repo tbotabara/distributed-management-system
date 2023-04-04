@@ -277,7 +277,7 @@
                         OnSelect: =Navigate(draftclaimdetail_screen)
                         TemplateSize: =58
                         Transition: =Transition.Pop
-                        Width: =1560
+                        Width: =2900
                         X: =41
                         Y: =166
                         ZIndex: =1
@@ -421,93 +421,93 @@
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Actual ETA'
-                            X: =40
-                            Y: =18
+                            X: =ActualETD_tb_lbl.X + ActualETD_tb_lbl.Width
                             ZIndex: =13
 
                         KellInvNo_tb_lbl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: |-
                                 =ThisItem.'Kellogg Inv #'
-                            X: =60
-                            Y: =18
+                            X: =ActualETA_tb_lbl.X + ActualETA_tb_lbl.Width
                             ZIndex: =14
 
                         InvDate_tb_lbl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Invoice Date'
-                            X: =80
-                            Y: =18
+                            X: =KellInvNo_tb_lbl.X+KellInvNo_tb_lbl.Width
                             ZIndex: =15
 
                         ContNo_tb_lbl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: |-
                                 =ThisItem.'Container #'
-                            X: =100
-                            Y: =18
+                            X: =InvDate_tb_lbl.X+InvDate_tb_lbl.Width
                             ZIndex: =16
 
                         BLNo_tb_lbl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: |-
                                 =ThisItem.'BL#'
-                            X: =120
-                            Y: =18
+                            X: =ContNo_tb_lbl.X+ContNo_tb_lbl.Width
                             ZIndex: =17
 
                         SSCCNo_tb_lbl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: |-
                                 =ThisItem.'SSCC#'
-                            X: =140
-                            Y: =18
+                            X: =BLNo_tb_lbl.X+BLNo_tb_lbl.Width
                             ZIndex: =18
 
                         TotalCases_tb_lbl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Total cases for Claim'
-                            X: =160
-                            Y: =18
+                            X: =SSCCNo_tb_lbl.X + SSCCNo_tb_lbl.Width
                             ZIndex: =19
 
                         DDRF_tb_bl As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: |-
                                 =ThisItem.'DDRF#'
-                            X: =180
-                            Y: =18
+                            X: =TotalCases_tb_lbl.Width+TotalCases_tb_lbl.X
                             ZIndex: =20
 
                         ClaimSubDate_tb_lbl As label:
@@ -517,7 +517,7 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.Created
-                            X: =200
+                            X: =DDRF_tb_bl.Width + DDRF_tb_bl.X
                             Y: =18
                             ZIndex: =21
 
@@ -525,11 +525,12 @@
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: =ThisItem.'Claim Status'.Value
-                            X: =220
-                            Y: =18
+                            Width: =143
+                            X: =ClaimSubDate_tb_lbl.Width+ClaimSubDate_tb_lbl.X
                             ZIndex: =22
 
         FooterContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
