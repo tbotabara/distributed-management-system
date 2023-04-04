@@ -558,7 +558,7 @@
                             Height: =32
                             Icon: =Icon.Warning
                             Visible: |-
-                                =If(LookUp(customer_claims_1, field_5= ThisItem.'Kellogg PO#', ID) > 1 ,true,false)
+                                =If(LookUp(customer_claims_1, 'Kellogg PO#'= ThisItem.'Kellogg PO#', ID) > 1 ,true,false)
                             Width: =30
                             Y: =12
                             ZIndex: =5
@@ -1700,7 +1700,7 @@
                             Height: =32
                             Icon: =Icon.Warning
                             Visible: |-
-                                =If(LookUp(customer_claims_1, field_16= ThisItem.'SSCC#', ID) > 1 ,true,false)
+                                =If(LookUp(customer_claims_1, 'SSCC#'= ThisItem.'SSCC#', ID) > 1 ,true,false)
                             Width: =30
                             Y: =12
                             ZIndex: =5
@@ -2092,7 +2092,7 @@
                 ContainerErrorKelloggPO_1 As groupContainer.manualLayoutContainer:
                     Height: =56
                     Visible: |
-                        =If(LookUp(customer_claims_1, field_5 = Value(DataCardValue6_1.Text), ID) > 1 ,true,false)
+                        =If(LookUp(customer_claims_1, 'Kellogg PO#' = Value(DataCardValue6_1.Text), ID) > 1 ,true,false)
                     Width: =750
                     X: =216
                     Y: =45
@@ -2125,7 +2125,7 @@
                 ContainerErrorSSCC_1 As groupContainer.manualLayoutContainer:
                     Height: =56
                     Visible: |
-                        =If(LookUp(customer_claims_1, field_16 = DataCardValue17_1.Text, ID) > 1 ,true,false)
+                        =If(LookUp(customer_claims_1, 'SSCC#' = DataCardValue17_1.Text, ID) > 1 ,true,false)
                     Width: =750
                     X: =216
                     Y: =101

@@ -74,32 +74,37 @@
                 Height: =75
                 ZIndex: =4
 
-            Label5 As label:
+            Icon6_1 As icon.Person:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Person
+                ZIndex: =5
+
+            Label5_4 As label:
                 Align: =Align.Right
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Size: =13
-                Text: ="Distributor"
-                ZIndex: =5
-
-            logout_btn As button:
-                Align: =Align.Right
-                AlignInContainer: =AlignInContainer.Center
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                FillPortions: =1
-                HoverColor: =RGBA(164, 38, 44, 1)
-                HoverFill: =ColorFade(RGBA(0,0, 0, 0), -20%)
-                LayoutMinWidth: =115
-                OnSelect: =Navigate(login_screen)
-                PressedFill: =ColorFade(Self.Fill, -15%)
-                Text: ="Logout"
+                Text: |
+                    =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
                 ZIndex: =6
+
+            Icon5_1 As icon.Leave:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Leave
+                OnSelect: =Navigate(login_screen)
+                ZIndex: =7
 
         MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
@@ -368,16 +373,19 @@
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =274
-                    Items: |
-                        =Filter(customer_claims_1,
-                            Or(
-                                input_search.Text in 'CIN (Title)',
-                                input_search.Text in 'Kellogg PO#',
-                                input_search.Text in 'Kellogg Inv #',
-                                input_search.Text in 'Container #'
-                            ) &&
-                            (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
-                            (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
+                    Items: |-
+                        =Sort(
+                            Filter(customer_claims_1,
+                                Or(
+                                    input_search.Text in 'CIN (Title)',
+                                    input_search.Text in 'Kellogg PO#',
+                                    input_search.Text in 'Kellogg Inv #',
+                                    input_search.Text in 'Container #'
+                                ) &&
+                                (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
+                                (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
+                            ),
+                            'CIN (Title)', SortOrder.Descending
                         )
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
@@ -538,19 +546,45 @@
                     Y: =216
                     ZIndex: =19
 
-                Label11 As label:
+                Label3 As label:
+                    Align: =Align.Center
                     BorderColor: =RGBA(89, 0, 0, 1)
-                    Color: =RGBA(255, 255, 255, 1)
+                    Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
-                    Fill: =RGBA(0, 0, 0, 1)
-                    Height: =115
+                    FontWeight: =FontWeight.Semibold
+                    Height: =38
                     Size: =13
-                    Text: =varOverflowText
+                    Text: ="No records found"
+                    VerticalAlign: =VerticalAlign.Top
+                    Visible: =CountRows(Gallery4_1.AllItems) = 0
+                    Width: =1280
+                    X: =25
+                    Y: =324
+                    ZIndex: =21
+
+                Button4 As button:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(164, 38, 44, 1)
+                    FontWeight: =FontWeight.Semibold
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: |-
+                        =ClearCollect(
+                            FilteredClaims,
+                            Filter(
+                                customer_claims_1,
+                                (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value) &&
+                                (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
+                            )
+                        )
+                    Size: =15
+                    Text: ="Button"
                     Visible: =false
-                    Width: =255
-                    X: =26
-                    Y: =64
-                    ZIndex: =20
+                    X: =1145
+                    Y: =216
+                    ZIndex: =22
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
