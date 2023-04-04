@@ -1992,7 +1992,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_21")
                         Required: =false
                         Update: =DataCardValue22.Text
-                        Width: =243
+                        Width: =486
                         X: =0
                         Y: =22
                         ZIndex: =2
@@ -2034,7 +2034,7 @@
                             RadiusTopRight: =0
                             Size: =13
                             Tooltip: =Parent.DisplayName
-                            Width: =183
+                            Width: =426
                             X: =30
                             Y: =DataCardKey22.Y + DataCardKey22.Height + 5
                             ZIndex: =2
@@ -2086,7 +2086,7 @@
                     Text: ="Cancel"
                     Width: =140
                     X: =1179
-                    Y: =544
+                    Y: =533
                     ZIndex: =2
 
                 Icon3 As icon.Cancel:
@@ -2107,8 +2107,8 @@
                     Visible: |
                         =If(CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text)) >1 ,true,false)
                     Width: =875
-                    X: =348
-                    Y: =64
+                    X: =374
+                    Y: =51
                     ZIndex: =18
 
                     ErrorKelloggPO As label:
@@ -2133,7 +2133,7 @@
                         Icon: =Icon.Warning
                         Visible: =ContainerErrorKelloggPO.Visible
                         Width: =20
-                        X: =14
+                        X: =8
                         ZIndex: =7
 
                 ContainerErrorSSCC As groupContainer.manualLayoutContainer:
@@ -2142,8 +2142,8 @@
                         =//If(LookUp(customer_claims_1, 'SSCC#' = DataCardValue17.Text, ID) > 1 ,true,false)
                         If(CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text)) >1 , true, false)
                     Width: =861
-                    X: =348
-                    Y: =95
+                    X: =374
+                    Y: =81
                     ZIndex: =23
 
                     IconErrorSSCC As icon.Warning:
@@ -2155,7 +2155,7 @@
                         Icon: =Icon.Warning
                         Visible: =ContainerErrorSSCC.Visible
                         Width: =24
-                        X: =14
+                        X: =8
                         ZIndex: =7
 
                     ErrorSSCC As label:
@@ -2177,8 +2177,8 @@
                         =//If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
                         If(DateValue(DataCardValue2.Text)>(DateAdd(DataCardValue12.SelectedDate, 30,TimeUnit.Days)),true,false)
                     Width: =875
-                    X: =348
-                    Y: =127
+                    X: =374
+                    Y: =112
                     ZIndex: =24
 
                     IconErrorETA As icon.Warning:
@@ -2190,7 +2190,7 @@
                         Icon: =Icon.Warning
                         Visible: =ContainerErrorETA.Visible
                         Width: =24
-                        X: =14
+                        X: =8
                         ZIndex: =1
 
                     ErrorETA As label:
@@ -2203,7 +2203,7 @@
                             ="Claim submission for PO# " & DataCardValue6.Text & " is more than 30 days from ETA."
                         Visible: =ContainerErrorETA.Visible
                         Width: =709
-                        X: =41
+                        X: =34
                         ZIndex: =2
 
                 Button3_2 As button:
@@ -2221,8 +2221,8 @@
                     Size: =15
                     Text: ="Submit"
                     Width: =139
-                    X: =860
-                    Y: =543
+                    X: =845
+                    Y: =533
                     ZIndex: =26
 
                 Button3_3 As button:
@@ -2240,8 +2240,8 @@
                     Size: =15
                     Text: ="Delete"
                     Width: =137
-                    X: =1020
-                    Y: =544
+                    X: =1013
+                    Y: =533
                     ZIndex: =27
 
                 Label4 As label:
@@ -2526,7 +2526,7 @@
         Size: =16
         Text: ="Claim Detail"
         Width: =172
-        X: =381
-        Y: =105
+        X: =396
+        Y: =100
         ZIndex: =2
 
