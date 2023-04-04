@@ -74,6 +74,16 @@
                 Height: =75
                 ZIndex: =4
 
+            Icon6 As icon.Person:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Person
+                ZIndex: =5
+
             Label5_1 As label:
                 Align: =Align.Right
                 AlignInContainer: =AlignInContainer.Center
@@ -81,25 +91,20 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Size: =13
-                Text: =var_current_user
-                ZIndex: =5
-
-            logout_btn_1 As button:
-                Align: =Align.Right
-                AlignInContainer: =AlignInContainer.Center
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                FillPortions: =1
-                HoverColor: =RGBA(164, 38, 44, 1)
-                HoverFill: =ColorFade(RGBA(0,0, 0, 0), -20%)
-                LayoutMinWidth: =115
-                OnSelect: =Navigate(login_screen)
-                PressedFill: =ColorFade(Self.Fill, -15%)
-                Text: ="Logout"
+                Text: |
+                    =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
                 ZIndex: =6
+
+            Icon5 As icon.Leave:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Leave
+                OnSelect: =Navigate(login_screen)
+                ZIndex: =7
 
         MainSectionContainer1_1 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
