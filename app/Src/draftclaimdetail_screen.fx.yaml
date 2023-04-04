@@ -2206,12 +2206,13 @@
                         X: =34
                         ZIndex: =2
 
-                Button3_2 As button:
+                button_Submit As button:
                     BorderColor: =ColorFade(RGBA(54,176,75,1), -15%)
                     BorderThickness: =0
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =If(IsBlank(Gallery_WHReceipt) || IsBlank(Gallery_DamageImage), DisplayMode.Disabled, DisplayMode.Edit)
                     Fill: =RGBA(54, 176, 75, 1)
                     FontWeight: =FontWeight.Semibold
                     Height: =51
