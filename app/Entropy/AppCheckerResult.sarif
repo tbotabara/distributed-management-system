@@ -386,10 +386,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 13,
-                  "charOffset": 185,
+                  "charLength": 2,
+                  "charOffset": 81,
                   "snippet": {
-                    "text": "'Kellogg PO#'"
+                    "text": "in"
                   }
                 }
               },
@@ -402,7 +402,7 @@
           ],
           "message": {
             "arguments": [
-              "Kellogg PO#"
+              "CIN (Title)"
             ],
             "id": "issue"
           },
@@ -426,10 +426,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 44,
-                  "charOffset": 174,
+                  "charLength": 211,
+                  "charOffset": 46,
                   "snippet": {
-                    "text": "StartsWith('Kellogg PO#', input_search.Text)"
+                    "text": "Or(\r\n            input_search.Text in 'CIN (Title)',\r\n            input_search.Text in 'Kellogg PO#',\r\n            input_search.Text in 'Kellogg Inv #',\r\n            input_search.Text in 'Container #'\r\n        )"
                   }
                 }
               },
@@ -467,9 +467,9 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 154,
+                  "charOffset": 258,
                   "snippet": {
-                    "text": "||"
+                    "text": "&&"
                   }
                 }
               },
@@ -507,249 +507,9 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 219,
+                  "charOffset": 358,
                   "snippet": {
-                    "text": "||"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "landing_screen",
-                "type": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 286,
-                  "snippet": {
-                    "text": "||"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "landing_screen",
-                "type": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 768,
-                  "snippet": {
-                    "text": "'Kellogg PO#'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "landing_screen",
-                "type": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Kellogg PO#"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 44,
-                  "charOffset": 757,
-                  "snippet": {
-                    "text": "StartsWith('Kellogg PO#', input_search.Text)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "landing_screen",
-                "type": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 741,
-                  "snippet": {
-                    "text": "||"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "landing_screen",
-                "type": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 802,
-                  "snippet": {
-                    "text": "||"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "landing_screen",
-                "type": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "landing_screen.ScreenContainer1.MainSectionContainer1.Container1.Gallery4_1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 865,
-                  "snippet": {
-                    "text": "||"
+                    "text": "&&"
                   }
                 }
               },

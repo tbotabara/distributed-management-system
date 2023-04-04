@@ -10086,7 +10086,14 @@
           "NameMapSourceSchema": "?"
         },
         "Role",
-        "Color",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Color",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledColor",
         "PressedColor",
         "HoverColor",
@@ -10116,7 +10123,14 @@
         "FocusedBorderThickness",
         "Size",
         "Italic",
-        "Underline",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Underline",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Strikethrough",
         "PaddingTop",
         "PaddingRight",
