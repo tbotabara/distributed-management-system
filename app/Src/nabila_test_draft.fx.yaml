@@ -615,22 +615,6 @@
                             X: =Label_CustomerRequestedETA.X
                             ZIndex: =10
 
-                        Icon1_2 As icon.Error:
-                            BorderColor: =RGBA(255, 0, 0, 1)
-                            Color: =RGBA(89, 0, 0, 1)
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(244, 244, 244, 1)
-                            Height: =24
-                            Icon: =Icon.Error
-                            OnSelect: |-
-                                =Set(varOverflowText, ThisItem.Errors);
-                                Notify(varOverflowText)
-                            Tooltip: =ThisItem.Errors
-                            Visible: =!IsBlank(ThisItem.Errors)
-                            Width: =27
-                            Y: =17
-                            ZIndex: =11
-
                         ActualETD_Table As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
