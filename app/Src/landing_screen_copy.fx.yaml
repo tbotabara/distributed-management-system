@@ -1,4 +1,4 @@
-"landing_screen_1 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"landing_screen_copy As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: |
@@ -46,7 +46,7 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen_1)
+                OnSelect: =Navigate(landing_screen_copy)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =10
                 Text: ="Dashboard"
@@ -521,10 +521,10 @@
                         Font: =Font.'Segoe UI'
                         Height: =58
                         HoverBorderColor: =RGBA(0,0,0,0)
-                        HoverColor: =RGBA(102, 182, 227, 1)
+                        HoverColor: =RGBA(204, 231, 246, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnSelect: |-
-                            =Navigate(draftclaimdetail_screen, ScreenTransition.None, {selectedItem: ThisItem})
+                            =Navigate(draftclaimdetail_screen, ScreenTransition.None, {selectedClaimRecord: ThisItem})
                         PressedColor: =RGBA(0, 134, 208, 1)
                         PressedFill: =RGBA(0,0,0,0)
                         Size: =10
