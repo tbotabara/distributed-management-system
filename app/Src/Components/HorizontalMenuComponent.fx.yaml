@@ -44,7 +44,7 @@ HorizontalMenuComponent As CanvasComponent:
 
             Button5 As button:
                 BorderThickness: =0
-                Color: =RGBA(164, 38, 44, 100)
+                Color: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuPrimaryColor,varMenuSecondaryColor )
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -73,7 +73,7 @@ HorizontalMenuComponent As CanvasComponent:
                 Height: =70
                 Icon: =Icon.Home
                 OnSelect: =Select(Parent)
-                Visible: =IsBlank(ThisItem.ParentTab) && CountRows(Filter(colHorizontalMenu, Id = ThisItem.Id)) > 0
+                Visible: =IsBlank(ThisItem.ParentTab) && CountRows(Filter(colHorizontalMenu, Id = ThisItem.Id)) > 1
                 Width: =20
                 X: =20
                 ZIndex: =2
