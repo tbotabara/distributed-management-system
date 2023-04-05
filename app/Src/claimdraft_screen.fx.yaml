@@ -122,6 +122,8 @@
             ZIndex: =3
 
             Container1_2 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
                 ZIndex: =2
 
                 SearchInput As text:
