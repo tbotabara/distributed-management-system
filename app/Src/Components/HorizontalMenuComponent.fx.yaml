@@ -1,7 +1,6 @@
 HorizontalMenuComponent As CanvasComponent:
     Fill: =Color.Transparent
-    FlexibleHeight: =HeightSubmenu.Text
-    Height: =HorizontalMenuComponent.FlexibleHeight
+    Height: =70
     Width: =App.Width
     X: =0
     Y: =0
