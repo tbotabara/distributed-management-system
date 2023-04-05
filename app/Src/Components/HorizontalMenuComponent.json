@@ -1012,14 +1012,7 @@
                     "IsLockable": false,
                     "NameMapSourceSchema": "?"
                   },
-                  {
-                    "AFDDataSourceName": "",
-                    "AutoRuleBindingEnabled": false,
-                    "AutoRuleBindingString": "RGBA(89, 0, 0, 1)",
-                    "InvariantPropertyName": "Color",
-                    "IsLockable": false,
-                    "NameMapSourceSchema": "?"
-                  },
+                  "Color",
                   "DisabledColor",
                   "PressedColor",
                   "HoverColor",
@@ -1063,7 +1056,14 @@
                   "ZIndex",
                   "BorderThickness",
                   "FocusedBorderThickness",
-                  "Visible"
+                  {
+                    "AFDDataSourceName": "",
+                    "AutoRuleBindingEnabled": false,
+                    "AutoRuleBindingString": "true",
+                    "InvariantPropertyName": "Visible",
+                    "IsLockable": false,
+                    "NameMapSourceSchema": "?"
+                  }
                 ],
                 "ControlUniqueId": "279",
                 "HasDynamicProperties": false,
@@ -1088,7 +1088,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuPrimaryColor,varMenuSecondaryColor )",
+                    "InvariantScript": "RGBA(89, 0, 0, 1)",
                     "Property": "Color",
                     "RuleProviderType": "Unknown"
                   },
@@ -1220,7 +1220,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "true",
+                    "InvariantScript": "IsBlank(ThisItem.ParentTab) && CountRows(Filter(colHorizontalMenu, Id = ThisItem.Id)) > 1",
                     "Property": "Visible",
                     "RuleProviderType": "Unknown"
                   },
@@ -1593,7 +1593,7 @@
         "Rules": [
           {
             "Category": "Data",
-            "InvariantScript": "GroupBy(Filter(colHorizontalMenu, Id = varTabSelected || ParentTab = \"\" ) ,\"Id\",\"GroupMenu\")",
+            "InvariantScript": "GroupBy(Filter(colHorizontalMenu, Id = varTabSelected || ParentTab = \"\") ,\"Id\",\"GroupMenu\")",
             "Property": "Items",
             "RuleProviderType": "Unknown"
           },
@@ -2882,7 +2882,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638162803268906684",
+    "LastModifiedTimestamp": "638162780939531949",
     "Name": "HorizontalMenuComponent",
     "Rules": [
       {
@@ -2957,7 +2957,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638162803268906684",
+  "LastModifiedTimestamp": "638162780939531949",
   "Name": "edba5150e0cb4e3bb0532a7de693516b",
   "OverridableProperties": {},
   "Version": "638162698784582006"

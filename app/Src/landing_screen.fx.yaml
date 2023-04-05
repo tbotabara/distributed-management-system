@@ -65,7 +65,7 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(screen_draft)
+                OnSelect: =Navigate(claimdraft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =10
                 Text: ="Draft"
@@ -357,7 +357,7 @@
                     Height: =315
                     Items: |-
                         =If(
-                            IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems),
+                            !areFiltersApplied,
                             Sort(customer_claims_1, ID, SortOrder.Descending),
                             With(
                                 {
@@ -397,7 +397,7 @@
                         Height: =58
                         OnSelect: =Select(Parent)
                         Size: =10
-                        Text: ="Singapore"
+                        Text: =ThisItem.'Destination Country'
                         Width: =125
                         X: =35
                         ZIndex: =2
@@ -593,6 +593,139 @@
                     X: =683
                     Y: =28
                     ZIndex: =23
+
+                Group2 As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =40
+                    ZIndex: =30
+
+                    lbl_SearchKeyword_2 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =29
+                        Size: =10
+                        Text: ="Search"
+                        Width: =388
+                        X: =26
+                        Y: =195
+                        ZIndex: =24
+
+                    lbl_ClaimType1_2 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =29
+                        Size: =10
+                        Text: ="Claim Type"
+                        Width: =388
+                        X: =481
+                        Y: =196
+                        ZIndex: =25
+
+                    lbl_Status_2 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        Height: =29
+                        Size: =10
+                        Text: ="Status"
+                        Width: =388
+                        X: =906
+                        Y: =196
+                        ZIndex: =26
+
+                    input_search As text:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Default: =""
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        FocusedBorderThickness: =4
+                        Font: =Font.'Segoe UI'
+                        HintText: ="Search PO/Inv/Cont/CIN/Cust Ref."
+                        HoverBorderColor: =RGBA(89, 0, 0, 1)
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(222, 179, 184, 1)
+                        OnChange: =
+                        Size: =10
+                        Width: =427
+                        X: =26
+                        Y: =225
+                        ZIndex: =27
+
+                    combo_status As combobox:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        ChevronBackground: =RGBA(164, 38, 44, 1)
+                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayFields: =["Title"]
+                        Font: =Font.'Segoe UI'
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(222, 179, 184, 1)
+                        InputTextPlaceholder: ="Select status"
+                        IsSearchable: =false
+                        Items: =Choices(customer_claims_1.'Claim Sta'), Value in ["New", "Processed", "Rejected"])
+                        OnSelect: |-
+                            =Set(
+                                areFiltersApplied,
+                                !(IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems))
+                            )
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(89, 0, 0, 1)
+                        SearchFields: =["Title"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(164, 38, 44, 1)
+                        Size: =10
+                        Width: =399
+                        X: =906
+                        Y: =225
+                        ZIndex: =28
+
+                    combo_ct As combobox:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        ChevronBackground: =RGBA(164, 38, 44, 1)
+                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        DisabledFill: =RGBA(244, 244, 244, 1)
+                        DisplayFields: =["Value"]
+                        Font: =Font.'Segoe UI'
+                        HoverColor: =RGBA(0, 0, 0, 1)
+                        HoverFill: =RGBA(222, 179, 184, 1)
+                        InputTextPlaceholder: ="Select Claim Type"
+                        IsSearchable: =false
+                        Items: =Choices(customer_claims_1.'Claim Type')
+                        OnSelect: |-
+                            =Set(
+                                areFiltersApplied,
+                                !(IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems))
+                            )
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(89, 0, 0, 1)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(164, 38, 44, 1)
+                        Size: =10
+                        Width: =399
+                        X: =481
+                        Y: =225
+                        ZIndex: =29
 
     OverlayPopup As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)

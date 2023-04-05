@@ -77,16 +77,6 @@ HorizontalMenuComponent As CanvasComponent:
                 X: =20
                 ZIndex: =2
 
-    Image2_3 As image:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =70
-        Image: ='Kellogs.KelloggLogo650x366'
-        PaddingRight: =20
-        X: =30
-        ZIndex: =3
-
     HeightSubmenu As label:
         BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(164, 38, 44, 100)
@@ -99,39 +89,4 @@ HorizontalMenuComponent As CanvasComponent:
         X: =830
         Y: =15
         ZIndex: =4
-
-    Icon6_2 As icon.Person:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =20
-        Icon: =Icon.Person
-        X: =1076
-        Y: =26
-        ZIndex: =5
-
-    Label5_3 As label:
-        Align: =Align.Right
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Size: =13
-        Text: |
-            =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
-        X: =1140
-        Y: =15
-        ZIndex: =6
-
-    Icon5_2 As icon.Leave:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =20
-        Icon: =Icon.Leave
-        OnSelect: =Navigate(login_screen)
-        X: =1278
-        Y: =26
-        ZIndex: =7
 
