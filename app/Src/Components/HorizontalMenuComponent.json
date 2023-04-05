@@ -2879,25 +2879,11 @@
       },
       "X",
       "Y",
-      "ZIndex",
-      {
-        "AFDDataSourceName": "",
-        "AutoRuleBindingEnabled": false,
-        "AutoRuleBindingString": "100",
-        "InvariantPropertyName": "FlexibleHeight",
-        "IsLockable": false,
-        "NameMapSourceSchema": "?"
-      }
+      "ZIndex"
     ],
-    "LastModifiedTimestamp": "638162844007859205",
+    "LastModifiedTimestamp": "638162844187090190",
     "Name": "HorizontalMenuComponent",
     "Rules": [
-      {
-        "Category": "Data",
-        "InvariantScript": "HeightSubmenu.Text",
-        "Property": "FlexibleHeight",
-        "RuleProviderType": "System"
-      },
       {
         "Category": "Design",
         "InvariantScript": "Color.Transparent",
@@ -2945,17 +2931,7 @@
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
-  "CustomProperties": [
-    {
-      "Category": 0,
-      "DisplayName": "FlexibleHeight",
-      "Hidden": true,
-      "Name": "FlexibleHeight",
-      "PropertyDataTypeKey": "Number",
-      "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
-    }
-  ],
+  "CustomProperties": [],
   "FirstParty": true,
   "Id": "http://microsoft.com/appmagic/Component",
   "IsComponentLocked": false,
@@ -2964,7 +2940,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638162844007859205",
+  "LastModifiedTimestamp": "638162844187090190",
   "Name": "edba5150e0cb4e3bb0532a7de693516b",
   "OverridableProperties": {},
   "Version": "638162698784582006"
