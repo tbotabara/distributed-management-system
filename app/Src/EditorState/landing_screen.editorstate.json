@@ -105,7 +105,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "AttachmentControl",
-      "ParentIndex": 2,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -826,7 +826,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Button2",
-      "ParentIndex": 4,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1858,7 +1858,7 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
+          "InvariantPropertyName": "OnChange",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -1873,7 +1873,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "combo_ct",
-      "ParentIndex": 9,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2098,7 +2098,7 @@
         },
         {
           "Category": "Behavior",
-          "PropertyName": "OnSelect",
+          "PropertyName": "OnChange",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -2191,7 +2191,7 @@
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
+          "InvariantPropertyName": "OnChange",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         }
@@ -2206,7 +2206,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "combo_status",
-      "ParentIndex": 10,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2431,7 +2431,7 @@
         },
         {
           "Category": "Behavior",
-          "PropertyName": "OnSelect",
+          "PropertyName": "OnChange",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -3064,7 +3064,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "dd_",
-      "ParentIndex": 3,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5288,7 +5288,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image3",
-      "ParentIndex": 1,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5520,7 +5520,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "input_search",
-      "ParentIndex": 8,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9151,7 +9151,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_ClaimType1_2",
-      "ParentIndex": 6,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9427,7 +9427,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_ClaimType2",
-      "ParentIndex": 0,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9984,7 +9984,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_SearchKeyword_2",
-      "ParentIndex": 5,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10260,7 +10260,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lbl_Status_2",
-      "ParentIndex": 7,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
