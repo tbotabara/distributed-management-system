@@ -2077,7 +2077,9 @@
                     DisabledColor: =RGBA(244, 244, 244, 1)
                     Height: =37
                     Icon: =Icon.Cancel
-                    OnSelect: =Back();ScreenTransition.Fade
+                    OnSelect: |-
+                        =Back();
+                        ScreenTransition.Fade
                     Width: =30
                     X: =1276
                     Y: =14
@@ -2388,6 +2390,7 @@
                         OnSelect: =Select(Parent)
                         Size: =10
                         Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Tooltip: =ThisItem.'File name with extension'
                         Width: =181
                         Y: =8
                         ZIndex: =3
@@ -2446,6 +2449,7 @@
                         OnSelect: =Select(Parent)
                         Size: =10
                         Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Tooltip: =ThisItem.'File name with extension'
                         Width: =181
                         Y: =9
                         ZIndex: =3
@@ -2473,6 +2477,7 @@
                         OnSelect: =Select(Parent)
                         Size: =10
                         Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Tooltip: =ThisItem.'File name with extension'
                         Width: =181
                         Y: =6
                         ZIndex: =1
