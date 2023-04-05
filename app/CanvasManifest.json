@@ -102,7 +102,7 @@
     "Id": "b79e01a8-5a76-42b4-967e-554194c9cd2d",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "PIO Claims Management",
+    "Name": "PIO Claims Management - JW",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
@@ -119,9 +119,11 @@
   "ScreenOrder": [
     "login_screen",
     "landing_screen",
-    "nabila_test_draft",
+    "claimdraft_screen",
+    "claimdraft_screen_backup",
     "draft_screen",
     "draftclaimdetail_screen",
-    "Screen1"
+    "Screen1",
+    "menu_screen"
   ]
 }
