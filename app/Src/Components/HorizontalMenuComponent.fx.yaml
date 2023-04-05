@@ -128,3 +128,13 @@ HorizontalMenuComponent As CanvasComponent:
         Y: =25
         ZIndex: =8
 
+    Logo As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =70
+        Image: ='Kellogs.KelloggLogo650x366'
+        PaddingRight: =20
+        X: =20
+        ZIndex: =9
+
