@@ -23,88 +23,10 @@
             PaddingRight: =20
             ZIndex: =2
 
-            Image2_1 As image:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Image: ='Kellogs.KelloggLogo650x366'
-                PaddingRight: =20
-                ZIndex: =1
-
-            dashboard_btn_1 As button:
-                Align: =Align.Left
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(164, 38, 44, 1)
-                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(draft_screen)
-                PressedFill: =ColorFade(Self.Fill, -15%)
-                Text: ="Dashboard"
-                Width: =115
-                ZIndex: =2
-
-            draft_btn_1 As button:
-                Align: =Align.Left
-                AlignInContainer: =AlignInContainer.Center
-                BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                HoverColor: =RGBA(164, 38, 44, 1)
-                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(draft_screen)
-                PressedFill: =ColorFade(Self.Fill, -15%)
-                Text: ="Draft"
-                Width: =115
-                ZIndex: =3
-
-            Rectangle7_1 As rectangle:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                FillPortions: =9
-                Height: =75
-                ZIndex: =4
-
-            Icon6 As icon.Person:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(89, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =20
-                Icon: =Icon.Person
-                ZIndex: =5
-
-            Label5_1 As label:
-                Align: =Align.Right
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                Size: =13
-                Text: |
-                    =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
-                ZIndex: =6
-
-            Icon5 As icon.Leave:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(89, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =20
-                Icon: =Icon.Leave
-                OnSelect: =Navigate(login_screen)
-                ZIndex: =7
+            HorizontalMenuComponent_2 As HorizontalMenuComponent:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                ZIndex: =8
 
         MainSectionContainer1_1 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)

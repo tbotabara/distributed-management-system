@@ -140,22 +140,26 @@
 
                         Label_CIN_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =35
                             Size: =10
                             Text: ="CIN"
                             ZIndex: =1
 
                         Label_ClaimType_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Claim Type"
                             Width: =228
@@ -164,11 +168,13 @@
 
                         Label_CustomerPO_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Customer PO"
                             X: =Label_ClaimType_2.X + Label_ClaimType_2.Width
@@ -176,11 +182,13 @@
 
                         Label_KelloggSO_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Kellogg SO"
                             X: =Label_CustomerPO_2.X+Label_CustomerPO_2.Width
@@ -188,11 +196,13 @@
 
                         Label_KelloggPO_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Kellogg PO"
                             X: =Label_KelloggSO_2.X + Label_KelloggSO_2.Width
@@ -200,11 +210,13 @@
 
                         Label_KelloggCode_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Kellogg Code"
                             X: =Label_KelloggPO_2.X + Label_KelloggPO_2.Width
@@ -212,11 +224,13 @@
 
                         Label_ProductDesc_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Product Description"
                             Width: =228
@@ -225,11 +239,13 @@
 
                         Label_Quantity_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Quantity"
                             X: =Label_ProductDesc_2.X + Label_ProductDesc_2.Width
@@ -237,11 +253,13 @@
 
                         Label_CusReqETA_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Customer"
                             X: =Label_Quantity_2.X+Label_Quantity_2.Width
@@ -249,11 +267,13 @@
 
                         Label_ActualETD_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Actual ETD"
                             X: =Label_CusReqETA_2.X + Label_CusReqETA_2.Width
@@ -261,11 +281,13 @@
 
                         Label_ActualETA_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Actual ETA"
                             X: =Label_ActualETD_2.X
@@ -273,11 +295,13 @@
 
                         Label_KelloggInvNo_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Kellogg Invoice Number"
                             Width: =228
@@ -286,11 +310,13 @@
 
                         Label_InvDate_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Invoice Date"
                             X: =Label_KelloggInvNo_2.X + Label_KelloggInvNo_2.Width
@@ -298,11 +324,13 @@
 
                         Label_ContainerNo_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Container Number"
                             X: =Label_InvDate_2.X + Label_InvDate_2.Width
@@ -310,11 +338,13 @@
 
                         Label_BLNo_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="BL Number"
                             X: =Label_ContainerNo_2.X + Label_ContainerNo_2.Width
@@ -322,11 +352,13 @@
 
                         Label_SSCCNo_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="SSCC Number"
                             X: =Label_BLNo_2.X + Label_BLNo_2.Width
@@ -334,11 +366,13 @@
 
                         Label_TotalCases_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Total Cases for Claim"
                             X: =Label_SSCCNo_2.Width + Label_SSCCNo_2.X
@@ -346,11 +380,13 @@
 
                         Label_DDRF_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Cust. Ref/DDRF No."
                             X: =Label_TotalCases_2.X + Label_TotalCases_2.Width
@@ -358,11 +394,13 @@
 
                         Label_ClaimSubDate_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Claim Submission Date"
                             Width: =228
@@ -371,11 +409,13 @@
 
                         Label_Status_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(0, 0, 0, 1)
+                            Color: =RGBA(234, 234, 234, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Fill: =RGBA(255, 255, 255, 1)
+                            Fill: =RGBA(164, 38, 44, 1)
                             Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Bold
                             Height: =58
+                            PaddingLeft: =10
                             Size: =10
                             Text: ="Status"
                             X: =Label_ClaimSubDate_2.X + Label_ClaimSubDate_2.Width
@@ -398,7 +438,7 @@
                         LayoutMinHeight: =287
                         LayoutMinWidth: =320
                         LoadingSpinner: =LoadingSpinner.Data
-                        OnSelect: =Navigate(draftclaimdetail_screen)
+                        OnSelect: =
                         TemplateSize: =58
                         Width: =3330
                         X: =41
@@ -412,8 +452,7 @@
                             Font: =Font.'Segoe UI'
                             Height: =58
                             OnSelect: |-
-                                =Set(selectedClaimRecord, TableDataClaimDraft_2.Selected);
-                                Navigate(draftclaimdetail_screen)
+                                =Navigate(draftclaimdetail_screen,ScreenTransition.None,{selectedClaimRecord:ThisItem});
                             Size: =10
                             Text: =ThisItem.'CIN (Title)'
                             Underline: =true
@@ -532,15 +571,16 @@
                             Color: =RGBA(89, 0, 0, 1)
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(244, 244, 244, 1)
-                            Height: =24
-                            Icon: =Icon.Error
+                            Height: =20
+                            Icon: =Icon.Warning
                             OnSelect: |-
                                 =Set(varOverflowText, ThisItem.Errors);
                                 Notify(varOverflowText)
                             Tooltip: =ThisItem.Errors
                             Visible: =!IsBlank(ThisItem.Errors)
-                            Width: =27
-                            Y: =17
+                            Width: =16
+                            X: =11
+                            Y: =19
                             ZIndex: =11
 
                         ActualETD_TD_2 As label:
