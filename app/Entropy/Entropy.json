@@ -318,19 +318,19 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/05/2023 02:04:02",
+  "HeaderLastSavedDateTimeUTC": "04/05/2023 02:27:19",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "018c66cb-ecfb-4867-9a80-893c3fb4649d": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/84a64f6446d7437b9a3224addb90bc39-ed7df927e0d9ef7d\"",
     "1390746f-2c3e-4bd4-b54c-35d18b14ab9e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
     "2279b649-02fe-4a89-b294-78385dbd9d71": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
     "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
     "7515b6ee-efc6-4098-8f1c-6c832a908684": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
-    "79905b54-438e-4802-8691-6d055939dcff": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-0e70618d-3b39-4d42-bfac-70e13eb0b7db\"",
     "8011ed01-664b-4730-9cc8-cc23dafdd925": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/41e29534a0d24eec8d08d5c6362798a5\"",
     "8b52b43c-d21e-4f2a-8535-a5fa79b5befe": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
     "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
-    "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/52e1ef847f454509a33f44d7b77d36a5\""
+    "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/52e1ef847f454509a33f44d7b77d36a5\"",
+    "df15fa28-58cb-4b58-b409-9261ea5af33c": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/84a64f6446d7437b9a3224addb90bc39-ed7df927e0d9ef7d\"",
+    "f76c37de-cda8-4aba-9822-6fd688e33855": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-0e70618d-3b39-4d42-bfac-70e13eb0b7db\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -371,7 +371,7 @@
   "OrderTemplate": {},
   "OrderXMLTemplate": {
     "attachments": 11,
-    "button": 2,
+    "button": 3,
     "checkbox": 13,
     "combobox": 9,
     "datepicker": 10,
@@ -382,7 +382,7 @@
     "icon": 5,
     "image": 1,
     "label": 4,
-    "rectangle": 3,
+    "rectangle": 2,
     "text": 8
   },
   "OverridablePropertiesEntry": {
@@ -746,7 +746,7 @@
     "Customer Requested ETA_DataCard1": 217,
     "dashboard_btn": 12,
     "dashboard_btn_1": 99,
-    "dashboard_btn_2": 143,
+    "dashboard_btn_2": 144,
     "dashboard_btn_3": 62,
     "DataCardKey1": 174,
     "DataCardKey10": 219,
@@ -797,7 +797,7 @@
     "DDRF#_DataCard1": 263,
     "draft_btn": 13,
     "draft_btn_1": 100,
-    "draft_btn_2": 144,
+    "draft_btn_2": 145,
     "draft_btn_3": 63,
     "draft_screen": 168,
     "draftclaimdetail_screen": 2,
@@ -981,7 +981,7 @@
     "Rectangle3": 152,
     "Rectangle7": 11,
     "Rectangle7_1": 101,
-    "Rectangle7_2": 145,
+    "Rectangle7_2": 143,
     "Rectangle7_3": 64,
     "remember_cb": 6,
     "SaveDocument": 298,
@@ -1047,7 +1047,7 @@
       "typedDataCard": 22
     },
     "DeserializationLoadTime": 3.3060173,
-    "ErrorCount": 14
+    "ErrorCount": 11
   },
   "WasLocalDatabaseReferencesEmpty": true
 }
