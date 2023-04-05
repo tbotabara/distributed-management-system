@@ -500,15 +500,6 @@
                         X: =1146
                         ZIndex: =10
 
-                    "InfoButtonCanvas2 As 'Info button'":
-                        DisplayMode: =DisplayMode.Edit
-                        Height: =32
-                        IconSize: ='PowerApps.CoreControls.InfoButtonCanvas.IconSize'.Large
-                        Width: =32
-                        X: =3
-                        Y: =13
-                        ZIndex: =11
-
                 Label3 As label:
                     Align: =Align.Center
                     BorderColor: =RGBA(89, 0, 0, 1)
