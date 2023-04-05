@@ -102,11 +102,11 @@
     "Id": "b79e01a8-5a76-42b4-967e-554194c9cd2d",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "Name": "PIO Claims Management - JW",
+    "Name": "PIO Claims Management",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "PIO Claims Management - JW",
+    "AppName": "PIO Claims Management",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -119,7 +119,8 @@
   "ScreenOrder": [
     "login_screen",
     "landing_screen",
-    "screen_draft",
+    "claimdraft_screen",
+    "claimdraft_screen_backup",
     "draft_screen",
     "draftclaimdetail_screen",
     "Screen1"
