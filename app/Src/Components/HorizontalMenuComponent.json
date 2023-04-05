@@ -10,7 +10,17 @@
   },
   "ComponentType": "CanvasComponent",
   "CustomGroupControlTemplateName": "",
-  "CustomProperties": [],
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "FlexibleHeight",
+      "Hidden": true,
+      "Name": "FlexibleHeight",
+      "PropertyDataTypeKey": "Number",
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.330\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
   "FirstParty": true,
   "Id": "http://microsoft.com/appmagic/Component",
   "IsComponentLocked": false,
@@ -19,7 +29,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638162750188213188",
+  "LastModifiedTimestamp": "638162748651926542",
   "Name": "edba5150e0cb4e3bb0532a7de693516b",
   "OverridableProperties": {},
   "Version": "638162698784582006"
