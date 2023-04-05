@@ -411,7 +411,9 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Font: =Font.'Segoe UI'
                             Height: =58
-                            OnSelect: =Navigate(draftclaimdetail_screen)
+                            OnSelect: |-
+                                =Set(selectedClaimRecord, TableDataClaimDraft_2.Selected);
+                                Navigate(draftclaimdetail_screen)
                             Size: =10
                             Text: =ThisItem.'CIN (Title)'
                             Underline: =true
