@@ -89,16 +89,6 @@ HorizontalMenuComponent As CanvasComponent:
         Y: =15
         ZIndex: =4
 
-    Image2_5 As image:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledFill: =RGBA(244, 244, 244, 1)
-        Height: =70
-        Image: ='Kellogs.KelloggLogo650x366'
-        PaddingRight: =20
-        X: =20
-        ZIndex: =5
-
     Icon7_1 As icon.Person:
         BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(89, 0, 0, 1)

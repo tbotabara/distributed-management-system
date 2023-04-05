@@ -380,7 +380,9 @@
                     Items: =customer_claims_1
                     Layout: =Layout.Vertical
                     LoadingSpinner: =LoadingSpinner.Data
-                    OnSelect: =Navigate(draftclaimdetail_screen)
+                    OnSelect: |-
+                        =Set(selectedClaimRecord, SummaryGallery.Selected);
+                        Navigate(draftclaimdetail_screen)
                     TemplateSize: =58
                     Transition: =Transition.Pop
                     Width: =1280

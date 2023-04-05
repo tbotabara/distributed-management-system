@@ -119,11 +119,14 @@
   "ScreenOrder": [
     "login_screen",
     "landing_screen",
-    "claimdraft_screen",
-    "claimdraft_screen_backup",
+    "screen_draft",
     "draft_screen",
+    "draft_screen_copy",
     "draftclaimdetail_screen",
+    "draftclaimdetail_screen_copy",
     "Screen1",
-    "menu_screen"
+    "menu_screen",
+    "claimdraft_screen_backup",
+    "claimdraft_screen_backup_1"
   ]
 }
