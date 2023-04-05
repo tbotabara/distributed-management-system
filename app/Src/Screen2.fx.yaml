@@ -1,0 +1,7 @@
+Screen2 As screen:
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    HorizontalMenuComponent_1 As HorizontalMenuComponent:
+        Height: =HorizontalMenuComponent_1.FlexibleHeight
+
