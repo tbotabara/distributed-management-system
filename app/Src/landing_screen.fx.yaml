@@ -594,6 +594,13 @@
                     Y: =28
                     ZIndex: =23
 
+                Group3 As group:
+                    Height: =5
+                    Width: =5
+                    X: =40
+                    Y: =40
+                    ZIndex: =30
+
     OverlayPopup As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, .6)
