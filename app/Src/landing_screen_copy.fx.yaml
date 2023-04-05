@@ -1,0 +1,6 @@
+"landing_screen_copy As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: |
+        =Set(areFiltersApplied, false)
+

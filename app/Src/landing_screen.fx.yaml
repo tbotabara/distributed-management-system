@@ -235,6 +235,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    PaddingLeft: =45
                     Size: =10
                     Text: ="Country"
                     Width: =165
@@ -524,7 +525,7 @@
                         HoverColor: =RGBA(102, 182, 227, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnSelect: |-
-                            =Navigate(draftclaimdetail_screen, ScreenTransition.None, {selectedItem: ThisItem})
+                            =Navigate(draftclaimdetail_screen, ScreenTransition.None, {selectedClaimRecord: ThisItem})
                         PressedColor: =RGBA(0, 134, 208, 1)
                         PressedFill: =RGBA(0,0,0,0)
                         Size: =10
@@ -593,6 +594,45 @@
                     X: =683
                     Y: =28
                     ZIndex: =23
+
+                lbl_SearchKeyword_4 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =27
+                    Size: =10
+                    Text: ="Search"
+                    Width: =426
+                    X: =30
+                    Y: =199
+                    ZIndex: =27
+
+                lbl_ClaimType1_4 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =27
+                    Size: =10
+                    Text: ="Claim Type"
+                    Width: =399
+                    X: =485
+                    Y: =199
+                    ZIndex: =28
+
+                lbl_Status_4 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =27
+                    Size: =10
+                    Text: ="Status"
+                    Width: =399
+                    X: =910
+                    Y: =199
+                    ZIndex: =29
 
                 Group3 As group:
                     Height: =5
