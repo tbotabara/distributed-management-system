@@ -42,11 +42,13 @@ HorizontalMenuComponent As CanvasComponent:
 
             Button5 As button:
                 BorderThickness: =0
+                Color: =RGBA(164, 38, 44, 100)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
                 FocusedBorderThickness: =0
+                Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =If(IsBlank(ThisItem.ParentTab), 70, 40)
                 HoverColor: =RGBA(255, 255, 255, 1)
@@ -60,4 +62,15 @@ HorizontalMenuComponent As CanvasComponent:
                 Text: =ThisItem.Title
                 Width: =200
                 ZIndex: =1
+
+            Icon7 As icon.ChevronDown:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =40
+                Icon: =Icon.ChevronDown
+                OnSelect: =Select(Parent)
+                X: =40
+                ZIndex: =2
 

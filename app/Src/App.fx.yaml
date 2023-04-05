@@ -11,7 +11,7 @@ App As appinfo:
         
         );
         
-        Set(varMenuPrimaryColor, RGBA(4, 42, 61, 1));
+        Set(varMenuPrimaryColor, RGBA(255, 255, 255, 1));
         Set(varMenuSecondaryColor, RGBA(164, 38, 44, 100));
         
         Set(varTabSelected, 0);
