@@ -48,7 +48,7 @@
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(landing_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =10
+                Size: =12
                 Text: ="Dashboard"
                 Width: =115
                 ZIndex: =2
@@ -67,7 +67,7 @@
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(claimdraft_screen_backup)
                 PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =10
+                Size: =12
                 Text: ="Draft"
                 Width: =115
                 ZIndex: =3
@@ -154,8 +154,8 @@
                         Refresh(customer_claims_1)
                     Size: =10
                     Text: ="Upload Claim"
-                    Width: =437
-                    X: =683
+                    Width: =399
+                    X: =479
                     Y: =102
                     ZIndex: =2
 
@@ -172,6 +172,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     Font: =Font.'Segoe UI'
+                    Height: =36
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(222, 179, 184, 1)
                     Items: ='Claim Type'
@@ -179,8 +180,8 @@
                     PressedFill: =RGBA(89, 0, 0, 1)
                     SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =10
-                    Width: =437
-                    X: =683
+                    Width: =399
+                    X: =479
                     Y: =52
                     ZIndex: =3
 
@@ -212,9 +213,9 @@
                     PressedFill: =RGBA(89, 0, 0, 1)
                     Size: =10
                     Tooltip: =
-                    Width: =399
-                    X: =223
-                    Y: =50
+                    Width: =426
+                    X: =26
+                    Y: =52
                     ZIndex: =4
 
                 Image3 As image:
@@ -235,6 +236,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     PaddingLeft: =45
                     Size: =10
                     Text: ="Country"
@@ -250,6 +252,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="CIN"
                     Width: =90
@@ -264,6 +267,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Claim Type"
                     Width: =164
@@ -278,6 +282,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Kellogg PO"
                     X: =445
@@ -291,6 +296,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Invoice Number"
                     X: =595
@@ -304,6 +310,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Total Cases for Claim"
                     X: =745
@@ -317,6 +324,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Claim Date"
                     X: =895
@@ -330,6 +338,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Status"
                     Width: =125
@@ -344,6 +353,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Fill: =RGBA(164, 38, 44, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
                     Size: =10
                     Text: ="Comments"
                     Width: =135
@@ -587,11 +597,12 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =22
                     Size: =10
                     Text: ="Claim Type"
                     Width: =189
-                    X: =683
+                    X: =479
                     Y: =28
                     ZIndex: =23
 
@@ -600,6 +611,7 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =27
                     Size: =10
                     Text: ="Search"
@@ -613,6 +625,7 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =27
                     Size: =10
                     Text: ="Claim Type"
@@ -626,6 +639,7 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
                     Height: =27
                     Size: =10
                     Text: ="Status"
@@ -653,6 +667,10 @@
                             areFiltersApplied,
                             !(IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems))
                         )
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
                     Size: =10
                     Width: =427
                     X: =25
@@ -807,8 +825,8 @@
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =20
         Icon: =Icon.HorizontalLine
-        Width: =67
-        X: =124
+        Width: =82
+        X: =122
         Y: =62
         ZIndex: =13
 
