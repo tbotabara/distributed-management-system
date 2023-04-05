@@ -43,7 +43,7 @@ HorizontalMenuComponent As CanvasComponent:
 
             Button5 As button:
                 BorderThickness: =0
-                Color: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuPrimaryColor,varMenuSecondaryColor )
+                Color: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuPrimaryColor,varMenuSecondaryColor)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -53,7 +53,7 @@ HorizontalMenuComponent As CanvasComponent:
                 FontWeight: =FontWeight.Semibold
                 Height: =If(IsBlank(ThisItem.ParentTab), 70, 40)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(varMenuSecondaryColor, -20%)
+                HoverFill: =ColorFade(varMenuSecondaryColor, 20%)
                 OnSelect: =If(varTabSelected=ThisItem.Id,Set(varTabSelected,0),Set(varTabSelected,ThisItem.Id));Navigate(ThisItem.Screen)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -63,18 +63,6 @@ HorizontalMenuComponent As CanvasComponent:
                 Text: =ThisItem.Title
                 Width: =200
                 ZIndex: =1
-
-            Icon7 As icon.ChevronDown:
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuPrimaryColor,varMenuSecondaryColor )
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =70
-                Icon: =Icon.Home
-                OnSelect: =Select(Parent)
-                Width: =20
-                X: =20
-                ZIndex: =2
 
     HeightSubmenu As label:
         BorderColor: =RGBA(89, 0, 0, 1)
@@ -137,4 +125,37 @@ HorizontalMenuComponent As CanvasComponent:
         PaddingRight: =20
         X: =20
         ZIndex: =9
+
+    Icon7 As icon.Database:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =ColorFade(varMenuSecondaryColor, 50%)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =70
+        Icon: =Icon.Database
+        Width: =20
+        X: =605
+        ZIndex: =10
+
+    Icon10 As icon.Home:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =ColorFade(varMenuSecondaryColor, 50%)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =70
+        Icon: =Icon.Home
+        Width: =20
+        X: =170
+        ZIndex: =11
+
+    Icon11 As icon.Edit:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =ColorFade(varMenuSecondaryColor, 50%)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =70
+        Icon: =Icon.Edit
+        Width: =20
+        X: =400
+        ZIndex: =12
 
