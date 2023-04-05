@@ -2174,66 +2174,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.HeaderContainer1_5.Icon5_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.HeaderContainer1_5.Icon5_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claimdraft_screen_backup",
-                "type": "claimdraft_screen_backup.ScreenContainer1_5.HeaderContainer1_5.Icon5_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.HeaderContainer1_5.Icon5_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.HeaderContainer1_5.Icon5_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "claimdraft_screen_backup",
-                "type": "claimdraft_screen_backup.ScreenContainer1_5.HeaderContainer1_5.Icon5_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.SearchInput_2.AccessibleLabel"
                 }
               ],
@@ -4874,17 +4814,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "draftclaimdetail_screen.selectedItem"
+                  "fullyQualifiedName": "draftclaimdetail_screen.selectedClaimRecord"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.selectedItem",
+                  "fullyQualifiedName": "draftclaimdetail_screen.selectedClaimRecord",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "selectedItem",
+                "member": "selectedClaimRecord",
                 "module": "draftclaimdetail_screen",
                 "type": "draftclaimdetail_screen"
               }
