@@ -91,7 +91,7 @@ login_screen As screen:
                 !IsBlank(
                     LookUp(
                         users,
-                        Title = username_txt.Text And password = password_txt.Text
+                        username = username_txt.Text And password = password_txt.Text
                     )
                 ),
                 Navigate(landing_screen);

@@ -42,6 +42,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(nabila_test_draft)
@@ -59,6 +60,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(draft_screen)
@@ -133,6 +135,7 @@
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
                     Height: =36
                     HintText: ="Search for Kellogg PO and Invoice"
                     HoverBorderColor: =RGBA(89, 0, 0, 1)
@@ -170,7 +173,7 @@
                         Height: =61
                         LayoutMinHeight: =60
                         LayoutMinWidth: =3330
-                        Width: =DraftSummaryGallery.Width
+                        Width: =3330
                         X: =27
                         Y: =138
                         ZIndex: =1
@@ -181,6 +184,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="CIN"
@@ -195,6 +199,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Claim Type"
@@ -209,6 +214,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Customer PO"
@@ -223,6 +229,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Kellogg SO"
@@ -237,6 +244,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Kellogg PO"
@@ -251,6 +259,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Kellogg Code"
@@ -265,6 +274,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Product Description"
@@ -279,6 +289,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Quantity"
@@ -293,6 +304,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Customer Requested ETA"
@@ -308,6 +320,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Actual ETD"
@@ -322,6 +335,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Actual ETA"
@@ -336,6 +350,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Kellogg Invoice Number"
@@ -350,6 +365,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Invoice Date"
@@ -364,10 +380,11 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
-                            Text: ="Kellogg SO"
-                            Width: =144
+                            Text: ="Container Number"
+                            Width: =164
                             X: =Label_InvDate.X+Label_InvDate.Width
                             Y: =1
                             ZIndex: =14
@@ -378,6 +395,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="BL Number"
@@ -392,6 +410,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="SSCC Number"
@@ -406,6 +425,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Total Cases For Claim"
@@ -420,6 +440,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Cust. Ref/DDRF No."
@@ -434,6 +455,7 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Claim Submission Date"
@@ -448,13 +470,333 @@
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Fill: =RGBA(255, 255, 255, 1)
+                            Font: =Font.'Segoe UI'
                             Height: =60
                             Size: =13
                             Text: ="Status"
-                            Width: =144
+                            Width: =124
                             X: =Label_ClaimSubmissionDate.X+Label_ClaimSubmissionDate.Width
                             Y: =1
                             ZIndex: =20
+
+                    SummaryGallery_1 As gallery.galleryVertical:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        DelayItemLoading: =true
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =267
+                        Items: =customer_claims_1
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =3330
+                        LoadingSpinner: =LoadingSpinner.Data
+                        TemplateSize: =58
+                        Width: =1280
+                        X: =41
+                        Y: =331
+                        ZIndex: =2
+
+                        CIN_table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(184, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            HoverColor: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                            OnSelect: =Navigate(draftclaimdetail_screen)
+                            Size: =13
+                            Text: =ThisItem.'CIN (Title)'
+                            Width: =113
+                            X: =27
+                            ZIndex: =2
+
+                        ClaimType_table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Claim Type'.Value
+                            Width: =Label_ClaimType.Width
+                            X: =Label_ClaimType.X
+                            ZIndex: =3
+
+                        CustomerPO_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Customer PO'
+                            Width: =Label_CustomerPO.Width
+                            X: =Label_CustomerPO.X
+                            ZIndex: =4
+
+                        KelloggSO_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Kellogg SO#'
+                            Width: =Label_KelloggSO.Width
+                            X: =Label_KelloggSO.X
+                            ZIndex: =5
+
+                        KelloggPO_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Kellogg PO#'
+                            Width: =Label_KelloggPO.Width
+                            X: =Label_KelloggPO.X
+                            ZIndex: =6
+
+                        KelloggCode_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Kellogg Code'
+                            Width: =Label_KelloggCode.Width
+                            X: =Label_KelloggCode.X
+                            ZIndex: =7
+
+                        ProductDescription_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Product Description '
+                            Width: =Label_ProductDescription.Width
+                            X: =Label_ProductDescription.X
+                            ZIndex: =8
+
+                        Quantity_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Quantity (cs)'
+                            Width: =Label_Quantity.Width
+                            X: =Label_Quantity.X
+                            ZIndex: =9
+
+                        CustReqETA_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Customer Requested ETA'
+                            Width: =Label_CustomerRequestedETA.Width
+                            X: =Label_CustomerRequestedETA.X
+                            ZIndex: =10
+
+                        Icon1_2 As icon.Error:
+                            BorderColor: =RGBA(255, 0, 0, 1)
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(244, 244, 244, 1)
+                            Height: =24
+                            Icon: =Icon.Error
+                            OnSelect: |-
+                                =Set(varOverflowText, ThisItem.Errors);
+                                Notify(varOverflowText)
+                            Tooltip: =ThisItem.Errors
+                            Visible: =!IsBlank(ThisItem.Errors)
+                            Width: =27
+                            Y: =17
+                            ZIndex: =11
+
+                        ActualETD_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Actual ETD'
+                            Width: =Label_ActualETD.Width
+                            X: =Label_ActualETD.X
+                            ZIndex: =12
+
+                        ActualETA_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Actual ETA'
+                            Width: =Label_ActualETA.Width
+                            X: =Label_ActualETA.X
+                            ZIndex: =13
+
+                        KelloggInvNo_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Kellogg Inv #'
+                            Width: =Label_KelloggInvNo.Width
+                            X: =Label_KelloggInvNo.X
+                            ZIndex: =14
+
+                        InvoiceDate_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Invoice Date'
+                            Width: =Label_InvDate.Width
+                            X: =Label_InvDate.X
+                            ZIndex: =15
+
+                        ContainerNo_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'Container #'
+                            Width: =Label_ContainerNo.Width
+                            X: =Label_ContainerNo.X
+                            ZIndex: =16
+
+                        BLNo_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'BL#'
+                            Width: =Label_BLNo.Width
+                            X: =Label_BLNo.X
+                            ZIndex: =17
+
+                        SSCCNo_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'SSCC#'
+                            Width: =Label_SSCCNo.Width
+                            X: =Label_SSCCNo.X
+                            ZIndex: =18
+
+                        TotalCases_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Total cases for Claim'
+                            Width: =Label_TotalCases.Width
+                            X: =Label_TotalCases.X
+                            ZIndex: =19
+
+                        DDRF_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: |-
+                                =ThisItem.'DDRF#'
+                            Width: =Label_DDRF.Width
+                            X: =Label_DDRF.X
+                            ZIndex: =20
+
+                        ClaimSubmitDate_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.Created
+                            Width: =Label_ClaimSubmissionDate.Width
+                            X: =Label_ClaimSubmissionDate.X
+                            ZIndex: =21
+
+                        Status_Table As label:
+                            BorderColor: =RGBA(89, 0, 0, 1)
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            OnSelect: =Select(Parent)
+                            Size: =13
+                            Text: =ThisItem.'Claim Status'.Value
+                            Width: =Label_ClaimStatus.Width
+                            X: =Label_ClaimStatus.X
+                            ZIndex: =22
+
+                        Button4 As button:
+                            Color: =RGBA(0, 0, 0, 0)
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Font: =Font.'Segoe UI'
+                            FontWeight: =FontWeight.Semibold
+                            Height: =CIN_table.Height
+                            HoverBorderColor: =RGBA(0, 0, 0, 0)
+                            HoverColor: =RGBA(0, 0, 0, 0)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            OnSelect: =Select(Parent)
+                            Text: =""
+                            Width: =CIN_table.Width
+                            X: =CIN_table.X
+                            Y: =CIN_table.Y
+                            ZIndex: =23
 
         FooterContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0

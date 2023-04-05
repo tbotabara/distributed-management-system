@@ -60,13 +60,16 @@
     "dataSources": [
       "customer_claims_1",
       "Claim Attachment",
-      "Claim Document Type"
+      "Claim Document Type",
+      "Claim Type",
+      "Generic Status",
+      "users"
     ],
     "dependencies": {},
     "dependents": [
       "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d",
       "8011ed01-664b-4730-9cc8-cc23dafdd925",
-      "edb66bd4-1444-4a12-b1d3-12e93b0558ca"
+      "018c66cb-ecfb-4867-9a80-893c3fb4649d"
     ],
     "id": "1390746f-2c3e-4bd4-b54c-35d18b14ab9e"
   },
