@@ -1,0 +1,31 @@
+"draftclaimdetail_screen_copy As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+    Fill: =RGBA(234, 234, 234, 1)
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+    OnVisible: |-
+        =UpdateContext({KelloggPOError: false});
+        UpdateContext({SSCCError: false});
+        UpdateContext({ClaimETAError: false});
+        UpdateContext({ShowPopup: false})
+
+    ScreenContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+    Label2_1 As label:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =39
+        Size: =16
+        Text: ="Claim Detail"
+        Width: =172
+        X: =396
+        Y: =100
+        ZIndex: =2
+
