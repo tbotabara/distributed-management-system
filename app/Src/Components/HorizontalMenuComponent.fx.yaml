@@ -50,7 +50,7 @@ HorizontalMenuComponent As CanvasComponent:
                 FontWeight: =FontWeight.Semibold
                 Height: =If(IsBlank(ThisItem.ParentTab), 70, 40)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                HoverFill: =ColorFade(varMenuSecondaryColor, -20%)
                 OnSelect: =If(varTabSelected=ThisItem.Id,Set(varTabSelected,0),Set(varTabSelected,ThisItem.Id));Navigate(ThisItem.Screen)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
