@@ -90,3 +90,52 @@ HorizontalMenuComponent As CanvasComponent:
         Y: =15
         ZIndex: =4
 
+    Image2_5 As image:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =70
+        Image: ='Kellogs.KelloggLogo650x366'
+        PaddingRight: =20
+        X: =20
+        ZIndex: =5
+
+    Icon7_1 As icon.Person:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =20
+        Icon: =Icon.Person
+        Width: =20
+        X: =1114
+        Y: =25
+        ZIndex: =6
+
+    username As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        OnSelect: =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
+        Size: =10
+        Text: |
+            =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
+        Width: =156
+        X: =1134
+        Y: =18
+        ZIndex: =7
+
+    Icon7_2 As icon.Leave:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =20
+        Icon: =Icon.Leave
+        OnSelect: =Navigate(login_screen)
+        X: =1290
+        Y: =25
+        ZIndex: =8
+
