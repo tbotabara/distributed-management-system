@@ -1,4 +1,4 @@
-"nabila_test_draft As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"screen_draft As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: =
@@ -45,7 +45,7 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(nabila_test_draft)
+                OnSelect: =Navigate(screen_draft)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Text: ="Dashboard"
                 Width: =115
@@ -484,11 +484,13 @@
                         DelayItemLoading: =true
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =267
-                        Items: =customer_claims_1
+                        Items: |
+                            =customer_claims_1
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
                         LayoutMinWidth: =3330
                         LoadingSpinner: =LoadingSpinner.Data
+                        ShowNavigation: =true
                         TemplateSize: =58
                         Width: =1280
                         X: =41
@@ -623,7 +625,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: =ThisItem.'Actual ETD'
+                            Text: =ThisItem.'CIN (Title)'
                             Width: =Label_ActualETD.Width
                             X: =Label_ActualETD.X
                             ZIndex: =12
@@ -636,7 +638,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: =ThisItem.'Actual ETA'
+                            Text: =ThisItem.ID
                             Width: =Label_ActualETA.Width
                             X: =Label_ActualETA.X
                             ZIndex: =13
@@ -649,8 +651,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: |-
-                                =ThisItem.'Kellogg Inv #'
+                            Text: =ThisItem.'Destination Country'
                             Width: =Label_KelloggInvNo.Width
                             X: =Label_KelloggInvNo.X
                             ZIndex: =14
@@ -663,7 +664,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: =ThisItem.'Invoice Date'
+                            Text: =ThisItem.CIN2
                             Width: =Label_InvDate.Width
                             X: =Label_InvDate.X
                             ZIndex: =15
@@ -676,8 +677,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: |-
-                                =ThisItem.'Container #'
+                            Text: =ThisItem.'Claim Type'.Value
                             Width: =Label_ContainerNo.Width
                             X: =Label_ContainerNo.X
                             ZIndex: =16
@@ -690,8 +690,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: |-
-                                =ThisItem.'BL#'
+                            Text: =ThisItem.'Customer PO'
                             Width: =Label_BLNo.Width
                             X: =Label_BLNo.X
                             ZIndex: =17
@@ -705,7 +704,7 @@
                             OnSelect: =Select(Parent)
                             Size: =13
                             Text: |-
-                                =ThisItem.'SSCC#'
+                                =ThisItem.'Kellogg SO#'
                             Width: =Label_SSCCNo.Width
                             X: =Label_SSCCNo.X
                             ZIndex: =18
@@ -718,7 +717,8 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: =ThisItem.'Total cases for Claim'
+                            Text: |-
+                                =ThisItem.'Kellogg PO#'
                             Width: =Label_TotalCases.Width
                             X: =Label_TotalCases.X
                             ZIndex: =19
@@ -731,8 +731,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: |-
-                                =ThisItem.'DDRF#'
+                            Text: =ThisItem.'Kellogg Code'
                             Width: =Label_DDRF.Width
                             X: =Label_DDRF.X
                             ZIndex: =20
@@ -758,7 +757,7 @@
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =13
-                            Text: =ThisItem.'Claim Status'.Value
+                            Text: =ThisItem.'Quantity (cs)'
                             Width: =Label_ClaimStatus.Width
                             X: =Label_ClaimStatus.X
                             ZIndex: =22
@@ -775,7 +774,7 @@
                             HoverBorderColor: =RGBA(0, 0, 0, 0)
                             HoverColor: =RGBA(0, 0, 0, 0)
                             HoverFill: =RGBA(0, 0, 0, 0)
-                            OnSelect: =Select(Parent)
+                            OnSelect: =Navigate(draftclaimdetail_screen)
                             Text: =""
                             Width: =CIN_table.Width
                             X: =CIN_table.X

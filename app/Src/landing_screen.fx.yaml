@@ -64,7 +64,7 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(draft_screen)
+                OnSelect: =Navigate(screen_draft)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =10
                 Text: ="Draft"
