@@ -8,7 +8,14 @@
         "AllowAccessToGlobals": true,
         "Children": [],
         "ControlPropertyState": [
-          "Fill",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Fill",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -69,7 +76,7 @@
         "Rules": [
           {
             "Category": "Design",
-            "InvariantScript": "RGBA(164, 38, 44, 1)",
+            "InvariantScript": "RGBA(255, 255, 255, 1)",
             "Property": "Fill",
             "RuleProviderType": "Unknown"
           },
@@ -3298,7 +3305,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638163492254933796",
+    "LastModifiedTimestamp": "638163587502231205",
     "Name": "HorizontalMenuComponent",
     "Rules": [
       {
@@ -3357,7 +3364,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638163492254933796",
+  "LastModifiedTimestamp": "638163587502231205",
   "Name": "edba5150e0cb4e3bb0532a7de693516b",
   "OverridableProperties": {},
   "Version": "638162698784582006"

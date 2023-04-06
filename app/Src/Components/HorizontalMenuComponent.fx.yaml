@@ -10,7 +10,7 @@ HorizontalMenuComponent As CanvasComponent:
         BorderColor: =RGBA(89, 0, 0, 1)
         DisabledFill: =varMenuPrimaryColor
         DisplayMode: =DisplayMode.Disabled
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =RGBA(255, 255, 255, 1)
         Height: =70
         Width: =App.Width
         ZIndex: =1
