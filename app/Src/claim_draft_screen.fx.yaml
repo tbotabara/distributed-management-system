@@ -739,7 +739,7 @@
                             HoverColor: =RGBA(102, 182, 227, 1)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             OnSelect: |-
-                                =Set(selectedClaimRecord, ThisItem);
+                                =Set(newSelectedRecord, ThisItem);
                                 Navigate(draftclaimdetail_screen, ScreenTransition.None)
                             PressedColor: =RGBA(0, 134, 208, 1)
                             PressedFill: =RGBA(0,0,0,0)

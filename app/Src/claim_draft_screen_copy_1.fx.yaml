@@ -717,8 +717,7 @@
                             HoverBorderColor: =RGBA(0,0,0,0)
                             HoverColor: =RGBA(102, 182, 227, 1)
                             HoverFill: =RGBA(0, 0, 0, 0)
-                            OnSelect: |-
-                                =Navigate(draftclaimdetail_screen, ScreenTransition.None, {selectedClaimRecord: ThisItem})
+                            OnSelect: =Navigate(draftclaimdetail_screen, ScreenTransition.None)
                             PressedColor: =RGBA(0, 134, 208, 1)
                             PressedFill: =RGBA(0,0,0,0)
                             Size: =10
