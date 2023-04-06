@@ -65,7 +65,7 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(claimdraft_screen_backup)
+                OnSelect: =Navigate(claim_draft_screenraft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Draft"
