@@ -2062,7 +2062,9 @@
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(116,116,116,1), -20%)
-                    OnSelect: =Navigate(draft_screen)
+                    OnSelect: |-
+                        =Back();
+                        ScreenTransition.Fade
                     Size: =15
                     Text: ="Cancel"
                     Width: =140
