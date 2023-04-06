@@ -2113,9 +2113,7 @@
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(116,116,116,1), -20%)
-                    OnSelect: |-
-                        =Back();
-                        ScreenTransition.Fade
+                    OnSelect: =Navigate(claimdraft_screen_backup)
                     Size: =15
                     Text: ="Cancel"
                     Width: =140
@@ -2258,7 +2256,7 @@
                     Height: =51
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(54,176,75,1), -20%)
-                    OnSelect: =SubmitForm(ClaimForm);Navigate(draft_screen)
+                    OnSelect: =SubmitForm(ClaimForm);Navigate(landing_screen)
                     Size: =15
                     Text: ="Submit"
                     Width: =139
@@ -2278,7 +2276,7 @@
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(255,0,0,1), -20%)
-                    OnSelect: =Remove(customer_claims_1, SummaryGallery.Selected); If (IsEmpty(Errors(customer_claims_1, SummaryGallery.Selected)), Back())
+                    OnSelect: =Remove(customer_claims_1, selectedClaimRecord); If (IsEmpty(Errors(customer_claims_1, selectedClaimRecord)), Back())
                     Size: =15
                     Text: ="Delete"
                     Visible: |
@@ -2639,7 +2637,7 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
                     OnSelect: |-
-                        =Set(CINNumber,SummaryGallery.Selected.'CIN (Title)');
+                        =Set(CINNumber,selectedClaimRecord.'CIN (Title)');
                         
                         ForAll(FileAttachment.Attachments,
                         SaveAttachmentToSharePoint.Run(CINNumber,TypeNumber,

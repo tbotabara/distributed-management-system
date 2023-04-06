@@ -109,7 +109,7 @@
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "PIO Claims Management-JW",
+    "AppName": "PIO Claims Management - MH",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -120,9 +120,9 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
+    "claimdraft_screen_backup",
+    "claimdraft_screen_backup_1",
     "draftclaimdetail_screen",
-    "draftclaimdetail_screen_copy",
-    "draft_screen",
     "landing_screen",
     "landing_screen_copy",
     "login_screen",
