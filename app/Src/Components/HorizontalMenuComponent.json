@@ -65,7 +65,7 @@
         "Name": "Rectangle4",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 2,
+        "PublishOrderIndex": 431,
         "Rules": [
           {
             "Category": "Design",
@@ -242,7 +242,7 @@
         "Name": "Logo",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 3,
+        "PublishOrderIndex": 432,
         "Rules": [
           {
             "Category": "Data",
@@ -459,7 +459,7 @@
             "Name": "galleryTemplate1",
             "Parent": "MainMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 12,
+            "PublishOrderIndex": 434,
             "Rules": [
               {
                 "Category": "Data",
@@ -520,7 +520,7 @@
                 "Name": "galleryTemplate2",
                 "Parent": "Submenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 14,
+                "PublishOrderIndex": 436,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -740,7 +740,7 @@
                 "Name": "Button5",
                 "Parent": "Submenu",
                 "PersistMetaDataIDKey": false,
-                "PublishOrderIndex": 15,
+                "PublishOrderIndex": 437,
                 "Rules": [
                   {
                     "Category": "Data",
@@ -834,7 +834,7 @@
                   },
                   {
                     "Category": "Design",
-                    "InvariantScript": "ColorFade(varMenuSecondaryColor, 0.9)",
+                    "InvariantScript": "ColorFade(varMenuSecondaryColor, 20%)",
                     "Property": "HoverFill",
                     "RuleProviderType": "Unknown"
                   },
@@ -1070,7 +1070,7 @@
             "Name": "Submenu",
             "Parent": "MainMenu",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 13,
+            "PublishOrderIndex": 435,
             "Rules": [
               {
                 "Category": "Data",
@@ -1335,7 +1335,7 @@
         "Name": "MainMenu",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 4,
+        "PublishOrderIndex": 433,
         "Rules": [
           {
             "Category": "Data",
@@ -1574,7 +1574,7 @@
         "Name": "Icon10",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 5,
+        "PublishOrderIndex": 438,
         "Rules": [
           {
             "Category": "Design",
@@ -1814,7 +1814,7 @@
         "Name": "Icon11",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 6,
+        "PublishOrderIndex": 439,
         "Rules": [
           {
             "Category": "Design",
@@ -2061,7 +2061,7 @@
         "Name": "Icon7",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7,
+        "PublishOrderIndex": 440,
         "Rules": [
           {
             "Category": "Design",
@@ -2303,7 +2303,7 @@
         "Name": "HeightSubmenu",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 8,
+        "PublishOrderIndex": 441,
         "Rules": [
           {
             "Category": "Data",
@@ -2641,7 +2641,7 @@
         "Name": "username",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 9,
+        "PublishOrderIndex": 442,
         "Rules": [
           {
             "Category": "Data",
@@ -2948,7 +2948,7 @@
         "Name": "Icon7_1",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 10,
+        "PublishOrderIndex": 443,
         "Rules": [
           {
             "Category": "Design",
@@ -3161,7 +3161,7 @@
         "Name": "Icon7_2",
         "Parent": "HorizontalMenuComponent",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 11,
+        "PublishOrderIndex": 444,
         "Rules": [
           {
             "Category": "Design",
@@ -3354,7 +3354,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638163405550581858",
+    "LastModifiedTimestamp": "638163392028542280",
     "Name": "HorizontalMenuComponent",
     "Rules": [
       {
@@ -3413,7 +3413,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638163405550581858",
+  "LastModifiedTimestamp": "638163392028542280",
   "Name": "edba5150e0cb4e3bb0532a7de693516b",
   "OverridableProperties": {},
   "Version": "638162698784582006"
