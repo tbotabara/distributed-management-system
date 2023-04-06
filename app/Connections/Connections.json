@@ -1,8 +1,5 @@
 {
   "1390746f-2c3e-4bd4-b54c-35d18b14ab9e": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
@@ -26,9 +23,6 @@
     "id": "1390746f-2c3e-4bd4-b54c-35d18b14ab9e"
   },
   "2279b649-02fe-4a89-b294-78385dbd9d71": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
@@ -51,9 +45,6 @@
     "id": "2279b649-02fe-4a89-b294-78385dbd9d71"
   },
   "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "apiTier": "Standard",
       "displayName": "SharePoint",
@@ -79,13 +70,6 @@
     "id": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
   },
   "6d39c6b4-bf08-4f97-98e6-7bd1a95ca5a3": {
-    "connectionParameters": {
-      "logicAppHostType": "ARM",
-      "workFlowCallbackUri": "https://prod-197.westeurope.logic.azure.com:443/workflows/491a789f975e4810967ee0c728136544/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=khMAhLxzyVUzat0PtQCP6mNBYFGmsHlk-2QFmOKRUA4",
-      "workflowEndpoint": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-c60753f4a9204c19afa2163fe6e8d066/providers/Microsoft.Logic/workflows/84a64f64-46d7-437b-9a32-24addb90bc39",
-      "workflowName": "84a64f64-46d7-437b-9a32-24addb90bc39",
-      "workflowPath": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-c60753f4a9204c19afa2163fe6e8d066/providers/Microsoft.Logic/workflows/84a64f64-46d7-437b-9a32-24addb90bc39"
-    },
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -127,9 +111,6 @@
     "id": "6d39c6b4-bf08-4f97-98e6-7bd1a95ca5a3"
   },
   "7515b6ee-efc6-4098-8f1c-6c832a908684": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
@@ -156,13 +137,6 @@
     "id": "7515b6ee-efc6-4098-8f1c-6c832a908684"
   },
   "8011ed01-664b-4730-9cc8-cc23dafdd925": {
-    "connectionParameters": {
-      "logicAppHostType": "ARM",
-      "workFlowCallbackUri": "https://prod-214.westeurope.logic.azure.com:443/workflows/25d475ebd9c2465cb524699cf7992e9d/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=50Q9lCOAtCtfhrHXMBqC9q-xa-8AML6nPN4mLzFB-3A",
-      "workflowEndpoint": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-ed51ad9b73f6424280a08d39b0813c7a/providers/Microsoft.Logic/workflows/b03abacb-76b4-4c6f-81dd-5ab5ba816c81",
-      "workflowName": "b03abacb-76b4-4c6f-81dd-5ab5ba816c81",
-      "workflowPath": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-ed51ad9b73f6424280a08d39b0813c7a/providers/Microsoft.Logic/workflows/b03abacb-76b4-4c6f-81dd-5ab5ba816c81"
-    },
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -197,9 +171,6 @@
     "id": "8011ed01-664b-4730-9cc8-cc23dafdd925"
   },
   "8b52b43c-d21e-4f2a-8535-a5fa79b5befe": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
@@ -222,9 +193,6 @@
     "id": "8b52b43c-d21e-4f2a-8535-a5fa79b5befe"
   },
   "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "SharePoint",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
@@ -247,13 +215,6 @@
     "id": "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d"
   },
   "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": {
-    "connectionParameters": {
-      "logicAppHostType": "ARM",
-      "workFlowCallbackUri": "https://prod-196.westeurope.logic.azure.com:443/workflows/4d78660af8ff425bb6ce665bc112c705/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=TBEmBJ5DsGypYKGwfrMfyLZHsvso8rlYnmJzanQloHs",
-      "workflowEndpoint": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-ed51ad9b73f6424280a08d39b0813c7a/providers/Microsoft.Logic/workflows/7f405389-46b4-4332-b6eb-3ac29210c9aa",
-      "workflowName": "7f405389-46b4-4332-b6eb-3ac29210c9aa",
-      "workflowPath": "/subscriptions/427976e2-4271-4308-afb8-d28d53a6ad06/resourceGroups/36da45f1dd2c4d1faf135abe46b99921-ed51ad9b73f6424280a08d39b0813c7a/providers/Microsoft.Logic/workflows/7f405389-46b4-4332-b6eb-3ac29210c9aa"
-    },
     "connectionRef": {
       "displayName": "Logic flows",
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
@@ -288,9 +249,6 @@
     "id": "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d"
   },
   "fa0d3e20-32f2-4ca2-acd2-3675963a0f06": {
-    "connectionParameters": {
-      "sku": "Enterprise"
-    },
     "connectionRef": {
       "displayName": "Excel Online (Business)",
       "iconUri": "https://connectoricons-prod.azureedge.net/u/laborbol/releases/ase-v3/1.0.1622.3202/excelonlinebusiness/icon.png",

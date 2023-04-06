@@ -3287,36 +3287,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "claimdraft_screen_backup",
-                "type": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2.FocusedBorderThickness"
                 }
               ],
@@ -3341,6 +3311,36 @@
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
           "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claimdraft_screen_backup",
+                "type": "claimdraft_screen_backup.ScreenContainer1_5.MainSectionContainer1_5.Container1_4.TableClaimDraft_2.TableDataClaimDraft_2.CIN_TD_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 5
         },
         {
           "locations": [
