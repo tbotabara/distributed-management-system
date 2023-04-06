@@ -136,17 +136,6 @@ HorizontalMenuComponent As CanvasComponent:
         X: =20
         ZIndex: =9
 
-    Icon7 As icon.Database:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =ColorFade(varMenuSecondaryColor, 50%)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =70
-        Icon: =Icon.Database
-        Width: =20
-        X: =605
-        ZIndex: =10
-
     Icon10 As icon.Home:
         BorderColor: =RGBA(89, 0, 0, 1)
         Color: =ColorFade(varMenuSecondaryColor, 50%)
