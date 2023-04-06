@@ -7,8 +7,6 @@ App As appinfo:
         
         {Title:"Draft",Screen:claim_draft_screen, Id:2, ParentTab: ""},
         
-        {Title:"KPI",Screen:menu_screen, Id:3, ParentTab: ""}
-        
         );
         
         Set(varMenuPrimaryColor, RGBA(255, 255, 255, 1));
