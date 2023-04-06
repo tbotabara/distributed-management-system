@@ -450,21 +450,6 @@
                         Y: =331
                         ZIndex: =2
 
-                        CIN_TD_2 As label:
-                            BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(164, 38, 44, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =Font.'Segoe UI'
-                            Height: =58
-                            OnSelect: |-
-                                =Navigate(draftclaimdetail_screen,ScreenTransition.None,{selectedClaimRecord:ThisItem});
-                            Size: =10
-                            Text: =ThisItem.'CIN (Title)'
-                            Underline: =true
-                            Width: =98
-                            X: =27
-                            ZIndex: =2
-
                         ClaimType_TD_2 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
@@ -739,6 +724,29 @@
                             X: =11
                             Y: =19
                             ZIndex: =23
+
+                        Button_CIN_TD As button:
+                            Align: =Align.Left
+                            Color: =RGBA(0, 134, 208, 1)
+                            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(0, 0, 0, 0)
+                            Fill: =RGBA(0, 0, 0, 0)
+                            Font: =Font.'Segoe UI'
+                            Height: =58
+                            HoverBorderColor: =RGBA(0,0,0,0)
+                            HoverColor: =RGBA(102, 182, 227, 1)
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            OnSelect: |-
+                                =Navigate(draftclaimdetail_screen, ScreenTransition.None, {selectedClaimRecord: ThisItem})
+                            PressedColor: =RGBA(0, 134, 208, 1)
+                            PressedFill: =RGBA(0,0,0,0)
+                            Size: =10
+                            Text: =ThisItem.'CIN (Title)'
+                            Underline: =true
+                            Width: =98
+                            X: =27
+                            ZIndex: =24
 
                 Label9_2 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
