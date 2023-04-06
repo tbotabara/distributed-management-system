@@ -5,7 +5,7 @@ App As appinfo:
         
         {Title:"Dashboard",Screen:landing_screen, Id:1, ParentTab: ""},
         
-        {Title:"Draft",Screen:claimdraft_screen_backup, Id:2, ParentTab: ""},
+        {Title:"Draft",Screen:claim_draft_screen, Id:2, ParentTab: ""},
         
         {Title:"KPI",Screen:menu_screen, Id:3, ParentTab: ""}
         
