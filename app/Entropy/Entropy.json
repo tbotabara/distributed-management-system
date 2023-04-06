@@ -183,6 +183,7 @@
     "galleryTemplate4_3": 439,
     "galleryTemplate4_5": 381,
     "galleryTemplate4_6": 218,
+    "Group1": 458,
     "Group3": 329,
     "Group3_1": 451,
     "HeaderClaimDraft_2": 359,
@@ -464,19 +465,19 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/06/2023 00:53:42",
+  "HeaderLastSavedDateTimeUTC": "04/06/2023 01:15:46",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
-    "1390746f-2c3e-4bd4-b54c-35d18b14ab9e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
-    "2279b649-02fe-4a89-b294-78385dbd9d71": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
-    "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
-    "6d39c6b4-bf08-4f97-98e6-7bd1a95ca5a3": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/57a32ae02d414b09942f62fff24cec0b\"",
-    "7515b6ee-efc6-4098-8f1c-6c832a908684": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
-    "8011ed01-664b-4730-9cc8-cc23dafdd925": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/f5a4357f30e849058bf99b465f1be8aa\"",
-    "8b52b43c-d21e-4f2a-8535-a5fa79b5befe": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
-    "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
-    "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/0193ea3c1a2f4cd78cc132e007d9e438\"",
-    "fa0d3e20-32f2-4ca2-acd2-3675963a0f06": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/6086e88153854842af2bf33a8545bfd7\""
+    "1390746f-2c3e-4bd4-b54c-35d18b14ab9e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "2279b649-02fe-4a89-b294-78385dbd9d71": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "6d39c6b4-bf08-4f97-98e6-7bd1a95ca5a3": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/84a64f6446d7437b9a3224addb90bc39-ed7df927e0d9ef7d\"",
+    "7515b6ee-efc6-4098-8f1c-6c832a908684": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "8011ed01-664b-4730-9cc8-cc23dafdd925": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/41e29534a0d24eec8d08d5c6362798a5\"",
+    "8b52b43c-d21e-4f2a-8535-a5fa79b5befe": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/d1412dd66e0e44e98fef9b181e22e883\"",
+    "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": "\"/providers/microsoft.powerapps/apis/shared_logicflows/connections/52e1ef847f454509a33f44d7b77d36a5\"",
+    "fa0d3e20-32f2-4ca2-acd2-3675963a0f06": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-0e70618d-3b39-4d42-bfac-70e13eb0b7db\""
   },
   "LocalDatabaseReferencesAsEmpty": false,
   "LocalResourceFileNames": {
@@ -484,8 +485,8 @@
     "Kellogs.KelloggLogo650x366": "0002.png"
   },
   "LocalResourceRootPaths": {
-    "Kelloggs_login": "https://docserverpwaprodweu.blob.core.windows.net/10ea2df9-8190-4e99-92e1-9996ce178d2b-1/resource/Assets0Images00001.JPG?sv=2018-03-28&sr=b&sig=EocFWsN6pVnHr7DM7UfOXzpSZY0HFQml69KWcwWl9Z4%3D&spr=https&se=2023-04-07T01%3A06%3A36Z&sp=r",
-    "Kellogs.KelloggLogo650x366": "https://docserverpwaprodweu.blob.core.windows.net/10ea2df9-8190-4e99-92e1-9996ce178d2b-1/resource/Assets0Images00002.png?sv=2018-03-28&sr=b&sig=JjGZ86u1DmtwZoDXxJmJtCcpvEkjpeLznfuToVjqJbE%3D&spr=https&se=2023-04-07T01%3A06%3A36Z&sp=r"
+    "Kelloggs_login": "https://docserverpwaprodweu.blob.core.windows.net/99e88ecd-8bb5-430c-8803-17a4bc645f0c-1/resource/Assets0Images00001.JPG?sv=2018-03-28&sr=b&sig=plsorrQ12YBtumSYfRnkbz%2Fbrk55c%2FI6RaK%2FXHRE71Q%3D&spr=https&se=2023-04-07T01%3A18%3A51Z&sp=r",
+    "Kellogs.KelloggLogo650x366": "https://docserverpwaprodweu.blob.core.windows.net/99e88ecd-8bb5-430c-8803-17a4bc645f0c-1/resource/Assets0Images00002.png?sv=2018-03-28&sr=b&sig=305hehSvBp5LdgR3SRGVrSHjgMF10jqr7QWhIukGvuY%3D&spr=https&se=2023-04-07T01%3A18%3A51Z&sp=r"
   },
   "OrderComponentMetadata": {
     "edba5150e0cb4e3bb0532a7de693516b": 0
@@ -511,6 +512,12 @@
     "users": 11
   },
   "OrderGroupControls": {
+    "Group1": {
+      "AttachmentControl": 0,
+      "Button2": 3,
+      "dd_": 2,
+      "lbl_ClaimType2": 1
+    },
     "Group3": {},
     "Group3_1": {}
   },
@@ -711,6 +718,7 @@
     "galleryTemplate4_3": {},
     "galleryTemplate4_5": {},
     "galleryTemplate4_6": {},
+    "Group1": {},
     "Group3": {},
     "Group3_1": {},
     "HeaderClaimDraft_2": {},
@@ -1171,6 +1179,7 @@
     "galleryTemplate4_3": 404,
     "galleryTemplate4_5": 33,
     "galleryTemplate4_6": 92,
+    "Group1": 0,
     "Group3": 330,
     "Group3_1": 382,
     "HeaderClaimDraft_2": 11,
@@ -1458,7 +1467,7 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 2.2878698,
+    "AnalysisLoadTime": 2.2874491,
     "ControlCount": {
       "attachments": 4,
       "button": 24,
@@ -1480,7 +1489,7 @@
       "text": 22,
       "typedDataCard": 22
     },
-    "DeserializationLoadTime": 3.2380476,
+    "DeserializationLoadTime": 3.6392721,
     "ErrorCount": 12
   },
   "WasLocalDatabaseReferencesEmpty": true
