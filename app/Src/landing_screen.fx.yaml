@@ -731,6 +731,7 @@
                         ItemHoverColor: =RGBA(0, 0, 0, 1)
                         ItemHoverFill: =RGBA(222, 179, 184, 1)
                         Items: =
+                        MaxAttachments: =1
                         OnAddFile: =
                         PaddingBottom: =5
                         PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)

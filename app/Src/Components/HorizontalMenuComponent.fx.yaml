@@ -43,11 +43,11 @@ HorizontalMenuComponent As CanvasComponent:
 
             Button5 As button:
                 BorderThickness: =0
-                Color: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuPrimaryColor,varMenuSecondaryColor)
+                Color: =varMenuSecondaryColor
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
+                Fill: =varMenuPrimaryColor
                 FocusedBorderThickness: =0
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
@@ -63,6 +63,16 @@ HorizontalMenuComponent As CanvasComponent:
                 Text: =ThisItem.Title
                 Width: =200
                 ZIndex: =1
+
+            Rectangle5 As rectangle:
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
+                Height: =5
+                HoverFill: =ColorFade(varMenuSecondaryColor, 0.9)
+                OnSelect: =Select(Parent)
+                Width: =200
+                Y: =65
+                ZIndex: =2
 
     HeightSubmenu As label:
         BorderColor: =RGBA(89, 0, 0, 1)
