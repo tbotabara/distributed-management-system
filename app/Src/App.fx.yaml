@@ -1,17 +1,5 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |-
-        =ClearCollect(colHorizontalMenu,
-        
-        {Title:"Dashboard",Screen:landing_screen, Id:1, ParentTab: ""},
-        
-        {Title:"Draft",Screen:claim_draft_screen, Id:2, ParentTab: ""},
-        
-        );
-        
-        Set(varMenuPrimaryColor, RGBA(255, 255, 255, 1));
-        Set(varMenuSecondaryColor, RGBA(164, 38, 44, 100));
-        
-        Set(varTabSelected, 0);
+    OnStart: =
     StartScreen: =login_screen
 

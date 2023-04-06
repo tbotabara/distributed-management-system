@@ -2249,7 +2249,7 @@
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisplayMode: =If(IsBlank(Gallery_WHReceipt) || IsBlank(Gallery_DamageImage), DisplayMode.Disabled, DisplayMode.Edit)
+                    DisplayMode: =If(CountRows(Gallery_WHReceipt.AllItems) > 0 And CountRows(Gallery_DamageImage.AllItems) > 0, DisplayMode.Edit, DisplayMode.Disabled)
                     Fill: =RGBA(54, 176, 75, 1)
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -2348,7 +2348,7 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: =IsBlank(Gallery_WHReceipt)
+                    Visible: =CountRows(Gallery_WHReceipt.AllItems) < 1
                     Width: =32
                     X: =155
                     Y: =63
@@ -2368,7 +2368,7 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: =IsBlank(Gallery_DamageImage)
+                    Visible: =CountRows(Gallery_DamageImage.AllItems) < 1
                     Width: =32
                     X: =155
                     Y: =153
@@ -2388,7 +2388,7 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: =IsBlank('Gallery_Supporting Documents')
+                    Visible: =CountRows('Gallery_Supporting Documents'.AllItems) < 1
                     Width: =32
                     X: =175
                     Y: =239
