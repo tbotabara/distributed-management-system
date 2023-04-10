@@ -35,8 +35,8 @@ menu_screen As screen:
             ItemsGap: =50
             NumberOfSeries: =5
             Width: =472
-            X: =22
-            Y: =120
+            X: =60
+            Y: =116
             ZIndex: =4
 
     CompositeLineChart1 As group:
@@ -82,6 +82,7 @@ menu_screen As screen:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
             Height: =30
             Text: ="Distributor Claim Submission Status (P1)"
@@ -92,7 +93,9 @@ menu_screen As screen:
 
         PieChart1 As pieChart:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =277
+            ItemBorderThickness: =0
             ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =PieChartSample
             Width: =360
@@ -102,6 +105,7 @@ menu_screen As screen:
 
         Legend3 As legend:
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             Height: =301
             ItemColorSet: =PieChart1.ItemColorSet
             Items: =PieChart1.SeriesLabels
@@ -110,4 +114,13 @@ menu_screen As screen:
             X: =420
             Y: =465
             ZIndex: =12
+
+    PowerBI1 As powerbi:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Height: =318
+        Width: =542
+        WorkspaceId: =""
+        X: =575
+        Y: =450
+        ZIndex: =13
 

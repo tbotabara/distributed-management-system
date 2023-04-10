@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-04-04T16:26:33.9110000Z",
+      "LastChangedTimeString": "2023-03-23T16:41:13.7120000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -25,7 +25,6 @@
       "{VersionNumber}": "Version number",
       "Author": "Created By",
       "Author#Claims": "Created By Claims",
-      "BUComment": "BU Comment",
       "CIN": "CIN2",
       "ComplianceAssetId": "Compliance Asset Id",
       "Created": "Created",
@@ -57,9 +56,6 @@
       "field_9": "Customer Requested ETA",
       "ID": "ID",
       "Modified": "Modified",
-      "RejectedComment": "Rejected Comment",
-      "RejectedComment#Id": "Rejected Comment Id",
-      "SubmissionDate": "Submission Date",
       "Title": "CIN (Title)"
     },
     "DatasetName": "https://apcdeloitte.sharepoint.com/sites/Kellogg36",
