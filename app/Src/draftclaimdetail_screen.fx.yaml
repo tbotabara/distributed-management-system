@@ -75,6 +75,7 @@
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Draft"
+                Visible: =var_current_user="Distributor"
                 Width: =115
                 ZIndex: =3
 

@@ -70,6 +70,7 @@
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Draft"
+                Visible: =var_current_user="Distributor"
                 Width: =115
                 ZIndex: =3
 
@@ -821,6 +822,8 @@
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =20
         Icon: =Icon.HorizontalLine
+        OnSelect: =var_current_user="Distributor"
+        Visible: =var_current_user="Distributor"
         Width: =43
         X: =238
         Y: =62
