@@ -14,46 +14,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Rectangle4.DisabledFill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Rectangle4.DisabledFill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "varMenuPrimaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "DisabledFill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.Rectangle4"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuPrimaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Items"
                 }
               ],
@@ -490,166 +450,6 @@
           },
           "ruleId": "app-ErrInvalidName",
           "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "varMenuPrimaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuPrimaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.HoverFill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.HoverFill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 10,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HoverFill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.HoverFill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.HoverFill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 37,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ColorFade(varMenuSecondaryColor, 0.9)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HoverFill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ColorFade"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
         },
         {
           "locations": [
@@ -1210,366 +1010,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 105,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 19,
-                  "charOffset": 128,
-                  "snippet": {
-                    "text": "varMenuPrimaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuPrimaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.Fill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.Fill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 148,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Fill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.HoverFill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.HoverFill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 10,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HoverFill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.HoverFill"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5.HoverFill",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 37,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ColorFade(varMenuSecondaryColor, 0.9)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "HoverFill",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Rectangle5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ColorFade"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon10.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon10.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 10,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.Icon10"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon10.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon10.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 37,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ColorFade(varMenuSecondaryColor, 50%)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.Icon10"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ColorFade"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon11.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon11.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 10,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.Icon11"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon11.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.Icon11.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 37,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ColorFade(varMenuSecondaryColor, 50%)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.Icon11"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ColorFade"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "HorizontalMenuComponent.HeightSubmenu.Text"
                 }
               ],
@@ -1611,369 +1051,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 73,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorSSCC.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorSSCC.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 68,
-                  "charOffset": 88,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorSSCC"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 73,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Number",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 73,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.DataCardKey17.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.DataCardKey17.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 68,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.DataCardKey17"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.Icon4_2.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.Icon4_2.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 68,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.Icon4_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Items"
                 }
               ],
@@ -2007,7 +1084,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2047,7 +1124,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2087,7 +1164,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2127,7 +1204,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2167,7 +1244,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 6
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -2207,7 +1284,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 7
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -2247,7 +1324,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 8
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -2287,6 +1364,732 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 7
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 73,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorKelloggPO"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorSSCC.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorSSCC.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 68,
+                  "charOffset": 88,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ContainerErrorSSCC"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 73,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.DataCardKey6"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 73,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Kellogg PO#_DataCard1'.Icon4_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.DataCardKey17.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.DataCardKey17.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 68,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.DataCardKey17"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.Icon4_2.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.Icon4_2.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 68,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'SSCC#_DataCard1'.Icon4_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorSSCC_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorSSCC_1.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 70,
+                  "charOffset": 88,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17_1.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorSSCC_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.Icon4_5.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.Icon4_5.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 70,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17_1.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.Icon4_5"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.DataCardKey17_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.DataCardKey17_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 70,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17_1.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.DataCardKey17_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.Icon4_3.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.Icon4_3.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.Icon4_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.Icon4_3.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.Icon4_3.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 75,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6_1.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.Icon4_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardKey6_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardKey6_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardKey6_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardKey6_1.Color"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardKey6_1.Color",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 75,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6_1.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Color",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardKey6_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorKelloggPO_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorKelloggPO_1.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 53,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorKelloggPO_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Number",
+              "Text"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorKelloggPO_1.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorKelloggPO_1.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 75,
+                  "charOffset": 3,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = DataCardValue6_1.Text))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ContainerErrorKelloggPO_1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
           "ruleIndex": 8
         },
         {
@@ -2547,6 +2350,306 @@
                 "member": "TabIndex",
                 "module": "HorizontalMenuComponent",
                 "type": "HorizontalMenuComponent.Icon7_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "login_screen.username_txt.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "login_screen.username_txt.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "login_screen",
+                "type": "login_screen.username_txt"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "login_screen.password_txt.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "login_screen.password_txt.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "login_screen",
+                "type": "login_screen.password_txt"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.SearchInput_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.SearchInput_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen",
+                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.SearchInput_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen",
+                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claim_draft_screen",
+                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen",
+                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claim_draft_screen",
+                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.SearchInput_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.SearchInput_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.SearchInput_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5"
               }
             }
           ],
@@ -3464,19 +3567,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Customer Comment_DataCard1'.DataCardValue22.AccessibleLabel"
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'BU Comment_DataCard1'.DataCardValue23.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Customer Comment_DataCard1'.DataCardValue22.AccessibleLabel",
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'BU Comment_DataCard1'.DataCardValue23.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Customer Comment_DataCard1'.DataCardValue22"
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'BU Comment_DataCard1'.DataCardValue23"
               }
             }
           ],
@@ -4004,79 +4107,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.SearchInput_6.AccessibleLabel"
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon9_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.SearchInput_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen",
-                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.SearchInput_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen",
-                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.TabIndex",
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon9_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "claim_draft_screen",
-                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6"
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon9_5"
               }
             }
           ],
@@ -4094,19 +4137,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.AccessibleLabel"
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon9_5.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.AccessibleLabel",
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon9_5.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "claim_draft_screen",
-                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6"
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon9_5"
               }
             }
           ],
@@ -4124,19 +4167,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.TabIndex"
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon8_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6.TabIndex",
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon8_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
-                "module": "claim_draft_screen",
-                "type": "claim_draft_screen.ScreenContainer1_10.MainSectionContainer1_9.Container1_8.TableClaimDraft_6.TableDataClaimDraft_6.Icon1_6"
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon8_5"
               }
             }
           ],
@@ -4148,6 +4191,1386 @@
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
           "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon8_5.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon8_5.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.Icon8_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon9_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon9_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon9_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon9_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon9_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon9_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.'Gallery_Supporting Documents_1'"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_SupportingDocs_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_SupportingDocs_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_SupportingDocs_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_SupportingDocs_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_SupportingDocs_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_SupportingDocs_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon8_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon8_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon8_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon8_4.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon8_4.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.Icon8_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_DamageImage_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.FileAttachment_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.FileAttachment_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.FileAttachment_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_ImageDamage_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_ImageDamage_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_ImageDamage_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_ImageDamage_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_ImageDamage_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_Add_ImageDamage_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon9_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon9_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon9_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon9_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon9_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon9_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon8_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon8_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon8_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon8_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon8_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.Icon8_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Gallery_WHReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'BU Comment_DataCard1_1'.DataCardValue23_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'BU Comment_DataCard1_1'.DataCardValue23_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'BU Comment_DataCard1_1'.DataCardValue23_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Approved Cases_DataCard1_1'.DataCardValue21_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Approved Cases_DataCard1_1'.DataCardValue21_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Approved Cases_DataCard1_1'.DataCardValue21_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Total cases for Claim_DataCard1_1'.DataCardValue18_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Total cases for Claim_DataCard1_1'.DataCardValue18_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Total cases for Claim_DataCard1_1'.DataCardValue18_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'DDRF#_DataCard1_1'.DataCardValue19_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'DDRF#_DataCard1_1'.DataCardValue19_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'DDRF#_DataCard1_1'.DataCardValue19_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.DataCardValue17_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.DataCardValue17_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'SSCC#_DataCard1_1'.DataCardValue17_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'BL#_DataCard1_1'.DataCardValue16_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'BL#_DataCard1_1'.DataCardValue16_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'BL#_DataCard1_1'.DataCardValue16_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Container #_DataCard1_1'.DataCardValue15_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Container #_DataCard1_1'.DataCardValue15_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Container #_DataCard1_1'.DataCardValue15_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Invoice Date_DataCard1_1'.DataCardValue14_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Invoice Date_DataCard1_1'.DataCardValue14_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Invoice Date_DataCard1_1'.DataCardValue14_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg Inv #_DataCard1_1'.DataCardValue13_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg Inv #_DataCard1_1'.DataCardValue13_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg Inv #_DataCard1_1'.DataCardValue13_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Actual ETA_DataCard1_1'.DataCardValue12_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Actual ETA_DataCard1_1'.DataCardValue12_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Actual ETA_DataCard1_1'.DataCardValue12_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Claim Type_DataCard1_1'.DataCardValue3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Claim Type_DataCard1_1'.DataCardValue3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Claim Type_DataCard1_1'.DataCardValue3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Actual ETD_DataCard1_1'.DataCardValue11_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Actual ETD_DataCard1_1'.DataCardValue11_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Actual ETD_DataCard1_1'.DataCardValue11_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg Code_DataCard1_1'.DataCardValue7_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg Code_DataCard1_1'.DataCardValue7_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg Code_DataCard1_1'.DataCardValue7_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer Comment_DataCard1_1'.DataCardValue22_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer Comment_DataCard1_1'.DataCardValue22_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer Comment_DataCard1_1'.DataCardValue22_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer Requested ETA_DataCard1_1'.DataCardValue10_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer Requested ETA_DataCard1_1'.DataCardValue10_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer Requested ETA_DataCard1_1'.DataCardValue10_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Quantity (cs)_DataCard1_1'.DataCardValue9_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Quantity (cs)_DataCard1_1'.DataCardValue9_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Quantity (cs)_DataCard1_1'.DataCardValue9_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Claim Status_DataCard1_1'.DataCardValue20_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Claim Status_DataCard1_1'.DataCardValue20_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Claim Status_DataCard1_1'.DataCardValue20_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Product Description _DataCard1_1'.DataCardValue8_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Product Description _DataCard1_1'.DataCardValue8_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Product Description _DataCard1_1'.DataCardValue8_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardValue6_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardValue6_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg PO#_DataCard1_1'.DataCardValue6_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg SO#_DataCard1_1'.DataCardValue5_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg SO#_DataCard1_1'.DataCardValue5_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Kellogg SO#_DataCard1_1'.DataCardValue5_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon3_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon3_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon3_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon3_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon3_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer PO_DataCard1_1'.DataCardValue4_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer PO_DataCard1_1'.DataCardValue4_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'Customer PO_DataCard1_1'.DataCardValue4_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'CIN (Title)_DataCard1_1'.DataCardValue1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'CIN (Title)_DataCard1_1'.DataCardValue1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.ClaimForm_1.'CIN (Title)_DataCard1_1'.DataCardValue1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_AddWHReceipt_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_AddWHReceipt_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_AddWHReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_AddWHReceipt_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_AddWHReceipt_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1.ScreenContainer1_3.MainSectionContainer1_4.cont_ClaimDetail_1.Icon_AddWHReceipt_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -4527,6 +5950,336 @@
                 "member": "TabIndex",
                 "module": "landing_screen",
                 "type": "landing_screen.CancelIcon_X"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.HeaderContainer1_1.Icon5_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.HeaderContainer1_1.Icon5_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.HeaderContainer1_1.Icon5_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.HeaderContainer1_1.Icon5_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.HeaderContainer1_1.Icon5_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.HeaderContainer1_1.Icon5_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.input_search_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.input_search_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.input_search_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.combo_ct_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.combo_ct_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.combo_ct_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.combo_status_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.combo_status_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.combo_status_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.Icon1_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.Icon1_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.Icon1_1.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.Icon1_1.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.ScreenContainer1_1.MainSectionContainer1_1.Container1_1.Gallery4_3.Icon1_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 10
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.CancelIcon_X_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.CancelIcon_X_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.CancelIcon_X_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen_bu.CancelIcon_X_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen_bu.CancelIcon_X_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "landing_screen_bu",
+                "type": "landing_screen_bu.CancelIcon_X_2"
               }
             }
           ],
@@ -4934,169 +6687,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "login_screen.username_txt.AccessibleLabel"
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Customer Comment_DataCard1'.DataCardValue22.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "login_screen.username_txt.AccessibleLabel",
+                  "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Customer Comment_DataCard1'.DataCardValue22.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
-                "module": "login_screen",
-                "type": "login_screen.username_txt"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "login_screen.password_txt.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "login_screen.password_txt.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "login_screen",
-                "type": "login_screen.password_txt"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.SearchInput_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.SearchInput_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.SearchInput_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 9
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_9.MainSectionContainer1_8.Container1_7.TableClaimDraft_5.TableDataClaimDraft_5"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 10
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ClaimETAError"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.ClaimETAError",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "ClaimETAError",
                 "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen"
+                "type": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.ClaimForm.'Customer Comment_DataCard1'.DataCardValue22"
               }
             }
           ],
@@ -5106,68 +6709,8 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.KelloggPOError"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.KelloggPOError",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "KelloggPOError",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 12
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "draftclaimdetail_screen.SSCCError"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "draftclaimdetail_screen.SSCCError",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "SSCCError",
-                "module": "draftclaimdetail_screen",
-                "type": "draftclaimdetail_screen"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 12
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -5197,6 +6740,186 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ClaimETAError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.ClaimETAError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClaimETAError",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.KelloggPOError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.KelloggPOError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "KelloggPOError",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen.SSCCError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen.SSCCError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SSCCError",
+                "module": "draftclaimdetail_screen",
+                "type": "draftclaimdetail_screen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ClaimETAError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.ClaimETAError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "ClaimETAError",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.KelloggPOError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.KelloggPOError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "KelloggPOError",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.SSCCError"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "draftclaimdetail_screen_1.SSCCError",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "SSCCError",
+                "module": "draftclaimdetail_screen_1",
+                "type": "draftclaimdetail_screen_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
           "ruleIndex": 13
         }
       ],
@@ -5300,25 +7023,6 @@
               }
             },
             {
-              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-              "messageStrings": {
-                "issue": {
-                  "text": "Delegation warning. The highlighted part of this formula might not work correctly on large data sets. The \"{0}\" operation is not supported by this connector."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
-                  "Try simplifying the formula.",
-                  "Try moving your data to a different data source."
-                ],
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
               "messageStrings": {
                 "issue": {
@@ -5342,6 +7046,25 @@
               "messageStrings": {
                 "issue": {
                   "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly on large data sets. The \"{0}\" operation is not supported by this connector."
                 }
               },
               "properties": {
@@ -5408,23 +7131,6 @@
               }
             },
             {
-              "id": "app-UnusedVariables",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unused variable"
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove the unused variable."
-                ],
-                "level": "Medium",
-                "primaryCategory": "performance",
-                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
-              }
-            },
-            {
               "id": "app-InefficientDelayLoading",
               "messageStrings": {
                 "issue": {
@@ -5439,6 +7145,23 @@
                 "level": "Medium",
                 "primaryCategory": "performance",
                 "whyFix": "Controls that reference controls on other screens can slow down app loading and navigation. Doing this may force the app to load the other screens immediately, rather than waiting until the user navigates to that screen."
+              }
+            },
+            {
+              "id": "app-UnusedVariables",
+              "messageStrings": {
+                "issue": {
+                  "text": "Unused variable"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Remove the unused variable."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "This variable is declared but is not referenced by any control, so it is not needed."
               }
             }
           ],
