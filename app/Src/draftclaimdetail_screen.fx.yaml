@@ -195,6 +195,23 @@
                             Y: =14.5
                             ZIndex: =3
 
+                    "'Customer Comment_DataCard1' As typedDataCard.textualEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="field_21"
+                        Default: =ThisItem.'Customer Comment'
+                        DisplayMode: =If(var_current_user="Distributor", DisplayMode.Edit, DisplayMode.Disabled)
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"field_21")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_21")
+                        Required: =false
+                        Update: =DataCardValue22.Text
+                        Width: =486
+                        X: =0
+                        Y: =22
+                        ZIndex: =1
+
                     "'BU Comment_DataCard1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -287,23 +304,6 @@
                             Wrap: =false
                             Y: =DataCardKey23.Y
                             ZIndex: =4
-
-                    "'Customer Comment_DataCard1' As typedDataCard.textualEditCard":
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="field_21"
-                        Default: =ThisItem.'Customer Comment'
-                        DisplayMode: =If(var_current_user="Distributor", DisplayMode.Edit, DisplayMode.Disabled)
-                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"field_21")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =50
-                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_21")
-                        Required: =false
-                        Update: =DataCardValue22.Text
-                        Width: =486
-                        X: =0
-                        Y: =22
-                        ZIndex: =1
 
                     "'CIN (Title)_DataCard1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)

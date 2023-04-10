@@ -4,3 +4,83 @@ menu_screen As screen:
 
     HorizontalMenuComponent_1 As HorizontalMenuComponent:
 
+    CompositeColumnChart1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =2
+
+        Title1 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =25
+            Text: ="Total of Claims by Period"
+            Width: =400
+            X: =22
+            Y: =98
+            ZIndex: =3
+
+        ColumnChart1 As barChart:
+            BorderColor: =RGBA(56, 56, 56, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: =ColumnChartSample
+            X: =22
+            Y: =128
+            ZIndex: =4
+
+        Legend1 As legend:
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =80
+            ItemColorSet: =ColumnChart1.ItemColorSet
+            Items: =ColumnChart1.SeriesLabels
+            Width: =320
+            X: =62
+            Y: =538
+            ZIndex: =5
+
+    CompositeLineChart1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =6
+
+        Title2 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =25
+            Text: ="Total Amount of Claims by Period"
+            Width: =400
+            X: =555
+            Y: =98
+            ZIndex: =7
+
+        LineChart1 As lineChart:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: =LineChartSample
+            Size: =11
+            X: =555
+            Y: =128
+            ZIndex: =8
+
+        Legend2 As legend:
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =80
+            ItemColorSet: =LineChart1.ItemColorSet
+            Items: =LineChart1.SeriesLabels
+            Width: =320
+            X: =595
+            Y: =538
+            ZIndex: =9
+
