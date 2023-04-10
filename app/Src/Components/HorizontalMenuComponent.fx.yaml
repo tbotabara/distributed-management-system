@@ -8,7 +8,7 @@ HorizontalMenuComponent As CanvasComponent:
 
     Rectangle4 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        DisabledFill: =varMenuPrimaryColor
+        DisabledFill: =RGBA(255,255,255, 1)
         DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(255, 255, 255, 1)
         Height: =70
