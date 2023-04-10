@@ -95,6 +95,7 @@ menu_screen As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             Height: =277
+            ItemBorderThickness: =0
             ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =PieChartSample
             Width: =360
