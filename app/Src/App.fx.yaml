@@ -1,5 +1,14 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: =
+    OnStart: |-
+        =ClearCollect(colHorizontalMenu,
+        
+        {Title:"Dashboard",Screen:landing_screen, Id:1, ParentTab: ""},
+        
+        {Title:"Draft",Screen:claim_draft_screen, Id:2, ParentTab: ""}
+        
+        );
+        
+        Set(varTabSelected, 1);
     StartScreen: =login_screen
 
