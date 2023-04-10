@@ -47,7 +47,7 @@ HorizontalMenuComponent As CanvasComponent:
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =varMenuPrimaryColor
+                Fill: =RGBA(255,255,255, 1)
                 FocusedBorderThickness: =0
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
