@@ -69,6 +69,28 @@
     "dependents": [],
     "id": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
   },
+  "5cb34b41-1110-46e1-b6ff-b8ae909da929": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
+        "dataSources": {
+          "Market": {
+            "tableName": "0dcbf303-701e-4690-b440-d7a8bdde95d7"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Market"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5cb34b41-1110-46e1-b6ff-b8ae909da929"
+  },
   "6d39c6b4-bf08-4f97-98e6-7bd1a95ca5a3": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -213,6 +235,20 @@
     "dependencies": {},
     "dependents": [],
     "id": "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d"
+  },
+  "9b967192-ff3b-4384-9091-0bc437194f48": {
+    "connectionRef": {
+      "displayName": "Power BI",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1596/1.0.1596.2995/powerbi/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerbi"
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerBI"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9b967192-ff3b-4384-9091-0bc437194f48"
   },
   "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": {
     "connectionRef": {
