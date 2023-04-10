@@ -8,7 +8,7 @@ HorizontalMenuComponent As CanvasComponent:
 
     Rectangle4 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        DisabledFill: =varMenuPrimaryColor
+        DisabledFill: =RGBA(255,255,255, 1)
         DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(255, 255, 255, 1)
         Height: =70
@@ -43,17 +43,17 @@ HorizontalMenuComponent As CanvasComponent:
 
             Button5 As button:
                 BorderThickness: =0
-                Color: =varMenuSecondaryColor
+                Color: =RGBA(164,33,44, 100)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =varMenuPrimaryColor
+                Fill: =RGBA(255,255,255, 1)
                 FocusedBorderThickness: =0
                 Font: =Font.'Segoe UI'
                 FontWeight: =FontWeight.Semibold
                 Height: =If(IsBlank(ThisItem.ParentTab), 70, 40)
                 HoverColor: =RGBA(255, 255, 255, 1)
-                HoverFill: =ColorFade(varMenuSecondaryColor, 0.9)
+                HoverFill: =ColorFade(RGBA(164,33,44, 100), 0.9)
                 OnSelect: =If(varTabSelected=ThisItem.Id,Set(varTabSelected,0),Set(varTabSelected,ThisItem.Id));Navigate(ThisItem.Screen)
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -66,9 +66,9 @@ HorizontalMenuComponent As CanvasComponent:
 
             Rectangle5 As rectangle:
                 BorderColor: =RGBA(89, 0, 0, 1)
-                Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
+                Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), RGBA(164,33,44, 100), RGBA(255,255,255, 1))
                 Height: =5
-                HoverFill: =ColorFade(varMenuSecondaryColor, 0.9)
+                HoverFill: =ColorFade(RGBA(164,33,44, 100), 0.9)
                 OnSelect: =Select(Parent)
                 Width: =200
                 Y: =65
@@ -138,7 +138,7 @@ HorizontalMenuComponent As CanvasComponent:
 
     Icon10 As icon.Home:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =ColorFade(varMenuSecondaryColor, 50%)
+        Color: =ColorFade(RGBA(164,33,44, 100), 50%)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =70
@@ -149,7 +149,7 @@ HorizontalMenuComponent As CanvasComponent:
 
     Icon11 As icon.Edit:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =ColorFade(varMenuSecondaryColor, 50%)
+        Color: =ColorFade(RGBA(164,33,44, 100), 50%)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =70
