@@ -496,46 +496,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Color"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Color",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "varMenuSecondaryColor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Color",
-                "module": "HorizontalMenuComponent",
-                "type": "HorizontalMenuComponent.MainMenu.Submenu.Button5"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "varMenuSecondaryColor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.Submenu.Button5.Fill"
                 }
               ],
