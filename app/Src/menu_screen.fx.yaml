@@ -16,11 +16,12 @@ menu_screen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
-            Height: =25
+            FontWeight: =FontWeight.Bold
+            Height: =43
             Text: ="Total of Claims by Period"
-            Width: =400
+            Width: =436
             X: =22
-            Y: =98
+            Y: =77
             ZIndex: =3
 
         ColumnChart1 As barChart:
@@ -28,24 +29,15 @@ menu_screen As screen:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             GridStyle: =GridStyle.All
+            Height: =300
             ItemColorSet: =[RGBA(164,33,44, 100), RGBA(164,33,44, 100),RGBA(164,33,44, 100),RGBA(164,33,44, 100),RGBA(164,33,44, 100)]
             Items: =ColumnChartSample
             ItemsGap: =50
             NumberOfSeries: =5
-            X: =22
-            Y: =128
+            Width: =472
+            X: =60
+            Y: =116
             ZIndex: =4
-
-        Legend1 As legend:
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            Height: =80
-            ItemColorSet: =ColumnChart1.ItemColorSet
-            Items: =ColumnChart1.SeriesLabels
-            Width: =320
-            X: =62
-            Y: =538
-            ZIndex: =5
 
     CompositeLineChart1 As group:
         Height: =5
@@ -59,31 +51,76 @@ menu_screen As screen:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
-            Height: =25
+            FontWeight: =FontWeight.Bold
+            Height: =43
             Text: ="Total Amount of Claims by Period"
-            Width: =400
+            Width: =520
             X: =555
-            Y: =98
+            Y: =77
             ZIndex: =7
 
         LineChart1 As lineChart:
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
+            Height: =300
             ItemColorSet: =[RGBA(164,33,44, 100)]
             Items: =LineChartSample
             Size: =11
+            Width: =520
             X: =555
-            Y: =128
+            Y: =120
             ZIndex: =8
 
-        Legend2 As legend:
+    CompositePieChart1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        Title3 As label:
+            Align: =Align.Center
+            Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
-            Height: =80
-            ItemColorSet: =LineChart1.ItemColorSet
-            Items: =LineChart1.SeriesLabels
-            Width: =320
-            X: =595
-            Y: =538
-            ZIndex: =9
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            Text: ="Distributor Claim Submission Status (P1)"
+            Width: =449
+            X: =58
+            Y: =420
+            ZIndex: =10
+
+        PieChart1 As pieChart:
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =277
+            ItemBorderThickness: =0
+            ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+            Items: =PieChartSample
+            Width: =360
+            X: =60
+            Y: =465
+            ZIndex: =11
+
+        Legend3 As legend:
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            Height: =301
+            ItemColorSet: =PieChart1.ItemColorSet
+            Items: =PieChart1.SeriesLabels
+            Size: =12
+            Width: =155
+            X: =420
+            Y: =465
+            ZIndex: =12
+
+    PowerBI1 As powerbi:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Height: =318
+        Width: =542
+        WorkspaceId: =""
+        X: =575
+        Y: =450
+        ZIndex: =13
 

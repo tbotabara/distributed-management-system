@@ -1,9 +1,0 @@
-"draftclaimdetail_screen_1 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
-    Fill: =RGBA(234, 234, 234, 1)
-    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
-    OnVisible: |-
-        =UpdateContext({KelloggPOError: false});
-        UpdateContext({SSCCError: false});
-        UpdateContext({ClaimETAError: false});
-        UpdateContext({ShowPopup: false})
-
