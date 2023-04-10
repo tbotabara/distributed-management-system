@@ -437,7 +437,7 @@
                     HoverFill: =RGBA(222, 179, 184, 1)
                     InputTextPlaceholder: ="Select status"
                     IsSearchable: =false
-                    Items: =Market.'Name'
+                    Items: =Market.Name
                     NoSelectionText: ="All"
                     OnSelect: |-
                         =Set(

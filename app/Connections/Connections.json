@@ -5,14 +5,23 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1623/1.0.1623.3210/sharepointonline/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
     },
-    "datasets": {},
+    "datasets": {
+      "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
+        "dataSources": {
+          "RejectReason_1": {
+            "tableName": "d9085410-ae18-4ad6-a11b-6dcecb4309cd"
+          }
+        }
+      }
+    },
     "dataSources": [
       "customer_claims_1",
       "Claim Attachment",
       "Claim Document Type",
       "Claim Type",
       "Generic Status",
-      "users"
+      "users",
+      "RejectReason_1"
     ],
     "dependencies": {},
     "dependents": [
