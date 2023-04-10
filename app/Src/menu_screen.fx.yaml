@@ -34,7 +34,7 @@ menu_screen As screen:
             Items: =ColumnChartSample
             ItemsGap: =50
             NumberOfSeries: =5
-            Width: =436
+            Width: =472
             X: =22
             Y: =120
             ZIndex: =4
@@ -54,7 +54,7 @@ menu_screen As screen:
             FontWeight: =FontWeight.Bold
             Height: =43
             Text: ="Total Amount of Claims by Period"
-            Width: =416
+            Width: =520
             X: =555
             Y: =77
             ZIndex: =7
@@ -66,7 +66,7 @@ menu_screen As screen:
             ItemColorSet: =[RGBA(164,33,44, 100)]
             Items: =LineChartSample
             Size: =11
-            Width: =416
+            Width: =520
             X: =555
             Y: =120
             ZIndex: =8
@@ -96,7 +96,7 @@ menu_screen As screen:
             ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
             Items: =PieChartSample
             Width: =360
-            X: =15
+            X: =60
             Y: =465
             ZIndex: =11
 
@@ -107,7 +107,7 @@ menu_screen As screen:
             Items: =PieChart1.SeriesLabels
             Size: =12
             Width: =155
-            X: =375
+            X: =420
             Y: =465
             ZIndex: =12
 
