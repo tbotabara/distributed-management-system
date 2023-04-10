@@ -15,7 +15,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
+        HeaderContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
@@ -121,7 +121,7 @@
                 OnSelect: =Navigate(login_screen)
                 ZIndex: =7
 
-        MainSectionContainer1_4 As groupContainer.verticalAutoLayoutContainer:
+        MainSectionContainer1_3 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -270,9 +270,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: |-
-                                =If(var_current_user="Distributor" And ThisItem.'Claim Status'.Value ="New",
-                                DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="Distributor", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -365,7 +363,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="KelloggsBU", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -2405,7 +2403,15 @@
                     Height: =51
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(54,176,75,1), -20%)
-                    OnSelect: =SubmitForm(ClaimForm_1);Navigate(landing_screen)
+                    OnSelect: |-
+                        =SubmitForm(ClaimForm_1);
+                        Patch(customer_claims_1,
+                            LookUp(customer_claims_1, ID = newSelectedRecord.ID),
+                            {
+                                'Created': Now()
+                            }
+                        );
+                        Navigate(landing_screen)
                     Size: =15
                     Text: ="Submit"
                     Visible: |
@@ -2589,7 +2595,7 @@
                         Y: =14
                         ZIndex: =2
 
-                    Label5_10 As label:
+                    Label5_8 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -2648,7 +2654,7 @@
                         Y: =14
                         ZIndex: =2
 
-                    Label5_9 As label:
+                    Label5_7 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -2993,19 +2999,27 @@
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(255,0,0,1), -20%)
             OnSelect: |-
-                =SubmitForm(ClaimForm_1);
+                =SubmitForm(Form1_1);
                 Patch(customer_claims_1,
                     LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                      If(
                         var_current_user="KelloggsBU",
                         {
-                            'Claim Status': {Value: "Rejected by BU"}
+                            'Claim Status': {Value: "Rejected by BU"},
+                            'Rejected Comment': {Value: DataCardValue50_1.Selected.Value},
+                            'BU Comment': {Value: DataCardValue50_1.Selected.Value},
+                            'Created': Now()
                         },
                         {
-                            'Claim Status': {Value: "Rejected by PIO SPOC"}
+                            'Claim Status': {Value: "Rejected by PIO SPOC"},
+                            'Rejected Comment': {Value: DataCardValue50_1.Selected.Value},
+                            'Created': Now()
+                            //,'PIO SPOC Comment': {Value: DataCardValue50.Selected.Value}
+                
                         }
                      )
                 );
+                UpdateContext({ShowPopupLightBox:false});
                 Back(); 
             Size: =15
             Text: ="Reject"
@@ -3067,7 +3081,7 @@
 
                 DataCardKey50_1 As label:
                     AutoHeight: =true
-                    Color: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
                     Height: =34
@@ -3095,12 +3109,13 @@
                     Font: =Font.'Segoe UI'
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =RGBA(222, 179, 184, 1)
-                    Items: =Choices([@customer_claims_1].RejectedComment)
+                    IsSearchable: =false
+                    Items: =Choices([@customer_claims_1].'Rejected Comment')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
                     SearchFields: =["Value"]
-                    SearchItems: =Choices(customer_claims_1.RejectedComment,DataCardValue50_1.SearchText)
+                    SearchItems: =[]
                     SelectionFill: =RGBA(164, 38, 44, 1)
                     SelectMultiple: =false
                     Size: =10
@@ -3141,7 +3156,7 @@
                     Y: =DataCardKey50_1.Y
                     ZIndex: =4
 
-        Icon5_8 As icon.Cancel:
+        Icon5_2 As icon.Cancel:
             BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(89, 0, 0, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
