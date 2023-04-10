@@ -68,7 +68,7 @@ HorizontalMenuComponent As CanvasComponent:
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Fill: =If(ThisItem.Id = LookUp(colHorizontalMenu, Screen = App.ActiveScreen).Id && IsBlank(ThisItem.ParentTab), varMenuSecondaryColor, varMenuPrimaryColor)
                 Height: =5
-                HoverFill: =ColorFade(varMenuSecondaryColor, 0.9)
+                HoverFill: =ColorFade(RGBA(164,33,44, 100), 0.9)
                 OnSelect: =Select(Parent)
                 Width: =200
                 Y: =65
