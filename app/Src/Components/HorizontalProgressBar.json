@@ -28,7 +28,7 @@
             "Name": "galleryTemplate4",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 776,
+            "PublishOrderIndex": 778,
             "Rules": [
               {
                 "Category": "Data",
@@ -87,7 +87,14 @@
               "DisabledFill",
               "PressedFill",
               "HoverFill",
-              "Font",
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Font",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              },
               "FontWeight",
               {
                 "AFDDataSourceName": "",
@@ -123,7 +130,14 @@
               "PaddingRight",
               "PaddingBottom",
               "PaddingLeft",
-              "Size"
+              {
+                "AFDDataSourceName": "",
+                "AutoRuleBindingEnabled": false,
+                "AutoRuleBindingString": "",
+                "InvariantPropertyName": "Size",
+                "IsLockable": false,
+                "NameMapSourceSchema": "?"
+              }
             ],
             "ControlUniqueId": "26",
             "HasDynamicProperties": false,
@@ -138,7 +152,7 @@
             "Name": "Title5",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 777,
+            "PublishOrderIndex": 779,
             "Rules": [
               {
                 "Category": "Data",
@@ -250,7 +264,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "Font.'Open Sans'",
+                "InvariantScript": "Font.'Segoe UI'",
                 "Property": "Font",
                 "RuleProviderType": "Unknown"
               },
@@ -334,7 +348,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "20",
+                "InvariantScript": "12",
                 "Property": "Size",
                 "RuleProviderType": "Unknown"
               },
@@ -394,7 +408,7 @@
             "Name": "Separator2",
             "Parent": "Gallery1",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 778,
+            "PublishOrderIndex": 780,
             "Rules": [
               {
                 "Category": "Design",
@@ -607,7 +621,7 @@
         "Name": "Gallery1",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 775,
+        "PublishOrderIndex": 777,
         "Rules": [
           {
             "Category": "Data",
@@ -838,7 +852,7 @@
         "Name": "Icon7",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 779,
+        "PublishOrderIndex": 781,
         "Rules": [
           {
             "Category": "Design",
@@ -914,13 +928,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1050,7 +1064,7 @@
         "Name": "Icon12",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 780,
+        "PublishOrderIndex": 782,
         "Rules": [
           {
             "Category": "Design",
@@ -1126,13 +1140,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1262,7 +1276,7 @@
         "Name": "Icon13",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 781,
+        "PublishOrderIndex": 783,
         "Rules": [
           {
             "Category": "Design",
@@ -1338,13 +1352,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1474,7 +1488,7 @@
         "Name": "Icon14",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 782,
+        "PublishOrderIndex": 784,
         "Rules": [
           {
             "Category": "Design",
@@ -1550,13 +1564,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1686,7 +1700,7 @@
         "Name": "Icon15",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 783,
+        "PublishOrderIndex": 785,
         "Rules": [
           {
             "Category": "Design",
@@ -1762,13 +1776,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "40",
+            "InvariantScript": "30",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1873,7 +1887,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638167930476811481",
+    "LastModifiedTimestamp": "638167934203416970",
     "Name": "HorizontalProgressBar",
     "Rules": [
       {
@@ -1932,7 +1946,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638167930476811481",
+  "LastModifiedTimestamp": "638167934203416970",
   "Name": "33041f7c703542f1a1b3f8341a03b202",
   "OverridableProperties": {},
   "Version": "638167897736407617"
