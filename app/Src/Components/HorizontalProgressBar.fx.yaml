@@ -157,7 +157,7 @@ HorizontalProgressBar As CanvasComponent:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: |-
             =Color.DarkGray
-            //If(Role = 'PIO SPOC' && Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
+            //If(Role = 'PIO SPOC' && Status = 'Approve',RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
         Height: =2
         Width: =200
         X: =378
