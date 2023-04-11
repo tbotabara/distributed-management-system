@@ -1,5 +1,5 @@
 HorizontalProgressBar As CanvasComponent:
-    Fill: =RGBA(0, 0, 0, 0)
+    Fill: =RGBA(0,0,0,0.03)
     Height: =150
     Width: =1200
     X: =0
@@ -8,6 +8,7 @@ HorizontalProgressBar As CanvasComponent:
 
     "Gallery1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(0, 0, 0, 0.03)
         Height: =150
         Items: |-
             =Table(
@@ -49,6 +50,7 @@ HorizontalProgressBar As CanvasComponent:
             Align: =Align.Center
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Semibold
             Height: =35
             OnSelect: =Select(Parent)
@@ -56,12 +58,12 @@ HorizontalProgressBar As CanvasComponent:
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
-            Size: =20
+            Size: =12
             Text: =ThisItem.Label
             VerticalAlign: =VerticalAlign.Top
             Width: =165
             X: =40
-            Y: =80
+            Y: =67
             ZIndex: =1
 
         Separator2 As rectangle:
@@ -78,10 +80,10 @@ HorizontalProgressBar As CanvasComponent:
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =30
         Icon: =Icon.DocumentWithContent
-        Width: =60
-        X: =90
+        Width: =30
+        X: =103
         Y: =11
         ZIndex: =2
 
@@ -90,10 +92,10 @@ HorizontalProgressBar As CanvasComponent:
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =30
         Icon: =Icon.Person
-        Width: =60
-        X: =331
+        Width: =30
+        X: =344
         Y: =14
         ZIndex: =3
 
@@ -102,10 +104,10 @@ HorizontalProgressBar As CanvasComponent:
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =30
         Icon: =Icon.OfficeBuilding
-        Width: =60
-        X: =568
+        Width: =30
+        X: =581
         Y: =14
         ZIndex: =4
 
@@ -114,10 +116,10 @@ HorizontalProgressBar As CanvasComponent:
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =30
         Icon: =Icon.Calculator
-        Width: =60
-        X: =811
+        Width: =30
+        X: =824
         Y: =14
         ZIndex: =5
 
@@ -126,10 +128,10 @@ HorizontalProgressBar As CanvasComponent:
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =60
+        Height: =30
         Icon: =Icon.ThumbsUp
-        Width: =60
-        X: =1055
+        Width: =30
+        X: =1068
         Y: =14
         ZIndex: =6
 
