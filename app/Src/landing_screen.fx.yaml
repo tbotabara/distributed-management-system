@@ -97,7 +97,7 @@
                 Width: =115
                 ZIndex: =2
 
-            draft_btn As button:
+            kpi_btn As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 BorderThickness: =1
@@ -112,8 +112,7 @@
                 OnSelect: =Navigate(claim_draft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
-                Text: ="Draft"
-                Visible: =var_current_user="Distributor"
+                Text: ="KPI"
                 Width: =115
                 ZIndex: =3
 
@@ -123,7 +122,7 @@
                 Fill: =RGBA(0, 0, 0, 0)
                 FillPortions: =9
                 Height: =75
-                ZIndex: =4
+                ZIndex: =5
 
             Icon6_1 As icon.Person:
                 AlignInContainer: =AlignInContainer.Center
@@ -134,7 +133,7 @@
                 Height: =20
                 Icon: =Icon.Person
                 Width: =20
-                ZIndex: =5
+                ZIndex: =6
 
             Label5_4 As label:
                 Align: =Align.Center
@@ -146,7 +145,7 @@
                 Size: =12
                 Text: =var_current_user_type
                 Width: =100
-                ZIndex: =6
+                ZIndex: =7
 
             Icon5_1 As icon.Leave:
                 AlignInContainer: =AlignInContainer.Center
@@ -157,7 +156,7 @@
                 Height: =20
                 Icon: =Icon.Leave
                 OnSelect: =Navigate(login_screen)
-                ZIndex: =7
+                ZIndex: =8
 
         MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
@@ -568,7 +567,7 @@
                     Visible: =var_current_user<>"Distributor"
                     Width: =181
                     X: =155
-                    Y: =77
+                    Y: =87
                     ZIndex: =30
 
                 Group3 As group:
@@ -583,15 +582,17 @@
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
                     GridStyle: =GridStyle.All
-                    Height: =170
+                    Height: =140
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
                     Items: =ChoiceCountCollection
                     ItemsGap: =20
-                    SeriesAxisMax: =10
+                    PaddingLeft: =0
+                    PaddingRight: =0
                     Visible: =var_current_user<>"Distributor"
                     Width: =523
                     X: =155
-                    Y: =101
+                    XLabelAngle: =0
+                    Y: =111
                     ZIndex: =31
 
                 Group2 As group:
@@ -850,13 +851,15 @@
                 LineChart2 As lineChart:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
-                    Height: =170
+                    Height: =140
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
                     Items: =ChoiceCountCollection
+                    PaddingRight: =0
                     Size: =11
                     Width: =523
                     X: =747
-                    Y: =101
+                    XLabelAngle: =0
+                    Y: =111
                     ZIndex: =34
 
                 Label7_1 As label:
@@ -871,7 +874,7 @@
                     Visible: =var_current_user<>"Distributor"
                     Width: =241
                     X: =744
-                    Y: =88
+                    Y: =87
                     ZIndex: =36
 
                 lbl_Status_8 As label:
