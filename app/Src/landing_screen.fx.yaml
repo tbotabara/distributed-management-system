@@ -885,7 +885,7 @@
                     Text: ="Status"
                     Width: =399
                     X: =476
-                    Y: =5
+                    Y: =3
                     ZIndex: =37
 
                 combo_status_4 As combobox:
@@ -951,7 +951,7 @@
                     Size: =10
                     Width: =398
                     X: =476
-                    Y: =31
+                    Y: =29
                     ZIndex: =38
 
                 lbl_ClaimType1_8 As label:
@@ -965,6 +965,7 @@
                     Text: ="Claim Type"
                     Width: =399
                     X: =27
+                    Y: =3
                     ZIndex: =39
 
                 combo_ct_4 As combobox:
@@ -1030,7 +1031,7 @@
                     Size: =10
                     Width: =398
                     X: =27
-                    Y: =26
+                    Y: =29
                     ZIndex: =40
 
                 lbl_Status_9 As label:
@@ -1044,7 +1045,7 @@
                     Text: ="Market"
                     Width: =399
                     X: =905
-                    Y: =5
+                    Y: =3
                     ZIndex: =41
 
                 combo_status_6 As combobox:
@@ -1110,7 +1111,7 @@
                     Size: =10
                     Width: =398
                     X: =906
-                    Y: =31
+                    Y: =29
                     ZIndex: =42
 
     Icon2 As icon.HorizontalLine:
