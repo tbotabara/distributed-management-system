@@ -80,17 +80,6 @@
                 Height: =75
                 ZIndex: =4
 
-            Icon6_5 As icon.Person:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(89, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =20
-                Icon: =Icon.Person
-                Width: =20
-                ZIndex: =5
-
             Label5_11 As label:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
@@ -102,17 +91,6 @@
                     =var_current_user_type
                 Width: =100
                 ZIndex: =6
-
-            Icon5_5 As icon.Leave:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(89, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =20
-                Icon: =Icon.Leave
-                OnSelect: =Navigate(login_screen)
-                ZIndex: =7
 
         MainSectionContainer1_5 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)

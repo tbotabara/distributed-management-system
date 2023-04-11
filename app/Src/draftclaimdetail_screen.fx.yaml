@@ -176,65 +176,6 @@
                         )
                     ZIndex: =1
 
-                    Created_DataCard2 As typedDataCard.textualViewCard:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        BorderStyle: =BorderStyle.Solid
-                        DataField: ="Created"
-                        Default: =ThisItem.Created
-                        DisplayMode: =DisplayMode.Edit
-                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"Created")
-                        Fill: =RGBA(0, 0, 0, 0)
-                        Height: =118
-                        Required: =false
-                        Width: =243
-                        X: =4
-                        Y: =0
-                        ZIndex: =1
-
-                        DataCardKey2 As label:
-                            Color: =If(DateValue(DataCardValue2.Text)>(DateAdd(DataCardValue12.SelectedDate, 30,TimeUnit.Days)) ,RGBA(255,0,0,1),RGBA(0, 0, 0, 1))
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =Font.'Segoe UI'
-                            Height: =28
-                            Size: =10
-                            Text: ="Claim Submission Date"
-                            Width: =186
-                            Wrap: =false
-                            X: =27
-                            Y: =10
-                            ZIndex: =1
-
-                        DataCardValue2 As label:
-                            BorderColor: =RGBA(89, 0, 0, 1)
-                            BorderThickness: =2
-                            Color: =RGBA(0, 0, 0, 1)
-                            DisabledColor: =RGBA(166, 166, 166, 1)
-                            DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =DisplayMode.Disabled
-                            Font: =Font.'Segoe UI'
-                            PaddingLeft: =0
-                            PaddingRight: =0
-                            PaddingTop: =0
-                            Size: =10
-                            Text: =Parent.Default
-                            Width: =Parent.Width - 60
-                            X: =30
-                            Y: =43
-                            ZIndex: =2
-
-                        Icon4 As icon.Warning:
-                            BorderColor: =RGBA(89, 0, 0, 1)
-                            Color: =RGBA(255, 0, 0, 1)
-                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                            DisabledColor: =RGBA(244, 244, 244, 1)
-                            Height: =19
-                            Icon: =Icon.Warning
-                            Visible: =If(DateValue(DataCardValue2.Text)>(DateAdd(DataCardValue12.SelectedDate, 30,TimeUnit.Days)),true,false)
-                            Width: =24
-                            X: =189
-                            Y: =14.5
-                            ZIndex: =3
-
                     "'Estimated Claim Value_DataCard1' As typedDataCard.numberEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -548,7 +489,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="kelloggsbu", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="kelloggs_bu", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -612,7 +553,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "PIOSPOCComment")
                         Required: =false
                         Update: =DataCardValue24.Text
-                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggsbu"))
+                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggs_bu"))
                         Width: =486
                         X: =2
                         Y: =22
@@ -641,7 +582,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by BU" And var_current_user="piospoc", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by BU" And var_current_user="pio_spoc", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -705,7 +646,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "PIOFinanceComment")
                         Required: =false
                         Update: =DataCardValue25.Text
-                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggsbu") || var_current_user=Lower("piospoc"))
+                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggs_bu") || var_current_user=Lower("pio_spoc"))
                         Width: =486
                         X: =3
                         Y: =22
@@ -734,7 +675,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by PIO SPOC" And var_current_user="piofinance", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by PIO SPOC" And var_current_user="pio_finance", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -877,6 +818,53 @@
                             Width: =30
                             Wrap: =false
                             Y: =DataCardKey26.Y
+                            ZIndex: =4
+
+                    "'Submission Date_DataCard1' As typedDataCard.dateEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="SubmissionDate"
+                        Default: =ThisItem.'Submission Date'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"SubmissionDate")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        Required: =false
+                        Update: =DataCardValue2.SelectedDate
+                        Width: =243
+                        X: =4
+                        Y: =0
+                        ZIndex: =1
+
+                        ErrorMessage28 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue2.Y + DataCardValue2.Height
+                            ZIndex: =3
+
+                        StarVisible28 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =DataCardKey2.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey2.Y
                             ZIndex: =4
 
                     "'CIN (Title)_DataCard1' As typedDataCard.textualEditCard":
@@ -1628,7 +1616,7 @@
                         Required: =false
                         Update: =DataCardValue10.SelectedDate
                         Width: =243
-                        X: =2
+                        X: =3
                         Y: =2
                         ZIndex: =2
 
@@ -1714,7 +1702,7 @@
                         Required: =false
                         Update: =DataCardValue11.SelectedDate
                         Width: =243
-                        X: =3
+                        X: =4
                         Y: =2
                         ZIndex: =2
 
@@ -2156,7 +2144,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "field_14")
                         Required: =false
                         Update: =DataCardValue15.Text
-                        Width: =243
+                        Width: =121
                         X: =243
                         Y: =14
                         ZIndex: =2
@@ -2822,7 +2810,7 @@
                     Visible: |-
                         =//If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
                         !(
-                            DateValue(DataCardValue2.Text) <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))
+                            DataCardValue2.SelectedDate <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))
                         )
                     Width: =875
                     X: =374
@@ -2873,7 +2861,8 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                             {
-                               'Claim Status': {Value: "New"} 
+                               'Claim Status': {Value: "New"},
+                               'Submission Date': Now() 
                             }
                         );
                         Navigate(landing_screen)
@@ -3346,9 +3335,11 @@
                     Size: =15
                     Text: ="Reject"
                     Visible: |-
-                        =(var_current_user = Lower("kelloggsbu") And newSelectedRecord.'Claim Status'.Value ="New") 
+                        =(var_current_user = Lower("kelloggs_bu") And newSelectedRecord.'Claim Status'.Value ="New") 
                         || 
-                        (var_current_user = Lower("PioSpoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        (var_current_user = Lower("Pio_Spoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        ||
+                        (var_current_user = Lower("Pio_Finance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
                     Width: =140
                     X: =1179
                     Y: =533
@@ -3372,21 +3363,21 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                              If(
-                                var_current_user=Lower("kelloggsbu") And IsBlank(DataCardValue21.Text),
+                                var_current_user=Lower("kelloggs_bu") And IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by BU"},
                                     'Approved Cases':Value(DataCardValue18.Text)
                                 },
-                                var_current_user=Lower("piospoc") And IsBlank(DataCardValue21.Text),
+                                var_current_user=Lower("pio_spoc") And IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"},
                                     'Approved Cases':Value(DataCardValue18.Text)
                                 },
-                                var_current_user=Lower("piospoc") And !IsBlank(DataCardValue21.Text),
+                                var_current_user=Lower("pio_spoc") And !IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"}
                                 },
-                                var_current_user=Lower("piofinance"),
+                                var_current_user=Lower("pio_finance"),
                                 {
                                     'Claim Status': {Value: "Approved by Finance"}
                                 },
@@ -3399,11 +3390,11 @@
                     Size: =15
                     Text: ="Approve"
                     Visible: |-
-                        =(var_current_user = Lower("kelloggsbu") And newSelectedRecord.'Claim Status'.Value ="New") 
+                        =(var_current_user = Lower("kelloggs_bu") And newSelectedRecord.'Claim Status'.Value ="New") 
                         || 
-                        (var_current_user = Lower("PioSpoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        (var_current_user = Lower("Pio_Spoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
                         ||
-                        (var_current_user = Lower("PioFinance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
+                        (var_current_user = Lower("Pio_Finance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
                     Width: =139
                     X: =1013
                     Y: =533
@@ -3562,35 +3553,35 @@
                 =Patch(customer_claims_1,
                     LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                      If(
-                        var_current_user=Lower("kelloggsbu") && RejectReason.Selected.ID = 5,
+                        var_current_user=Lower("kelloggs_bu") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("kelloggsbu") && !(RejectReason.Selected.ID = 5),
+                        var_current_user=Lower("kelloggs_bu") && !(RejectReason.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("piofinance") && RejectReason.Selected.ID = 5,
+                        var_current_user=Lower("pio_finance") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by Finance"},
                             'PIOFinance Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("piofinance") && !(RejectReason.Selected.ID = 5),
+                        var_current_user=Lower("pio_finance") && !(RejectReason.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by Finance"},
                             'PIOFinance Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("piospoc") && RejectReason.Selected.ID = 5,
+                        var_current_user=Lower("pio_spoc") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by PIO SPOC"},
                             'PIOSPOC Comment': RejectReasonOthers.Text,
