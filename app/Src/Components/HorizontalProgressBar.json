@@ -284,7 +284,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(0, 0, 0, 1)\r\n//If(Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))",
+                "InvariantScript": "RGBA(106, 113, 120, 1)\r\n//If(Status = 'Approve',RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -2605,7 +2605,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168025831086493",
+    "LastModifiedTimestamp": "638168027686448341",
     "Name": "HorizontalProgressBar",
     "Rules": [
       {
@@ -2664,7 +2664,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168025831086493",
+  "LastModifiedTimestamp": "638168027686448341",
   "Name": "33041f7c703542f1a1b3f8341a03b202",
   "OverridableProperties": {},
   "Version": "638167897736407617"
