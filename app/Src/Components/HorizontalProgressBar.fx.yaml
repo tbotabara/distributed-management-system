@@ -1,6 +1,6 @@
 HorizontalProgressBar As CanvasComponent:
     Fill: =RGBA(0,0,0,0.03)
-    Height: =170
+    Height: =160
     Width: =1200
     X: =0
     Y: =0
@@ -9,7 +9,7 @@ HorizontalProgressBar As CanvasComponent:
     "Trail As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
         BorderColor: =RGBA(0, 0, 0, 0.03)
         Fill: =RGBA(0, 0, 0, 0.03)
-        Height: =170
+        Height: =160
         Items: |-
             =Table(
                 {
