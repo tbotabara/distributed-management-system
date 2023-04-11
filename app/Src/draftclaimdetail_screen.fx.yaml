@@ -2809,9 +2809,7 @@
                     Height: =If(ContainerErrorETA.Visible,19,0)
                     Visible: |-
                         =//If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
-                        !(
-                            DataCardValue2.SelectedDate <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))
-                        )
+                        !(DataCardValue2.SelectedDate <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days)))
                     Width: =875
                     X: =374
                     Y: =ContainerErrorSSCC.Height+ContainerErrorSSCC.Y
