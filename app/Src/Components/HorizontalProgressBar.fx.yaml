@@ -63,7 +63,9 @@ HorizontalProgressBar As CanvasComponent:
 
         Title4 As label:
             Align: =Align.Center
-            Color: =RGBA(0, 0, 0, 1)
+            Color: |-
+                =RGBA(0, 0, 0, 1)
+                //If(Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
@@ -80,6 +82,9 @@ HorizontalProgressBar As CanvasComponent:
         StatusIcon As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(89, 0, 0, 1)
+            Color: |-
+                =RGBA(0, 0, 0, 1)
+                //If(Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =30
@@ -104,7 +109,9 @@ HorizontalProgressBar As CanvasComponent:
         Label8 As label:
             Align: =Align.Center
             BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =RGBA(0, 0, 0, 1)
+            Color: |-
+                =RGBA(0, 0, 0, 1)
+                //If(Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
@@ -119,7 +126,9 @@ HorizontalProgressBar As CanvasComponent:
         Label9 As label:
             Align: =Align.Center
             BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =RGBA(0, 0, 0, 1)
+            Color: |-
+                =RGBA(0, 0, 0, 1)
+                //If(Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
@@ -135,7 +144,9 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =Color.DarkGray
+        Fill: |-
+            =Color.DarkGray
+            //If(Role = 'BU' && Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
         Height: =2
         Width: =200
         X: =140
@@ -144,7 +155,9 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6_1 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =Color.DarkGray
+        Fill: |-
+            =Color.DarkGray
+            //If(Role = 'PIO SPOC' && Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
         Height: =2
         Width: =200
         X: =378
@@ -153,7 +166,9 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6_2 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =Color.DarkGray
+        Fill: |-
+            =Color.DarkGray
+            //If(Role = 'PIO Finance' && Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
         Height: =2
         Width: =200
         X: =617
@@ -162,7 +177,9 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6_3 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =Color.DarkGray
+        Fill: |-
+            =Color.DarkGray
+            //If(Role = 'GBS' && Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
         Height: =2
         Width: =200
         X: =861
