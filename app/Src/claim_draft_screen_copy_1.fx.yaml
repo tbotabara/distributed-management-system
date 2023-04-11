@@ -82,17 +82,6 @@
                 Height: =75
                 ZIndex: =4
 
-            Icon6_5 As icon.Person:
-                AlignInContainer: =AlignInContainer.Center
-                BorderColor: =RGBA(89, 0, 0, 1)
-                Color: =RGBA(89, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(244, 244, 244, 1)
-                Height: =20
-                Icon: =Icon.Person
-                Width: =20
-                ZIndex: =7
-
             Label5_16 As label:
                 Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
