@@ -30,6 +30,7 @@
             ZIndex: =3
 
             HorizontalProgressBar_1 As HorizontalProgressBar:
+                AlignInContainer: =AlignInContainer.Start
                 LayoutMinHeight: =640
                 LayoutMinWidth: =640
 
