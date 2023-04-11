@@ -535,6 +535,21 @@
                     Y: =296
                     ZIndex: =22
 
+                Label7 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =26
+                    Size: =10
+                    Text: ="Total of Claims by Period"
+                    Visible: =var_current_user<>"Distributor"
+                    Width: =181
+                    X: =177
+                    Y: =88
+                    ZIndex: =30
+
                 Group3 As group:
                     Height: =5
                     Width: =5
@@ -683,21 +698,6 @@
                         X: =908
                         Y: =40
                         ZIndex: =29
-
-                Label7 As label:
-                    BorderColor: =RGBA(89, 0, 0, 1)
-                    Color: =RGBA(0, 0, 0, 1)
-                    DisabledColor: =RGBA(166, 166, 166, 1)
-                    Font: =Font.'Segoe UI'
-                    FontWeight: =FontWeight.Bold
-                    Height: =26
-                    Size: =10
-                    Text: ="Total of Claims by Period"
-                    Visible: =var_current_user<>"Distributor"
-                    Width: =181
-                    X: =177
-                    Y: =88
-                    ZIndex: =30
 
                 ColumnChart2 As barChart:
                     BorderColor: =RGBA(56, 56, 56, 1)

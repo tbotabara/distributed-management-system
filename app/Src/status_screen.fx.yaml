@@ -1,4 +1,4 @@
-"Screen1 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"status_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
@@ -17,6 +17,10 @@
             LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
+
+            HorizontalMenuComponent_2 As HorizontalMenuComponent:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
 
         MainSectionContainer2 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
