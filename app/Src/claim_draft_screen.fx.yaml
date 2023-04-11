@@ -70,7 +70,7 @@
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Draft"
-                Visible: =var_current_user="Distributor"
+                Visible: =var_current_user=Lower("Distributor")
                 Width: =115
                 ZIndex: =3
 
@@ -82,8 +82,19 @@
                 Height: =75
                 ZIndex: =4
 
-            Label5_11 As label:
-                Align: =Align.Right
+            Icon6_3 As icon.Person:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Person
+                Width: =20
+                ZIndex: =7
+
+            Label5_15 As label:
+                Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(0, 0, 0, 1)
@@ -92,8 +103,19 @@
                 Size: =10
                 Text: |
                     =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
-                Width: =75
-                ZIndex: =6
+                Width: =100
+                ZIndex: =8
+
+            Icon5_8 As icon.Leave:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Leave
+                OnSelect: =Navigate(login_screen)
+                ZIndex: =9
 
         MainSectionContainer1_9 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
@@ -798,12 +820,11 @@
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =20
+        Height: =13
         Icon: =Icon.HorizontalLine
-        OnSelect: =var_current_user="Distributor"
-        Visible: =var_current_user="Distributor"
-        Width: =43
-        X: =238
-        Y: =62
+        Visible: =var_current_user=Lower("Distributor")
+        Width: =73
+        X: =225
+        Y: =66
         ZIndex: =2
 
