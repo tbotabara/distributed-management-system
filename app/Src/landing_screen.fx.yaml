@@ -677,6 +677,20 @@
                         Y: =40
                         ZIndex: =29
 
+                ColumnChart2 As barChart:
+                    BorderColor: =RGBA(56, 56, 56, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    GridStyle: =GridStyle.All
+                    Height: =145
+                    ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
+                    Items: =customer_claims_1
+                    Visible: =var_current_user<>"Distributor"
+                    Width: =523
+                    X: =52
+                    Y: =128
+                    ZIndex: =31
+
                 Group2 As group:
                     Height: =5
                     Width: =5
@@ -941,17 +955,4 @@
         X: =122
         Y: =62
         ZIndex: =13
-
-    ColumnChart2 As barChart:
-        BorderColor: =RGBA(56, 56, 56, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        Font: =Font.'Segoe UI'
-        Height: =145
-        ItemColorSet: =[RGBA(49, 130, 93, 1),RGBA(48,166,103, 1), RGBA(94,193,108,1), RGBA(246,199,144,1), RGBA(247,199,114,1), RGBA(247,180,91,1), RGBA(246,143,100,1), RGBA(212,96,104,1), RGBA(148, 110, 176, 1), RGBA(118, 154, 204, 1), RGBA(96, 197, 234, 1)]
-        Items: =customer_claims_1
-        Visible: =var_current_user<>"Distributor"
-        Width: =428
-        X: =40
-        Y: =216
-        ZIndex: =16
 

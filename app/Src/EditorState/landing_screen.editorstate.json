@@ -1043,7 +1043,14 @@
           "NameMapSourceSchema": "?"
         },
         "ItemColorSet",
-        "GridStyle",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "GridStyle",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledBorderColor",
         "PressedBorderColor",
         "HoverBorderColor",
@@ -1083,9 +1090,9 @@
       "IsGroupControl": false,
       "IsLocked": false,
       "LayoutName": "",
-      "MetaDataIDKey": "%ColumnChart.ID%",
+      "MetaDataIDKey": "",
       "Name": "ColumnChart2",
-      "ParentIndex": 2,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4483,7 +4490,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "GraphFilter",
-      "ParentIndex": 31,
+      "ParentIndex": 32,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4534,7 +4541,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group1",
-      "ParentIndex": 30,
+      "ParentIndex": 31,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4585,7 +4592,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group2",
-      "ParentIndex": 32,
+      "ParentIndex": 33,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4636,7 +4643,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Group3",
-      "ParentIndex": 29,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
