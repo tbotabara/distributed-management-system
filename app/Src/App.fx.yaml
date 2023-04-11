@@ -10,5 +10,13 @@ App As appinfo:
         );
         
         Set(varTabSelected, 1);
+        
+        ClearCollect(
+            UniqueCountriesCollection,
+            Distinct(
+                customer_claims_1,
+                'Destination Country'
+            )
+        );
     StartScreen: =login_screen
 

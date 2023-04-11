@@ -1,12 +1,33 @@
 "landing_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
-    OnVisible: |
+    OnVisible: |+
         =Set(areFiltersApplied, false);
+        ClearCollect(
+            UniqueCountriesCollection,
+            Distinct(
+                customer_claims_1,
+                'Destination Country'
+            )
+        );
+        ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
+        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
+        ClearCollect(colDestinationCountry, combo_status_6.SelectedItems.Value);
+        ClearCollect(customer_claims_1_all, customer_claims_1);
+        ClearCollect(
+            FilteredChoiceCountCollection,
+            Filter(
+                customer_claims_1_all,
+                (IsEmpty(colClaimType) || 'Claim Type'.Value in colClaimType),
+                (IsEmpty(colClaimStatus) || 'Claim Status'.Value in colClaimStatus),
+                (IsEmpty(colDestinationCountry) || 'Destination Country' in colDestinationCountry)
+            )
+        );
+        
         ClearCollect(
             ChoiceTextCollection,
             ForAll(
-                customer_claims_1,
+                FilteredChoiceCountCollection,
                 {
                     PeriodText: Period.Value
                 }
@@ -24,7 +45,8 @@
                 "Count",
                 CountRows(GroupedItems)
             )
-        )
+        );
+        
 
     ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -122,8 +144,7 @@
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Segoe UI'
                 Size: =10
-                Text: |
-                    =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
+                Text: =var_current_user_type
                 Width: =100
                 ZIndex: =6
 
@@ -535,6 +556,252 @@
                     Y: =296
                     ZIndex: =22
 
+                combo_status_4 As combobox:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    ChevronBackground: =RGBA(164, 38, 44, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    Font: =Font.'Segoe UI'
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    InputTextPlaceholder: ="Select status"
+                    IsSearchable: =false
+                    Items: =Choices(customer_claims_1.'Claim Status')
+                    NoSelectionText: ="All"
+                    OnChange: |
+                        =ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
+                        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
+                        ClearCollect(colDestinationCountry, combo_status_6.SelectedItems.Value);
+                        
+                        ClearCollect(
+                            FilteredChoiceCountCollection,
+                            Filter(
+                                customer_claims_1_all,
+                                (IsEmpty(colClaimType) || 'Claim Type'.Value in colClaimType),
+                                (IsEmpty(colClaimStatus) || 'Claim Status'.Value in colClaimStatus),
+                                (IsEmpty(colDestinationCountry) || 'Destination Country' in colDestinationCountry)
+                            )
+                        );
+                        
+                        ClearCollect(
+                            ChoiceTextCollection,
+                            ForAll(
+                                FilteredChoiceCountCollection,
+                                {
+                                    PeriodText: Period.Value
+                                }
+                            )
+                        );
+                        
+                        ClearCollect(
+                            ChoiceCountCollection,
+                            AddColumns(
+                                GroupBy(
+                                    ChoiceTextCollection,
+                                    "PeriodText",
+                                    "GroupedItems"
+                                ),
+                                "Count",
+                                CountRows(GroupedItems)
+                            )
+                        );
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectionFill: =RGBA(164, 38, 44, 1)
+                    Size: =10
+                    Visible: =!(var_current_user = "Distributor")
+                    Width: =398
+                    X: =479
+                    Y: =40
+                    ZIndex: =24
+
+                combo_ct_4 As combobox:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    ChevronBackground: =RGBA(164, 38, 44, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    Font: =Font.'Segoe UI'
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    InputTextPlaceholder: ="Select Claim Type"
+                    IsSearchable: =false
+                    Items: =Choices(customer_claims_1.'Claim Type')
+                    NoSelectionText: ="All"
+                    OnChange: |
+                        =ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
+                        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
+                        ClearCollect(colDestinationCountry, combo_status_6.SelectedItems.Value);
+                        
+                        ClearCollect(
+                            FilteredChoiceCountCollection,
+                            Filter(
+                                customer_claims_1_all,
+                                (IsEmpty(colClaimType) || 'Claim Type'.Value in colClaimType),
+                                (IsEmpty(colClaimStatus) || 'Claim Status'.Value in colClaimStatus),
+                                (IsEmpty(colDestinationCountry) || 'Destination Country' in colDestinationCountry)
+                            )
+                        );
+                        
+                        ClearCollect(
+                            ChoiceTextCollection,
+                            ForAll(
+                                FilteredChoiceCountCollection,
+                                {
+                                    PeriodText: Period.Value
+                                }
+                            )
+                        );
+                        
+                        ClearCollect(
+                            ChoiceCountCollection,
+                            AddColumns(
+                                GroupBy(
+                                    ChoiceTextCollection,
+                                    "PeriodText",
+                                    "GroupedItems"
+                                ),
+                                "Count",
+                                CountRows(GroupedItems)
+                            )
+                        );
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectionFill: =RGBA(164, 38, 44, 1)
+                    Size: =10
+                    Visible: =!(var_current_user = "Distributor")
+                    Width: =427
+                    X: =25
+                    Y: =40
+                    ZIndex: =25
+
+                lbl_SearchKeyword_7 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =27
+                    Size: =10
+                    Text: ="Claim Type"
+                    Visible: =!(var_current_user = "Distributor")
+                    Width: =426
+                    X: =25
+                    Y: =15
+                    ZIndex: =26
+
+                lbl_SearchKeyword_8 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =27
+                    Size: =10
+                    Text: ="Status"
+                    Visible: =!(var_current_user = "Distributor")
+                    Width: =426
+                    X: =479
+                    Y: =15
+                    ZIndex: =27
+
+                lbl_SearchKeyword_9 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =27
+                    Size: =10
+                    Text: ="Market"
+                    Visible: =!(var_current_user = "Distributor")
+                    Width: =426
+                    X: =905
+                    Y: =15
+                    ZIndex: =28
+
+                combo_status_6 As combobox:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    ChevronBackground: =RGBA(164, 38, 44, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayFields: =["Value"]
+                    Font: =Font.'Segoe UI'
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    InputTextPlaceholder: ="Select status"
+                    IsSearchable: =false
+                    Items: =UniqueCountriesCollection
+                    NoSelectionText: ="All"
+                    OnChange: |
+                        =ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
+                        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
+                        ClearCollect(colDestinationCountry, combo_status_6.SelectedItems.Value);
+                        
+                        ClearCollect(
+                            FilteredChoiceCountCollection,
+                            Filter(
+                                customer_claims_1_all,
+                                (IsEmpty(colClaimType) || 'Claim Type'.Value in colClaimType),
+                                (IsEmpty(colClaimStatus) || 'Claim Status'.Value in colClaimStatus),
+                                (IsEmpty(colDestinationCountry) || 'Destination Country' in colDestinationCountry)
+                            )
+                        );
+                        
+                        ClearCollect(
+                            ChoiceTextCollection,
+                            ForAll(
+                                FilteredChoiceCountCollection,
+                                {
+                                    PeriodText: Period.Value
+                                }
+                            )
+                        );
+                        
+                        ClearCollect(
+                            ChoiceCountCollection,
+                            AddColumns(
+                                GroupBy(
+                                    ChoiceTextCollection,
+                                    "PeriodText",
+                                    "GroupedItems"
+                                ),
+                                "Count",
+                                CountRows(GroupedItems)
+                            )
+                        );
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectionFill: =RGBA(164, 38, 44, 1)
+                    Size: =10
+                    Visible: =!(var_current_user = "Distributor")
+                    Width: =398
+                    X: =908
+                    Y: =40
+                    ZIndex: =29
+
                 Label7 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
@@ -546,7 +813,7 @@
                     Text: ="Total of Claims by Period"
                     Visible: =var_current_user<>"Distributor"
                     Width: =181
-                    X: =177
+                    X: =155
                     Y: =88
                     ZIndex: =30
 
@@ -557,162 +824,20 @@
                     Y: =40
                     ZIndex: =30
 
-                GraphFilter As group:
-                    Height: =5
-                    Width: =5
-                    X: =80
-                    Y: =80
-                    ZIndex: =30
-
-                    combo_status_4 As combobox:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        ChevronBackground: =RGBA(164, 38, 44, 1)
-                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayFields: =["Value"]
-                        Font: =Font.'Segoe UI'
-                        HoverColor: =RGBA(0, 0, 0, 1)
-                        HoverFill: =RGBA(222, 179, 184, 1)
-                        InputTextPlaceholder: ="Select status"
-                        IsSearchable: =false
-                        Items: =Filter(Choices(customer_claims_1.'Claim Status'), Value in ["New", "Processed", "Rejected"])
-                        NoSelectionText: ="All"
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(89, 0, 0, 1)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectionFill: =RGBA(164, 38, 44, 1)
-                        Size: =10
-                        Visible: =!(var_current_user = "Distributor")
-                        Width: =398
-                        X: =479
-                        Y: =40
-                        ZIndex: =24
-
-                    combo_ct_4 As combobox:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        ChevronBackground: =RGBA(164, 38, 44, 1)
-                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayFields: =["Value"]
-                        Font: =Font.'Segoe UI'
-                        HoverColor: =RGBA(0, 0, 0, 1)
-                        HoverFill: =RGBA(222, 179, 184, 1)
-                        InputTextPlaceholder: ="Select Claim Type"
-                        IsSearchable: =false
-                        Items: =Choices(customer_claims_1.'Claim Type')
-                        NoSelectionText: ="All"
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(89, 0, 0, 1)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectionFill: =RGBA(164, 38, 44, 1)
-                        Size: =10
-                        Visible: =!(var_current_user = "Distributor")
-                        Width: =427
-                        X: =25
-                        Y: =40
-                        ZIndex: =25
-
-                    lbl_SearchKeyword_7 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =27
-                        Size: =10
-                        Text: ="Claim Type"
-                        Visible: =!(var_current_user = "Distributor")
-                        Width: =426
-                        X: =25
-                        Y: =15
-                        ZIndex: =26
-
-                    lbl_SearchKeyword_8 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =27
-                        Size: =10
-                        Text: ="Status"
-                        Visible: =!(var_current_user = "Distributor")
-                        Width: =426
-                        X: =479
-                        Y: =15
-                        ZIndex: =27
-
-                    lbl_SearchKeyword_9 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =27
-                        Size: =10
-                        Text: ="Market"
-                        Visible: =!(var_current_user = "Distributor")
-                        Width: =426
-                        X: =905
-                        Y: =15
-                        ZIndex: =28
-
-                    combo_status_6 As combobox:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        ChevronBackground: =RGBA(164, 38, 44, 1)
-                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayFields: =["Value"]
-                        Font: =Font.'Segoe UI'
-                        HoverColor: =RGBA(0, 0, 0, 1)
-                        HoverFill: =RGBA(222, 179, 184, 1)
-                        InputTextPlaceholder: ="Select status"
-                        IsSearchable: =false
-                        Items: =Choices(customer_claims_1.'Destination Country')
-                        NoSelectionText: ="All"
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(89, 0, 0, 1)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectionFill: =RGBA(164, 38, 44, 1)
-                        Size: =10
-                        Visible: =!(var_current_user = "Distributor")
-                        Width: =398
-                        X: =908
-                        Y: =40
-                        ZIndex: =29
-
                 ColumnChart2 As barChart:
                     BorderColor: =RGBA(56, 56, 56, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
                     GridStyle: =GridStyle.All
-                    Height: =159
+                    Height: =170
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
                     Items: =ChoiceCountCollection
                     ItemsGap: =20
                     SeriesAxisMax: =10
                     Visible: =var_current_user<>"Distributor"
                     Width: =523
-                    X: =177
-                    Y: =114
+                    X: =155
+                    Y: =125
                     ZIndex: =31
 
                 Group2 As group:
@@ -971,13 +1096,13 @@
                 LineChart2 As lineChart:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
-                    Height: =159
+                    Height: =170
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
                     Items: =ChoiceCountCollection
                     Size: =11
                     Width: =523
-                    X: =769
-                    Y: =114
+                    X: =747
+                    Y: =125
                     ZIndex: =34
 
                 Label7_1 As label:
@@ -991,8 +1116,8 @@
                     Text: ="Total Amount of Claims by Period"
                     Visible: =var_current_user<>"Distributor"
                     Width: =241
-                    X: =766
-                    Y: =88
+                    X: =744
+                    Y: =99
                     ZIndex: =36
 
     Icon2 As icon.HorizontalLine:

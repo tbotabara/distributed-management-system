@@ -95,11 +95,11 @@ login_screen As screen:
                     )
                 ),
                 Set(var_current_user, username_txt.Text);
-                Set(var_current_user_type, LookUp(users, username = username_txt.Text).Name);
+                Set(var_current_user_type, LookUp(users, username = username_txt.Text).'Name (Title)');
                 Reset(username_txt);
                 Reset(password_txt);
                 If(
-                    var_current_user_type = "distributor",
+                    var_current_user_type = "Distributor",
                     Navigate(landing_screen_distributor),
                     Navigate(landing_screen)
                 ),
