@@ -64,8 +64,8 @@ HorizontalProgressBar As CanvasComponent:
         Title4 As label:
             Align: =Align.Center
             Color: |-
-                =RGBA(0, 0, 0, 1)
-                //If(Status = 'Approve',rgb(48, 181, 148), rgb(255, 0, 0))
+                =RGBA(106, 113, 120, 1)
+                //If(Status = 'Approve',RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
