@@ -93,7 +93,7 @@
                 ZIndex: =5
 
             Label5_4 As label:
-                Align: =Align.Right
+                Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(0, 0, 0, 1)
@@ -102,7 +102,7 @@
                 Size: =10
                 Text: |
                     =Upper(Left(var_current_user, 1)) & Lower(Right(var_current_user, Len(var_current_user) - 1))
-                Width: =75
+                Width: =100
                 ZIndex: =6
 
             Icon5_1 As icon.Leave:
