@@ -15,26 +15,41 @@ HorizontalProgressBar As CanvasComponent:
                 {
                     Id: 1,
                     Label: "New",
+                    Icon: Icon.DocumentWithContent,
+                    Date: "",
+                    Time: "",
                     Visible: true
                 },
                 {
                     Id: 2,
                     Label: "BU",
+                    Icon: Icon.Person,
+                    Date: "",
+                    Time: "",
                     Visible: true
                 },
                 {
                     Id: 3,
                     Label: "PIO SPOC",
+                    Icon: Icon.OfficeBuilding,
+                    Date: "",
+                    Time: "",
                     Visible: true
                 },
                 {
                     Id: 4,
                     Label: "PIO Finance",
+                    Icon: Icon.Calculator,
+                    Date: "",
+                    Time: "",
                     Visible: true
                 },
                 {
                     Id: 5,
                     Label: "GBS",
+                    Icon: Icon.ThumbsUp,
+                    Date: "",
+                    Time: "",
                     Visible: true
                 }
             )
@@ -51,7 +66,7 @@ HorizontalProgressBar As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =35
             OnSelect: =Select(Parent)
             PaddingBottom: =0
@@ -75,64 +90,43 @@ HorizontalProgressBar As CanvasComponent:
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
 
-    Icon7 As icon.DocumentwithContent:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =30
-        Icon: =Icon.DocumentWithContent
-        Width: =30
-        X: =107
-        Y: =11
-        ZIndex: =2
+        Icon6 As icon.Add:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =ThisItem.Icon
+            OnSelect: =Select(Parent)
+            Width: =30
+            X: =105
+            Y: =14
+            ZIndex: =5
 
-    Icon12 As icon.Person:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =Color.DarkGray
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =30
-        Icon: =Icon.Person
-        Width: =30
-        X: =344
-        Y: =14
-        ZIndex: =3
+        DateLabel As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.Date
+            X: =80
+            Y: =80
+            ZIndex: =6
 
-    Icon13 As icon.OfficeBuilding:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =Color.DarkGray
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =30
-        Icon: =Icon.OfficeBuilding
-        Width: =30
-        X: =581
-        Y: =14
-        ZIndex: =4
-
-    Icon14 As icon.Calculator:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =Color.DarkGray
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =30
-        Icon: =Icon.Calculator
-        Width: =30
-        X: =824
-        Y: =14
-        ZIndex: =5
-
-    Icon15 As icon.ThumbsUp:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =Color.DarkGray
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =30
-        Icon: =Icon.ThumbsUp
-        Width: =30
-        X: =1068
-        Y: =14
-        ZIndex: =6
+        TimeLabel As label:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.Time
+            X: =90
+            Y: =100
+            ZIndex: =7
 
     Rectangle6 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
