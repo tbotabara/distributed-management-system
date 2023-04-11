@@ -46,7 +46,7 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(184, 0, 0, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen)
+                OnSelect: =Navigate(landing_screen_distributor)
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
