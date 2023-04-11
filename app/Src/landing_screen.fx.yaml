@@ -968,6 +968,32 @@
                         Y: =28
                         ZIndex: =16
 
+                LineChart2 As lineChart:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =159
+                    ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
+                    Items: =ChoiceCountCollection
+                    Size: =11
+                    X: =644
+                    Y: =114
+                    ZIndex: =34
+
+                Label7_1 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Bold
+                    Height: =26
+                    Size: =10
+                    Text: ="Total Amount of Claims by Period"
+                    Visible: =var_current_user<>"Distributor"
+                    Width: =241
+                    X: =641
+                    Y: =88
+                    ZIndex: =36
+
     Icon2 As icon.HorizontalLine:
         BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(89, 0, 0, 1)
