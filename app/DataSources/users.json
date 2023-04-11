@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-03-23T16:41:13.7120000Z",
+      "LastChangedTimeString": "2023-04-04T16:26:33.9110000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -17,7 +17,7 @@
       "{Link}": "Link to item",
       "{ModerationComment}": "Comments associated with the content approval of this list item",
       "{ModerationStatus}": "Content approval status",
-      "{Name}": "Name",
+      "{Name}": "Name ({Name})",
       "{Path}": "Folder path",
       "{Thumbnail}": "Thumbnail",
       "{TriggerWindowEndToken}": "Trigger Window End Token",
@@ -32,6 +32,7 @@
       "field_1": "password",
       "ID": "ID",
       "Modified": "Modified",
+      "Name": "Username",
       "Title": "username"
     },
     "DatasetName": "https://apcdeloitte.sharepoint.com/sites/Kellogg36",
