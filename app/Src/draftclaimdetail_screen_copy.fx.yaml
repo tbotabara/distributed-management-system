@@ -75,7 +75,7 @@
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Draft"
-                Visible: =var_current_user="Distributor"
+                Visible: =var_current_user=Lower("distributor")
                 Width: =115
                 ZIndex: =3
 
@@ -151,10 +151,12 @@
                     DataSource: =customer_claims_1
                     Height: |
                         =If(
+                        !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
+                        424,
                         ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
                         414,
                         ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                        376,
+                        414,
                         459
                         )
                     Item: =newSelectedRecord
@@ -164,10 +166,12 @@
                     X: =348
                     Y: |
                         =If(
+                        !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
+                        98,
                         ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
                         109,
                         ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                        146,
+                        108,
                         64
                         )
                     ZIndex: =1
@@ -231,6 +235,186 @@
                             Y: =14.5
                             ZIndex: =3
 
+                    "'Estimated Claim Value_DataCard1_1' As typedDataCard.numberEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="EstimatedClaimValue"
+                        Default: =ThisItem.'Estimated Claim Value'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"EstimatedClaimValue")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        Required: =false
+                        Update: =Value(DataCardValue27_1.Text)
+                        Visible: =!(var_current_user=Lower("distributor"))
+                        Width: =243
+                        X: =730
+                        Y: =14
+                        ZIndex: =1
+
+                        DataCardKey27_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =34
+                            Size: =10
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue27_1 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =EstimatedClaimValue*10
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =DisplayMode.Disabled
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Format: =TextFormat.Number
+                            HoverBorderColor: =RGBA(89, 0, 0, 1)
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =RGBA(222, 179, 184, 1)
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey27_1.Y + DataCardKey27_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage26_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue27_1.Y + DataCardValue27_1.Height
+                            ZIndex: =3
+
+                        StarVisible26_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =DataCardKey27_1.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey27_1.Y
+                            ZIndex: =4
+
+                    "'Final Claim Value_DataCard1_1' As typedDataCard.numberEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="FinalClaimValue"
+                        Default: =ThisItem.'Final Claim Value'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"FinalClaimValue")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        Required: =false
+                        Update: =Value(DataCardValue28_1.Text)
+                        Visible: =var_current_user=Lower("gbs")
+                        Width: =243
+                        X: =2
+                        Y: =17
+                        ZIndex: =1
+
+                        DataCardKey28_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =34
+                            Size: =10
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue28_1 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by Finance" And var_current_user="gbs", DisplayMode.Edit, DisplayMode.Disabled)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Format: =TextFormat.Number
+                            HoverBorderColor: =RGBA(89, 0, 0, 1)
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =RGBA(222, 179, 184, 1)
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey28_1.Y + DataCardKey28_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage27_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue28_1.Y + DataCardValue28_1.Height
+                            ZIndex: =3
+
+                        StarVisible27_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =DataCardKey28_1.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey28_1.Y
+                            ZIndex: =4
+
                     "'Customer Comment_DataCard1_1' As typedDataCard.textualEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
@@ -271,7 +455,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="Distributor", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Draft" And var_current_user=Lower("distributor"), DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -335,7 +519,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "BUComment")
                         Required: =false
                         Update: =DataCardValue23_1.Text
-                        Visible: =!(var_current_user = "Distributor")
+                        Visible: =!(var_current_user=Lower("distributor"))
                         Width: =486
                         X: =1
                         Y: =22
@@ -364,7 +548,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="KelloggsBU", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="kelloggs_bu", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -414,6 +598,285 @@
                             Width: =30
                             Wrap: =false
                             Y: =DataCardKey23_1.Y
+                            ZIndex: =4
+
+                    "'PIOSPOC Comment_DataCard1_1' As typedDataCard.textualEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="PIOSPOCComment"
+                        Default: =ThisItem.'PIOSPOC Comment'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"PIOSPOCComment")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "PIOSPOCComment")
+                        Required: =false
+                        Update: =DataCardValue24_1.Text
+                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggs_bu"))
+                        Width: =486
+                        X: =2
+                        Y: =22
+                        ZIndex: =1
+
+                        DataCardKey24_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =34
+                            Size: =10
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue24_1 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by BU" And var_current_user="pio_spoc", DisplayMode.Edit, DisplayMode.Disabled)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =123
+                            HoverBorderColor: =RGBA(89, 0, 0, 1)
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =RGBA(222, 179, 184, 1)
+                            MaxLength: =Parent.MaxLength
+                            Mode: =TextMode.MultiLine
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey24_1.Y + DataCardKey24_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage23_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue24_1.Y + DataCardValue24_1.Height
+                            ZIndex: =3
+
+                        StarVisible23_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =DataCardKey24_1.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey24_1.Y
+                            ZIndex: =4
+
+                    "'PIOFinance Comment_DataCard1_1' As typedDataCard.textualEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="PIOFinanceComment"
+                        Default: =ThisItem.'PIOFinance Comment'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"PIOFinanceComment")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "PIOFinanceComment")
+                        Required: =false
+                        Update: =DataCardValue25_1.Text
+                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggs_bu") || var_current_user=Lower("pio_spoc"))
+                        Width: =486
+                        X: =3
+                        Y: =22
+                        ZIndex: =1
+
+                        DataCardKey25_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =34
+                            Size: =10
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue25_1 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by PIO SPOC" And var_current_user="pio_finance", DisplayMode.Edit, DisplayMode.Disabled)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =123
+                            HoverBorderColor: =RGBA(89, 0, 0, 1)
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =RGBA(222, 179, 184, 1)
+                            MaxLength: =Parent.MaxLength
+                            Mode: =TextMode.MultiLine
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey25_1.Y + DataCardKey25_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage24_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue25_1.Y + DataCardValue25_1.Height
+                            ZIndex: =3
+
+                        StarVisible24_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =DataCardKey25_1.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey25_1.Y
+                            ZIndex: =4
+
+                    "'GBS Comment_DataCard1_1' As typedDataCard.textualEditCard":
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        BorderStyle: =BorderStyle.Solid
+                        DataField: ="GBSComment"
+                        Default: =ThisItem.'GBS Comment'
+                        DisplayMode: =Parent.DisplayMode
+                        DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"GBSComment")
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =50
+                        MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "GBSComment")
+                        Required: =false
+                        Update: =DataCardValue26_1.Text
+                        Visible: =var_current_user=Lower("gbs")
+                        Width: =486
+                        X: =0
+                        Y: =26
+                        ZIndex: =1
+
+                        DataCardKey26_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(0, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Font: =Font.'Segoe UI'
+                            Height: =34
+                            Size: =10
+                            Text: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            Wrap: =false
+                            X: =30
+                            Y: =10
+                            ZIndex: =1
+
+                        DataCardValue26_1 As text:
+                            BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                            BorderThickness: =2
+                            Color: =RGBA(0, 0, 0, 1)
+                            Default: =Parent.Default
+                            DelayOutput: =true
+                            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            DisabledFill: =RGBA(244, 244, 244, 1)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by Finance" And var_current_user="gbs", DisplayMode.Edit, DisplayMode.Disabled)
+                            FocusedBorderThickness: =4
+                            Font: =Font.'Segoe UI'
+                            Height: =123
+                            HoverBorderColor: =RGBA(89, 0, 0, 1)
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            HoverFill: =RGBA(222, 179, 184, 1)
+                            MaxLength: =Parent.MaxLength
+                            Mode: =TextMode.MultiLine
+                            PaddingLeft: =5
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =10
+                            Tooltip: =Parent.DisplayName
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardKey26_1.Y + DataCardKey26_1.Height + 5
+                            ZIndex: =2
+
+                        ErrorMessage25_1 As label:
+                            AutoHeight: =true
+                            Color: =RGBA(168, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            FontWeight: =FontWeight.Semibold
+                            Height: =10
+                            Live: =Live.Assertive
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =Parent.Error
+                            Visible: =Parent.DisplayMode=DisplayMode.Edit
+                            Width: =Parent.Width - 60
+                            X: =30
+                            Y: =DataCardValue26_1.Y + DataCardValue26_1.Height
+                            ZIndex: =3
+
+                        StarVisible25_1 As label:
+                            Align: =Align.Center
+                            Color: =RGBA(89, 0, 0, 1)
+                            DisabledColor: =RGBA(166, 166, 166, 1)
+                            Height: =DataCardKey26_1.Height
+                            Size: =13
+                            Text: ="*"
+                            Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            Width: =30
+                            Wrap: =false
+                            Y: =DataCardKey26_1.Y
                             ZIndex: =4
 
                     "'CIN (Title)_DataCard1_1' As typedDataCard.textualEditCard":
@@ -2201,6 +2664,7 @@
                             HoverBorderColor: =RGBA(89, 0, 0, 1)
                             HoverColor: =RGBA(0, 0, 0, 1)
                             HoverFill: =RGBA(222, 179, 184, 1)
+                            OnChange: =Set(EstimatedClaimValue, Value(DataCardValue21_1.Text))
                             PaddingLeft: =5
                             RadiusBottomLeft: =0
                             RadiusBottomRight: =0
@@ -2259,7 +2723,7 @@
                     OnSelect: =Navigate(claim_draft_screen)
                     Size: =15
                     Text: ="Cancel"
-                    Visible: =var_current_user="Distributor"
+                    Visible: =var_current_user=Lower("distributor")
                     Width: =140
                     X: =1179
                     Y: =533
@@ -2324,7 +2788,7 @@
                         !(CountRows(Filter(customer_claims_1, 'SSCC#' = DataCardValue17_1.Text)) =1)
                     Width: =861
                     X: =374
-                    Y: =81
+                    Y: =ContainerErrorKelloggPO_1.Height + ContainerErrorKelloggPO_1.Y
                     ZIndex: =5
 
                     IconErrorSSCC_1 As icon.Warning:
@@ -2362,7 +2826,7 @@
                         )
                     Width: =875
                     X: =374
-                    Y: =112
+                    Y: =ContainerErrorSSCC_1.Height+ContainerErrorSSCC_1.Y
                     ZIndex: =6
 
                     IconErrorETA_1 As icon.Warning:
@@ -2409,14 +2873,17 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                             {
-                                Created: Now()
+                               'Claim Status': {Value: "New"} 
                             }
                         );
                         Navigate(landing_screen)
                     Size: =15
                     Text: ="Submit"
                     Visible: |
-                        =If(DataCardValue20_1.Selected.Value = "New" And var_current_user="Distributor", true, false)
+                        =If(
+                        DataCardValue20_1.Selected.Value = "Draft" And 
+                        var_current_user=Lower("Distributor")
+                        , true, false)
                     Width: =139
                     X: =845
                     Y: =533
@@ -2438,7 +2905,10 @@
                     Size: =15
                     Text: ="Delete"
                     Visible: |
-                        =If(DataCardValue20_1.Selected.Value = "New" And var_current_user="Distributor", true, false)
+                        =If(
+                            (DataCardValue20_1.Selected.Value = "New" || DataCardValue20_1.Selected.Value = "Draft")
+                            And var_current_user=Lower("distributor"), 
+                            true, false)
                     Width: =137
                     X: =1013
                     Y: =533
@@ -2506,7 +2976,10 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: =CountRows(Gallery_WHReceipt_1.AllItems) < 1
+                    Visible: |-
+                        =(CountRows(Gallery_WHReceipt_1.AllItems) < 1)
+                        And
+                        DataCardValue20_1.Selected.Value = "Draft"
                     Width: =32
                     X: =155
                     Y: =63
@@ -2526,7 +2999,10 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: =CountRows(Gallery_DamageImage_1.AllItems) < 1
+                    Visible: |-
+                        =(CountRows(Gallery_DamageImage_1.AllItems) < 1)
+                        And
+                        DataCardValue20_1.Selected.Value = "Draft"
                     Width: =32
                     X: =155
                     Y: =153
@@ -2546,7 +3022,10 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: =CountRows('Gallery_Supporting Documents_1'.AllItems) < 1
+                    Visible: |-
+                        =(CountRows('Gallery_Supporting Documents_1'.AllItems) < 1)
+                        And
+                        DataCardValue20_1.Selected.Value = "Draft"
                     Width: =32
                     X: =175
                     Y: =239
@@ -2867,7 +3346,7 @@
                     Size: =15
                     Text: ="Reject"
                     Visible: |-
-                        =(var_current_user = "KelloggsBU" And newSelectedRecord.'Claim Status'.Value ="New") 
+                        =(var_current_user = Lower("kelloggs_bu") And newSelectedRecord.'Claim Status'.Value ="New") 
                         || 
                         (var_current_user = "PioSpoc" And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
                     Width: =140
@@ -2893,19 +3372,23 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                              If(
-                                var_current_user="KelloggsBU" And IsBlank(DataCardValue21_1.Text),
+                                var_current_user=Lower("kelloggs_bu") And IsBlank(DataCardValue21_1.Text),
                                 {
                                     'Claim Status': {Value: "Approved by BU"},
                                     'Approved Cases':Value(DataCardValue18_1.Text)
                                 },
-                                var_current_user="PioSpoc" And IsBlank(DataCardValue21_1.Text),
+                                var_current_user=Lower("pio_spoc") And IsBlank(DataCardValue21_1.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"},
                                     'Approved Cases':Value(DataCardValue18_1.Text)
                                 },
-                                var_current_user="PioSpoc" And !IsBlank(DataCardValue21_1.Text),
+                                var_current_user=Lower("pio_spoc") And !IsBlank(DataCardValue21_1.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"}
+                                },
+                                var_current_user=Lower("pio_finance"),
+                                {
+                                    'Claim Status': {Value: "Approved by Finance"}
                                 },
                                 {
                                     'Claim Status': {Value: "Approved by BU"}
@@ -2916,13 +3399,49 @@
                     Size: =15
                     Text: ="Approve"
                     Visible: |-
-                        =(var_current_user = "KelloggsBU" And newSelectedRecord.'Claim Status'.Value ="New") 
+                        =(var_current_user = Lower("kelloggs_bu") And newSelectedRecord.'Claim Status'.Value ="New") 
                         || 
-                        (var_current_user = "PioSpoc" And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        (var_current_user = Lower("Pio_Spoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        ||
+                        (var_current_user = Lower("Pio_Finance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
                     Width: =139
                     X: =1013
                     Y: =533
                     ZIndex: =26
+
+                button_process_1 As button:
+                    BorderColor: =ColorFade(RGBA(54,176,75,1), -15%)
+                    BorderThickness: =0
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =If(CountRows(Gallery_WHReceipt_1.AllItems) > 0 And CountRows(Gallery_DamageImage_1.AllItems) > 0, DisplayMode.Edit, DisplayMode.Disabled)
+                    Fill: =RGBA(54, 176, 75, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =51
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(54,176,75,1), -20%)
+                    OnSelect: |-
+                        =SubmitForm(ClaimForm_1);
+                        Patch(customer_claims_1,
+                            LookUp(customer_claims_1, ID = newSelectedRecord.ID),
+                            {
+                               'Claim Status': {Value: "Processed"} 
+                            }
+                        );
+                        Navigate(landing_screen)
+                    Size: =15
+                    Text: ="Submit"
+                    Visible: |
+                        =If(
+                        DataCardValue20_1.Selected.Value = "Approved by Finance" And 
+                        var_current_user=Lower("gbs")
+                        , true, false)
+                    Width: =139
+                    X: =1179
+                    Y: =533
+                    ZIndex: =27
 
         FooterContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
@@ -3043,25 +3562,39 @@
                 =Patch(customer_claims_1,
                     LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                      If(
-                        var_current_user="KelloggsBU" && RejectReason_2.Selected.ID = 5,
+                        var_current_user=Lower("kelloggs_bu") && RejectReason_2.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReasonOthers_1.Text,
                             'Rejected Comment': RejectReasonOthers_1.Text,
                             'Approved Cases': 0
                         },
-                        var_current_user="PioSpoc" && RejectReason_2.Selected.ID = 5,
-                        {
-                            'Claim Status': {Value: "Rejected by PIO SPOC"},
-                            'PIOSPOC Comment': RejectReasonOthers_1.Text,
-                            'Rejected Comment': RejectReasonOthers_1.Text,
-                            'Approved Cases': 0
-                        },
-                        var_current_user="KelloggsBU" && !(RejectReason_2.Selected.ID = 5),
+                        var_current_user=Lower("kelloggs_bu") && !(RejectReason_2.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReason_2.Selected.Name,
                             'Rejected Comment': RejectReason_2.Selected.Name,
+                            'Approved Cases': 0
+                        },
+                        var_current_user=Lower("pio_finance") && RejectReason_2.Selected.ID = 5,
+                        {
+                            'Claim Status': {Value: "Rejected by Finance"},
+                            'PIOFinance Comment': RejectReasonOthers_1.Text,
+                            'Rejected Comment': RejectReasonOthers_1.Text,
+                            'Approved Cases': 0
+                        },
+                        var_current_user=Lower("pio_finance") && !(RejectReason_2.Selected.ID = 5),
+                        {
+                            'Claim Status': {Value: "Rejected by Finance"},
+                            'PIOFinance Comment': RejectReason_2.Selected.Name,
+                            'Rejected Comment': RejectReason_2.Selected.Name,
+                            'Approved Cases': 0
+                        },
+                        var_current_user=Lower("pio_spoc") && RejectReason_2.Selected.ID = 5,
+                        {
+                            'Claim Status': {Value: "Rejected by PIO SPOC"},
+                            'PIOSPOC Comment': RejectReasonOthers_1.Text,
+                            'Rejected Comment': RejectReasonOthers_1.Text,
                             'Approved Cases': 0
                         },
                         {

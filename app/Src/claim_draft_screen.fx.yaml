@@ -451,7 +451,7 @@
                             Sort(
                                 Filter(
                                 customer_claims_1,
-                                StartsWith('Claim Status'.Value, "New") &&
+                                StartsWith('Claim Status'.Value, "Draft") &&
                                 (StartsWith('Kellogg PO#', SearchInput_6.Text) ||
                                 StartsWith('Kellogg Inv #', SearchInput_6.Text))
                                 ), 
