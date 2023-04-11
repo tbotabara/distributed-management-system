@@ -1,4 +1,4 @@
-"landing_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
+"landing_screen_2 As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: |+
@@ -10,9 +10,9 @@
                 'Destination Country'
             )
         );
-        ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
-        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
-        ClearCollect(colDestinationCountry, combo_market_1.SelectedItems.Value);
+        ClearCollect(colClaimType, combo_ct_7.SelectedItems.Value);
+        ClearCollect(colClaimStatus, combo_status_6.SelectedItems.Value);
+        ClearCollect(colDestinationCountry, combo_market_3.SelectedItems.Value);
         ClearCollect(customer_claims_1_all, customer_claims_1);
         ClearCollect(
             FilteredChoiceCountCollection,
@@ -48,7 +48,7 @@
         );
         
 
-    ScreenContainer1 As groupContainer.verticalAutoLayoutContainer:
+    ScreenContainer1_7 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
@@ -56,7 +56,7 @@
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1 As groupContainer.horizontalAutoLayoutContainer:
+        HeaderContainer1_7 As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
@@ -69,7 +69,7 @@
             PaddingRight: =20
             ZIndex: =2
 
-            Image2 As image:
+            Image2_5 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -78,7 +78,7 @@
                 PaddingRight: =20
                 ZIndex: =1
 
-            dashboard_btn As button:
+            dashboard_btn_5 As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
@@ -90,14 +90,14 @@
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen)
+                OnSelect: =Navigate(landing_screen_2)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Dashboard"
                 Width: =115
                 ZIndex: =2
 
-            draft_btn As button:
+            draft_btn_5 As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 BorderThickness: =1
@@ -117,7 +117,7 @@
                 Width: =115
                 ZIndex: =3
 
-            Rectangle7 As rectangle:
+            Rectangle7_5 As rectangle:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Fill: =RGBA(0, 0, 0, 0)
@@ -125,7 +125,7 @@
                 Height: =75
                 ZIndex: =4
 
-            Icon6_1 As icon.Person:
+            Icon6_9 As icon.Person:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(89, 0, 0, 1)
@@ -136,7 +136,7 @@
                 Width: =20
                 ZIndex: =5
 
-            Label5_4 As label:
+            Label5_17 As label:
                 Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
@@ -148,7 +148,7 @@
                 Width: =100
                 ZIndex: =6
 
-            Icon5_1 As icon.Leave:
+            Icon5_11 As icon.Leave:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(89, 0, 0, 1)
@@ -159,7 +159,7 @@
                 OnSelect: =Navigate(login_screen)
                 ZIndex: =7
 
-        MainSectionContainer1 As groupContainer.verticalAutoLayoutContainer:
+        MainSectionContainer1_7 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -169,23 +169,23 @@
             PaddingTop: =20
             ZIndex: =3
 
-            Container1 As groupContainer.manualLayoutContainer:
+            Container1_5 As groupContainer.manualLayoutContainer:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =300
                 ZIndex: =2
 
-                Image3 As image:
+                Image3_4 As image:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
                     Height: =92
-                    Image: =Last(AttachmentControl.Attachments).Value
+                    Image: =Last(AttachmentControl_4.Attachments).Value
                     Visible: =false
                     X: =206
                     Y: =50
                     ZIndex: =4
 
-                Gallery4_1 As gallery.galleryVertical:
+                Gallery4_6 As gallery.galleryVertical:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
@@ -198,17 +198,17 @@
                                 {
                                     FilteredClaims: Filter(
                                         customer_claims_1,
-                                        (StartsWith('CIN (Title)', input_search.Text) ||
-                                        (IsNumeric(input_search.Text) && 'Kellogg PO#' = Value(input_search.Text)) ||
-                                        (IsNumeric(input_search.Text) && 'Kellogg Inv #' = Value(input_search.Text)) ||
-                                        StartsWith('Container #', input_search.Text))
+                                        (StartsWith('CIN (Title)', input_search_4.Text) ||
+                                        (IsNumeric(input_search_4.Text) && 'Kellogg PO#' = Value(input_search_4.Text)) ||
+                                        (IsNumeric(input_search_4.Text) && 'Kellogg Inv #' = Value(input_search_4.Text)) ||
+                                        StartsWith('Container #', input_search_4.Text))
                                     )
                                 },
                                 Sort(
                                     Filter(
                                         FilteredClaims,
-                                        (IsEmpty(combo_ct.SelectedItems) || 'Claim Type'.Value in combo_ct.SelectedItems.Value),
-                                        (IsEmpty(combo_status.SelectedItems) || 'Claim Status'.Value in combo_status.SelectedItems.Value)
+                                        (IsEmpty(combo_ct_8.SelectedItems) || 'Claim Type'.Value in combo_ct_8.SelectedItems.Value),
+                                        (IsEmpty(combo_status_7.SelectedItems) || 'Claim Status'.Value in combo_status_7.SelectedItems.Value)
                                     ),
                                     ID, SortOrder.Descending
                                 )
@@ -224,7 +224,7 @@
                     Y: =400
                     ZIndex: =14
 
-                    lbl_tbl_country As label:
+                    lbl_tbl_country_5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -237,7 +237,7 @@
                         X: =35
                         ZIndex: =2
 
-                    lbl_tbl_ct As label:
+                    lbl_tbl_ct_5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -250,7 +250,7 @@
                         X: =250
                         ZIndex: =4
 
-                    lbl_tbl_kpo As label:
+                    lbl_tbl_kpo_5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -263,7 +263,7 @@
                         X: =414
                         ZIndex: =5
 
-                    lbl_tbl_in As label:
+                    lbl_tbl_in_5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -276,7 +276,7 @@
                         X: =564
                         ZIndex: =6
 
-                    lbl_tbl_tcfc As label:
+                    lbl_tbl_tcfc_5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -288,7 +288,7 @@
                         X: =714
                         ZIndex: =7
 
-                    lbl_tbl_status As label:
+                    lbl_tbl_status_4 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -301,7 +301,7 @@
                         X: =1014
                         ZIndex: =8
 
-                    lbl_tbl_cd As label:
+                    lbl_tbl_cd_4 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -313,7 +313,7 @@
                         X: =864
                         ZIndex: =9
 
-                    lbl_tbl_comments As label:
+                    lbl_tbl_comments_4 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -326,15 +326,15 @@
                         X: =1146
                         ZIndex: =10
 
-                    Icon1 As icon.Warning:
+                    Icon1_4 As icon.Warning:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(89, 0, 0, 1)
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(244, 244, 244, 1)
                         Height: =20
                         Icon: =Icon.Warning
-                        OnSelect: =Notify(lbl_hdn_warnings.Text, NotificationType.Error)
-                        Tooltip: =lbl_hdn_warnings.Text
+                        OnSelect: =Notify(lbl_hdn_warnings_5.Text, NotificationType.Error)
+                        Tooltip: =lbl_hdn_warnings_5.Text
                         Visible: |
                             =!(
                                 IsBlank(LookUp(customer_claims_1, 'Kellogg PO#' = ThisItem.'Kellogg PO#', 'Kellogg PO#')) &&
@@ -346,7 +346,7 @@
                         Y: =19
                         ZIndex: =11
 
-                    button_gallery_cin As button:
+                    button_gallery_cin_5 As button:
                         Align: =Align.Left
                         Color: =RGBA(0, 134, 208, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -370,7 +370,7 @@
                         X: =160
                         ZIndex: =12
 
-                    lbl_hdn_warnings As label:
+                    lbl_hdn_warnings_5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -401,7 +401,7 @@
                         Y: =9
                         ZIndex: =13
 
-                Label3 As label:
+                Label3_5 As label:
                     Align: =Align.Center
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
@@ -411,13 +411,13 @@
                     Size: =10
                     Text: ="No records found"
                     VerticalAlign: =VerticalAlign.Top
-                    Visible: =CountRows(Gallery4_1.AllItems) = 0
+                    Visible: =CountRows(Gallery4_6.AllItems) = 0
                     Width: =1280
                     X: =27
                     Y: =400
                     ZIndex: =15
 
-                lbl_SearchKeyword_4 As label:
+                lbl_SearchKeyword_8 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -431,7 +431,7 @@
                     Y: =270
                     ZIndex: =17
 
-                lbl_ClaimType1_4 As label:
+                lbl_ClaimType1_12 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -445,7 +445,7 @@
                     Y: =270
                     ZIndex: =18
 
-                lbl_Status_4 As label:
+                lbl_Status_15 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -459,7 +459,7 @@
                     Y: =270
                     ZIndex: =19
 
-                input_search As text:
+                input_search_4 As text:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     BorderThickness: =2
                     Color: =RGBA(0, 0, 0, 1)
@@ -476,7 +476,7 @@
                     OnChange: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems))
+                            !(IsEmpty(input_search_4.Text) && IsEmpty(combo_ct_8.SelectedItems) && IsEmpty(combo_status_7.SelectedItems))
                         )
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -488,7 +488,7 @@
                     Y: =296
                     ZIndex: =20
 
-                combo_status As combobox:
+                combo_status_7 As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -509,7 +509,7 @@
                     OnSelect: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems))
+                            !(IsEmpty(input_search_4.Text) && IsEmpty(combo_ct_8.SelectedItems) && IsEmpty(combo_status_7.SelectedItems))
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
@@ -522,7 +522,7 @@
                     Y: =296
                     ZIndex: =21
 
-                combo_ct As combobox:
+                combo_ct_8 As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -543,7 +543,7 @@
                     OnSelect: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(input_search.Text) && IsEmpty(combo_ct.SelectedItems) && IsEmpty(combo_status.SelectedItems))
+                            !(IsEmpty(input_search_4.Text) && IsEmpty(combo_ct_8.SelectedItems) && IsEmpty(combo_status_7.SelectedItems))
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
@@ -556,7 +556,7 @@
                     Y: =296
                     ZIndex: =22
 
-                Label7 As label:
+                Label7_4 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -571,14 +571,14 @@
                     Y: =77
                     ZIndex: =30
 
-                Group3 As group:
+                Group3_5 As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =30
 
-                ColumnChart2 As barChart:
+                ColumnChart2_2 As barChart:
                     BorderColor: =RGBA(56, 56, 56, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
@@ -594,14 +594,14 @@
                     Y: =101
                     ZIndex: =31
 
-                Group2 As group:
+                Group2_2 As group:
                     Height: =5
                     Width: =5
                     X: =60
                     Y: =60
                     ZIndex: =31
 
-                    Label1_10 As label:
+                    Label1_52 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -616,7 +616,7 @@
                         Y: =360
                         ZIndex: =5
 
-                    Label1_9 As label:
+                    Label1_51 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(242, 242, 242, 1)
@@ -632,7 +632,7 @@
                         Y: =360
                         ZIndex: =6
 
-                    Label1_11 As label:
+                    Label1_53 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -647,7 +647,7 @@
                         Y: =360
                         ZIndex: =7
 
-                    Label1_12 As label:
+                    Label1_54 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -661,7 +661,7 @@
                         Y: =360
                         ZIndex: =8
 
-                    Label1_13 As label:
+                    Label1_55 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -675,7 +675,7 @@
                         Y: =360
                         ZIndex: =9
 
-                    Label1_14 As label:
+                    Label1_56 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -689,7 +689,7 @@
                         Y: =360
                         ZIndex: =10
 
-                    Label1_15 As label:
+                    Label1_57 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -703,7 +703,7 @@
                         Y: =360
                         ZIndex: =11
 
-                    Label1_16 As label:
+                    Label1_58 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -718,7 +718,7 @@
                         Y: =360
                         ZIndex: =12
 
-                    Label1_17 As label:
+                    Label1_59 As label:
                         BorderColor: =RGBA(234, 234, 234, 1)
                         BorderThickness: =1
                         Color: =RGBA(234, 234, 234, 1)
@@ -733,14 +733,14 @@
                         Y: =360
                         ZIndex: =13
 
-                Group1 As group:
+                Group1_4 As group:
                     Height: =5
                     Width: =5
                     X: =40
                     Y: =40
                     ZIndex: =33
 
-                    Button2 As button:
+                    Button2_4 As button:
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(244, 244, 244, 1)
@@ -750,17 +750,17 @@
                         HoverColor: =RGBA(255, 255, 255, 1)
                         HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
                         OnSelect: |-
-                            =Set(varFromAttachmentControl, JSON(Image3.Image, JSONFormat.IncludeBinaryData));
+                            =Set(varFromAttachmentControl, JSON(Image3_4.Image, JSONFormat.IncludeBinaryData));
                             Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len
                             (varFromAttachmentControl) - Find(",", varFromAttachmentControl)-1));
                             
-                            Set(varFlowResponse, UploadExcel.Run(Last(AttachmentControl.Attachments).Name, varBase64Only));
+                            Set(varFlowResponse, UploadExcel.Run(Last(AttachmentControl_4.Attachments).Name, varBase64Only));
                             
                             Set(varInsertedItems, varFlowResponse.inserteditems);
                             
                             Notify("Upload Successful! Count of claims uploaded: " & varInsertedItems, NotificationType.Success);
                             
-                            Reset(AttachmentControl);
+                            Reset(AttachmentControl_4);
                             Refresh(customer_claims_1)
                         Size: =10
                         Text: ="Upload Claim"
@@ -770,7 +770,7 @@
                         Y: =102
                         ZIndex: =1
 
-                    dd_ As dropdown:
+                    dd__4 As dropdown:
                         AllowEmptySelection: =true
                         BorderColor: =RGBA(89, 0, 0, 1)
                         ChevronBackground: =RGBA(164, 38, 44, 1)
@@ -797,7 +797,7 @@
                         Y: =52
                         ZIndex: =2
 
-                    AttachmentControl As attachments:
+                    AttachmentControl_4 As attachments:
                         BorderColor: =RGBA(164, 38, 44, 1)
                         BorderThickness: =2
                         DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -832,7 +832,7 @@
                         Y: =52
                         ZIndex: =3
 
-                    lbl_ClaimType2 As label:
+                    lbl_ClaimType2_4 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -847,7 +847,7 @@
                         Y: =28
                         ZIndex: =16
 
-                LineChart2 As lineChart:
+                LineChart2_2 As lineChart:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     Font: =Font.'Segoe UI'
                     Height: =170
@@ -859,7 +859,7 @@
                     Y: =101
                     ZIndex: =34
 
-                Label7_1 As label:
+                Label7_5 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -874,7 +874,7 @@
                     Y: =88
                     ZIndex: =36
 
-                lbl_Status_8 As label:
+                lbl_Status_13 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -888,7 +888,7 @@
                     Y: =3
                     ZIndex: =37
 
-                lbl_ClaimType1_8 As label:
+                lbl_ClaimType1_11 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -902,7 +902,7 @@
                     Y: =3
                     ZIndex: =39
 
-                lbl_Status_9 As label:
+                lbl_Status_14 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
@@ -916,7 +916,7 @@
                     Y: =3
                     ZIndex: =41
 
-                combo_market_1 As combobox:
+                combo_market_3 As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -935,9 +935,9 @@
                     Items: =UniqueCountriesCollection
                     NoSelectionText: ="All"
                     OnChange: |
-                        =ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
-                        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
-                        ClearCollect(colDestinationCountry, combo_market_1.SelectedItems.Value);
+                        =ClearCollect(colClaimType, combo_ct_7.SelectedItems.Value);
+                        ClearCollect(colClaimStatus, combo_status_6.SelectedItems.Value);
+                        ClearCollect(colDestinationCountry, combo_market_3.SelectedItems.Value);
                         
                         ClearCollect(
                             FilteredChoiceCountCollection,
@@ -983,7 +983,7 @@
                     Y: =27
                     ZIndex: =44
 
-                combo_ct_4 As combobox:
+                combo_ct_7 As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -1002,9 +1002,9 @@
                     Items: =Choices(customer_claims_1.'Claim Type')
                     NoSelectionText: ="All"
                     OnChange: |
-                        =ClearCollect(colClaimType, combo_ct_4.SelectedItems.Value);
-                        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
-                        ClearCollect(colDestinationCountry, combo_market_2.SelectedItems.Value);
+                        =ClearCollect(colClaimType, combo_ct_7.SelectedItems.Value);
+                        ClearCollect(colClaimStatus, combo_status_6.SelectedItems.Value);
+                        ClearCollect(colDestinationCountry, combo_market_3.SelectedItems.Value);
                         
                         ClearCollect(
                             FilteredChoiceCountCollection,
@@ -1050,7 +1050,7 @@
                     Y: =27
                     ZIndex: =45
 
-                combo_status_4 As combobox:
+                combo_status_6 As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -1069,9 +1069,9 @@
                     Items: =Choices(customer_claims_1.'Claim Status')
                     NoSelectionText: ="All"
                     OnChange: |
-                        =ClearCollect(colClaimType, combo_status_4.SelectedItems.Value);
-                        ClearCollect(colClaimStatus, combo_status_4.SelectedItems.Value);
-                        ClearCollect(colDestinationCountry, combo_market_2.SelectedItems.Value);
+                        =ClearCollect(colClaimType, combo_status_6.SelectedItems.Value);
+                        ClearCollect(colClaimStatus, combo_status_6.SelectedItems.Value);
+                        ClearCollect(colDestinationCountry, combo_market_3.SelectedItems.Value);
                         
                         ClearCollect(
                             FilteredChoiceCountCollection,
@@ -1117,7 +1117,7 @@
                     Y: =27
                     ZIndex: =46
 
-    Icon2 As icon.HorizontalLine:
+    Icon2_7 As icon.HorizontalLine:
         BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
