@@ -29,10 +29,12 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =3
 
-            HorizontalProgressBar_1 As HorizontalProgressBar:
-                AlignInContainer: =AlignInContainer.Start
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
+            Container2 As groupContainer.manualLayoutContainer:
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =2
+
+                HorizontalProgressBar_1 As HorizontalProgressBar:
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
