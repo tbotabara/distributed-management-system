@@ -548,7 +548,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="kelloggsbu", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "New" And var_current_user="kelloggs_bu", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -612,7 +612,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "PIOSPOCComment")
                         Required: =false
                         Update: =DataCardValue24.Text
-                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggsbu"))
+                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggs_bu"))
                         Width: =486
                         X: =2
                         Y: =22
@@ -641,7 +641,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by BU" And var_current_user="piospoc", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by BU" And var_current_user="pio_spoc", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -705,7 +705,7 @@
                         MaxLength: =DataSourceInfo([@customer_claims_1], DataSourceInfo.MaxLength, "PIOFinanceComment")
                         Required: =false
                         Update: =DataCardValue25.Text
-                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggsbu") || var_current_user=Lower("piospoc"))
+                        Visible: =!(var_current_user=Lower("distributor") || var_current_user=Lower("kelloggs_bu") || var_current_user=Lower("pio_spoc"))
                         Width: =486
                         X: =3
                         Y: =22
@@ -734,7 +734,7 @@
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
-                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by PIO SPOC" And var_current_user="piofinance", DisplayMode.Edit, DisplayMode.Disabled)
+                            DisplayMode: =If(ThisItem.'Claim Status'.Value = "Approved by PIO SPOC" And var_current_user="pio_finance", DisplayMode.Edit, DisplayMode.Disabled)
                             FocusedBorderThickness: =4
                             Font: =Font.'Segoe UI'
                             Height: =123
@@ -2873,7 +2873,8 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                             {
-                               'Claim Status': {Value: "New"} 
+                               'Claim Status': {Value: "New"},
+                               'Submission Date': Now() 
                             }
                         );
                         Navigate(landing_screen)
@@ -3346,9 +3347,11 @@
                     Size: =15
                     Text: ="Reject"
                     Visible: |-
-                        =(var_current_user = Lower("kelloggsbu") And newSelectedRecord.'Claim Status'.Value ="New") 
+                        =(var_current_user = Lower("kelloggs_bu") And newSelectedRecord.'Claim Status'.Value ="New") 
                         || 
-                        (var_current_user = Lower("PioSpoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        (var_current_user = Lower("Pio_Spoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        ||
+                        (var_current_user = Lower("Pio_Finance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
                     Width: =140
                     X: =1179
                     Y: =533
@@ -3372,21 +3375,21 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                              If(
-                                var_current_user=Lower("kelloggsbu") And IsBlank(DataCardValue21.Text),
+                                var_current_user=Lower("kelloggs_bu") And IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by BU"},
                                     'Approved Cases':Value(DataCardValue18.Text)
                                 },
-                                var_current_user=Lower("piospoc") And IsBlank(DataCardValue21.Text),
+                                var_current_user=Lower("pio_spoc") And IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"},
                                     'Approved Cases':Value(DataCardValue18.Text)
                                 },
-                                var_current_user=Lower("piospoc") And !IsBlank(DataCardValue21.Text),
+                                var_current_user=Lower("pio_spoc") And !IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"}
                                 },
-                                var_current_user=Lower("piofinance"),
+                                var_current_user=Lower("pio_finance"),
                                 {
                                     'Claim Status': {Value: "Approved by Finance"}
                                 },
@@ -3399,11 +3402,11 @@
                     Size: =15
                     Text: ="Approve"
                     Visible: |-
-                        =(var_current_user = Lower("kelloggsbu") And newSelectedRecord.'Claim Status'.Value ="New") 
+                        =(var_current_user = Lower("kelloggs_bu") And newSelectedRecord.'Claim Status'.Value ="New") 
                         || 
-                        (var_current_user = Lower("PioSpoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
+                        (var_current_user = Lower("Pio_Spoc") And newSelectedRecord.'Claim Status'.Value ="Approved by BU")
                         ||
-                        (var_current_user = Lower("PioFinance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
+                        (var_current_user = Lower("Pio_Finance") And newSelectedRecord.'Claim Status'.Value ="Approved by PIO SPOC")
                     Width: =139
                     X: =1013
                     Y: =533
@@ -3562,35 +3565,35 @@
                 =Patch(customer_claims_1,
                     LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                      If(
-                        var_current_user=Lower("kelloggsbu") && RejectReason.Selected.ID = 5,
+                        var_current_user=Lower("kelloggs_bu") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("kelloggsbu") && !(RejectReason.Selected.ID = 5),
+                        var_current_user=Lower("kelloggs_bu") && !(RejectReason.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("piofinance") && RejectReason.Selected.ID = 5,
+                        var_current_user=Lower("pio_finance") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by Finance"},
                             'PIOFinance Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("piofinance") && !(RejectReason.Selected.ID = 5),
+                        var_current_user=Lower("pio_finance") && !(RejectReason.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by Finance"},
                             'PIOFinance Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
                             'Approved Cases': 0
                         },
-                        var_current_user=Lower("piospoc") && RejectReason.Selected.ID = 5,
+                        var_current_user=Lower("pio_spoc") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by PIO SPOC"},
                             'PIOSPOC Comment': RejectReasonOthers.Text,
