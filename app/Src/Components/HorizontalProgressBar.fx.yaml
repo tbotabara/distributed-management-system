@@ -77,7 +77,6 @@ HorizontalProgressBar As CanvasComponent:
 
     Icon7 As icon.DocumentwithContent:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =30
@@ -89,7 +88,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Icon12 As icon.Person:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
+        Color: =Color.DarkGray
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =30
@@ -101,7 +100,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Icon13 As icon.OfficeBuilding:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
+        Color: =Color.DarkGray
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =30
@@ -113,7 +112,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Icon14 As icon.Calculator:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
+        Color: =Color.DarkGray
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =30
@@ -125,7 +124,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Icon15 As icon.ThumbsUp:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
+        Color: =Color.DarkGray
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
         Height: =30
@@ -137,7 +136,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =Color.DarkGray
         Height: =2
         Width: =200
         X: =140
@@ -146,7 +145,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6_1 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =Color.DarkGray
         Height: =2
         Width: =200
         X: =378
@@ -155,7 +154,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6_2 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =Color.DarkGray
         Height: =2
         Width: =200
         X: =617
@@ -164,7 +163,7 @@ HorizontalProgressBar As CanvasComponent:
 
     Rectangle6_3 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Fill: =RGBA(164, 38, 44, 1)
+        Fill: =Color.DarkGray
         Height: =2
         Width: =200
         X: =861
