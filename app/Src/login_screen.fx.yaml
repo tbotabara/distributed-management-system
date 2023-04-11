@@ -91,11 +91,11 @@ login_screen As screen:
                 !IsBlank(
                     LookUp(
                         users,
-                        username = username_txt.Text And password = password_txt.Text
+                        'Name (Title)' = username_txt.Text And password = password_txt.Text
                     )
                 ),
                 Set(var_current_user, username_txt.Text);
-                Set(var_current_user_type, LookUp(users, username = username_txt.Text).'Name (Title)');
+                Set(var_current_user_type, LookUp(users, 'Name (Title)' = username_txt.Text).'Name (Title)');
                 Reset(username_txt);
                 Reset(password_txt);
                 If(
