@@ -63,7 +63,7 @@ HorizontalProgressBar As CanvasComponent:
             VerticalAlign: =VerticalAlign.Top
             Width: =165
             X: =40
-            Y: =67
+            Y: =60
             ZIndex: =1
 
         Separator2 As rectangle:
@@ -134,4 +134,40 @@ HorizontalProgressBar As CanvasComponent:
         X: =1068
         Y: =14
         ZIndex: =6
+
+    Rectangle6 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =2
+        Width: =200
+        X: =135
+        Y: =32
+        ZIndex: =7
+
+    Rectangle6_1 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =2
+        Width: =200
+        X: =378
+        Y: =32
+        ZIndex: =8
+
+    Rectangle6_2 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =2
+        Width: =200
+        X: =617
+        Y: =32
+        ZIndex: =9
+
+    Rectangle6_3 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Height: =2
+        Width: =200
+        X: =861
+        Y: =32
+        ZIndex: =10
 
