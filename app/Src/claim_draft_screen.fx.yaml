@@ -820,11 +820,11 @@
         Color: =RGBA(89, 0, 0, 1)
         DisabledBorderColor: =RGBA(166, 166, 166, 1)
         DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =22
+        Height: =13
         Icon: =Icon.HorizontalLine
         Visible: =var_current_user=Lower("Distributor")
         Width: =73
         X: =225
-        Y: =60
+        Y: =66
         ZIndex: =2
 
