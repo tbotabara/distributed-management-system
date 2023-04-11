@@ -31,14 +31,13 @@
                 ZIndex: =2
 
                 Container3 As groupContainer.manualLayoutContainer:
-                    Height: =135
+                    Height: =170
                     Width: =1200
                     X: =80
                     Y: =20
                     ZIndex: =2
 
                     HorizontalProgressBar_1 As HorizontalProgressBar:
-                        Height: =135
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0

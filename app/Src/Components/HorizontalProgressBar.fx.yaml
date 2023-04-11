@@ -1,23 +1,23 @@
 HorizontalProgressBar As CanvasComponent:
     Fill: =RGBA(0,0,0,0.03)
-    Height: =150
+    Height: =170
     Width: =1200
     X: =0
     Y: =0
     ZIndex: =1
 
     "Trail As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        BorderColor: =RGBA(89, 0, 0, 1)
+        BorderColor: =RGBA(0, 0, 0, 0.03)
         Fill: =RGBA(0, 0, 0, 0.03)
-        Height: =150
+        Height: =170
         Items: |-
             =Table(
                 {
                     Id: 1,
                     Label: "New",
                     Icon: Icon.DocumentWithContent,
-                    Date: "",
-                    Time: "",
+                    Date: "11/04/2023",
+                    Time: "17:08:23 PM",
                     Visible: true
                 },
                 {
@@ -56,7 +56,7 @@ HorizontalProgressBar As CanvasComponent:
         Layout: =Layout.Vertical
         ShowScrollbar: =false
         TemplatePadding: =0
-        TemplateSize: =150
+        TemplateSize: =175
         Width: =1200
         WrapCount: =5
         ZIndex: =1
@@ -66,13 +66,9 @@ HorizontalProgressBar As CanvasComponent:
             Color: =RGBA(0, 0, 0, 1)
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Semibold
+            FontWeight: =FontWeight.Bold
             Height: =Self.Size * 1.8
             OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
             Size: =12
             Text: =ThisItem.Label
             VerticalAlign: =VerticalAlign.Top
@@ -84,7 +80,6 @@ HorizontalProgressBar As CanvasComponent:
         StatusIcon As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =RGBA(89, 0, 0, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =30
@@ -98,13 +93,42 @@ HorizontalProgressBar As CanvasComponent:
             ZIndex: =2
 
         Separator1 As rectangle:
-            BorderColor: =RGBA(89, 0, 0, 1)
-            Fill: =RGBA(89, 0, 0, 1)
+            BorderColor: =RGBA(0, 0, 0, 0.03)
+            Fill: =RGBA(0, 0, 0, 0.03)
             Height: =1
             OnSelect: =Select(Parent)
             Width: =Parent.TemplateWidth
             Y: =Parent.TemplateHeight - 1
             ZIndex: =3
+
+        Label8 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            Height: =33
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.Date
+            X: =52
+            Y: =91
+            ZIndex: =4
+
+        Label9 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Bold
+            OnSelect: =Select(Parent)
+            Size: =12
+            Text: =ThisItem.Time
+            X: =52
+            Y: =124
+            ZIndex: =5
 
     Rectangle6 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
