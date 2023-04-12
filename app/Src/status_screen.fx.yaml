@@ -35,18 +35,24 @@
                 ZIndex: =2
 
                 Container3 As groupContainer.manualLayoutContainer:
-                    Height: =155
+                    Height: =140
                     Width: =1200
                     X: =80
                     Y: =20
                     ZIndex: =2
 
-                    HorizontalProgressBar_1 As HorizontalProgressBar:
+                    "HorizontalProgressBar_1 As 'HorizontalProgressBar (Test)'":
 
-            ProgressBar_1 As ProgressBar:
-                LayoutMinHeight: =640
-                LayoutMinWidth: =640
-                ZIndex: =3
+                Container5 As groupContainer.manualLayoutContainer:
+                    Height: =105
+                    Width: =952
+                    X: =80
+                    Y: =192
+                    ZIndex: =3
+
+                    ProgressBar_1 As ProgressBar:
+                        Height: =105
+                        Width: =952
 
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0

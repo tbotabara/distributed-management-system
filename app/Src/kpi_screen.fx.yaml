@@ -142,8 +142,8 @@
                     Size: =10
                     Text: ="CIN"
                     Width: =165
-                    X: =26
-                    Y: =284
+                    X: =25
+                    Y: =425
                     ZIndex: =8
 
                 Label1_37 As label:
@@ -157,8 +157,8 @@
                     Size: =10
                     Text: ="Submission Date (Start Date)"
                     Width: =148
-                    X: =191
-                    Y: =284
+                    X: =190
+                    Y: =425
                     ZIndex: =9
 
                 Label1_38 As label:
@@ -172,8 +172,8 @@
                     Size: =10
                     Text: ="Period (Start Date)"
                     Width: =184
-                    X: =339
-                    Y: =284
+                    X: =338
+                    Y: =425
                     ZIndex: =10
 
                 Label1_39 As label:
@@ -187,8 +187,8 @@
                     Size: =10
                     Text: ="Expected Completion Date (End Date)"
                     Width: =187
-                    X: =521
-                    Y: =284
+                    X: =520
+                    Y: =425
                     ZIndex: =11
 
                 Label1_40 As label:
@@ -202,8 +202,8 @@
                     Size: =10
                     Text: ="Period (End Date)"
                     Width: =154
-                    X: =708
-                    Y: =284
+                    X: =707
+                    Y: =425
                     ZIndex: =12
 
                 Label1_41 As label:
@@ -217,15 +217,15 @@
                     Size: =10
                     Text: ="Status"
                     Width: =214
-                    X: =862
-                    Y: =284
+                    X: =861
+                    Y: =425
                     ZIndex: =13
 
                 Gallery4_4 As gallery.galleryVertical:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DelayItemLoading: =true
                     Fill: =RGBA(255, 255, 255, 1)
-                    Height: =315
+                    Height: =161
                     Items: |-
                         =If(
                             !areFiltersApplied,
@@ -245,8 +245,8 @@
                     TemplateSize: =58
                     Transition: =Transition.Pop
                     Width: =1050
-                    X: =26
-                    Y: =324
+                    X: =25
+                    Y: =465
                     ZIndex: =17
 
                     lbl_tbl_country_3 As label:
@@ -383,7 +383,7 @@
                     Visible: =CountRows(Gallery4_4.AllItems) = 0
                     Width: =1280
                     X: =25
-                    Y: =324
+                    Y: =449
                     ZIndex: =21
 
                 lbl_ClaimType1_7 As label:
@@ -489,6 +489,18 @@
                     Y: =31
                     ZIndex: =32
 
+                PowerBI3 As powerbi:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    DashboardId: ="85fe358e-0aa4-4279-a4fd-805f19f06b4e"
+                    Height: =150
+                    TileUrl: |-
+                        ="https://app.powerbi.com/embed?dashboardId=85fe358e-0aa4-4279-a4fd-805f19f06b4e&tileId=7ec66ac3-6b12-4c13-97a6-19fe5fc75cff&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+                    Width: =308
+                    WorkspaceId: ="__my-workspace"
+                    X: =349
+                    Y: =266
+                    ZIndex: =33
+
     OverlayPopup_3 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =RGBA(0, 0, 0, .6)
@@ -569,13 +581,25 @@
 
     PowerBI2 As powerbi:
         BorderColor: =RGBA(89, 0, 0, 1)
-        DashboardId: ="a3dd80ea-34c4-4347-8e12-97f94e2c3f77"
+        DashboardId: ="85fe358e-0aa4-4279-a4fd-805f19f06b4e"
         Height: =172
         TileUrl: |-
-            ="https://app.powerbi.com/embed?dashboardId=a3dd80ea-34c4-4347-8e12-97f94e2c3f77&tileId=79e36622-3d98-4302-b252-0fbcdd4718b7&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
-        Width: =1035
+            ="https://app.powerbi.com/embed?dashboardId=85fe358e-0aa4-4279-a4fd-805f19f06b4e&tileId=e642c01a-bbf5-481f-89eb-82b0a70e12b4&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        Width: =632
         WorkspaceId: ="__my-workspace"
-        X: =60
-        Y: =195
+        X: =45
+        Y: =180
         ZIndex: =14
+
+    PowerBI4 As powerbi:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DashboardId: ="85fe358e-0aa4-4279-a4fd-805f19f06b4e"
+        Height: =154
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=85fe358e-0aa4-4279-a4fd-805f19f06b4e&tileId=83878649-5da4-48c1-b1e9-9e7ddef4eddf&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
+        Width: =308
+        WorkspaceId: ="__my-workspace"
+        X: =45
+        Y: =359
+        ZIndex: =15
 

@@ -28,7 +28,7 @@
             "Name": "galleryTemplate4",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 943,
+            "PublishOrderIndex": 907,
             "Rules": [
               {
                 "Category": "Data",
@@ -184,7 +184,7 @@
             "Name": "StatusIcon",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 944,
+            "PublishOrderIndex": 908,
             "Rules": [
               {
                 "Category": "Data",
@@ -284,7 +284,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+                "InvariantScript": "//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -490,7 +490,7 @@
             "Name": "Title4",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 945,
+            "PublishOrderIndex": 909,
             "Rules": [
               {
                 "Category": "Data",
@@ -518,7 +518,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+                "InvariantScript": "//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -820,7 +820,7 @@
             "Name": "Label8",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 946,
+            "PublishOrderIndex": 910,
             "Rules": [
               {
                 "Category": "Data",
@@ -848,7 +848,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+                "InvariantScript": "//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -1207,7 +1207,7 @@
             "Name": "Label9",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 947,
+            "PublishOrderIndex": 911,
             "Rules": [
               {
                 "Category": "Data",
@@ -1235,7 +1235,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))\r\n",
+                "InvariantScript": "//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))\r\n",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -1499,7 +1499,7 @@
             "Name": "Separator1",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 948,
+            "PublishOrderIndex": 912,
             "Rules": [
               {
                 "Category": "Design",
@@ -1703,9 +1703,9 @@
         "LayoutName": "",
         "MetaDataIDKey": "",
         "Name": "Trail",
-        "Parent": "HorizontalProgressBar",
+        "Parent": "HorizontalProgressBar (Test)",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 942,
+        "PublishOrderIndex": 906,
         "Rules": [
           {
             "Category": "Data",
@@ -1940,9 +1940,9 @@
         "LayoutName": "",
         "MetaDataIDKey": "",
         "Name": "Rectangle6",
-        "Parent": "HorizontalProgressBar",
+        "Parent": "HorizontalProgressBar (Test)",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 949,
+        "PublishOrderIndex": 913,
         "Rules": [
           {
             "Category": "Design",
@@ -2117,9 +2117,9 @@
         "LayoutName": "",
         "MetaDataIDKey": "",
         "Name": "Rectangle6_1",
-        "Parent": "HorizontalProgressBar",
+        "Parent": "HorizontalProgressBar (Test)",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 950,
+        "PublishOrderIndex": 914,
         "Rules": [
           {
             "Category": "Design",
@@ -2294,9 +2294,9 @@
         "LayoutName": "",
         "MetaDataIDKey": "",
         "Name": "Rectangle6_2",
-        "Parent": "HorizontalProgressBar",
+        "Parent": "HorizontalProgressBar (Test)",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 951,
+        "PublishOrderIndex": 915,
         "Rules": [
           {
             "Category": "Design",
@@ -2471,9 +2471,9 @@
         "LayoutName": "",
         "MetaDataIDKey": "",
         "Name": "Rectangle6_3",
-        "Parent": "HorizontalProgressBar",
+        "Parent": "HorizontalProgressBar (Test)",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 952,
+        "PublishOrderIndex": 916,
         "Rules": [
           {
             "Category": "Design",
@@ -2605,25 +2605,19 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168863619084023",
-    "Name": "HorizontalProgressBar",
+    "LastModifiedTimestamp": "638168897540076197",
+    "Name": "HorizontalProgressBar (Test)",
     "Rules": [
       {
         "Category": "Design",
-        "InvariantScript": "1",
-        "Property": "ZIndex",
-        "RuleProviderType": "Unknown"
+        "InvariantScript": "RGBA(0,0,0,0.03)",
+        "Property": "Fill",
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
-        "InvariantScript": "0",
-        "Property": "Y",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "InvariantScript": "0",
-        "Property": "X",
+        "InvariantScript": "140",
+        "Property": "Height",
         "RuleProviderType": "Unknown"
       },
       {
@@ -2634,15 +2628,21 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "140",
-        "Property": "Height",
+        "InvariantScript": "0",
+        "Property": "X",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "InvariantScript": "RGBA(0,0,0,0.03)",
-        "Property": "Fill",
-        "RuleProviderType": "System"
+        "InvariantScript": "0",
+        "Property": "Y",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "InvariantScript": "1",
+        "Property": "ZIndex",
+        "RuleProviderType": "Unknown"
       }
     ]
   },
@@ -2650,7 +2650,7 @@
     "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
-    "Name": "HorizontalProgressBar",
+    "Name": "HorizontalProgressBar (Test)",
     "TemplateGuid": "33041f7c703542f1a1b3f8341a03b202"
   },
   "ComponentType": "CanvasComponent",
@@ -2664,7 +2664,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168863619084023",
+  "LastModifiedTimestamp": "638168897540076197",
   "Name": "33041f7c703542f1a1b3f8341a03b202",
   "OverridableProperties": {},
   "Version": "638167897736407617"
