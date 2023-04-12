@@ -569,7 +569,10 @@
 
     PowerBI5 As powerbi:
         BorderColor: =RGBA(89, 0, 0, 1)
+        DashboardId: ="523f5f4c-a036-4371-a812-c04a16927e86"
         Height: =174
+        TileUrl: |-
+            ="https://app.powerbi.com/embed?dashboardId=523f5f4c-a036-4371-a812-c04a16927e86&tileId=5a75b5a1-b867-44cf-889d-b5ebea6c1110&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d"
         Width: =1054
         WorkspaceId: ="__my-workspace"
         X: =42
