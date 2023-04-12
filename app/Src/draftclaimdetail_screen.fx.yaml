@@ -3881,14 +3881,6 @@
                         Y: =70
                         ZIndex: =19
 
-        FooterContainer1_2 As groupContainer.horizontalAutoLayoutContainer:
-            FillPortions: =0
-            Height: =75
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
-            LayoutMode: =LayoutMode.Auto
-            ZIndex: =4
-
     Label2 As label:
         BorderColor: =RGBA(89, 0, 0, 1)
         Color: =RGBA(0, 0, 0, 1)
