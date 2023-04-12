@@ -1235,7 +1235,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(106, 113, 120, 1)\r\n//If('Claim Status'= \"New\" or 'Claim Status'= \"Approved by BU\" or 'Claim Status' = \"Approved by PIO SPOC\" or 'Claim Status'= \"Approved by PIO Finance\" or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
+                "InvariantScript": "RGBA(106, 113, 120, 1)\r\n//If('Claim Status'= \"New\" or 'Claim Status'= \"Approved by BU\" or 'Claim Status' = \"Approved by PIO SPOC\" or 'Claim Status'= \"Approved by PIO Finance\" or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))\r\n",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -2605,7 +2605,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168695521584068",
+    "LastModifiedTimestamp": "638168696191227716",
     "Name": "HorizontalProgressBar",
     "Rules": [
       {
@@ -2664,7 +2664,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168695521584068",
+  "LastModifiedTimestamp": "638168696191227716",
   "Name": "33041f7c703542f1a1b3f8341a03b202",
   "OverridableProperties": {},
   "Version": "638167897736407617"
