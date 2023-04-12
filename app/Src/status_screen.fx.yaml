@@ -43,6 +43,11 @@
 
                     HorizontalProgressBar_1 As HorizontalProgressBar:
 
+            ProgressBar_1 As ProgressBar:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+                ZIndex: =3
+
         FooterContainer1 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75

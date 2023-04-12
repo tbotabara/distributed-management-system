@@ -28,7 +28,7 @@
             "Name": "galleryTemplate4",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 835,
+            "PublishOrderIndex": 837,
             "Rules": [
               {
                 "Category": "Data",
@@ -184,7 +184,7 @@
             "Name": "StatusIcon",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 836,
+            "PublishOrderIndex": 838,
             "Rules": [
               {
                 "Category": "Data",
@@ -490,7 +490,7 @@
             "Name": "Title4",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 837,
+            "PublishOrderIndex": 839,
             "Rules": [
               {
                 "Category": "Data",
@@ -518,7 +518,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(106, 113, 120, 1)\r\n//If('Claim Status'= \"New\" or 'Claim Status'= \"Approved by BU\" or 'Claim Status' = \"Approved by PIO SPOC\" or 'Claim Status'= \"Approved by PIO Finance\" or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
+                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -820,7 +820,7 @@
             "Name": "Label8",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 838,
+            "PublishOrderIndex": 840,
             "Rules": [
               {
                 "Category": "Data",
@@ -848,7 +848,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(106, 113, 120, 1)\r\n//If('Claim Status'= \"New\" or 'Claim Status'= \"Approved by BU\" or 'Claim Status' = \"Approved by PIO SPOC\" or 'Claim Status'= \"Approved by PIO Finance\" or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
+                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -1207,7 +1207,7 @@
             "Name": "Label9",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 839,
+            "PublishOrderIndex": 841,
             "Rules": [
               {
                 "Category": "Data",
@@ -1235,7 +1235,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "RGBA(106, 113, 120, 1)\r\n//If('Claim Status'= \"New\" or 'Claim Status'= \"Approved by BU\" or 'Claim Status' = \"Approved by PIO SPOC\" or 'Claim Status'= \"Approved by PIO Finance\" or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))\r\n",
+                "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))\r\n",
                 "Property": "Color",
                 "RuleProviderType": "Unknown"
               },
@@ -1499,7 +1499,7 @@
             "Name": "Separator1",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 840,
+            "PublishOrderIndex": 842,
             "Rules": [
               {
                 "Category": "Design",
@@ -1705,7 +1705,7 @@
         "Name": "Trail",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 834,
+        "PublishOrderIndex": 836,
         "Rules": [
           {
             "Category": "Data",
@@ -1942,7 +1942,7 @@
         "Name": "Rectangle6",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 841,
+        "PublishOrderIndex": 843,
         "Rules": [
           {
             "Category": "Design",
@@ -2119,7 +2119,7 @@
         "Name": "Rectangle6_1",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 842,
+        "PublishOrderIndex": 844,
         "Rules": [
           {
             "Category": "Design",
@@ -2296,7 +2296,7 @@
         "Name": "Rectangle6_2",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 843,
+        "PublishOrderIndex": 845,
         "Rules": [
           {
             "Category": "Design",
@@ -2473,7 +2473,7 @@
         "Name": "Rectangle6_3",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 844,
+        "PublishOrderIndex": 846,
         "Rules": [
           {
             "Category": "Design",
@@ -2605,7 +2605,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168765437036134",
+    "LastModifiedTimestamp": "638168806726090461",
     "Name": "HorizontalProgressBar",
     "Rules": [
       {
@@ -2636,7 +2636,7 @@
         "Category": "Design",
         "InvariantScript": "140",
         "Property": "Height",
-        "RuleProviderType": "System"
+        "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
@@ -2664,7 +2664,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168765437036134",
+  "LastModifiedTimestamp": "638168806726090461",
   "Name": "33041f7c703542f1a1b3f8341a03b202",
   "OverridableProperties": {},
   "Version": "638167897736407617"
