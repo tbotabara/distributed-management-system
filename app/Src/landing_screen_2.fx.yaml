@@ -869,7 +869,8 @@
                             OnSelect: =Select(Parent)
                             Size: =10
                             Text: =ThisItem.'Destination Country'
-                            Width: =1
+                            Width: =125
+                            X: =35
                             ZIndex: =2
 
                         lbl_tbl_ct_5 As label:
@@ -938,12 +939,12 @@
                             BorderColor: =RGBA(89, 0, 0, 1)
                             Color: =RGBA(0, 0, 0, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
-                            Font: =Font.'Segoe UI'
                             Height: =58
                             OnSelect: =Select(Parent)
                             Size: =10
                             Text: =ThisItem.'Invoice Date'
-                            Width: =1
+                            Width: =0
+                            X: =1
                             ZIndex: =9
 
                         lbl_tbl_comments_4 As label:
@@ -973,8 +974,9 @@
                                     IsBlank(LookUp(customer_claims_1, 'SSCC#' = ThisItem.'SSCC#', 'SSCC#')) &&
                                     DateValue(ThisItem.Created) <= (DateAdd(ThisItem.'Actual ETA', 30, TimeUnit.Days))
                                 )
-                            Width: =1
-                            Y: =19
+                            Width: =16
+                            X: =10
+                            Y: =20
                             ZIndex: =11
 
                         button_gallery_cin_5 As button:
@@ -997,7 +999,8 @@
                             Size: =10
                             Text: =ThisItem.'CIN (Title)'
                             Underline: =true
-                            Width: =1
+                            Width: =90
+                            X: =160
                             ZIndex: =12
 
                         lbl_hdn_warnings_5 As label:
