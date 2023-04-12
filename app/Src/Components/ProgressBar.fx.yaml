@@ -6,61 +6,6 @@ ProgressBar As CanvasComponent:
     Y: =0
     ZIndex: =1
 
-    "Trail_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
-        BorderColor: =RGBA(0, 0, 0, 0.03)
-        Fill: =RGBA(0, 0, 0, 0.03)
-        Height: =140
-        Items: =customer_claims_1
-        Layout: =Layout.Vertical
-        ShowScrollbar: =false
-        TemplatePadding: =0
-        TemplateSize: =175
-        Width: =1200
-        WrapCount: =5
-        ZIndex: =1
-
-        Separator1_1 As rectangle:
-            BorderColor: =RGBA(0, 0, 0, 0.03)
-            Fill: =RGBA(0, 0, 0, 0.03)
-            Height: =1
-            OnSelect: =Select(Parent)
-            Width: =Parent.TemplateWidth
-            Y: =Parent.TemplateHeight - 1
-            ZIndex: =3
-
-        Label8_1 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =33
-            OnSelect: =Select(Parent)
-            Size: =10
-            Text: =ThisItem.Date
-            X: =52
-            Y: =78
-            ZIndex: =4
-
-        Label9_1 As label:
-            Align: =Align.Center
-            BorderColor: =RGBA(89, 0, 0, 1)
-            Color: |
-                =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
-            DisabledColor: =RGBA(166, 166, 166, 1)
-            Font: =Font.'Segoe UI'
-            FontWeight: =FontWeight.Bold
-            Height: =33
-            OnSelect: =Select(Parent)
-            PaddingBottom: =0
-            PaddingTop: =0
-            Size: =10
-            Text: =ThisItem.Time
-            X: =52
-            Y: =100
-            ZIndex: =5
-
     Rectangle6_4 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: |-
@@ -117,7 +62,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =105
+        X: =115
         Y: =17
         ZIndex: =16
 
@@ -132,8 +77,7 @@ ProgressBar As CanvasComponent:
         Size: =12
         Text: ="New"
         VerticalAlign: =VerticalAlign.Top
-        Width: |
-            =100
+        Width: =115
         X: =65
         Y: =52
         ZIndex: =17
@@ -267,6 +211,81 @@ ProgressBar As CanvasComponent:
         Width: |
             =100
         X: =1037
-        Y: =59
+        Y: =60
         ZIndex: =25
+
+    DateNew As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =52
+        Y: =78
+        ZIndex: =26
+
+    DateBU As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =283
+        Y: =78
+        ZIndex: =27
+
+    DatePIOSPOC As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =516
+        Y: =81
+        ZIndex: =28
+
+    DatePIOFinance As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =763
+        Y: =81
+        ZIndex: =29
+
+    DateGBS As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =1012
+        Y: =81
+        ZIndex: =30
 
