@@ -3,6 +3,7 @@
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: |+
         =Set(areFiltersApplied, false);
+        // Get all countries for dropdown
         ClearCollect(
             UniqueCountriesCollection,
             Distinct(
@@ -10,6 +11,9 @@
                 'Destination Country'
             )
         );
+        
+        // ** FOR TOTAL CLAIMS PER PERIOD CHART **
+        // Filtering list first based on filters
         ClearCollect(colClaimType, combo_ct_7.SelectedItems.Value);
         ClearCollect(colClaimStatus, combo_status_6.SelectedItems.Value);
         ClearCollect(colDestinationCountry, combo_market_3.SelectedItems.Value);
@@ -23,17 +27,18 @@
                 (IsEmpty(colDestinationCountry) || 'Destination Country' in colDestinationCountry)
             )
         );
-        
+        // Store the periods for the filtered rows in a new collection 
         ClearCollect(
             ChoiceTextCollection,
             ForAll(
                 FilteredChoiceCountCollection,
                 {
-                    PeriodText: Period.Value
+                    PeriodText: Period.Value,
+                    FinalClaim: 'Final Claim Value'
                 }
             )
         );
-        
+        // Get the count per period and then store it in a new collection
         ClearCollect(
             ChoiceCountCollection,
             AddColumns(
@@ -46,6 +51,20 @@
                 CountRows(GroupedItems)
             )
         );
+        
+        // ** FOR TOTAL AMOUNT OF CLAIMS PER PERIOD CHART **
+        ClearCollect(
+            GroupedData,
+            AddColumns(
+                GroupBy(
+                    ChoiceTextCollection,
+                    "PeriodText",
+                    "Items"
+                ),
+                "TotalValue",
+                Sum(Items, FinalClaim)
+            )
+        )
         
 
     ScreenContainer1_7 As groupContainer.verticalAutoLayoutContainer:
@@ -228,7 +247,7 @@
                     Font: =Font.'Segoe UI'
                     Height: =242
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
-                    Items: =ChoiceCountCollection
+                    Items: =GroupedData
                     PaddingRight: =0
                     Size: =11
                     Width: =523
