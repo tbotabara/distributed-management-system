@@ -68,7 +68,7 @@
                 OnSelect: =Navigate(claim_draft_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
-                Text: ="Draft"
+                Text: ="KPI"
                 Width: =115
                 ZIndex: =3
 
@@ -566,18 +566,6 @@
         X: =60
         Y: =62
         ZIndex: =12
-
-    Icon2_3 As icon.HorizontalLine:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =20
-        Icon: =Icon.HorizontalLine
-        Width: =82
-        X: =122
-        Y: =62
-        ZIndex: =13
 
     PowerBI2 As powerbi:
         BorderColor: =RGBA(89, 0, 0, 1)

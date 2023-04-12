@@ -46,7 +46,8 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(184, 0, 0, 1)
@@ -64,9 +65,10 @@
                 AlignInContainer: =AlignInContainer.Center
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
@@ -84,9 +86,10 @@
                 AlignInContainer: =AlignInContainer.Center
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
@@ -119,13 +122,12 @@
                 ZIndex: =6
 
             Label5_13 As label:
-                Align: =Align.Right
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Segoe UI'
-                Size: =10
+                Size: =12
                 Text: =var_current_user_type
                 Width: =100
                 ZIndex: =7
