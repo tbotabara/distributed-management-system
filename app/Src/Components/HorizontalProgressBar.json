@@ -28,7 +28,7 @@
             "Name": "galleryTemplate4",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 22,
+            "PublishOrderIndex": 835,
             "Rules": [
               {
                 "Category": "Data",
@@ -184,7 +184,7 @@
             "Name": "StatusIcon",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 23,
+            "PublishOrderIndex": 836,
             "Rules": [
               {
                 "Category": "Data",
@@ -242,13 +242,13 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "30",
+                "InvariantScript": "25",
                 "Property": "Height",
                 "RuleProviderType": "Unknown"
               },
               {
                 "Category": "Design",
-                "InvariantScript": "30",
+                "InvariantScript": "25",
                 "Property": "Width",
                 "RuleProviderType": "Unknown"
               },
@@ -490,7 +490,7 @@
             "Name": "Title4",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 24,
+            "PublishOrderIndex": 837,
             "Rules": [
               {
                 "Category": "Data",
@@ -632,7 +632,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "65",
+                "InvariantScript": "52",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -820,7 +820,7 @@
             "Name": "Label8",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 25,
+            "PublishOrderIndex": 838,
             "Rules": [
               {
                 "Category": "Data",
@@ -962,7 +962,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "91",
+                "InvariantScript": "78",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -1207,7 +1207,7 @@
             "Name": "Label9",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 26,
+            "PublishOrderIndex": 839,
             "Rules": [
               {
                 "Category": "Data",
@@ -1349,7 +1349,7 @@
               },
               {
                 "Category": "Design",
-                "InvariantScript": "113",
+                "InvariantScript": "100",
                 "Property": "Y",
                 "RuleProviderType": "Unknown"
               },
@@ -1499,7 +1499,7 @@
             "Name": "Separator1",
             "Parent": "Trail",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 27,
+            "PublishOrderIndex": 840,
             "Rules": [
               {
                 "Category": "Design",
@@ -1705,7 +1705,7 @@
         "Name": "Trail",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 17,
+        "PublishOrderIndex": 834,
         "Rules": [
           {
             "Category": "Data",
@@ -1775,7 +1775,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "155",
+            "InvariantScript": "140",
             "Property": "Height",
             "RuleProviderType": "Unknown"
           },
@@ -1942,7 +1942,7 @@
         "Name": "Rectangle6",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 18,
+        "PublishOrderIndex": 841,
         "Rules": [
           {
             "Category": "Design",
@@ -2119,7 +2119,7 @@
         "Name": "Rectangle6_1",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 19,
+        "PublishOrderIndex": 842,
         "Rules": [
           {
             "Category": "Design",
@@ -2296,7 +2296,7 @@
         "Name": "Rectangle6_2",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 20,
+        "PublishOrderIndex": 843,
         "Rules": [
           {
             "Category": "Design",
@@ -2473,7 +2473,7 @@
         "Name": "Rectangle6_3",
         "Parent": "HorizontalProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 21,
+        "PublishOrderIndex": 844,
         "Rules": [
           {
             "Category": "Design",
@@ -2605,7 +2605,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168758276083572",
+    "LastModifiedTimestamp": "638168761105421727",
     "Name": "HorizontalProgressBar",
     "Rules": [
       {
@@ -2634,9 +2634,9 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "155",
+        "InvariantScript": "140",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -2664,7 +2664,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168758276083572",
+  "LastModifiedTimestamp": "638168761105421727",
   "Name": "33041f7c703542f1a1b3f8341a03b202",
   "OverridableProperties": {},
   "Version": "638167897736407617"
