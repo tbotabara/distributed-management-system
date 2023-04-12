@@ -1,4 +1,4 @@
-HorizontalProgressBar As CanvasComponent:
+"'HorizontalProgressBar (Test)' As CanvasComponent":
     Fill: =RGBA(0,0,0,0.03)
     Height: =140
     Width: =1200
@@ -64,7 +64,7 @@ HorizontalProgressBar As CanvasComponent:
 
         Title4 As label:
             Align: =Align.Center
-            Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+            Color: =//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
@@ -81,7 +81,7 @@ HorizontalProgressBar As CanvasComponent:
         StatusIcon As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
             BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+            Color: =//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
             DisabledBorderColor: =RGBA(166, 166, 166, 1)
             DisabledColor: =RGBA(244, 244, 244, 1)
             Height: =25
@@ -106,7 +106,7 @@ HorizontalProgressBar As CanvasComponent:
         Label8 As label:
             Align: =Align.Center
             BorderColor: =RGBA(89, 0, 0, 1)
-            Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+            Color: =//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
@@ -122,7 +122,7 @@ HorizontalProgressBar As CanvasComponent:
             Align: =Align.Center
             BorderColor: =RGBA(89, 0, 0, 1)
             Color: |
-                =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+                =//If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
