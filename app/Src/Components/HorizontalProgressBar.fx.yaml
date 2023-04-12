@@ -118,7 +118,7 @@ HorizontalProgressBar As CanvasComponent:
             FontWeight: =FontWeight.Bold
             Height: =33
             OnSelect: =Select(Parent)
-            Size: =12
+            Size: =10
             Text: =ThisItem.Date
             X: =52
             Y: =91
@@ -137,7 +137,7 @@ HorizontalProgressBar As CanvasComponent:
             OnSelect: =Select(Parent)
             PaddingBottom: =0
             PaddingTop: =0
-            Size: =12
+            Size: =10
             Text: =ThisItem.Time
             X: =52
             Y: =113
