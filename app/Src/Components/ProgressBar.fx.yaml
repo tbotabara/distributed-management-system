@@ -11,7 +11,7 @@ ProgressBar As CanvasComponent:
         Fill: =If(DataCardValue20.Selected.Value = "Approve by BU", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))
         Height: =2
         Width: =100
-        X: =150
+        X: =165
         Y: =32
         ZIndex: =7
 
@@ -20,7 +20,7 @@ ProgressBar As CanvasComponent:
         Fill: =If(DataCardValue20.Selected.Value = "Approve by PIO SPOC", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))
         Height: =2
         Width: =100
-        X: =309
+        X: =325
         Y: =32
         ZIndex: =8
 
@@ -29,7 +29,7 @@ ProgressBar As CanvasComponent:
         Fill: =If(DataCardValue20.Selected.Value = "Approve by Finance", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))
         Height: =2
         Width: =100
-        X: =480
+        X: =485
         Y: =32
         ZIndex: =9
 
@@ -38,7 +38,7 @@ ProgressBar As CanvasComponent:
         Fill: =If(DataCardValue20.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
         Height: =2
         Width: =100
-        X: =660
+        X: =665
         Y: =32
         ZIndex: =10
 
@@ -86,7 +86,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =265
+        X: =280
         Y: =15
         ZIndex: =18
 
@@ -105,7 +105,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =230
+        X: =240
         Y: =50
         ZIndex: =19
 
@@ -121,7 +121,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =433
+        X: =445
         Y: =15
         ZIndex: =20
 
@@ -138,7 +138,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =395
+        X: =405
         Y: =50
         ZIndex: =21
 
@@ -154,7 +154,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =609
+        X: =615
         Y: =15
         ZIndex: =22
 
@@ -171,7 +171,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =571
+        X: =580
         Y: =50
         ZIndex: =23
 
@@ -187,7 +187,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =807
+        X: =805
         Y: =15
         ZIndex: =24
 
@@ -204,7 +204,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =771
+        X: =770
         Y: =50
         ZIndex: =25
 
@@ -234,8 +234,8 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =205
-        Y: =76
+        X: =215
+        Y: =75
         ZIndex: =27
 
     DatePIOSPOC As label:
@@ -249,8 +249,8 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =370
-        Y: =76
+        X: =380
+        Y: =75
         ZIndex: =28
 
     DatePIOFinance As label:
@@ -264,7 +264,7 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =549
+        X: =550
         Y: =76
         ZIndex: =29
 
@@ -279,7 +279,7 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =747
+        X: =745
         Y: =76
         ZIndex: =30
 
