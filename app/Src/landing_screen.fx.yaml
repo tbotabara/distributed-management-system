@@ -82,12 +82,13 @@
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(0, 0, 0, 0)
-                Color: =RGBA(0, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: =Navigate(landing_screen)
@@ -1218,26 +1219,14 @@
                         Y: =391
                         ZIndex: =11
 
-    Icon2_7 As icon.HorizontalLine:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =20
-        Icon: =Icon.HorizontalLine
-        Width: =82
-        X: =122
-        Y: =62
-        ZIndex: =13
-
     Rectangle6 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
         DisabledFill: =RGBA(89,0,0,1)
         DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(89, 0, 0, 1)
-        Height: =14
-        Width: =32
-        X: =253
-        Y: =82
+        Height: =2
+        Width: =80
+        X: =126
+        Y: =73
         ZIndex: =14
 

@@ -1,11 +1,32 @@
 "draftclaimdetail_screen As screen.'tabletAutoLayout_HeaderMainFooter_ver1.0'":
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
-    OnVisible: |-
+    OnVisible: |
         =UpdateContext({KelloggPOError: false});
         UpdateContext({SSCCError: false});
         UpdateContext({ClaimETAError: false});
-        UpdateContext({ShowPopup: false})
+        UpdateContext({ShowPopup: false});
+        
+        ClearCollect(PeriodChoices, Choices(customer_claims_1.Period));
+        
+        Set(
+            varPeriodRecord,
+            Switch(
+                true,
+                Today() >= Date(Year(Today()), 1, 1) && Today() <= Date(Year(Today()), 1, 28), LookUp(PeriodChoices, Value = "P1"),
+                Today() >= Date(Year(Today()), 1, 29) && Today() <= Date(Year(Today()), 2, 25), LookUp(PeriodChoices, Value = "P2"),
+                Today() >= Date(Year(Today()), 2, 26) && Today() <= Date(Year(Today()), 4, 1), LookUp(PeriodChoices, Value = "P3"),
+                Today() >= Date(Year(Today()), 4, 2) && Today() <= Date(Year(Today()), 4, 29), LookUp(PeriodChoices, Value = "P4"),
+                Today() >= Date(Year(Today()), 4, 30) && Today() <= Date(Year(Today()), 5, 27), LookUp(PeriodChoices, Value = "P5"),
+                Today() >= Date(Year(Today()), 5, 28) && Today() <= Date(Year(Today()), 7, 1), LookUp(PeriodChoices, Value = "P6"),
+                Today() >= Date(Year(Today()), 7, 2) && Today() <= Date(Year(Today()), 7, 29), LookUp(PeriodChoices, Value = "P7"),
+                Today() >= Date(Year(Today()), 7, 30) && Today() <= Date(Year(Today()), 8, 26), LookUp(PeriodChoices, Value = "P8"),
+                Today() >= Date(Year(Today()), 8, 27) && Today() <= Date(Year(Today()), 9, 30), LookUp(PeriodChoices, Value = "P9"),
+                Today() >= Date(Year(Today()), 10, 1) && Today() <= Date(Year(Today()), 10, 28), LookUp(PeriodChoices, Value = "P10"),
+                Today() >= Date(Year(Today()), 10, 29) && Today() <= Date(Year(Today()), 11, 25), LookUp(PeriodChoices, Value = "P11"),
+                Today() >= Date(Year(Today()), 11, 26) && Today() <= Date(Year(Today()), 12, 30), LookUp(PeriodChoices, Value = "P12")
+            )
+        );
 
     ScreenContainer1_2 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -2954,7 +2975,8 @@
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                             {
                                'Claim Status': {Value: "New"},
-                               'Submission Date': Now() 
+                               'Submission Date': Now(),
+                               Period: varPeriodRecord
                             }
                         );
                         Navigate(landing_screen)

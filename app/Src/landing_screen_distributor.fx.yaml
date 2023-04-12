@@ -761,15 +761,14 @@
                         Y: =28
                         ZIndex: =16
 
-    Icon2_2 As icon.HorizontalLine:
+    Rectangle6_2 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =20
-        Icon: =Icon.HorizontalLine
-        Width: =86
-        X: =123
-        Y: =63
-        ZIndex: =2
+        DisabledFill: =RGBA(89,0,0,1)
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(89, 0, 0, 1)
+        Height: =2
+        Width: =80
+        X: =126
+        Y: =73
+        ZIndex: =3
 
