@@ -223,7 +223,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"New\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -547,7 +547,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by BU\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -871,7 +871,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by Finance\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -1195,7 +1195,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by PIO SPOC\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -1519,7 +1519,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -2468,7 +2468,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"New\", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -2799,7 +2799,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by BU\", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = \"Rejected by BU\", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -3130,7 +3130,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by Finance\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -3461,7 +3461,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by PIO SPOC\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -4285,7 +4285,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"New\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -4658,7 +4658,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by BU\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -5031,7 +5031,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by PIO SPOC\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -5404,7 +5404,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= \"New\" Or 'Claim Status'= \"Approved by BU\" Or 'Claim Status' = \"Approved by PIO SPOC\" Or 'Claim Status'= \"Approved by PIO Finance\" Or 'Claim Status'= \"Processed\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))",
+            "InvariantScript": "If(DataCardValue20.Selected.Value = \"Approve by Finance\", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))",
             "Property": "Color",
             "RuleProviderType": "Unknown"
           },
@@ -5875,7 +5875,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168823745770115",
+    "LastModifiedTimestamp": "638168837471869811",
     "Name": "ProgressBar",
     "Rules": [
       {
@@ -5934,7 +5934,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168823745770115",
+  "LastModifiedTimestamp": "638168837471869811",
   "Name": "028175e180d7486f9f0c28262b40d618",
   "OverridableProperties": {},
   "TemplateOriginalName": "33041f7c703542f1a1b3f8341a03b202",
