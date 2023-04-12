@@ -66,7 +66,7 @@ HorizontalProgressBar As CanvasComponent:
             Align: =Align.Center
             Color: |-
                 =RGBA(106, 113, 120, 1)
-                //If('Claim Status'= "New" or 'Claim Status'= "Approved by BU" or 'Claim Status' = "Approved by PIO SPOC" or 'Claim Status'= "Approved by PIO Finance" or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
+                //If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
             DisabledColor: =RGBA(166, 166, 166, 1)
             Font: =Font.'Segoe UI'
             FontWeight: =FontWeight.Bold
