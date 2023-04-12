@@ -170,7 +170,7 @@
             ZIndex: =3
 
             Container1_5 As groupContainer.manualLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+                AlignInContainer: =AlignInContainer.Start
                 FillPortions: =0
                 Height: =1000
                 LayoutMinHeight: =500
@@ -635,186 +635,190 @@
                     Height: =198
                     LayoutMode: =LayoutMode.Auto
                     LayoutOverflowX: =LayoutOverflow.Scroll
-                    LayoutOverflowY: =LayoutOverflow.Scroll
+                    LayoutWrap: =true
                     Width: =1276
                     X: =31
                     Y: =451
                     ZIndex: =47
 
-                    Label1_60 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        PaddingLeft: =45
-                        Size: =10
-                        Text: ="Country"
-                        Width: =165
-                        X: =165
-                        Y: =325
-                        ZIndex: =2
+                    Container7_1 As groupContainer.manualLayoutContainer:
+                        AlignInContainer: =AlignInContainer.Start
+                        Height: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =1700
+                        Width: =1280
+                        X: =27
+                        Y: =40
+                        ZIndex: =1
 
-                    Label1_61 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(242, 242, 242, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="CIN"
-                        Width: =90
-                        X: =5
-                        Y: =325
-                        ZIndex: =3
+                        Group5 As group:
+                            Height: =5
+                            Width: =5
+                            X: =60
+                            Y: =40
+                            ZIndex: =13
 
-                    Label1_62 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Claim Type"
-                        Width: =164
-                        X: =255
-                        Y: =325
-                        ZIndex: =4
+                            Label1_84 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                PaddingLeft: =45
+                                Size: =10
+                                Text: ="Country"
+                                Width: =165
+                                ZIndex: =1
 
-                    Label1_63 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Kellogg PO"
-                        X: =419
-                        Y: =325
-                        ZIndex: =5
+                            Label1_85 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(242, 242, 242, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="CIN"
+                                Width: =90
+                                X: =165
+                                ZIndex: =2
 
-                    Label1_64 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Invoice Number"
-                        X: =569
-                        Y: =325
-                        ZIndex: =6
+                            Label1_86 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Claim Type"
+                                Width: =164
+                                X: =255
+                                ZIndex: =3
 
-                    Label1_65 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Total Cases for Claim"
-                        X: =719
-                        Y: =325
-                        ZIndex: =7
+                            Label1_87 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Kellogg PO"
+                                X: =394
+                                ZIndex: =4
 
-                    Label1_69 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Final Approved Quantity"
-                        Width: =180
-                        X: =719
-                        Y: =325
-                        ZIndex: =8
+                            Label1_88 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Invoice Number"
+                                X: =544
+                                ZIndex: =5
 
-                    Label1_70 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Est. Claim Value"
-                        X: =719
-                        Y: =325
-                        ZIndex: =9
+                            Label1_89 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Total Cases for Claim"
+                                X: =694
+                                ZIndex: =6
 
-                    Label1_71 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Final Claim Value"
-                        X: =719
-                        Y: =325
-                        ZIndex: =10
+                            Label1_90 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Final Approved Quantity"
+                                Width: =180
+                                X: =844
+                                ZIndex: =7
 
-                    Label1_66 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Claim Date"
-                        X: =869
-                        Y: =325
-                        ZIndex: =11
+                            Label1_91 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Est. Claim Value"
+                                X: =1024
+                                ZIndex: =8
 
-                    Label1_67 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Status"
-                        Width: =125
-                        X: =1019
-                        Y: =325
-                        ZIndex: =12
+                            Label1_92 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Final Claim Value"
+                                X: =1174
+                                ZIndex: =9
 
-                    Label1_68 As label:
-                        BorderColor: =RGBA(234, 234, 234, 1)
-                        BorderThickness: =1
-                        Color: =RGBA(234, 234, 234, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Size: =10
-                        Text: ="Comments"
-                        Width: =135
-                        X: =1144
-                        Y: =325
-                        ZIndex: =13
+                            Label1_93 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Claim Date"
+                                X: =1301
+                                ZIndex: =10
+
+                            Label1_94 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Status"
+                                Width: =125
+                                X: =1451
+                                ZIndex: =11
+
+                            Label1_95 As label:
+                                BorderColor: =RGBA(234, 234, 234, 1)
+                                BorderThickness: =1
+                                Color: =RGBA(234, 234, 234, 1)
+                                DisabledColor: =RGBA(166, 166, 166, 1)
+                                Fill: =RGBA(164, 38, 44, 1)
+                                Font: =Font.'Segoe UI'
+                                FontWeight: =FontWeight.Bold
+                                Size: =10
+                                Text: ="Comments"
+                                Width: =135
+                                X: =1576
+                                ZIndex: =12
 
                     Gallery4_6 As gallery.galleryVertical:
                         AlignInContainer: =AlignInContainer.Start
@@ -848,13 +852,13 @@
                             )
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
-                        LayoutMinWidth: =320
+                        LayoutMinWidth: =1700
                         LoadingSpinner: =LoadingSpinner.Data
                         OnSelect: =
                         TemplateSize: =58
                         Transition: =Transition.Pop
                         Width: =1280
-                        ZIndex: =14
+                        ZIndex: =2
 
                         lbl_tbl_country_5 As label:
                             BorderColor: =RGBA(89, 0, 0, 1)
@@ -1171,13 +1175,6 @@
                         X: =480
                         Y: =391
                         ZIndex: =22
-
-                Container7 As groupContainer.manualLayoutContainer:
-                    Height: =265
-                    Width: =1280
-                    X: =27
-                    Y: =40
-                    ZIndex: =48
 
     Icon2_7 As icon.HorizontalLine:
         BorderColor: =RGBA(89, 0, 0, 1)
