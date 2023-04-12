@@ -3742,7 +3742,7 @@
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
-            "AutoRuleBindingString": "(Parent.TemplateHeight / 2) - (Self.Height / 2)",
+            "AutoRuleBindingString": "",
             "InvariantPropertyName": "Y",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
@@ -3927,7 +3927,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "60",
+            "InvariantScript": "50",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -5896,7 +5896,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168859030890118",
+    "LastModifiedTimestamp": "638168859154451468",
     "Name": "ProgressBar",
     "Rules": [
       {
@@ -5955,7 +5955,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168859030890118",
+  "LastModifiedTimestamp": "638168859154451468",
   "Name": "028175e180d7486f9f0c28262b40d618",
   "OverridableProperties": {},
   "TemplateOriginalName": "33041f7c703542f1a1b3f8341a03b202",
