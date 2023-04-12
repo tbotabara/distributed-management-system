@@ -3424,23 +3424,28 @@
                                 var_current_user=Lower("kelloggs_bu") And IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by BU"},
-                                    'Approved Cases':Value(DataCardValue18.Text)
+                                    'Approved Cases':Value(DataCardValue18.Text),
+                                    BUTimestamp: Now()
                                 },
                                 var_current_user=Lower("pio_spoc") And IsBlank(DataCardValue21.Text),
                                 {
                                     'Claim Status': {Value: "Approved by PIO SPOC"},
-                                    'Approved Cases':Value(DataCardValue18.Text)
+                                    'Approved Cases':Value(DataCardValue18.Text),
+                                    PIOSPOCTimestamp:Now()
                                 },
                                 var_current_user=Lower("pio_spoc") And !IsBlank(DataCardValue21.Text),
                                 {
-                                    'Claim Status': {Value: "Approved by PIO SPOC"}
+                                    'Claim Status': {Value: "Approved by PIO SPOC"},
+                                    PIOSPOCTimestamp:Now()
                                 },
                                 var_current_user=Lower("pio_finance"),
                                 {
-                                    'Claim Status': {Value: "Approved by Finance"}
+                                    'Claim Status': {Value: "Approved by Finance"},
+                                    FinanceTimestamp: Now()
                                 },
                                 {
-                                    'Claim Status': {Value: "Approved by BU"}
+                                    'Claim Status': {Value: "Approved by BU"},
+                                    BUTimestamp: Now()
                                 }
                              )
                         );
@@ -3476,7 +3481,8 @@
                         Patch(customer_claims_1,
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                             {
-                               'Claim Status': {Value: "Processed"} 
+                               'Claim Status': {Value: "Processed"},
+                               GBSTimestamp:Now()
                             }
                         );
                         Navigate(landing_screen)
@@ -3603,41 +3609,47 @@
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
-                            'Approved Cases': 0
+                            'Approved Cases': 0,
+                            BUTimestamp: Now()
                         },
                         var_current_user=Lower("kelloggs_bu") && !(RejectReason.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by BU"},
                             'BU Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
-                            'Approved Cases': 0
+                            'Approved Cases': 0,
+                            BUTimestamp: Now()
                         },
                         var_current_user=Lower("pio_finance") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by Finance"},
                             'PIOFinance Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
-                            'Approved Cases': 0
+                            'Approved Cases': 0,
+                            FinanceTimestamp: Now()
                         },
                         var_current_user=Lower("pio_finance") && !(RejectReason.Selected.ID = 5),
                         {
                             'Claim Status': {Value: "Rejected by Finance"},
                             'PIOFinance Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
-                            'Approved Cases': 0
+                            'Approved Cases': 0,
+                            FinanceTimestamp: Now()
                         },
                         var_current_user=Lower("pio_spoc") && RejectReason.Selected.ID = 5,
                         {
                             'Claim Status': {Value: "Rejected by PIO SPOC"},
                             'PIOSPOC Comment': RejectReasonOthers.Text,
                             'Rejected Comment': RejectReasonOthers.Text,
-                            'Approved Cases': 0
+                            'Approved Cases': 0,
+                            PIOSPOCTimestamp: Now()
                         },
                         {
                             'Claim Status': {Value: "Rejected by PIO SPOC"},
                             'PIOSPOC Comment': RejectReason.Selected.Name,
                             'Rejected Comment': RejectReason.Selected.Name,
-                            'Approved Cases': 0
+                            'Approved Cases': 0,
+                            PIOSPOCTimestamp: Now()
                         }
                      )
                 );
