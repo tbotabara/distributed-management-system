@@ -1,0 +1,291 @@
+ProgressBar As CanvasComponent:
+    Fill: =RGBA(0,0,0,0.03)
+    Height: =140
+    Width: =1200
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Rectangle6_4 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: |-
+            =Color.DarkGray
+            //If('Claim Status'= "Approved by BU",RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
+        Height: =2
+        Width: =200
+        X: =140
+        Y: =32
+        ZIndex: =7
+
+    Rectangle6_5 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: |-
+            =Color.DarkGray
+            //If('Claim Status' = "Approved by PIO SPOC",RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
+        Height: =2
+        Width: =200
+        X: =366
+        Y: =32
+        ZIndex: =8
+
+    Rectangle6_6 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: |-
+            =Color.DarkGray
+            //If('Claim Status'= "Approved by PIO Finance",RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
+        Height: =2
+        Width: =200
+        X: =617
+        Y: =32
+        ZIndex: =9
+
+    Rectangle6_7 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Fill: |-
+            =Color.DarkGray
+            //If('Claim Status'= "Processed",RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1))
+        Height: =2
+        Width: =200
+        X: =861
+        Y: =32
+        ZIndex: =10
+
+    StatusIcon_2 As icon.ChevronRight:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.DocumentWithContent
+        OnSelect: =Select(Parent)
+        TabIndex: =0
+        Tooltip: ="View item details"
+        Width: =25
+        X: =115
+        Y: =17
+        ZIndex: =16
+
+    Title4_2 As label:
+        Align: =Align.Center
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =Self.Size * 1.8
+        OnSelect: =Select(Parent)
+        Size: =12
+        Text: ="New"
+        VerticalAlign: =VerticalAlign.Top
+        Width: =115
+        X: =65
+        Y: =52
+        ZIndex: =17
+
+    StatusIcon_3 As icon.ChevronRight:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.Person
+        OnSelect: =Select(Parent)
+        TabIndex: =0
+        Tooltip: ="View item details"
+        Width: =25
+        X: =340
+        Y: =17
+        ZIndex: =18
+
+    Title4_3 As label:
+        Align: =Align.Center
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =Self.Size * 1.8
+        OnSelect: =Select(Parent)
+        Size: =12
+        Text: ="BU"
+        VerticalAlign: =VerticalAlign.Top
+        Width: |
+            =100
+        X: =308
+        Y: =59
+        ZIndex: =19
+
+    StatusIcon_4 As icon.ChevronRight:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.OfficeBuilding
+        OnSelect: =Select(Parent)
+        TabIndex: =0
+        Tooltip: ="View item details"
+        Width: =25
+        X: =579
+        Y: =20
+        ZIndex: =20
+
+    Title4_4 As label:
+        Align: =Align.Center
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =Self.Size * 1.8
+        OnSelect: =Select(Parent)
+        Size: =12
+        Text: ="PIO SPOC"
+        VerticalAlign: =VerticalAlign.Top
+        Width: |
+            =100
+        X: =541
+        Y: =60
+        ZIndex: =21
+
+    StatusIcon_5 As icon.ChevronRight:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.Calculator
+        OnSelect: =Select(Parent)
+        TabIndex: =0
+        Tooltip: ="View item details"
+        Width: =25
+        X: =823
+        Y: =17
+        ZIndex: =22
+
+    Title4_5 As label:
+        Align: =Align.Center
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =Self.Size * 1.8
+        OnSelect: =Select(Parent)
+        Size: =12
+        Text: ="PIO Finance"
+        VerticalAlign: =VerticalAlign.Top
+        Width: |
+            =100
+        X: =785
+        Y: =59
+        ZIndex: =23
+
+    StatusIcon_6 As icon.ChevronRight:
+        AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =25
+        Icon: =Icon.ThumbsUp
+        OnSelect: =Select(Parent)
+        TabIndex: =0
+        Tooltip: ="View item details"
+        Width: =25
+        X: =1075
+        Y: =20
+        ZIndex: =24
+
+    Title4_6 As label:
+        Align: =Align.Center
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =Self.Size * 1.8
+        OnSelect: =Select(Parent)
+        Size: =12
+        Text: ="GBS"
+        VerticalAlign: =VerticalAlign.Top
+        Width: |
+            =100
+        X: =1037
+        Y: =60
+        ZIndex: =25
+
+    DateNew As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =52
+        Y: =78
+        ZIndex: =26
+
+    DateBU As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =283
+        Y: =78
+        ZIndex: =27
+
+    DatePIOSPOC As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =516
+        Y: =81
+        ZIndex: =28
+
+    DatePIOFinance As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =763
+        Y: =81
+        ZIndex: =29
+
+    DateGBS As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =If(IsEmpty('Claim Status'), RGBA(106, 113, 120, 1), If('Claim Status'= "New" Or 'Claim Status'= "Approved by BU" Or 'Claim Status' = "Approved by PIO SPOC" Or 'Claim Status'= "Approved by PIO Finance" Or 'Claim Status'= "Processed", RGBA(48, 181, 148, 1), RGBA(255, 0, 0, 1)))
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =33
+        OnSelect: =Select(Parent)
+        Size: =10
+        Text: ="date"
+        X: =1012
+        Y: =81
+        ZIndex: =30
+
