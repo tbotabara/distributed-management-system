@@ -351,7 +351,8 @@
                             ForAll(
                                 FilteredChoiceCountCollection,
                                 {
-                                    PeriodText: Period.Value
+                                    PeriodText: Period.Value,
+                                    FinalClaim: 'Final Claim Value'
                                 }
                             )
                         );
@@ -366,6 +367,19 @@
                                 ),
                                 "Count",
                                 CountRows(GroupedItems)
+                            )
+                        );
+                        
+                        ClearCollect(
+                            GroupedData,
+                            AddColumns(
+                                GroupBy(
+                                    ChoiceTextCollection,
+                                    "PeriodText",
+                                    "Items"
+                                ),
+                                "TotalValue",
+                                Sum(Items, FinalClaim)
                             )
                         );
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -418,7 +432,8 @@
                             ForAll(
                                 FilteredChoiceCountCollection,
                                 {
-                                    PeriodText: Period.Value
+                                    PeriodText: Period.Value,
+                                    FinalClaim: 'Final Claim Value'
                                 }
                             )
                         );
@@ -433,6 +448,19 @@
                                 ),
                                 "Count",
                                 CountRows(GroupedItems)
+                            )
+                        );
+                        
+                        ClearCollect(
+                            GroupedData,
+                            AddColumns(
+                                GroupBy(
+                                    ChoiceTextCollection,
+                                    "PeriodText",
+                                    "Items"
+                                ),
+                                "TotalValue",
+                                Sum(Items, FinalClaim)
                             )
                         );
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -485,7 +513,8 @@
                             ForAll(
                                 FilteredChoiceCountCollection,
                                 {
-                                    PeriodText: Period.Value
+                                    PeriodText: Period.Value,
+                                    FinalClaim: 'Final Claim Value'
                                 }
                             )
                         );
@@ -500,6 +529,19 @@
                                 ),
                                 "Count",
                                 CountRows(GroupedItems)
+                            )
+                        );
+                        
+                        ClearCollect(
+                            GroupedData,
+                            AddColumns(
+                                GroupBy(
+                                    ChoiceTextCollection,
+                                    "PeriodText",
+                                    "Items"
+                                ),
+                                "TotalValue",
+                                Sum(Items, FinalClaim)
                             )
                         );
                     PressedColor: =RGBA(255, 255, 255, 1)
