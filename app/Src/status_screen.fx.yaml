@@ -18,6 +18,10 @@
             LayoutMode: =LayoutMode.Auto
             ZIndex: =2
 
+            HorizontalMenuComponent_2 As HorizontalMenuComponent:
+                LayoutMinHeight: =640
+                LayoutMinWidth: =640
+
         MainSectionContainer2 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
