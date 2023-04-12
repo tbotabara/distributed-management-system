@@ -1,7 +1,7 @@
 ProgressBar As CanvasComponent:
     Fill: =RGBA(0,0,0,0.03)
-    Height: =140
-    Width: =1200
+    Height: =108
+    Width: =958
     X: =0
     Y: =0
     ZIndex: =1
@@ -10,8 +10,8 @@ ProgressBar As CanvasComponent:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =If(DataCardValue20.Selected.Value = "Approve by BU", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))
         Height: =2
-        Width: =200
-        X: =140
+        Width: =100
+        X: =150
         Y: =32
         ZIndex: =7
 
@@ -19,8 +19,8 @@ ProgressBar As CanvasComponent:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =If(DataCardValue20.Selected.Value = "Approve by PIO SPOC", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))
         Height: =2
-        Width: =200
-        X: =366
+        Width: =100
+        X: =309
         Y: =32
         ZIndex: =8
 
@@ -28,8 +28,8 @@ ProgressBar As CanvasComponent:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =If(DataCardValue20.Selected.Value = "Approve by Finance", RGBA(48, 181, 148, 1), If(DataCardValue20.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), RGBA(106, 113, 120, 1)))
         Height: =2
-        Width: =200
-        X: =617
+        Width: =100
+        X: =480
         Y: =32
         ZIndex: =9
 
@@ -37,9 +37,9 @@ ProgressBar As CanvasComponent:
         BorderColor: =RGBA(89, 0, 0, 1)
         Fill: =If(DataCardValue20.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
         Height: =2
-        Width: =200
-        X: =861
-        Y: =32
+        Width: =100
+        X: =660
+        Y: =34
         ZIndex: =10
 
     StatusIcon_2 As icon.ChevronRight:
@@ -55,7 +55,7 @@ ProgressBar As CanvasComponent:
         Tooltip: ="View item details"
         Width: =25
         X: =115
-        Y: =17
+        Y: =15
         ZIndex: =16
 
     Title4_2 As label:
@@ -71,7 +71,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: =115
         X: =65
-        Y: =52
+        Y: =50
         ZIndex: =17
 
     StatusIcon_3 As icon.ChevronRight:
@@ -86,8 +86,8 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =340
-        Y: =17
+        X: =265
+        Y: =15
         ZIndex: =18
 
     Title4_3 As label:
@@ -105,8 +105,8 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =308
-        Y: =59
+        X: =230
+        Y: =56
         ZIndex: =19
 
     StatusIcon_4 As icon.ChevronRight:
@@ -121,7 +121,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =579
+        X: =433
         Y: =20
         ZIndex: =20
 
@@ -138,7 +138,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =541
+        X: =395
         Y: =60
         ZIndex: =21
 
@@ -154,7 +154,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =823
+        X: =609
         Y: =17
         ZIndex: =22
 
@@ -171,7 +171,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =785
+        X: =571
         Y: =59
         ZIndex: =23
 
@@ -187,7 +187,7 @@ ProgressBar As CanvasComponent:
         TabIndex: =0
         Tooltip: ="View item details"
         Width: =25
-        X: =1075
+        X: =807
         Y: =20
         ZIndex: =24
 
@@ -204,7 +204,7 @@ ProgressBar As CanvasComponent:
         VerticalAlign: =VerticalAlign.Top
         Width: |
             =100
-        X: =1037
+        X: =771
         Y: =60
         ZIndex: =25
 
@@ -220,7 +220,7 @@ ProgressBar As CanvasComponent:
         Size: =10
         Text: ="date"
         X: =52
-        Y: =78
+        Y: =76
         ZIndex: =26
 
     DateBU As label:
@@ -234,8 +234,8 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =283
-        Y: =78
+        X: =205
+        Y: =76
         ZIndex: =27
 
     DatePIOSPOC As label:
@@ -249,8 +249,8 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =516
-        Y: =81
+        X: =370
+        Y: =75
         ZIndex: =28
 
     DatePIOFinance As label:
@@ -264,8 +264,8 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =763
-        Y: =81
+        X: =549
+        Y: =75
         ZIndex: =29
 
     DateGBS As label:
@@ -279,7 +279,7 @@ ProgressBar As CanvasComponent:
         OnSelect: =Select(Parent)
         Size: =10
         Text: ="date"
-        X: =1012
-        Y: =81
+        X: =747
+        Y: =75
         ZIndex: =30
 
