@@ -123,7 +123,7 @@
         "Name": "StatusIcon_2",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 912,
+        "PublishOrderIndex": 29,
         "Rules": [
           {
             "Category": "Data",
@@ -193,7 +193,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "17",
+            "InvariantScript": "15",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -447,7 +447,7 @@
         "Name": "StatusIcon_3",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 913,
+        "PublishOrderIndex": 30,
         "Rules": [
           {
             "Category": "Data",
@@ -517,13 +517,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "17",
+            "InvariantScript": "15",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "340",
+            "InvariantScript": "265",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -771,7 +771,7 @@
         "Name": "StatusIcon_5",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 914,
+        "PublishOrderIndex": 31,
         "Rules": [
           {
             "Category": "Data",
@@ -847,7 +847,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "823",
+            "InvariantScript": "609",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1019,7 +1019,14 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          "Y",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Y",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -1095,7 +1102,7 @@
         "Name": "StatusIcon_4",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 915,
+        "PublishOrderIndex": 32,
         "Rules": [
           {
             "Category": "Data",
@@ -1165,13 +1172,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "20",
+            "InvariantScript": "15",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "579",
+            "InvariantScript": "433",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1343,7 +1350,14 @@
             "IsLockable": false,
             "NameMapSourceSchema": "?"
           },
-          "Y",
+          {
+            "AFDDataSourceName": "",
+            "AutoRuleBindingEnabled": false,
+            "AutoRuleBindingString": "",
+            "InvariantPropertyName": "Y",
+            "IsLockable": false,
+            "NameMapSourceSchema": "?"
+          },
           {
             "AFDDataSourceName": "",
             "AutoRuleBindingEnabled": false,
@@ -1419,7 +1433,7 @@
         "Name": "StatusIcon_6",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 916,
+        "PublishOrderIndex": 33,
         "Rules": [
           {
             "Category": "Data",
@@ -1489,13 +1503,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "20",
+            "InvariantScript": "15",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "1075",
+            "InvariantScript": "807",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1692,7 +1706,7 @@
         "Name": "Rectangle6_4",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 917,
+        "PublishOrderIndex": 34,
         "Rules": [
           {
             "Category": "Design",
@@ -1744,7 +1758,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "140",
+            "InvariantScript": "150",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1756,7 +1770,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "200",
+            "InvariantScript": "100",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -1869,7 +1883,7 @@
         "Name": "Rectangle6_5",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 918,
+        "PublishOrderIndex": 35,
         "Rules": [
           {
             "Category": "Design",
@@ -1921,7 +1935,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "366",
+            "InvariantScript": "309",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -1933,7 +1947,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "200",
+            "InvariantScript": "100",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -2046,7 +2060,7 @@
         "Name": "Rectangle6_6",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 919,
+        "PublishOrderIndex": 36,
         "Rules": [
           {
             "Category": "Design",
@@ -2098,7 +2112,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "617",
+            "InvariantScript": "480",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -2110,7 +2124,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "200",
+            "InvariantScript": "100",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -2223,7 +2237,7 @@
         "Name": "Rectangle6_7",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 920,
+        "PublishOrderIndex": 37,
         "Rules": [
           {
             "Category": "Design",
@@ -2275,19 +2289,19 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "861",
+            "InvariantScript": "660",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "32",
+            "InvariantScript": "34",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "200",
+            "InvariantScript": "100",
             "Property": "Width",
             "RuleProviderType": "Unknown"
           },
@@ -2440,7 +2454,7 @@
         "Name": "Title4_2",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 921,
+        "PublishOrderIndex": 38,
         "Rules": [
           {
             "Category": "Data",
@@ -2582,7 +2596,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "52",
+            "InvariantScript": "50",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -2771,7 +2785,7 @@
         "Name": "Title4_3",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 922,
+        "PublishOrderIndex": 39,
         "Rules": [
           {
             "Category": "Data",
@@ -2907,13 +2921,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "308",
+            "InvariantScript": "230",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "59",
+            "InvariantScript": "56",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -3102,7 +3116,7 @@
         "Name": "Title4_5",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 923,
+        "PublishOrderIndex": 40,
         "Rules": [
           {
             "Category": "Data",
@@ -3238,7 +3252,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "785",
+            "InvariantScript": "571",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -3433,7 +3447,7 @@
         "Name": "Title4_4",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 924,
+        "PublishOrderIndex": 41,
         "Rules": [
           {
             "Category": "Data",
@@ -3569,7 +3583,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "541",
+            "InvariantScript": "395",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -3764,7 +3778,7 @@
         "Name": "Title4_6",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 925,
+        "PublishOrderIndex": 42,
         "Rules": [
           {
             "Category": "Data",
@@ -3900,7 +3914,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "1037",
+            "InvariantScript": "771",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -4101,7 +4115,7 @@
         "Name": "DateNew",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 926,
+        "PublishOrderIndex": 43,
         "Rules": [
           {
             "Category": "Data",
@@ -4201,7 +4215,7 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "78",
+            "InvariantScript": "76",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
@@ -4474,7 +4488,7 @@
         "Name": "DateBU",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 927,
+        "PublishOrderIndex": 44,
         "Rules": [
           {
             "Category": "Data",
@@ -4574,13 +4588,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "78",
+            "InvariantScript": "76",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "283",
+            "InvariantScript": "205",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -4847,7 +4861,7 @@
         "Name": "DatePIOSPOC",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 928,
+        "PublishOrderIndex": 45,
         "Rules": [
           {
             "Category": "Data",
@@ -4947,13 +4961,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "81",
+            "InvariantScript": "75",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "516",
+            "InvariantScript": "370",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -5220,7 +5234,7 @@
         "Name": "DatePIOFinance",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 929,
+        "PublishOrderIndex": 46,
         "Rules": [
           {
             "Category": "Data",
@@ -5320,13 +5334,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "81",
+            "InvariantScript": "75",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "763",
+            "InvariantScript": "549",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -5593,7 +5607,7 @@
         "Name": "DateGBS",
         "Parent": "ProgressBar",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 930,
+        "PublishOrderIndex": 47,
         "Rules": [
           {
             "Category": "Data",
@@ -5693,13 +5707,13 @@
           },
           {
             "Category": "Design",
-            "InvariantScript": "81",
+            "InvariantScript": "75",
             "Property": "Y",
             "RuleProviderType": "Unknown"
           },
           {
             "Category": "Design",
-            "InvariantScript": "1012",
+            "InvariantScript": "747",
             "Property": "X",
             "RuleProviderType": "Unknown"
           },
@@ -5875,7 +5889,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638168845951846414",
+    "LastModifiedTimestamp": "638168858472356733",
     "Name": "ProgressBar",
     "Rules": [
       {
@@ -5886,13 +5900,13 @@
       },
       {
         "Category": "Design",
-        "InvariantScript": "140",
+        "InvariantScript": "108",
         "Property": "Height",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "InvariantScript": "1200",
+        "InvariantScript": "958",
         "Property": "Width",
         "RuleProviderType": "Unknown"
       },
@@ -5934,7 +5948,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638168845951846414",
+  "LastModifiedTimestamp": "638168858472356733",
   "Name": "028175e180d7486f9f0c28262b40d618",
   "OverridableProperties": {},
   "TemplateOriginalName": "33041f7c703542f1a1b3f8341a03b202",
