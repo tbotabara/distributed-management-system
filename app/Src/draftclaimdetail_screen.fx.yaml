@@ -3903,6 +3903,100 @@
                         Y: =70
                         ZIndex: =19
 
+                Label6_6 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Size: =10
+                    Text: ="Credit Note"
+                    Underline: =true
+                    Width: =132
+                    X: =30
+                    Y: =330
+                    ZIndex: =29
+
+                Icon_AddCreditNote As icon.AddDocument:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =45
+                    Icon: =Icon.AddDocument
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup: true});
+                        UpdateContext({TypeNumber: 4})
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    Visible: |-
+                        =(CountRows(Gallery_CreditNote.AllItems) < 1)
+                        And
+                        DataCardValue20.Selected.Value = "Approved by Finance"
+                    Width: =32
+                    X: =109
+                    Y: =327
+                    ZIndex: =30
+
+                "Gallery_CreditNote As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Height: =61
+                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = newSelectedRecord.CIN2 && 'Document Type'.Value = "Credit Note"),"Created",SortOrder.Descending))
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =51
+                    Visible: =!IsBlank(Gallery_CreditNote)
+                    Width: =282
+                    X: =30
+                    Y: =357
+                    ZIndex: =31
+
+                    Icon8_6 As icon.Download:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =14
+                        ZIndex: =1
+
+                    Icon9_6 As icon.Trash:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =14
+                        ZIndex: =2
+
+                    Label5_12 As label:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Tooltip: =ThisItem.'File name with extension'
+                        Width: =181
+                        Y: =8
+                        ZIndex: =3
+
         FooterContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75
