@@ -491,7 +491,7 @@
                     HoverFill: =RGBA(222, 179, 184, 1)
                     InputTextPlaceholder: ="Select Claim Type"
                     IsSearchable: =false
-                    Items: =Filter(Choices(customer_claims_1.'Claim Status'), Value <> " Draft")
+                    Items: =Filter(Choices(customer_claims_1.'Claim Status'), Value <> "Draft")
                     NoSelectionText: ="All"
                     OnChange: |
                         =ClearCollect(colClaimType, combo_ct_7.SelectedItems.Value);
