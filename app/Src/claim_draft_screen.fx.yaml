@@ -501,8 +501,8 @@
                             OnSelect: =Select(Parent)
                             Size: =10
                             Text: =ThisItem.'Claim Type'.Value
-                            Width: =Label_ClaimType_6.Width
-                            X: =Label_ClaimType_6.X
+                            Width: =234
+                            X: =143
                             ZIndex: =3
 
                         CustomerPO_TD_6 As label:
@@ -768,7 +768,7 @@
 
                         Button_CIN_TD_3 As button:
                             Align: =Align.Left
-                            Color: =RGBA(0, 134, 208, 1)
+                            Color: =RGBA(164, 38, 44, 1)
                             DisabledBorderColor: =RGBA(0, 0, 0, 0)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(0, 0, 0, 0)
@@ -776,17 +776,17 @@
                             Font: =Font.'Segoe UI'
                             Height: =58
                             HoverBorderColor: =RGBA(0,0,0,0)
-                            HoverColor: =RGBA(102, 182, 227, 1)
+                            HoverColor: =RGBA(200, 125, 128, 1)
                             HoverFill: =RGBA(0, 0, 0, 0)
                             OnSelect: |-
                                 =Set(newSelectedRecord, ThisItem);
                                 Navigate(draftclaimdetail_screen, ScreenTransition.None)
-                            PressedColor: =RGBA(0, 134, 208, 1)
+                            PressedColor: =RGBA(89, 0, 0, 1)
                             PressedFill: =RGBA(0,0,0,0)
                             Size: =10
                             Text: =ThisItem.'CIN (Title)'
                             Underline: =true
-                            Width: =98
+                            Width: =116
                             X: =27
                             ZIndex: =24
 
