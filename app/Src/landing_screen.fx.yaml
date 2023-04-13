@@ -491,7 +491,7 @@
                     HoverFill: =RGBA(222, 179, 184, 1)
                     InputTextPlaceholder: ="Select Claim Type"
                     IsSearchable: =false
-                    Items: =Choices(customer_claims_1.'Claim Status')
+                    Items: =Filter(Choices(customer_claims_1.'Claim Status'), Value <> " Draft")
                     NoSelectionText: ="All"
                     OnChange: |
                         =ClearCollect(colClaimType, combo_ct_7.SelectedItems.Value);
@@ -942,12 +942,12 @@
                             Text: |-
                                 =Concatenate(
                                     If(
-                                        !IsBlank(LookUp(customer_claims_1, 'Kellogg PO#' = ThisItem.'Kellogg PO#', 'Kellogg PO#')),
+                                        !(CountRows(Filter(customer_claims_1, 'Kellogg PO#' = ThisItem.'Kellogg PO#')) = 1),
                                         Concatenate("Claim submission for PO# ", Text(ThisItem.'Kellogg PO#'), " is a duplicate entry.", Char(10)),
                                         ""
                                     ),
                                     If(
-                                        !IsBlank(LookUp(customer_claims_1, 'SSCC#' = ThisItem.'SSCC#', 'SSCC#')),
+                                        !(CountRows(Filter(customer_claims_1, 'SSCC#' = ThisItem.'Kellogg PO#')) =1),
                                         Concatenate("Claim submission for PO# ", Text(ThisItem.'Kellogg PO#'), " with ", Text(ThisItem.'SSCC#'), " has been submitted as part of another claim.", Char(10)),
                                         ""
                                     ),
@@ -1228,7 +1228,7 @@
                         HoverFill: =RGBA(222, 179, 184, 1)
                         InputTextPlaceholder: ="Select status"
                         IsSearchable: =false
-                        Items: =Choices(customer_claims_1.'Claim Status')
+                        Items: =Filter(Choices(customer_claims_1.'Claim Status'), Value <> "Draft")
                         NoSelectionText: ="All"
                         OnSelect: |-
                             =Set(
