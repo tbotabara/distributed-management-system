@@ -8107,6 +8107,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "landing_screen.ScreenContainer1_7.MainSectionContainer1_7.Container1_5.Container4.Gallery4_6.Icon1_4.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen.ScreenContainer1_7.MainSectionContainer1_7.Container1_5.Container4.Gallery4_6.Icon1_4.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 76,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = ThisItem.'Kellogg PO#'))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "landing_screen",
+                "type": "landing_screen.ScreenContainer1_7.MainSectionContainer1_7.Container1_5.Container4.Gallery4_6.Icon1_4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "landing_screen.ScreenContainer1_7.MainSectionContainer1_7.Container1_5.Container4.Gallery4_6.Icon1_4.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "landing_screen.ScreenContainer1_7.MainSectionContainer1_7.Container1_5.Container4.Gallery4_6.Icon1_4.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 97,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = ThisItem.'SSCC#'))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "landing_screen",
+                "type": "landing_screen.ScreenContainer1_7.MainSectionContainer1_7.Container1_5.Container4.Gallery4_6.Icon1_4"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "HorizontalMenuComponent.MainMenu.AccessibleLabel"
                 }
               ],
