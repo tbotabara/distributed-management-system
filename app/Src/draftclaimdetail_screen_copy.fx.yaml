@@ -46,12 +46,12 @@
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(184, 0, 0, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen)
+                OnSelect: =If(var_current_user=Lower("distributor"), Navigate (landing_screen_distributor),Navigate(landing_screen))
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
@@ -59,34 +59,14 @@
                 Width: =115
                 ZIndex: =2
 
-            kpi_btn_3 As button:
-                Align: =Align.Left
-                AlignInContainer: =AlignInContainer.Center
-                BorderThickness: =1
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                Font: =Font.'Segoe UI'
-                HoverColor: =RGBA(164, 38, 44, 1)
-                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(kpi_screen)
-                PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =12
-                Text: ="KPI"
-                Visible: =!(var_current_user=Lower("distributor"))
-                Width: =115
-                ZIndex: =3
-
             draft_btn_8 As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
                 BorderThickness: =1
                 Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
@@ -96,6 +76,27 @@
                 Size: =12
                 Text: ="Draft"
                 Visible: =var_current_user=Lower("distributor")
+                Width: =115
+                ZIndex: =3
+
+            kpi_btn_3 As button:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(0, 0, 0, 0)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(0, 0, 0, 0)
+                DisplayMode: =DisplayMode.Disabled
+                Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.'Segoe UI'
+                HoverColor: =RGBA(164, 38, 44, 1)
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
+                OnSelect: =Navigate(kpi_screen)
+                PressedFill: =ColorFade(Self.Fill, -15%)
+                Size: =12
+                Text: ="KPI"
+                Visible: =!(var_current_user=Lower("distributor"))
                 Width: =115
                 ZIndex: =4
 
@@ -119,13 +120,13 @@
                 ZIndex: =6
 
             Label5_14 As label:
-                Align: =Align.Right
+                Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(0, 0, 0, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 Font: =Font.'Segoe UI'
-                Size: =10
+                Size: =12
                 Text: =var_current_user_type
                 Width: =100
                 ZIndex: =7
@@ -165,10 +166,361 @@
                 Width: =1330
                 ZIndex: =1
 
+                Progress_Trail_1 As groupContainer.manualLayoutContainer:
+                    Fill: =RGBA(251, 251, 251, 1)
+                    Height: =If(Progress_Trail_1.Visible=true, 108,0)
+                    Visible: =!(var_current_user=Lower("distributor")) && !(newSelectedRecord.'Claim Status'.Value="Draft")
+                    Width: =958
+                    X: =359
+                    Y: |-
+                        =If(
+                        !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
+                        93,
+                        ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
+                        109,
+                        ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
+                        112,
+                        51
+                        )
+                    ZIndex: =1
+
+                    Rectangle6_12 As rectangle:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Fill: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        Height: =2
+                        Width: =100
+                        X: =173
+                        Y: =26
+                        ZIndex: =1
+
+                    Rectangle6_13 As rectangle:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Fill: |-
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        Height: =2
+                        Width: =100
+                        X: =333
+                        Y: =26
+                        ZIndex: =2
+
+                    Rectangle6_14 As rectangle:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Fill: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        Height: =2
+                        Width: =100
+                        X: =493
+                        Y: =26
+                        ZIndex: =3
+
+                    Rectangle6_15 As rectangle:
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Fill: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
+                        Height: =2
+                        Width: =100
+                        X: =673
+                        Y: =26
+                        ZIndex: =4
+
+                    StatusIcon_12 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(48, 181, 148, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =25
+                        Icon: =Icon.DocumentWithContent
+                        TabIndex: =0
+                        Tooltip: ="View item details"
+                        Width: =25
+                        X: =123
+                        Y: =9
+                        ZIndex: =5
+
+                    Title4_12 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(48, 181, 148, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =26
+                        Size: =12
+                        Text: ="New"
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: =115
+                        X: =73
+                        Y: =44
+                        ZIndex: =6
+
+                    StatusIcon_13 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =25
+                        Icon: =Icon.Person
+                        TabIndex: =0
+                        Tooltip: ="View item details"
+                        Width: =25
+                        X: =288
+                        Y: =9
+                        ZIndex: =7
+
+                    Title4_13 As label:
+                        Align: =Align.Center
+                        Color: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =26
+                        Size: =12
+                        Text: |
+                            =If(DataCardValue20_1.Selected.Value = "Approve by BU", "Approved (BU)", If(DataCardValue20_1.Selected.Value = "Rejected by BU", "Rejected (BU)", "BU"))
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: |
+                            =100
+                        X: =248
+                        Y: =44
+                        ZIndex: =8
+
+                    StatusIcon_14 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: |-
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =25
+                        Icon: =Icon.OfficeBuilding
+                        TabIndex: =0
+                        Tooltip: ="View item details"
+                        Width: =25
+                        X: =453
+                        Y: =9
+                        ZIndex: =9
+
+                    Title4_14 As label:
+                        Align: =Align.Center
+                        Color: |-
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =26
+                        Size: =12
+                        Text: =If(DataCardValue20_1.Selected.Value = "Approve by PIO SPOC", "Approved (PIO SPOC)", If(DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", "Rejected (PIO SPOC)", "PIO SPOC"))
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: |
+                            =100
+                        X: =413
+                        Y: =44
+                        ZIndex: =10
+
+                    StatusIcon_15 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =25
+                        Icon: =Icon.Calculator
+                        TabIndex: =0
+                        Tooltip: ="View item details"
+                        Width: =25
+                        X: =623
+                        Y: =9
+                        ZIndex: =11
+
+                    Title4_15 As label:
+                        Align: =Align.Center
+                        Color: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =26
+                        Size: =12
+                        Text: =If(DataCardValue20_1.Selected.Value = "Approve by PIO Finance", "Approved (PIO Finance)", If(DataCardValue20_1.Selected.Value = "Rejected by PIO Finance", "Rejected (PIO Finance)", "PIO Finance"))
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: |
+                            =100
+                        X: =588
+                        Y: =44
+                        ZIndex: =12
+
+                    StatusIcon_16 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =25
+                        Icon: =Icon.ThumbsUp
+                        TabIndex: =0
+                        Tooltip: ="View item details"
+                        Width: =25
+                        X: =813
+                        Y: =9
+                        ZIndex: =13
+
+                    Title4_16 As label:
+                        Align: =Align.Center
+                        Color: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =26
+                        Size: =12
+                        Text: ="GBS"
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: |
+                            =100
+                        X: =778
+                        Y: =44
+                        ZIndex: =14
+
+                    DateNew_2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =RGBA(48, 181, 148, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =33
+                        Size: =10
+                        Text: =newSelectedRecord.'Submission Date'
+                        X: =60
+                        Y: =70
+                        ZIndex: =15
+
+                    DateBU_2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =33
+                        Size: =10
+                        Text: =newSelectedRecord.BUTimestamp
+                        X: =223
+                        Y: =69
+                        ZIndex: =16
+
+                    DatePIOSPOC_2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: |-
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =33
+                        Size: =10
+                        Text: =newSelectedRecord.PIOSPOCTimestamp
+                        X: =388
+                        Y: =69
+                        ZIndex: =17
+
+                    DatePIOFinance_2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: |
+                            =If(
+                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
+                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
+                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
+                            RGBA(48, 181, 148, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =33
+                        Size: =10
+                        Text: =newSelectedRecord.FinanceTimestamp
+                        X: =558
+                        Y: =70
+                        ZIndex: =18
+
+                    DateGBS_2 As label:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(89, 0, 0, 1)
+                        Color: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =33
+                        Size: =10
+                        Text: =newSelectedRecord.GBSTimestamp
+                        X: =753
+                        Y: =70
+                        ZIndex: =19
+
                 ClaimForm_1 As form:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DataSource: =customer_claims_1
-                    Height: |-
+                    Height: |
                         =If(
                         Progress_Trail_1.Visible And !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
                         309,
@@ -193,20 +545,20 @@
                     SnapToColumns: =false
                     Width: =972
                     X: =348
-                    Y: |-
+                    Y: |
                         =If(
                             Progress_Trail_1.Visible=true,
                             Progress_Trail_1.Y+Progress_Trail_1.Height,
                             !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                            98,
+                            93,
                             ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
                             109,
                             ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                            108,
+                            112,
                             64
                         
                         )
-                    ZIndex: =1
+                    ZIndex: =2
 
                     "'Submission Date_DataCard1_1' As typedDataCard.dateEditCard":
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -258,7 +610,7 @@
                         DataCardKey2_1 As label:
                             AutoHeight: =true
                             Color: |+
-                                =If(!(DataCardValue2_1.SelectedDate <= (DateAdd(DataCardValue12_1.SelectedDate, 30, TimeUnit.Days))),
+                                =If(!(newSelectedRecord.'Submission Date' <= (DateAdd(DataCardValue12_1.SelectedDate, 30, TimeUnit.Days))),
                                 RGBA(255, 0, 0, 1),RGBA(0, 0, 0, 1))
                                 
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -276,7 +628,7 @@
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             CalendarHeaderFill: =RGBA(164, 38, 44, 1)
                             Color: =RGBA(0, 0, 0, 1)
-                            DefaultDate: =Parent.Default
+                            DefaultDate: =If(IsBlank(ThisItem.'Submission Date'), ThisItem.Created, Parent.Default)
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -304,7 +656,7 @@
                             DisabledColor: =RGBA(244, 244, 244, 1)
                             Height: =19
                             Icon: =Icon.Warning
-                            Visible: =If(!(DataCardValue2_1.SelectedDate <= (DateAdd(DataCardValue12_1.SelectedDate, 30, TimeUnit.Days))) ,true,false)
+                            Visible: =If(!(newSelectedRecord.'Submission Date' <= (DateAdd(DataCardValue12_1.SelectedDate, 30, TimeUnit.Days))) ,true,false)
                             Width: =24
                             X: =189
                             Y: =14
@@ -499,7 +851,7 @@
                         BorderColor: =RGBA(89, 0, 0, 1)
                         BorderStyle: =BorderStyle.Solid
                         DataField: ="field_21"
-                        Default: =ThisItem.'Customer Comment'
+                        Default: =ThisItem.'Distributor Comment'
                         DisplayMode: =Parent.DisplayMode
                         DisplayName: =DataSourceInfo([@customer_claims_1],DataSourceInfo.DisplayName,"field_21")
                         Fill: =RGBA(0, 0, 0, 0)
@@ -2800,14 +3152,14 @@
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(116,116,116,1), -20%)
-                    OnSelect: =Navigate(claim_draft_screen)
+                    OnSelect: =Back()
                     Size: =15
                     Text: ="Cancel"
                     Visible: =var_current_user=Lower("distributor")
                     Width: =140
                     X: =1179
                     Y: =533
-                    ZIndex: =2
+                    ZIndex: =3
 
                 Icon3_1 As icon.Cancel:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -2822,7 +3174,7 @@
                     Width: =30
                     X: =1276
                     Y: =14
-                    ZIndex: =3
+                    ZIndex: =4
 
                 ContainerErrorKelloggPO_1 As groupContainer.manualLayoutContainer:
                     Height: =If(ContainerErrorKelloggPO_1.Visible,19,0)
@@ -2833,7 +3185,7 @@
                     Width: =875
                     X: =374
                     Y: =51
-                    ZIndex: =4
+                    ZIndex: =5
 
                     ErrorKelloggPO_1 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2869,7 +3221,7 @@
                     Width: =861
                     X: =374
                     Y: =ContainerErrorKelloggPO_1.Height + ContainerErrorKelloggPO_1.Y
-                    ZIndex: =5
+                    ZIndex: =6
 
                     IconErrorSSCC_1 As icon.Warning:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2899,13 +3251,11 @@
 
                 ContainerErrorETA_1 As groupContainer.manualLayoutContainer:
                     Height: =If(ContainerErrorETA_1.Visible,19,0)
-                    Visible: |-
-                        =//If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
-                        !(DataCardValue2_1.SelectedDate <= (DateAdd(DataCardValue12_1.SelectedDate, 30, TimeUnit.Days)))
+                    Visible: =!(newSelectedRecord.'Submission Date' <= (DateAdd(DataCardValue12_1.SelectedDate, 30, TimeUnit.Days)))
                     Width: =875
                     X: =374
                     Y: =ContainerErrorSSCC_1.Height+ContainerErrorSSCC_1.Y
-                    ZIndex: =6
+                    ZIndex: =7
 
                     IconErrorETA_1 As icon.Warning:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -2952,10 +3302,11 @@
                             LookUp(customer_claims_1, ID = newSelectedRecord.ID),
                             {
                                'Claim Status': {Value: "New"},
-                               'Submission Date': Now() 
+                               'Submission Date': Now(),
+                               Period: varPeriodRecord
                             }
                         );
-                        Navigate(landing_screen)
+                        Back()
                     Size: =15
                     Text: ="Submit"
                     Visible: |
@@ -2966,7 +3317,7 @@
                     Width: =139
                     X: =845
                     Y: =533
-                    ZIndex: =7
+                    ZIndex: =8
 
                 Button_delete_1 As button:
                     BorderColor: =ColorFade(RGBA(255,0,0,1), -15%)
@@ -2991,7 +3342,7 @@
                     Width: =137
                     X: =1013
                     Y: =533
-                    ZIndex: =8
+                    ZIndex: =9
 
                 Label4_1 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3003,19 +3354,19 @@
                     Text: ="Attachment List"
                     Width: =216
                     X: =30
-                    ZIndex: =9
+                    ZIndex: =10
 
                 Label6_3 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Size: =10
-                    Text: ="Warehouse Receipt"
+                    Text: ="*Warehouse Receipt"
                     Underline: =true
                     Width: =132
                     X: =30
                     Y: =66
-                    ZIndex: =10
+                    ZIndex: =11
 
                 Label6_4 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3027,7 +3378,7 @@
                     Width: =145
                     X: =30
                     Y: =156
-                    ZIndex: =11
+                    ZIndex: =12
 
                 Label6_5 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3039,7 +3390,7 @@
                     Width: =157
                     X: =30
                     Y: =242
-                    ZIndex: =12
+                    ZIndex: =13
 
                 Icon_AddWHReceipt_1 As icon.AddDocument:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3062,7 +3413,7 @@
                     Width: =32
                     X: =155
                     Y: =63
-                    ZIndex: =13
+                    ZIndex: =14
 
                 Icon_Add_ImageDamage_1 As icon.AddDocument:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3085,7 +3436,7 @@
                     Width: =32
                     X: =155
                     Y: =153
-                    ZIndex: =14
+                    ZIndex: =15
 
                 Icon_Add_SupportingDocs_1 As icon.AddDocument:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3108,7 +3459,7 @@
                     Width: =32
                     X: =175
                     Y: =239
-                    ZIndex: =15
+                    ZIndex: =16
 
                 "'Gallery_Supporting Documents_1' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3121,7 +3472,7 @@
                     Width: =282
                     X: =30
                     Y: =269
-                    ZIndex: =16
+                    ZIndex: =17
 
                     Icon8_5 As icon.Download:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3180,7 +3531,7 @@
                     Width: =282
                     X: =30
                     Y: =181
-                    ZIndex: =17
+                    ZIndex: =18
 
                     Icon8_4 As icon.Download:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3239,7 +3590,7 @@
                     Width: =282
                     X: =30
                     Y: =93
-                    ZIndex: =18
+                    ZIndex: =19
 
                     Label5_1 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3293,7 +3644,7 @@
                     Height: =598
                     Width: =10
                     X: =337
-                    ZIndex: =19
+                    ZIndex: =20
 
                 cont_PopupGrey_1 As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3301,7 +3652,7 @@
                     Height: =598
                     Visible: =ShowPopup
                     Width: =1330
-                    ZIndex: =20
+                    ZIndex: =21
 
                 cont_Attachment_1 As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3311,7 +3662,7 @@
                     Width: =806
                     X: =280
                     Y: =131
-                    ZIndex: =21
+                    ZIndex: =22
 
                 FileAttachment_1 As attachments:
                     BorderColor: =RGBA(0, 0, 0, 1)
@@ -3341,7 +3692,7 @@
                     Width: =448
                     X: =312
                     Y: =171
-                    ZIndex: =22
+                    ZIndex: =23
 
                 SaveDocument_1 As button:
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -3381,7 +3732,7 @@
                     Width: =126
                     X: =312
                     Y: =312
-                    ZIndex: =23
+                    ZIndex: =24
 
                 CancelUpload_1 As button:
                     BorderColor: =RGBA(164, 38, 44, 100)
@@ -3406,7 +3757,7 @@
                     Width: =125
                     X: =455
                     Y: =312
-                    ZIndex: =24
+                    ZIndex: =25
 
                 Button_reject_1 As button:
                     BorderColor: =ColorFade(RGBA(255,0,0,1), -15%)
@@ -3433,7 +3784,7 @@
                     Width: =140
                     X: =1179
                     Y: =533
-                    ZIndex: =25
+                    ZIndex: =26
 
                 button_approve_1 As button:
                     BorderColor: =ColorFade(RGBA(54,176,75,1), -15%)
@@ -3493,7 +3844,7 @@
                     Width: =139
                     X: =1013
                     Y: =533
-                    ZIndex: =26
+                    ZIndex: =27
 
                 button_process_1 As button:
                     BorderColor: =ColorFade(RGBA(54,176,75,1), -15%)
@@ -3501,7 +3852,7 @@
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     DisabledFill: =RGBA(244, 244, 244, 1)
-                    DisplayMode: =If(CountRows(Gallery_WHReceipt_1.AllItems) > 0 And CountRows(Gallery_DamageImage_1.AllItems) > 0, DisplayMode.Edit, DisplayMode.Disabled)
+                    DisplayMode: =If(CountRows(Gallery_CreditNote_1.AllItems) > 0, DisplayMode.Edit, DisplayMode.Disabled)
                     Fill: =RGBA(54, 176, 75, 1)
                     Font: =Font.'Segoe UI'
                     FontWeight: =FontWeight.Semibold
@@ -3519,7 +3870,7 @@
                         );
                         Navigate(landing_screen)
                     Size: =15
-                    Text: ="Submit"
+                    Text: ="Process"
                     Visible: |
                         =If(
                         DataCardValue20_1.Selected.Value = "Approved by Finance" And 
@@ -3528,360 +3879,103 @@
                     Width: =139
                     X: =1179
                     Y: =533
-                    ZIndex: =27
-
-                Progress_Trail_1 As groupContainer.manualLayoutContainer:
-                    Fill: =RGBA(251, 251, 251, 1)
-                    Height: =If(Progress_Trail_1.Visible=true, 108,0)
-                    Visible: =!(var_current_user=Lower("distributor")) && !(newSelectedRecord.'Claim Status'.Value="Draft")
-                    Width: =958
-                    X: =359
-                    Y: |-
-                        =If(
-                        !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                        93,
-                        ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
-                        109,
-                        ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                        112,
-                        51
-                        )
                     ZIndex: =28
 
-                    Rectangle6_12 As rectangle:
+                Label6_7 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Size: =10
+                    Text: ="Credit Note"
+                    Underline: =true
+                    Width: =132
+                    X: =30
+                    Y: =330
+                    ZIndex: =29
+
+                Icon_AddCreditNote_1 As icon.AddDocument:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(89, 0, 0, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(244, 244, 244, 1)
+                    Height: =45
+                    Icon: =Icon.AddDocument
+                    OnSelect: |-
+                        =UpdateContext({ShowPopup: true});
+                        UpdateContext({TypeNumber: 4})
+                    PaddingBottom: =10
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    PaddingTop: =10
+                    Visible: |-
+                        =(CountRows(Gallery_CreditNote_1.AllItems) < 1)
+                        And
+                        DataCardValue20_1.Selected.Value = "Approved by Finance"
+                    Width: =32
+                    X: =109
+                    Y: =327
+                    ZIndex: =30
+
+                "Gallery_CreditNote_1 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Height: =61
+                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = newSelectedRecord.CIN2 && 'Document Type'.Value = "Credit Note"),"Created",SortOrder.Descending))
+                    Layout: =Layout.Vertical
+                    TemplatePadding: =0
+                    TemplateSize: =51
+                    Visible: =!IsBlank(Gallery_CreditNote_1)
+                    Width: =282
+                    X: =30
+                    Y: =357
+                    ZIndex: =31
+
+                    Icon8_7 As icon.Download:
                         BorderColor: =RGBA(89, 0, 0, 1)
-                        Fill: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        Height: =2
-                        Width: =100
-                        X: =173
-                        Y: =26
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Download
+                        OnSelect: |-
+                            =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
+                        Tooltip: ="Download this file"
+                        Width: =25
+                        X: =181
+                        Y: =14
                         ZIndex: =1
 
-                    Rectangle6_13 As rectangle:
+                    Icon9_7 As icon.Trash:
                         BorderColor: =RGBA(89, 0, 0, 1)
-                        Fill: |-
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        Height: =2
-                        Width: =100
-                        X: =333
-                        Y: =26
+                        Color: =RGBA(89, 0, 0, 1)
+                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                        DisabledColor: =RGBA(244, 244, 244, 1)
+                        Height: =23
+                        Icon: =Icon.Trash
+                        OnSelect: |-
+                            =Remove('Claim Attachment',ThisItem);
+                            Refresh('Claim Attachment');
+                        Tooltip: ="Delete this file"
+                        Width: =30
+                        X: =206
+                        Y: =14
                         ZIndex: =2
 
-                    Rectangle6_14 As rectangle:
+                    Label5_19 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
-                        Fill: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        Height: =2
-                        Width: =100
-                        X: =493
-                        Y: =26
+                        Color: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(166, 166, 166, 1)
+                        FontWeight: =FontWeight.Bold
+                        Height: =34
+                        Italic: =true
+                        OnSelect: =Select(Parent)
+                        Size: =10
+                        Text: =If(Len(ThisItem.'File name with extension') > 20, Left(ThisItem.'File name with extension', 20) & "...", ThisItem.'File name with extension')
+                        Tooltip: =ThisItem.'File name with extension'
+                        Width: =181
+                        Y: =8
                         ZIndex: =3
 
-                    Rectangle6_15 As rectangle:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Fill: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
-                        Height: =2
-                        Width: =100
-                        X: =673
-                        Y: =26
-                        ZIndex: =4
-
-                    StatusIcon_12 As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(48, 181, 148, 1)
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =25
-                        Icon: =Icon.DocumentWithContent
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =25
-                        X: =123
-                        Y: =9
-                        ZIndex: =5
-
-                    Title4_12 As label:
-                        Align: =Align.Center
-                        Color: =RGBA(48, 181, 148, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =26
-                        Size: =12
-                        Text: ="New"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: =115
-                        X: =73
-                        Y: =44
-                        ZIndex: =6
-
-                    StatusIcon_13 As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =25
-                        Icon: =Icon.Person
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =25
-                        X: =288
-                        Y: =9
-                        ZIndex: =7
-
-                    Title4_13 As label:
-                        Align: =Align.Center
-                        Color: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =26
-                        Size: =12
-                        Text: |
-                            =If(DataCardValue20_1.Selected.Value = "Approve by BU", "Approved (BU)", If(DataCardValue20_1.Selected.Value = "Rejected by BU", "Rejected (BU)", "BU"))
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: |
-                            =100
-                        X: =248
-                        Y: =44
-                        ZIndex: =8
-
-                    StatusIcon_14 As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: |-
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =25
-                        Icon: =Icon.OfficeBuilding
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =25
-                        X: =453
-                        Y: =9
-                        ZIndex: =9
-
-                    Title4_14 As label:
-                        Align: =Align.Center
-                        Color: |-
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =26
-                        Size: =12
-                        Text: =If(DataCardValue20_1.Selected.Value = "Approve by PIO SPOC", "Approved (PIO SPOC)", If(DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", "Rejected (PIO SPOC)", "PIO SPOC"))
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: |
-                            =100
-                        X: =413
-                        Y: =44
-                        ZIndex: =10
-
-                    StatusIcon_15 As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =25
-                        Icon: =Icon.Calculator
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =25
-                        X: =623
-                        Y: =9
-                        ZIndex: =11
-
-                    Title4_15 As label:
-                        Align: =Align.Center
-                        Color: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =26
-                        Size: =12
-                        Text: =If(DataCardValue20_1.Selected.Value = "Approve by PIO Finance", "Approved (PIO Finance)", If(DataCardValue20_1.Selected.Value = "Rejected by PIO Finance", "Rejected (PIO Finance)", "PIO Finance"))
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: |
-                            =100
-                        X: =588
-                        Y: =44
-                        ZIndex: =12
-
-                    StatusIcon_16 As icon.ChevronRight:
-                        AccessibleLabel: =Self.Tooltip
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(244, 244, 244, 1)
-                        Height: =25
-                        Icon: =Icon.ThumbsUp
-                        TabIndex: =0
-                        Tooltip: ="View item details"
-                        Width: =25
-                        X: =813
-                        Y: =9
-                        ZIndex: =13
-
-                    Title4_16 As label:
-                        Align: =Align.Center
-                        Color: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =26
-                        Size: =12
-                        Text: ="GBS"
-                        VerticalAlign: =VerticalAlign.Top
-                        Width: |
-                            =100
-                        X: =778
-                        Y: =44
-                        ZIndex: =14
-
-                    DateNew_2 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(48, 181, 148, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =33
-                        Size: =10
-                        Text: =newSelectedRecord.'Submission Date'
-                        X: =60
-                        Y: =70
-                        ZIndex: =15
-
-                    DateBU_2 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =33
-                        Size: =10
-                        Text: =newSelectedRecord.BUTimestamp
-                        X: =223
-                        Y: =69
-                        ZIndex: =16
-
-                    DatePIOSPOC_2 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: |-
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =33
-                        Size: =10
-                        Text: =newSelectedRecord.PIOSPOCTimestamp
-                        X: =388
-                        Y: =69
-                        ZIndex: =17
-
-                    DatePIOFinance_2 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: |
-                            =If(
-                            DataCardValue20_1.Selected.Value = "Rejected by Finance", RGBA(255, 0, 0, 1), 
-                            DataCardValue20_1.Selected.Value = "New", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by BU", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Approved by PIO SPOC", RGBA(106, 113, 120, 1),
-                            DataCardValue20_1.Selected.Value = "Rejected by PIO SPOC", RGBA(106, 113, 120, 1),
-                            RGBA(48, 181, 148, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =33
-                        Size: =10
-                        Text: =newSelectedRecord.FinanceTimestamp
-                        X: =558
-                        Y: =70
-                        ZIndex: =18
-
-                    DateGBS_2 As label:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =If(DataCardValue20_1.Selected.Value = "Processed", RGBA(48, 181, 148, 1), RGBA(106, 113, 120, 1))
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Bold
-                        Height: =33
-                        Size: =10
-                        Text: =newSelectedRecord.GBSTimestamp
-                        X: =753
-                        Y: =70
-                        ZIndex: =19
-
-        FooterContainer1_3 As groupContainer.horizontalAutoLayoutContainer:
+        FooterContainer1_5 As groupContainer.horizontalAutoLayoutContainer:
             FillPortions: =0
             Height: =75
             LayoutMinHeight: =100
@@ -4070,7 +4164,7 @@
             Y: =477
             ZIndex: =7
 
-        Icon5_2 As icon.Cancel:
+        Icon5_1 As icon.Cancel:
             BorderColor: =RGBA(89, 0, 0, 1)
             Color: =RGBA(89, 0, 0, 1)
             DisabledBorderColor: =RGBA(166, 166, 166, 1)

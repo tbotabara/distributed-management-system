@@ -105,11 +105,12 @@
     "Id": "041150ba-cf16-40ae-9a63-3f1a6a5a9fb2",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
+    "ManualOfflineProfileId": "",
     "Name": "PIO Claims Management",
     "OriginatingVersion": "1.330"
   },
   "PublishInfo": {
-    "AppName": "PIO Claims Management",
+    "AppName": "PIO Claims Management - TB",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -126,11 +127,11 @@
     "draftclaimdetail_screen_copy",
     "kpi_screen",
     "landing_screen",
+    "landing_screen_distributor",
     "landing_screen_1",
     "landing_screen_copy",
     "login_screen",
     "menu_screen",
-    "status_screen",
-    "landing_screen_distributor"
+    "status_screen"
   ]
 }
