@@ -4037,7 +4037,7 @@
       "LayoutName": "vertical",
       "MetaDataIDKey": "",
       "Name": "ClaimForm",
-      "ParentIndex": 16,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4829,7 +4829,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ContainerErrorETA",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4978,7 +4978,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ContainerErrorKelloggPO",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5127,7 +5127,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ContainerErrorSSCC",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -34606,7 +34606,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "FileAttachment",
-      "ParentIndex": 14,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -35464,7 +35464,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_DamageImage",
-      "ParentIndex": 15,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -35822,7 +35822,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Gallery_WHReceipt",
-      "ParentIndex": 9,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -37349,7 +37349,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Icon_AddWHReceipt",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -44931,7 +44931,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label6",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -46798,7 +46798,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Progress_Trail",
-      "ParentIndex": 10,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -48581,14 +48581,7 @@
     "RejectReasonOthers": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "\"Text input\"",
-          "InvariantPropertyName": "Default",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "Default",
         "Mode",
         "Format",
         "VirtualKeyboardMode",
