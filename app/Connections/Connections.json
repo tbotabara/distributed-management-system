@@ -245,20 +245,6 @@
     "dependents": [],
     "id": "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d"
   },
-  "9b967192-ff3b-4384-9091-0bc437194f48": {
-    "connectionRef": {
-      "displayName": "Power BI",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1596/1.0.1596.2995/powerbi/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_powerbi"
-    },
-    "datasets": {},
-    "dataSources": [
-      "PowerBI"
-    ],
-    "dependencies": {},
-    "dependents": [],
-    "id": "9b967192-ff3b-4384-9091-0bc437194f48"
-  },
   "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": {
     "connectionRef": {
       "displayName": "Logic flows",
@@ -292,6 +278,20 @@
     },
     "dependents": [],
     "id": "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d"
+  },
+  "f09932a7-959b-4bd4-8b00-7d221b58bcfa": {
+    "connectionRef": {
+      "displayName": "Power BI",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1596/1.0.1596.2995/powerbi/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_powerbi"
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerBI"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f09932a7-959b-4bd4-8b00-7d221b58bcfa"
   },
   "fa0d3e20-32f2-4ca2-acd2-3675963a0f06": {
     "connectionRef": {
