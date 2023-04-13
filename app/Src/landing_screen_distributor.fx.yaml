@@ -130,6 +130,104 @@
                 LayoutMinWidth: =300
                 ZIndex: =2
 
+                Button2_2 As button:
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Fill: =RGBA(164, 38, 44, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    HoverColor: =RGBA(255, 255, 255, 1)
+                    HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    OnSelect: |-
+                        =Set(varFromAttachmentControl, JSON(Image3_2.Image, JSONFormat.IncludeBinaryData));
+                        Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len
+                        (varFromAttachmentControl) - Find(",", varFromAttachmentControl)-1));
+                        
+                        Set(varFlowResponse, UploadExcel.Run(Last(AttachmentControl_2.Attachments).Name, varBase64Only));
+                        
+                        Set(varInsertedItems, varFlowResponse.inserteditems);
+                        
+                        Notify("Upload Successful! Count of claims uploaded: " & varInsertedItems, NotificationType.Success);
+                        
+                        Reset(AttachmentControl_2);
+                        Refresh(customer_claims_1)
+                    Size: =10
+                    Text: ="Upload Claim"
+                    Width: =399
+                    X: =693
+                    Y: =102
+                    ZIndex: =1
+
+                dd__2 As dropdown:
+                    AllowEmptySelection: =true
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    ChevronBackground: =RGBA(164, 38, 44, 1)
+                    ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                    ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                    ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                    Default: ="Claim Type"
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    Font: =Font.'Segoe UI'
+                    Height: =36
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    Items: ='Claim Type'
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    SelectionFill: =RGBA(164, 38, 44, 1)
+                    Size: =10
+                    Width: =399
+                    X: =693
+                    Y: =52
+                    ZIndex: =2
+
+                AttachmentControl_2 As attachments:
+                    AddAttachmentText: |-
+                        ="Drag & Drop or Browse Files (Supported format: .xlsx)"
+                    AddedItemColor: =RGBA(0, 0, 0, 1)
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    BorderThickness: =2
+                    Color: =RGBA(0, 134, 208, 1)
+                    DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    DisabledFill: =RGBA(244, 244, 244, 1)
+                    DisplayMode: =Parent.DisplayMode
+                    DropTargetBackgroundColor: =RGBA(222, 179, 184, 1)
+                    DropTargetBorderStyle: =BorderStyle.Solid
+                    Fill: =RGBA(255, 255,255, 1)
+                    FocusedBorderThickness: =4
+                    Font: =Font.'Segoe UI'
+                    Height: =88
+                    HoverColor: =RGBA(0, 0, 0, 1)
+                    HoverFill: =RGBA(222, 179, 184, 1)
+                    IsInDataCard: =true
+                    ItemColor: =RGBA(255, 255, 255, 1)
+                    ItemFill: =RGBA(0, 0, 0, 1)
+                    ItemHoverColor: =RGBA(0, 0, 0, 1)
+                    ItemHoverFill: =RGBA(222, 179, 184, 1)
+                    Items: =
+                    MaxAttachments: =1
+                    MaxAttachmentsColor: =RGBA(0, 0, 0, 1)
+                    NoAttachmentsColor: =RGBA(0, 0, 0, 1)
+                    OnAddFile: =
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    PressedColor: =RGBA(255, 255, 255, 1)
+                    PressedFill: =RGBA(89, 0, 0, 1)
+                    RemovedItemColor: =RGBA(0, 0, 0, 1)
+                    Size: =11
+                    Tooltip: =
+                    Width: =426
+                    X: =240
+                    Y: =52
+                    ZIndex: =3
+
                 Image3_2 As image:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -436,7 +534,7 @@
 
                     button_gallery_cin_2 As button:
                         Align: =Align.Left
-                        Color: =RGBA(0, 134, 208, 1)
+                        Color: =RGBA(164, 38, 44, 1)
                         DisabledBorderColor: =RGBA(0, 0, 0, 0)
                         DisabledColor: =RGBA(166, 166, 166, 1)
                         DisabledFill: =RGBA(0, 0, 0, 0)
@@ -444,12 +542,12 @@
                         Font: =Font.'Segoe UI'
                         Height: =58
                         HoverBorderColor: =RGBA(0,0,0,0)
-                        HoverColor: =RGBA(102, 182, 227, 1)
+                        HoverColor: =RGBA(200, 125, 128, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnSelect: |-
                             =Set(newSelectedRecord, ThisItem);
                             Navigate(draftclaimdetail_screen, ScreenTransition.None)
-                        PressedColor: =RGBA(0, 134, 208, 1)
+                        PressedColor: =RGBA(89, 0, 0, 1)
                         PressedFill: =RGBA(0,0,0,0)
                         Size: =10
                         Text: =ThisItem.'CIN (Title)'
@@ -504,6 +602,20 @@
                     X: =25
                     Y: =324
                     ZIndex: =15
+
+                lbl_ClaimType2_2 As label:
+                    BorderColor: =RGBA(89, 0, 0, 1)
+                    Color: =RGBA(0, 0, 0, 1)
+                    DisabledColor: =RGBA(166, 166, 166, 1)
+                    Font: =Font.'Segoe UI'
+                    FontWeight: =FontWeight.Semibold
+                    Height: =22
+                    Size: =10
+                    Text: ="Claim Type"
+                    Width: =189
+                    X: =693
+                    Y: =28
+                    ZIndex: =16
 
                 lbl_SearchKeyword_6 As label:
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -650,116 +762,6 @@
                     X: =40
                     Y: =40
                     ZIndex: =30
-
-                Group1_2 As group:
-                    Height: =5
-                    Width: =5
-                    X: =40
-                    Y: =40
-                    ZIndex: =33
-
-                    Button2_2 As button:
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Fill: =RGBA(164, 38, 44, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        HoverColor: =RGBA(255, 255, 255, 1)
-                        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                        OnSelect: |-
-                            =Set(varFromAttachmentControl, JSON(Image3_2.Image, JSONFormat.IncludeBinaryData));
-                            Set(varBase64Only, Mid(varFromAttachmentControl,Find(",",varFromAttachmentControl)+1,Len
-                            (varFromAttachmentControl) - Find(",", varFromAttachmentControl)-1));
-                            
-                            Set(varFlowResponse, UploadExcel.Run(Last(AttachmentControl_2.Attachments).Name, varBase64Only));
-                            
-                            Set(varInsertedItems, varFlowResponse.inserteditems);
-                            
-                            Notify("Upload Successful! Count of claims uploaded: " & varInsertedItems, NotificationType.Success);
-                            
-                            Reset(AttachmentControl_2);
-                            Refresh(customer_claims_1)
-                        Size: =10
-                        Text: ="Upload Claim"
-                        Width: =399
-                        X: =693
-                        Y: =102
-                        ZIndex: =1
-
-                    dd__2 As dropdown:
-                        AllowEmptySelection: =true
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        ChevronBackground: =RGBA(164, 38, 44, 1)
-                        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
-                        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
-                        ChevronHoverBackground: =ColorFade(RGBA(164, 38, 44, 1), -20%)
-                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
-                        Default: ="Claim Type"
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        Font: =Font.'Segoe UI'
-                        Height: =36
-                        HoverColor: =RGBA(0, 0, 0, 1)
-                        HoverFill: =RGBA(222, 179, 184, 1)
-                        Items: ='Claim Type'
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(89, 0, 0, 1)
-                        SelectionFill: =RGBA(164, 38, 44, 1)
-                        Size: =10
-                        Width: =399
-                        X: =693
-                        Y: =52
-                        ZIndex: =2
-
-                    AttachmentControl_2 As attachments:
-                        BorderColor: =RGBA(164, 38, 44, 1)
-                        BorderThickness: =2
-                        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        DisabledFill: =RGBA(244, 244, 244, 1)
-                        DisplayMode: =Parent.DisplayMode
-                        Fill: =Color.Transparent
-                        FocusedBorderThickness: =4
-                        Font: =Font.'Segoe UI'
-                        Height: =88
-                        HoverColor: =RGBA(0, 0, 0, 1)
-                        HoverFill: =RGBA(222, 179, 184, 1)
-                        IsInDataCard: =true
-                        ItemColor: =RGBA(255, 255, 255, 1)
-                        ItemFill: =RGBA(164, 38, 44, 1)
-                        ItemHoverColor: =RGBA(0, 0, 0, 1)
-                        ItemHoverFill: =RGBA(222, 179, 184, 1)
-                        Items: =
-                        MaxAttachments: =1
-                        OnAddFile: =
-                        PaddingBottom: =5
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        PaddingRight: =5
-                        PaddingTop: =5
-                        PressedColor: =RGBA(255, 255, 255, 1)
-                        PressedFill: =RGBA(89, 0, 0, 1)
-                        Size: =10
-                        Tooltip: =
-                        Width: =426
-                        X: =240
-                        Y: =52
-                        ZIndex: =3
-
-                    lbl_ClaimType2_2 As label:
-                        BorderColor: =RGBA(89, 0, 0, 1)
-                        Color: =RGBA(0, 0, 0, 1)
-                        DisabledColor: =RGBA(166, 166, 166, 1)
-                        Font: =Font.'Segoe UI'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =22
-                        Size: =10
-                        Text: ="Claim Type"
-                        Width: =189
-                        X: =693
-                        Y: =28
-                        ZIndex: =16
 
     Rectangle6_2 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
