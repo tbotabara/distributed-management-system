@@ -231,7 +231,7 @@
                     GridStyle: =GridStyle.All
                     Height: =242
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
-                    Items: =ChoiceCountCollection
+                    Items: =Sort(ChoiceCountCollection, PeriodText, SortOrder.Ascending)
                     ItemsGap: =20
                     PaddingLeft: =0
                     PaddingRight: =0
@@ -247,7 +247,7 @@
                     Font: =Font.'Segoe UI'
                     Height: =242
                     ItemColorSet: =[RGBA(245, 4, 64, 1), RGBA(245, 4, 64, 1)]
-                    Items: =GroupedData
+                    Items: =Sort(GroupedData, PeriodText, SortOrder.Ascending)
                     PaddingRight: =0
                     Size: =11
                     Width: =523
