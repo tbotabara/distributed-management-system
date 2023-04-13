@@ -108,12 +108,11 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(kpi_screen_2)
+                OnSelect: =Navigate(kpi_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="KPI"
