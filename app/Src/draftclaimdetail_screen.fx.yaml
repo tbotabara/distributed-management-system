@@ -68,12 +68,11 @@
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(184, 0, 0, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen)
+                OnSelect: =If(var_current_user=Lower("distributor"), Navigate (landing_screen_distributor),Navigate(landing_screen))
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
@@ -89,7 +88,6 @@
                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(0, 0, 0, 0)
-                DisplayMode: =DisplayMode.Disabled
                 Fill: =RGBA(0, 0, 0, 0)
                 Font: =Font.'Segoe UI'
                 HoverColor: =RGBA(164, 38, 44, 1)
@@ -2823,7 +2821,7 @@
                     Height: =50
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(116,116,116,1), -20%)
-                    OnSelect: =Navigate(claim_draft_screen)
+                    OnSelect: =Back()
                     Size: =15
                     Text: ="Cancel"
                     Visible: =var_current_user=Lower("distributor")
@@ -2979,7 +2977,7 @@
                                Period: varPeriodRecord
                             }
                         );
-                        Navigate(landing_screen)
+                        Back()
                     Size: =15
                     Text: ="Submit"
                     Visible: |
@@ -3543,7 +3541,7 @@
                         );
                         Navigate(landing_screen)
                     Size: =15
-                    Text: ="Submit"
+                    Text: ="Process"
                     Visible: |
                         =If(
                         DataCardValue20.Selected.Value = "Approved by Finance" And 
@@ -3904,6 +3902,14 @@
                         X: =753
                         Y: =70
                         ZIndex: =19
+
+        FooterContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            ZIndex: =4
 
     Label2 As label:
         BorderColor: =RGBA(89, 0, 0, 1)
