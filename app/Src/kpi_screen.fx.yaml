@@ -162,7 +162,7 @@
                     Fill: =RGBA(255, 255, 255, 1)
                     Height: =673
                     Width: =Parent.Width
-                    Y: =combo_market_1.Y+combo_market_1.Height
+                    Y: =cbKPI_Market.Y+cbKPI_Market.Height
                     ZIndex: =1
 
                     DataCard2_1 As dataCard:
@@ -338,7 +338,7 @@
                             Y: =898
                             ZIndex: =12
 
-                        Gallery4_5 As gallery.galleryVertical:
+                        GalleryKPI As gallery.galleryVertical:
                             BorderColor: =RGBA(89, 0, 0, 1)
                             DelayItemLoading: =true
                             Fill: =RGBA(255, 255, 255, 1)
@@ -350,7 +350,7 @@
                                         Sort(
                                             Filter(
                                                 customer_claims_1,
-                                                (IsEmpty(combo_ct_3.SelectedItems) || 'Claim Type'.Value in combo_ct_3.SelectedItems.Value)
+                                                (IsEmpty(cbKPI_ClaimType.SelectedItems) || 'Claim Type'.Value in cbKPI_ClaimType.SelectedItems.Value)
                                             ),
                                             ID, SortOrder.Descending
                                         )
@@ -510,11 +510,11 @@
                     Size: =10
                     Text: ="Market"
                     Width: =399
-                    X: =485
+                    X: =472
                     Y: =4
                     ZIndex: =3
 
-                combo_market_1 As combobox:
+                cbKPI_Market As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -535,7 +535,7 @@
                     OnSelect: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(combo_ct_4.SelectedItems))
+                            !(IsEmpty(cbKPI_ClaimType.SelectedItems))
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
@@ -544,11 +544,11 @@
                     SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =10
                     Width: =398
-                    X: =485
+                    X: =472
                     Y: =30
                     ZIndex: =4
 
-                combo_ct_4 As combobox:
+                cbKPI_ClaimType As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -569,7 +569,7 @@
                     OnSelect: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(combo_ct_4.SelectedItems))
+                            !(IsEmpty(cbKPI_ClaimType.SelectedItems))
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
@@ -578,7 +578,7 @@
                     SelectionFill: =RGBA(164, 38, 44, 1)
                     Size: =10
                     Width: =398
-                    X: =37
+                    X: =40
                     Y: =30
                     ZIndex: =5
 
@@ -596,7 +596,7 @@
                     Y: =4
                     ZIndex: =6
 
-                combo_market_2 As combobox:
+                cbKPI_Period As combobox:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     ChevronBackground: =RGBA(164, 38, 44, 1)
                     ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
@@ -617,7 +617,7 @@
                     OnSelect: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(combo_ct_4.SelectedItems))
+                            !(IsEmpty(cbKPI_ClaimType.SelectedItems))
                         )
                     PressedColor: =RGBA(255, 255, 255, 1)
                     PressedFill: =RGBA(89, 0, 0, 1)
