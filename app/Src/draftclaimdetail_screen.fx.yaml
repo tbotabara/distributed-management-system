@@ -141,6 +141,7 @@
                 ZIndex: =6
 
             Label5_13 As label:
+                Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(0, 0, 0, 1)
@@ -540,7 +541,7 @@
                 ClaimForm As form:
                     BorderColor: =RGBA(89, 0, 0, 1)
                     DataSource: =customer_claims_1
-                    Height: |-
+                    Height: |
                         =If(
                         Progress_Trail.Visible And !ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And ContainerErrorETA.Visible,
                         309,
@@ -565,16 +566,16 @@
                     SnapToColumns: =false
                     Width: =972
                     X: =348
-                    Y: |-
+                    Y: |
                         =If(
                             Progress_Trail.Visible=true,
                             Progress_Trail.Y+Progress_Trail.Height,
-                            !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                            98,
-                            ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
+                            !ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And ContainerErrorETA.Visible,
+                            93,
+                            ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And !ContainerErrorETA.Visible,
                             109,
-                            ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
-                            108,
+                            ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And ContainerErrorETA.Visible,
+                            112,
                             64
                         
                         )
@@ -630,7 +631,7 @@
                         DataCardKey2 As label:
                             AutoHeight: =true
                             Color: |+
-                                =If(!(DataCardValue2.SelectedDate <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))),
+                                =If(!(newSelectedRecord.'Submission Date' <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))),
                                 RGBA(255, 0, 0, 1),RGBA(0, 0, 0, 1))
                                 
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -648,7 +649,7 @@
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             CalendarHeaderFill: =RGBA(164, 38, 44, 1)
                             Color: =RGBA(0, 0, 0, 1)
-                            DefaultDate: =Parent.Default
+                            DefaultDate: =If(IsBlank(ThisItem.'Submission Date'), ThisItem.Created, Parent.Default)
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             DisabledFill: =RGBA(244, 244, 244, 1)
@@ -676,7 +677,7 @@
                             DisabledColor: =RGBA(244, 244, 244, 1)
                             Height: =19
                             Icon: =Icon.Warning
-                            Visible: =If(!(DataCardValue2.SelectedDate <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))) ,true,false)
+                            Visible: =If(!(newSelectedRecord.'Submission Date' <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days))) ,true,false)
                             Width: =24
                             X: =189
                             Y: =14
@@ -717,12 +718,8 @@
                             BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                             BorderThickness: =2
                             Color: =RGBA(0, 0, 0, 1)
-                            Default: |-
-                                =If(
-                                    var_current_user=Lower("gbs"),
-                                    Value(DataCardValue28.Text)*10,
-                                    Value(DataCardValue21.Text)*10
-                                )
+                            Default: |
+                                =Value(DataCardValue21.Text)*10
                             DelayOutput: =true
                             DisabledBorderColor: =RGBA(166, 166, 166, 1)
                             DisabledColor: =RGBA(166, 166, 166, 1)
@@ -3271,9 +3268,7 @@
 
                 ContainerErrorETA As groupContainer.manualLayoutContainer:
                     Height: =If(ContainerErrorETA.Visible,19,0)
-                    Visible: |-
-                        =//If(DateValue(DataCardValue2.Text) > DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days) ,true,false)
-                        !(DataCardValue2.SelectedDate <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days)))
+                    Visible: =!(newSelectedRecord.'Submission Date' <= (DateAdd(DataCardValue12.SelectedDate, 30, TimeUnit.Days)))
                     Width: =875
                     X: =374
                     Y: =ContainerErrorSSCC.Height+ContainerErrorSSCC.Y
@@ -3382,12 +3377,13 @@
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
+                    Height: =42
                     Size: =10
-                    Text: ="Warehouse Receipt"
+                    Text: ="*Warehouse Receipt"
                     Underline: =true
-                    Width: =132
+                    Width: =157
                     X: =30
-                    Y: =66
+                    Y: =64
                     ZIndex: =11
 
                 Label6_1 As label:
@@ -3395,7 +3391,7 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Size: =10
-                    Text: ="Images Of Damages"
+                    Text: ="*Images Of Damages"
                     Underline: =true
                     Width: =145
                     X: =30
@@ -3433,8 +3429,8 @@
                         And
                         DataCardValue20.Selected.Value = "Draft"
                     Width: =32
-                    X: =155
-                    Y: =63
+                    X: =162
+                    Y: =61
                     ZIndex: =14
 
                 Icon_Add_ImageDamage As icon.AddDocument:
@@ -3456,8 +3452,8 @@
                         And
                         DataCardValue20.Selected.Value = "Draft"
                     Width: =32
-                    X: =155
-                    Y: =153
+                    X: =162
+                    Y: =154
                     ZIndex: =15
 
                 Icon_Add_SupportingDocs As icon.AddDocument:
@@ -3910,6 +3906,7 @@
                     Size: =10
                     Text: ="Credit Note"
                     Underline: =true
+                    Visible: =var_current_user=Lower("gbs")
                     Width: =132
                     X: =30
                     Y: =330
@@ -3929,10 +3926,7 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: |-
-                        =(CountRows(Gallery_CreditNote.AllItems) < 1)
-                        And
-                        DataCardValue20.Selected.Value = "Approved by Finance"
+                    Visible: =var_current_user=Lower("gbs")
                     Width: =32
                     X: =109
                     Y: =327
@@ -3945,7 +3939,7 @@
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
-                    Visible: =!IsBlank(Gallery_CreditNote)
+                    Visible: =var_current_user=Lower("gbs")
                     Width: =282
                     X: =30
                     Y: =357
