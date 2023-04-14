@@ -6304,397 +6304,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 94,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "field_19.Value"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 41,
-                  "charOffset": 69,
-                  "snippet": {
-                    "text": "StartsWith('Claim Status'.Value, \"Draft\")"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 111,
-                  "snippet": {
-                    "text": "&&"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Filter"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Button_CIN_TD_4.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Button_CIN_TD_4.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 32,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "Set(newSelectedRecord, ThisItem)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Button_CIN_TD_4"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "lbl_hdn_warnings"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "lbl_hdn_warnings"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Tooltip",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 76,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = ThisItem.'Kellogg PO#'))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 64,
-                  "charOffset": 97,
-                  "snippet": {
-                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = ThisItem.'SSCC#'))"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "CountRows"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 16,
-                  "charOffset": 7,
-                  "snippet": {
-                    "text": "lbl_hdn_warnings"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "lbl_hdn_warnings"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 23,
-                  "snippet": {
-                    "text": ".Text"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "draftclaimdetail_screen.ScreenContainer1_2.MainSectionContainer1_2.cont_ClaimDetail.Progress_Trail.Visible"
                 }
               ],
@@ -7069,7 +6678,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7109,7 +6718,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7261,7 +6870,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -7455,7 +7064,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -7572,7 +7181,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -7806,7 +7415,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -7847,7 +7456,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 10
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -7928,7 +7537,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8009,7 +7618,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8123,7 +7732,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8163,7 +7772,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8508,7 +8117,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -8702,7 +8311,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -8819,7 +8428,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -9053,7 +8662,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -9168,7 +8777,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -9362,7 +8971,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -9479,7 +9088,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -9713,7 +9322,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -9791,7 +9400,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
-          "ruleIndex": 11
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -9831,7 +9440,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -9946,7 +9555,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -10217,7 +9826,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -10334,7 +9943,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -10491,7 +10100,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -10609,7 +10218,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -10646,7 +10255,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType",
-          "ruleIndex": 12
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -10687,7 +10296,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
-          "ruleIndex": 11
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -10727,7 +10336,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -12194,7 +11803,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-InOpRhs",
-          "ruleIndex": 13
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -12234,7 +11843,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 5
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -12271,7 +11880,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -12425,7 +12034,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -12928,7 +12537,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -13163,7 +12772,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -13280,7 +12889,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -13474,7 +13083,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -13591,7 +13200,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -13712,7 +13321,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13752,7 +13361,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13904,7 +13513,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -14098,7 +13707,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -14215,7 +13824,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -14449,7 +14058,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -14864,7 +14473,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -15058,7 +14667,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -15175,7 +14784,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -15409,7 +15018,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -15450,7 +15059,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 10
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -15531,7 +15140,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -15612,7 +15221,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -15726,7 +15335,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -15766,7 +15375,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -16111,7 +15720,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -16305,7 +15914,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -16422,7 +16031,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -16656,7 +16265,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -16734,7 +16343,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
-          "ruleIndex": 11
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -16774,7 +16383,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -16889,7 +16498,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrTypeError",
-          "ruleIndex": 8
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -17160,7 +16769,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -17277,7 +16886,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -17434,7 +17043,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -17552,7 +17161,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -17589,7 +17198,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType",
-          "ruleIndex": 12
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -17630,7 +17239,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
-          "ruleIndex": 11
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -17670,7 +17279,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 9
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -18907,6 +18516,397 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 94,
+                  "snippet": {
+                    "text": ".Value"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "field_19.Value"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+          "ruleIndex": 13
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 41,
+                  "charOffset": 69,
+                  "snippet": {
+                    "text": "StartsWith('Claim Status'.Value, \"Draft\")"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 111,
+                  "snippet": {
+                    "text": "&&"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Button_CIN_TD_4.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Button_CIN_TD_4.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 32,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "Set(newSelectedRecord, ThisItem)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Button_CIN_TD_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
+          "ruleIndex": 12
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 0,
+                  "snippet": {
+                    "text": "lbl_hdn_warnings"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "lbl_hdn_warnings"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Tooltip",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 16,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Tooltip",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 76,
+                  "charOffset": 8,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'Kellogg PO#' = ThisItem.'Kellogg PO#'))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.Visible",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 64,
+                  "charOffset": 97,
+                  "snippet": {
+                    "text": "CountRows(Filter(customer_claims_1, 'SSCC#' = ThisItem.'SSCC#'))"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Visible",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "CountRows"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 16,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "lbl_hdn_warnings"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "lbl_hdn_warnings"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 5,
+                  "charOffset": 23,
+                  "snippet": {
+                    "text": ".Text"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.Icon1_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 1
         },
         {
           "locations": [
@@ -18946,7 +18946,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-          "ruleIndex": 4
+          "ruleIndex": 13
         },
         {
           "locations": [
@@ -18986,7 +18986,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 5
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -19026,7 +19026,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 5
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -19063,7 +19063,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -19103,7 +19103,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19143,7 +19143,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19183,7 +19183,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19264,7 +19264,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19301,7 +19301,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -19341,7 +19341,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19422,7 +19422,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19462,7 +19462,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19502,7 +19502,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19539,7 +19539,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -19579,7 +19579,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19660,7 +19660,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19700,7 +19700,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19740,7 +19740,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
-          "ruleIndex": 7
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19817,7 +19817,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -19854,7 +19854,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -19894,7 +19894,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint-InOpRhs",
-          "ruleIndex": 13
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -19934,7 +19934,7 @@
             "level": "Medium"
           },
           "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 5
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -19971,7 +19971,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 6
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -20231,246 +20231,6 @@
                 "member": "TabIndex",
                 "module": "HorizontalMenuComponent",
                 "type": "HorizontalMenuComponent.Icon7_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "menu_screen.ColumnChart1.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "menu_screen.ColumnChart1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "menu_screen",
-                "type": "menu_screen.ColumnChart1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.SearchInput_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.SearchInput_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.SearchInput_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 15
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.Icon2_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 14
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "claim_draft_screen_copy_1",
-                "type": "claim_draft_screen_copy_1.Icon2_6"
               }
             }
           ],
@@ -25198,6 +24958,246 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "menu_screen.ColumnChart1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "menu_screen.ColumnChart1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "menu_screen",
+                "type": "menu_screen.ColumnChart1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.HeaderContainer1_10.Icon5_9"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.SearchInput_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.SearchInput_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.SearchInput_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.ScreenContainer1_11.MainSectionContainer1_10.Container1_9.TableClaimDraft_7.TableDataClaimDraft_7"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.Icon2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 14
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "claim_draft_screen_copy_1.Icon2_6.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "claim_draft_screen_copy_1",
+                "type": "claim_draft_screen_copy_1.Icon2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 15
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "claim_draft_screen.ScreenContainer1_10.HeaderContainer1_9.Icon5_8.AccessibleLabel"
                 }
               ],
@@ -27751,61 +27751,6 @@
               }
             },
             {
-              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
-              "messageStrings": {
-                "issue": {
-                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
-                  "Try simplifying the formula.",
-                  "Try moving your data to a different data source."
-                ],
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-SuggestRemoteExecutionHint",
-              "messageStrings": {
-                "issue": {
-                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
-                  "Try simplifying the formula.",
-                  "Try moving your data to a different data source."
-                ],
-                "level": "Medium",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleCtxtVariableTypes",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
               "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByService",
               "messageStrings": {
                 "issue": {
@@ -27911,6 +27856,61 @@
                 "componentType": "app",
                 "howToFix": [
                   "Change the item to the right of the \"in\" operator to be a column from the correct data source.",
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The \"{0}\" part of this formula might not work correctly on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
+                  "Try simplifying the formula.",
+                  "Try moving your data to a different data source."
+                ],
+                "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrIncompatibleCtxtVariableTypes",
+              "messageStrings": {
+                "issue": {
+                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
+                ],
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-SuggestRemoteExecutionHint-OpNotSupportedByColumn",
+              "messageStrings": {
+                "issue": {
+                  "text": "Delegation warning. The highlighted part of this formula might not work correctly with column \"{0}\" on large data sets."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
                   "If your data set exceeds the 500 record limit but contains less than 2,000 records, try resetting the limit.",
                   "Try simplifying the formula.",
                   "Try moving your data to a different data source."
