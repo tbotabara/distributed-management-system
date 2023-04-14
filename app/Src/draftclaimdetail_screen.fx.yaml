@@ -194,11 +194,11 @@
                     X: =359
                     Y: |-
                         =If(
-                        !ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
+                        !ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And ContainerErrorETA.Visible,
                         93,
-                        ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And !ContainerErrorETA_1.Visible,
+                        ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And !ContainerErrorETA.Visible,
                         109,
-                        ContainerErrorKelloggPO_1.Visible And ContainerErrorSSCC_1.Visible And ContainerErrorETA_1.Visible,
+                        ContainerErrorKelloggPO.Visible And ContainerErrorSSCC.Visible And ContainerErrorETA.Visible,
                         112,
                         51
                         )
