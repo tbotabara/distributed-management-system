@@ -3903,7 +3903,7 @@
                     Color: =RGBA(0, 0, 0, 1)
                     DisabledColor: =RGBA(166, 166, 166, 1)
                     Size: =10
-                    Text: ="Credit Note"
+                    Text: ="*Credit Note"
                     Underline: =true
                     Visible: =var_current_user=Lower("gbs")
                     Width: =132
