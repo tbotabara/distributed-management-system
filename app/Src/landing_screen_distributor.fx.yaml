@@ -678,7 +678,7 @@
                     OnChange: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(input_search_2.Text) && IsEmpty(combo_ct_2.SelectedItems) && IsEmpty(combo_status_2.SelectedItems))
+                            (IsEmpty(input_search_2.Text) || IsEmpty(combo_ct_2.SelectedItems) || IsEmpty(combo_status_2.SelectedItems))
                         )
                     RadiusBottomLeft: =0
                     RadiusBottomRight: =0
@@ -711,7 +711,7 @@
                     OnChange: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(input_search_2.Text) && IsEmpty(combo_ct_2.SelectedItems) && IsEmpty(combo_status_2.SelectedItems))
+                            (IsEmpty(input_search_2.Text) || IsEmpty(combo_ct_2.SelectedItems) || IsEmpty(combo_status_2.SelectedItems))
                         )
                     OnSelect: =
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -746,7 +746,7 @@
                     OnChange: |-
                         =Set(
                             areFiltersApplied,
-                            !(IsEmpty(input_search_2.Text) && IsEmpty(combo_ct_2.SelectedItems) && IsEmpty(combo_status_2.SelectedItems))
+                            (IsEmpty(input_search_2.Text) || IsEmpty(combo_ct_2.SelectedItems) || IsEmpty(combo_status_2.SelectedItems))
                         )
                     OnSelect: =
                     PressedColor: =RGBA(255, 255, 255, 1)
