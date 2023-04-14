@@ -401,8 +401,7 @@
                                 Height: =58
                                 OnSelect: =Select(Parent)
                                 Size: =10
-                                Text: |-
-                                    =ThisItem.'Kellogg PO#'
+                                Text: =DateAdd(ThisItem.'Submission Date', 30, TimeUnit.Days)
                                 Width: =199
                                 X: =589
                                 ZIndex: =5
