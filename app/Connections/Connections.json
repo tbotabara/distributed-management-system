@@ -279,6 +279,20 @@
     "dependents": [],
     "id": "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d"
   },
+  "c04a2c06-1d0d-48be-8ce0-aa6df8da7407": {
+    "connectionRef": {
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1626/1.0.1626.3238/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365"
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c04a2c06-1d0d-48be-8ce0-aa6df8da7407"
+  },
   "f09932a7-959b-4bd4-8b00-7d221b58bcfa": {
     "connectionRef": {
       "displayName": "Power BI",

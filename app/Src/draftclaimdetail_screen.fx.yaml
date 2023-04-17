@@ -3299,6 +3299,7 @@
                                Period: varPeriodRecord
                             }
                         );
+                        Office365Outlook.SendEmail("tbotabara@deloitte.com", "Claim submission from distributor", "Dear Kelloggs BU, a new claim has been submitted by Distributor in the PIO Claim Management Tool. Click on the link to login and view the submission: [LINK TO APP]");
                         Back()
                     Size: =15
                     Text: ="Submit"
