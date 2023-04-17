@@ -3497,7 +3497,7 @@
                             =Remove('Claim Attachment',ThisItem);
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
-                        Visible: =var_current_user=Lower("distributor")
+                        Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =12
                         X: =193
                         Y: =14
@@ -3557,7 +3557,7 @@
                             =Remove('Claim Attachment',ThisItem);
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
-                        Visible: =var_current_user=Lower("distributor")
+                        Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =12
                         X: =193
                         Y: =14
@@ -3632,7 +3632,7 @@
                             =Remove('Claim Attachment',ThisItem);
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
-                        Visible: =var_current_user=Lower("distributor")
+                        Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =12
                         X: =193
                         Y: =9
@@ -3897,7 +3897,7 @@
                     Size: =10
                     Text: ="*Credit Note"
                     Underline: =true
-                    Visible: =var_current_user=Lower("gbs")
+                    Visible: =var_current_user=Lower("gbs") || (var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Processed")
                     Width: =132
                     X: =30
                     Y: =330
@@ -3930,7 +3930,7 @@
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
-                    Visible: =var_current_user=Lower("gbs")
+                    Visible: =var_current_user=Lower("gbs") || (var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Processed")
                     Width: =282
                     X: =30
                     Y: =357
@@ -3946,7 +3946,7 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =25
+                        Width: =12
                         X: =181
                         Y: =14
                         ZIndex: =1
@@ -3962,8 +3962,9 @@
                             =Remove('Claim Attachment',ThisItem);
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
-                        Width: =30
-                        X: =206
+                        Visible: =var_current_user=Lower("gbs")
+                        Width: =12
+                        X: =198
                         Y: =14
                         ZIndex: =2
 
