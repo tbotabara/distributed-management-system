@@ -2,7 +2,10 @@
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: |
-        =Set(areFiltersApplied, false)
+        =Reset(combo_ct_2);
+        Reset(combo_status_2);
+        Reset(input_search_2);
+        Set(areFiltersApplied, false)
 
     ScreenContainer1_5 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -394,8 +397,8 @@
                                 Sort(
                                     Filter(
                                         FilteredClaims,
-                                        (IsEmpty(combo_ct_2.SelectedItems) || 'Claim Type'.Value in combo_ct_2.SelectedItems.Value),
-                                        (IsEmpty(combo_status_2.SelectedItems) || 'Claim Status'.Value in combo_status_2.SelectedItems.Value)
+                                        (IsBlank(combo_ct_2.Selected) || 'Claim Type'.Value in combo_ct_2.SelectedItems.Value),
+                                        (IsBlank(combo_status_2.Selected) || 'Claim Status'.Value in combo_status_2.SelectedItems.Value)
                                     ),
                                     ID, SortOrder.Descending
                                 )
@@ -711,7 +714,7 @@
                     OnChange: |-
                         =Set(
                             areFiltersApplied,
-                            (IsEmpty(input_search_2.Text) || IsEmpty(combo_ct_2.SelectedItems) || IsEmpty(combo_status_2.SelectedItems))
+                            (IsBlank(input_search_2.Text) || IsBlank(combo_ct_2.Selected) || IsBlank(combo_status_2.Selected))
                         )
                     OnSelect: =
                     PressedColor: =RGBA(255, 255, 255, 1)
@@ -746,7 +749,7 @@
                     OnChange: |-
                         =Set(
                             areFiltersApplied,
-                            (IsEmpty(input_search_2.Text) || IsEmpty(combo_ct_2.SelectedItems) || IsEmpty(combo_status_2.SelectedItems))
+                            (IsBlank(input_search_2.Text) || IsBlank(combo_ct_2.Selected) || IsBlank(combo_status_2.Selected))
                         )
                     OnSelect: =
                     PressedColor: =RGBA(255, 255, 255, 1)

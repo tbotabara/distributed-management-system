@@ -2,7 +2,10 @@
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: |+
-        =Set(areFiltersApplied, false);
+        =Reset(input_search_4);
+        Reset(combo_ct_8);
+        Reset(combo_status_7);
+        Set(areFiltersApplied, false);
         // Get all countries for dropdown
         ClearCollect(
             UniqueCountriesCollection,
@@ -769,8 +772,8 @@
                                     Sort(
                                         Filter(
                                             FilteredClaims,
-                                            (IsEmpty(combo_ct_8.SelectedItems) || 'Claim Type'.Value in combo_ct_8.SelectedItems.Value),
-                                            (IsEmpty(combo_status_7.SelectedItems) || 'Claim Status'.Value in combo_status_7.SelectedItems.Value)
+                                            (IsBlank(combo_ct_8.Selected) || 'Claim Type'.Value in combo_ct_8.SelectedItems.Value),
+                                            (IsBlank(combo_status_7.Selected) || 'Claim Status'.Value in combo_status_7.SelectedItems.Value)
                                         ),
                                         ID, SortOrder.Descending
                                     )
@@ -1201,8 +1204,9 @@
                         OnChange: |-
                             =Set(
                                 areFiltersApplied,
-                                (IsEmpty(input_search_4.Text) || IsEmpty(combo_ct_8.SelectedItems) || IsEmpty(combo_status_7.SelectedItems))
+                                (!IsBlank(input_search_4.Text) || !IsBlank(combo_ct_8.Selected) || !IsBlank(combo_status_7.Selected))
                             )
+                        OnSelect: =
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
@@ -1234,7 +1238,7 @@
                         OnChange: |-
                             =Set(
                                 areFiltersApplied,
-                                (IsEmpty(input_search_4.Text) || IsEmpty(combo_ct_8.SelectedItems) || IsEmpty(combo_status_7.SelectedItems))
+                                (!IsBlank(input_search_4.Text) || !IsBlank(combo_ct_8.Selected) || !IsBlank(combo_status_7.Selected))
                             )
                         OnSelect: =
                         PressedColor: =RGBA(255, 255, 255, 1)
@@ -1269,7 +1273,7 @@
                         OnChange: |-
                             =Set(
                                 areFiltersApplied,
-                                (IsEmpty(input_search_4.Text) || IsEmpty(combo_ct_8.SelectedItems) || IsEmpty(combo_status_7.SelectedItems))
+                                (!IsBlank(input_search_4.Text) || !IsBlank(combo_ct_8.Selected) || !IsBlank(combo_status_7.Selected))
                             )
                         OnSelect: =
                         PressedColor: =RGBA(255, 255, 255, 1)
