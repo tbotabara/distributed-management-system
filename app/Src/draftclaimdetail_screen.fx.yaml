@@ -3481,7 +3481,7 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =25
+                        Width: =12
                         X: =181
                         Y: =14
                         ZIndex: =1
@@ -3498,8 +3498,8 @@
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor")
-                        Width: =30
-                        X: =206
+                        Width: =12
+                        X: =193
                         Y: =14
                         ZIndex: =2
 
@@ -3541,7 +3541,7 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =25
+                        Width: =12
                         X: =181
                         Y: =14
                         ZIndex: =1
@@ -3558,8 +3558,8 @@
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor")
-                        Width: =30
-                        X: =206
+                        Width: =12
+                        X: =193
                         Y: =14
                         ZIndex: =2
 
@@ -3616,7 +3616,7 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =25
+                        Width: =12
                         X: =181
                         Y: =9
                         ZIndex: =2
@@ -3633,8 +3633,8 @@
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor")
-                        Width: =30
-                        X: =206
+                        Width: =12
+                        X: =193
                         Y: =9
                         ZIndex: =3
 
