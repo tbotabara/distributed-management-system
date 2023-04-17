@@ -27,6 +27,8 @@
                 Today() >= Date(Year(Today()), 11, 26) && Today() <= Date(Year(Today()), 12, 30), LookUp(PeriodChoices, Value = "P12")
             )
         );
+        
+        Set(email_test, "tbotabara@deloitte.com");
 
     ScreenContainer1_2 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -3299,7 +3301,7 @@
                                Period: varPeriodRecord
                             }
                         );
-                        Office365Outlook.SendEmail(email_test, "Claim submission from distributor", Concatenate("Dear Kelloggs BU, a new claim: ", newSelectedRecord.'CIN (Title)' ," has been submitted by Distributor in the PIO Claim Management Tool. Click on the link to login and view the submission: [LINK TO APP]"));
+                        Office365Outlook.SendEmail(email_test, Concatenate("Claim submission from distributor: ", newSelectedRecord.'CIN (Title)'), Concatenate("Dear Kelloggs BU, a new claim: ", newSelectedRecord.'CIN (Title)' ," has been submitted by Distributor in the PIO Claim Management Tool. Click on the link to login and view the submission: [LINK TO APP]"));
                         Back()
                     Size: =15
                     Text: ="Submit"
@@ -3832,9 +3834,9 @@
                         );
                         Switch(
                             var_current_user_type,
-                            "Kelloggs BU", Office365Outlook.SendEmail(email_test, "Claim approval from Kellogg BU", Concatenate("Dear PIO SPOC, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
-                            "PIO SPOC", Office365Outlook.SendEmail(email_test, "Claim approval from PIO SPOC", Concatenate("Dear PIO Finance, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
-                            "PIO Finance", Office365Outlook.SendEmail(email_test, "Claim approval from PIO Finance", Concatenate("Dear GBS, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
+                            "Kelloggs BU", Office365Outlook.SendEmail(email_test, Concatenate("Claim approval from Kellogg BU: ", newSelectedRecord.'CIN (Title)'), Concatenate("Dear PIO SPOC, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
+                            "PIO SPOC", Office365Outlook.SendEmail(email_test, Concatenate("Claim approval from PIO SPOC: ", newSelectedRecord.'CIN (Title)'), Concatenate("Dear PIO Finance, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
+                            "PIO Finance", Office365Outlook.SendEmail(email_test, Concatenate("Claim approval from PIO Finance: ", newSelectedRecord.'CIN (Title)'), Concatenate("Dear GBS, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
                             Set(varResult, "Invalid condition")
                         );
                         
@@ -3874,6 +3876,7 @@
                                GBSTimestamp:Now()
                             }
                         );
+                        Office365Outlook.SendEmail(email_test, Concatenate("Claim processed from GBS: ", newSelectedRecord.'CIN (Title)'), Concatenate("Dear Distributor, your claim submission: ", newSelectedRecord.'CIN (Title)' ," has been processed with the comment: ", DataCardValue26.Text, ". Click on the link to login and retrieve the credit note from PIO Claim Management Tool: [LINK TO APP]"));
                         Navigate(landing_screen)
                     Size: =15
                     Text: ="Process"
