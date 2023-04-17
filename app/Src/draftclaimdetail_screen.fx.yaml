@@ -3398,7 +3398,7 @@
                     Icon: =Icon.AddDocument
                     OnSelect: |-
                         =UpdateContext({ShowPopup: true});
-                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Warehouse Receipts").'ID'})
+                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Warehouse Receipts").ID})
                     PaddingBottom: =10
                     PaddingLeft: =10
                     PaddingRight: =10
@@ -3421,7 +3421,7 @@
                     Icon: =Icon.AddDocument
                     OnSelect: |-
                         =UpdateContext({ShowPopup: true});
-                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Images Of Damages").'ID'})
+                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Images Of Damages").ID})
                     PaddingBottom: =10
                     PaddingLeft: =10
                     PaddingRight: =10
@@ -3444,7 +3444,7 @@
                     Icon: =Icon.AddDocument
                     OnSelect: |-
                         =UpdateContext({ShowPopup: true});
-                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Supporting Documents").'ID'})
+                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Supporting Documents").ID})
                     PaddingBottom: =10
                     PaddingLeft: =10
                     PaddingRight: =10
@@ -3912,7 +3912,7 @@
                     Icon: =Icon.AddDocument
                     OnSelect: |-
                         =UpdateContext({ShowPopup: true});
-                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Credit Note").'ID'})
+                        UpdateContext({TypeNumber: LookUp('Claim Document Type', DocType = "Credit Note").ID})
                     PaddingBottom: =10
                     PaddingLeft: =10
                     PaddingRight: =10

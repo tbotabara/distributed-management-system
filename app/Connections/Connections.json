@@ -293,6 +293,28 @@
     "dependents": [],
     "id": "c04a2c06-1d0d-48be-8ce0-aa6df8da7407"
   },
+  "da1866a0-09ef-4791-88fb-08115836229e": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1627/1.0.1627.3238/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
+        "dataSources": {
+          "Period": {
+            "tableName": "6c18b661-f8bd-4804-8316-1435a8a7e718"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Period"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "da1866a0-09ef-4791-88fb-08115836229e"
+  },
   "f09932a7-959b-4bd4-8b00-7d221b58bcfa": {
     "connectionRef": {
       "displayName": "Power BI",
