@@ -1,9 +1,7 @@
 {
   "ComponentIndexes": {
-    "Component1": 8,
-    "Component2": 9,
-    "HorizontalMenuComponent": 10,
-    "ProgressBar": 11
+    "HorizontalMenuComponent": 8,
+    "ProgressBar": 9
   },
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
@@ -54,8 +52,6 @@
     "combo_status_2": 424,
     "combo_status_6": 338,
     "combo_status_7": 354,
-    "Component1": 24,
-    "Component2": 25,
     "CompositeColumnChart1": 531,
     "CompositeLineChart1": 532,
     "CompositePieChart1": 533,
@@ -540,7 +536,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "04/17/2023 00:49:12",
+  "HeaderLastSavedDateTimeUTC": "04/17/2023 00:49:40",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "1390746f-2c3e-4bd4-b54c-35d18b14ab9e": "\"/providers/microsoft.powerapps/apis/shared_sharepointonline/connections/124babb8ee00469c9c4bf5d73b80a1da\"",
@@ -567,15 +563,11 @@
   },
   "OrderComponentMetadata": {
     "028175e180d7486f9f0c28262b40d618": 0,
-    "ced2d635b2c34fd3be5b779d09690213": 2,
-    "edba5150e0cb4e3bb0532a7de693516b": 3,
-    "eee9404cbbaa49e29841d1e19171a85b": 1
+    "edba5150e0cb4e3bb0532a7de693516b": 1
   },
   "OrderComponentTemplate": {
     "028175e180d7486f9f0c28262b40d618": 0,
-    "ced2d635b2c34fd3be5b779d09690213": 2,
-    "edba5150e0cb4e3bb0532a7de693516b": 3,
-    "eee9404cbbaa49e29841d1e19171a85b": 1
+    "edba5150e0cb4e3bb0532a7de693516b": 1
   },
   "OrderDataSource": {
     "ChoiceCountCollection": 19,
@@ -736,8 +728,6 @@
     "combo_status_2": {},
     "combo_status_6": {},
     "combo_status_7": {},
-    "Component1": {},
-    "Component2": {},
     "CompositeColumnChart1": {},
     "CompositeLineChart1": {},
     "CompositePieChart1": {},
@@ -1270,8 +1260,6 @@
     "combo_status_2": 388,
     "combo_status_6": 313,
     "combo_status_7": 332,
-    "Component1": 1,
-    "Component2": 2,
     "CompositeColumnChart1": 422,
     "CompositeLineChart1": 424,
     "CompositePieChart1": 428,
