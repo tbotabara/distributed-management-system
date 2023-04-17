@@ -3927,7 +3927,7 @@
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
-                    Visible: =var_current_user=Lower("gbs")
+                    Visible: =var_current_user=Lower("gbs") || (var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Processed")
                     Width: =282
                     X: =30
                     Y: =357
