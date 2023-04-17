@@ -3897,7 +3897,7 @@
                     Size: =10
                     Text: ="*Credit Note"
                     Underline: =true
-                    Visible: =var_current_user=Lower("gbs")
+                    Visible: =var_current_user=Lower("gbs") || (var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Processed")
                     Width: =132
                     X: =30
                     Y: =330
