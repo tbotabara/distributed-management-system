@@ -3299,7 +3299,7 @@
                                Period: varPeriodRecord
                             }
                         );
-                        Office365Outlook.SendEmail("tbotabara@deloitte.com", "Claim submission from distributor", "Dear Kelloggs BU, a new claim has been submitted by Distributor in the PIO Claim Management Tool. Click on the link to login and view the submission: [LINK TO APP]");
+                        Office365Outlook.SendEmail(email_test, "Claim submission from distributor", Concatenate("Dear Kelloggs BU, a new claim: ", newSelectedRecord.'CIN (Title)' ," has been submitted by Distributor in the PIO Claim Management Tool. Click on the link to login and view the submission: [LINK TO APP]"));
                         Back()
                     Size: =15
                     Text: ="Submit"
@@ -3830,6 +3830,14 @@
                                 }
                              )
                         );
+                        Switch(
+                            var_current_user_type,
+                            "Kelloggs BU", Office365Outlook.SendEmail(email_test, "Claim approval from Kellogg BU", Concatenate("Dear PIO SPOC, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
+                            "PIO SPOC", Office365Outlook.SendEmail(email_test, "Claim approval from PIO SPOC", Concatenate("Dear PIO Finance, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
+                            "PIO Finance", Office365Outlook.SendEmail(email_test, "Claim approval from PIO Finance", Concatenate("Dear GBS, a claim (", newSelectedRecord.'CIN (Title)' ,") in the PIO Claim Management Tool is pending for your review. Click on the link to login and view the submission: [LINK TO APP]")),
+                            Set(varResult, "Invalid condition")
+                        );
+                        
                         Navigate(landing_screen)
                     Size: =15
                     Text: ="Approve"
@@ -4117,6 +4125,12 @@
                             PIOSPOCTimestamp: Now()
                         }
                      )
+                );
+                Switch(
+                    var_current_user_type,
+                    "Kelloggs BU", Office365Outlook.SendEmail(email_test, "Claim rejected from Kellogg BU", Concatenate("Dear Distributor, your claim: ", newSelectedRecord.'CIN (Title)' ," has been rejected due to ", RejectReason.Selected.Name)),
+                    "PIO SPOC", Office365Outlook.SendEmail(email_test, "Claim approval from PIO SPOC", Concatenate("Dear Distributor, your claim: ", newSelectedRecord.'CIN (Title)' ," has been rejected due to ", RejectReason.Selected.Name)),
+                    Set(varResult, "Invalid condition")
                 );
                 UpdateContext({ShowPopupLightBox:false});
                 Back()
