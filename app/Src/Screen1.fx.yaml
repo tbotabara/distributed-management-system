@@ -1,0 +1,40 @@
+Screen1 As screen:
+    Fill: =
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    AddMediaWithImage1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        UploadedImage1 As image:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Height: =AddMediaButton1.Height
+            Image: =If(IsBlank(AddMediaButton1.Media), SampleImage, AddMediaButton1.Media)
+            ImagePosition: =ImagePosition.Fill
+            Width: =AddMediaButton1.Width
+            X: =AddMediaButton1.X
+            Y: =AddMediaButton1.Y
+            ZIndex: =2
+
+        AddMediaButton1 As addMedia:
+            BorderColor: =RGBA(89, 0, 0, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =338
+            Size: =25
+            Width: =1360
+            ZIndex: =3
+
+    LinkCanvas1 As Link:
+        DisplayMode: =DisplayMode.Edit
+        Height: =32
+        Width: =320
+        X: =0
+        Y: =426
+        ZIndex: =4
+
