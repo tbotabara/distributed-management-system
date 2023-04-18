@@ -6,6 +6,7 @@
         Reset(combo_ct_8);
         Reset(combo_status_7);
         Set(areFiltersApplied, false);
+        
         // Get all countries for dropdown
         ClearCollect(
             UniqueCountriesCollection,
@@ -766,7 +767,8 @@
                                             (StartsWith('CIN (Title)', input_search_4.Text) ||
                                             (IsNumeric(input_search_4.Text) && 'Kellogg PO#' = Value(input_search_4.Text)) ||
                                             (IsNumeric(input_search_4.Text) && 'Kellogg Inv #' = Value(input_search_4.Text)) ||
-                                            StartsWith('Container #', input_search_4.Text))
+                                            StartsWith('Container #', input_search_4.Text) 
+                                            )
                                         )
                                     },
                                     Sort(
@@ -1028,16 +1030,12 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
                     OnSelect: |+
-                        =With({_jsonData:    
-                            ShowColumns(
-                                AddColumns(Gallery4_6.AllItems, 
-                                    lbl_fcv.Text, lbl_ecv.Text
-                                ), 
-                                lbl_fcv.Text, lbl_ecv.Text
-                            )},
+                        =ClearCollect(myNewCollection, 
+                        ShowColumns(Gallery4_6.AllItems,
+                        "field_1","Title","field_2", "field_5","field_12", "field_17", "field_20", "EstimatedClaimValue",
+                        "FinalClaimValue", "field_13","field_19","field_21"));
+                        ExportToExcel.Run(JSON(myNewCollection, JSONFormat.IncludeBinaryData & JSONFormat.IgnoreUnsupportedTypes))
                         
-                            ExportToExcel.Run(JSON(_jsonData, IndentFour & IngnoreBinaryData))
-                        )
                         
                         
                     Size: =10

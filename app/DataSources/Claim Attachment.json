@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2023-03-23T16:41:13.7120000Z",
+      "LastChangedTimeString": "2023-04-04T16:26:33.9110000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -38,6 +38,7 @@
       "MediaServiceImageTags@odata.type": "MediaServiceImageTags (MediaServiceImageTags@odata.type)",
       "MediaServiceOCR": "Extracted Text",
       "Modified": "Modified",
+      "OData__ColorTag": "Color Tag",
       "OData__DisplayName": "Sensitivity",
       "OData__ExtendedDescription": "Description",
       "Title": "Title"

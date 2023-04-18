@@ -6,6 +6,11 @@
       <object name="ManualTriggerInput">
         <property name="Compose_Inputs" type="string" />
       </object>
+      <string name="ResponseActionOutput_filelink_def" />
+      <object name="ResponseActionOutput">
+        <property name="filelink" type="string" />
+      </object>
+      <object name="Run_responses_default_def" />
     </jsonTypes>
   </grammars>
   <resources siena:authenticationProviderHref="#PowerAppAuth" base="https://europe-001.azure-apim.net/apim/logicflows">
@@ -21,6 +26,9 @@
             <param style="plain" name="Compose_Inputs" path="/Compose_Inputs" type="xs:string" required="true" />
           </representation>
         </request>
+        <response>
+          <representation mediaType="application/json" element="service:ResponseActionOutput" />
+        </response>
       </method>
     </resource>
   </resources>
