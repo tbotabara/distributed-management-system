@@ -196,14 +196,9 @@
                             AllowNewAPI: =true
                             BorderColor: =RGBA(89, 0, 0, 1)
                             DashboardId: ="d956facb-d5c3-4f92-9497-8a2ad98fea9c"
-                            DisplayMode: =DisplayMode.Disabled
                             Height: =317
                             TileUrl: |-
-                                =If(
-                                    IsBlank(cbKPI_ClaimType.Selected),
-                                    "https://app.powerbi.com/embed?dashboardId=d956facb-d5c3-4f92-9497-8a2ad98fea9c&tileId=a628efc4-4661-43ce-81e6-913b8c580b08&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d",
-                                    "https://app.powerbi.com/embed?dashboardId=d956facb-d5c3-4f92-9497-8a2ad98fea9c&tileId=a628efc4-4661-43ce-81e6-913b8c580b08&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d&filter=customer_claims/ClaimType eq '" & cbKPI_ClaimType.Selected.Value & "'"
-                                )
+                                ="https://app.powerbi.com/embed?dashboardId=d956facb-d5c3-4f92-9497-8a2ad98fea9c&tileId=a628efc4-4661-43ce-81e6-913b8c580b08&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly9XQUJJLU5PUlRILUVVUk9QRS1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldCIsImVtYmVkRmVhdHVyZXMiOnsibW9kZXJuRW1iZWQiOmZhbHNlfX0%3d?filter=customer_claims/ClaimType eq 'Image of Damages' && customer_claims/Destination Country eq 'Indonesia'"
                             WorkspaceId: ="__my-workspace"
                             X: =40
                             Y: =256
