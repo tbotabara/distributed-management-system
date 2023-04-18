@@ -5,6 +5,7 @@
         =Reset(combo_ct_2);
         Reset(combo_status_2);
         Reset(input_search_2);
+        ClearCollect(statusChoiceDistributor, {status: "New"}, {status: "Processed"}, {status: "Rejected"});
         Set(areFiltersApplied, false)
 
     ScreenContainer1_5 As groupContainer.verticalAutoLayoutContainer:
@@ -398,8 +399,11 @@
                                     Filter(
                                         FilteredClaims,
                                         (IsBlank(combo_ct_2.Selected) || 'Claim Type'.Value in combo_ct_2.SelectedItems.Value),
-                                        (IsBlank(combo_status_2.Selected) || 'Claim Status'.Value in combo_status_2.SelectedItems.Value)
-                                    ),
+                                        (IsBlank(combo_status_2.Selected) || 
+                                        (If ("Rejected" in combo_status_2.SelectedItems.Value,
+                                        'Claim Status'.Value in [ "Rejected by BU", "Rejected by Finance", "Rejected by PIO SPOC", Concat(combo_status_2.SelectedItems, Value & ",")],
+                                        'Claim Status'.Value in combo_status_2.SelectedItems.Value))
+                                        )),
                                     ID, SortOrder.Descending
                                 )
                             )
@@ -709,7 +713,9 @@
                     HoverFill: =RGBA(222, 179, 184, 1)
                     InputTextPlaceholder: ="Select status"
                     IsSearchable: =false
-                    Items: =Filter(Choices(customer_claims_1.'Claim Status'), Value in ["New", "Processed", "Rejected", "Draft"])
+                    Items: |
+                        =//Filter(Choices(customer_claims_1.'Claim Status'), Value in ["New", "Processed"])
+                        ["New","Processed","Rejected"]
                     NoSelectionText: ="All"
                     OnChange: |-
                         =Set(
