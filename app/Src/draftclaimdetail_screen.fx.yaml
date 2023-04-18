@@ -3481,8 +3481,8 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =12
-                        X: =181
+                        Width: =15
+                        X: =221
                         Y: =14
                         ZIndex: =1
 
@@ -3498,8 +3498,8 @@
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
-                        Width: =12
-                        X: =193
+                        Width: =15
+                        X: =238
                         Y: =14
                         ZIndex: =2
 
@@ -3517,6 +3517,16 @@
                         Width: =181
                         Y: =8
                         ZIndex: =3
+
+                    LinkCanvas4_2 As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =31
+                        Text: ="View"
+                        URL: =ThisItem.'Link to item'
+                        Width: =38
+                        X: =183
+                        Y: =14
+                        ZIndex: =4
 
                 "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3541,8 +3551,8 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =12
-                        X: =181
+                        Width: =15
+                        X: =221
                         Y: =14
                         ZIndex: =1
 
@@ -3558,8 +3568,8 @@
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
-                        Width: =12
-                        X: =193
+                        Width: =15
+                        X: =238
                         Y: =14
                         ZIndex: =2
 
@@ -3578,6 +3588,16 @@
                         Y: =9
                         ZIndex: =3
 
+                    LinkCanvas4_1 As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =31
+                        Text: ="View"
+                        URL: =ThisItem.'Link to item'
+                        Width: =38
+                        X: =183
+                        Y: =14
+                        ZIndex: =4
+
                 "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -3590,6 +3610,16 @@
                     X: =30
                     Y: =93
                     ZIndex: =19
+
+                    LinkCanvas4 As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =31
+                        Text: ="View"
+                        URL: =ThisItem.'Link to item'
+                        Width: =38
+                        X: =181
+                        Y: =9
+                        ZIndex: =1
 
                     Label5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3604,7 +3634,7 @@
                         Tooltip: =ThisItem.'File name with extension'
                         Width: =181
                         Y: =6
-                        ZIndex: =1
+                        ZIndex: =2
 
                     Icon8 As icon.Download:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3616,10 +3646,10 @@
                         OnSelect: |-
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
-                        Width: =12
-                        X: =181
+                        Width: =15
+                        X: =221
                         Y: =9
-                        ZIndex: =2
+                        ZIndex: =3
 
                     Icon9 As icon.Trash:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3633,10 +3663,10 @@
                             Refresh('Claim Attachment');
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
-                        Width: =12
-                        X: =193
+                        Width: =15
+                        X: =237
                         Y: =9
-                        ZIndex: =3
+                        ZIndex: =4
 
                 Rectangle3 As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
