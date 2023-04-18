@@ -3518,8 +3518,6 @@
                         Y: =8
                         ZIndex: =3
 
-
-
                 "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -3580,8 +3578,6 @@
                         Y: =9
                         ZIndex: =3
 
-
-
                 "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
                     Height: =61
@@ -3594,8 +3590,6 @@
                     X: =30
                     Y: =93
                     ZIndex: =19
-
-
 
                     Label5 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
@@ -3623,7 +3617,7 @@
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
                         Width: =15
-                        X: =221
+                        X: =208
                         Y: =9
                         ZIndex: =3
 
@@ -3640,9 +3634,19 @@
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =15
-                        X: =237
+                        X: =224
                         Y: =9
                         ZIndex: =4
+
+                    LinkCanvas1 As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Text: ="View"
+                        URL: =ThisItem.'Link to item'
+                        Width: =42
+                        X: =240
+                        Y: =9
+                        ZIndex: =5
 
                 Rectangle3 As rectangle:
                     BorderColor: =RGBA(89, 0, 0, 1)
