@@ -1032,13 +1032,9 @@
                     OnSelect: |+
                         =With({_ExportCSVVar:
                             "Country,CIN,Claim Type,Kellogg PO,Invoice Number,Total Cases for Claim,Final Approved Quantity,Estimated Claim Value,Final Claim Value,Claim Date,Status,Comment" & Char(10) &
-                               Concat(Gallery4_6.AllItems, 
-                                        lbl_tbl_country_5.Text & "," & button_gallery_cin_5.Text & "," & lbl_tbl_ct_5.Text & "," & lbl_tbl_kpo_5.Text & "," & 
-                                       lbl_tbl_in_5.Text & "," & lbl_tbl_tcfc_5.Text & "," & lbl_faq.Text & "," & lbl_ecv.Text & "," & 
-                                       lbl_fcv.Text & "," & lbl_tbl_cd_4.Text & "," & lbl_tbl_status_4.Text & "," & lbl_tbl_comments_4.Text & Char(10)
+                               Concat(Gallery4_6.AllItems, lbl_tbl_country_5.Text & "," & button_gallery_cin_5.Text & "," & lbl_tbl_ct_5.Text & "," & lbl_tbl_kpo_5.Text & "," & lbl_tbl_in_5.Text & "," & lbl_tbl_tcfc_5.Text & "," & lbl_faq.Text & "," & lbl_ecv.Text & "," & lbl_fcv.Text & "," & lbl_tbl_cd_4.Text & "," & lbl_tbl_status_4.Text & "," & lbl_tbl_comments_4.Text & Char(10)
                                 )
-                            }, Set(SuccessVar, ExportToExcel.Run(JSON(_ExportCSVVar, JSONFormat.IncludeBinaryData & JSONFormat.IgnoreUnsupportedTypes))
-                        );
+                            }, ExportToExcel.Run(JSON(_ExportCSVVar, JSONFormat.IncludeBinaryData & JSONFormat.IgnoreUnsupportedTypes)))
                         
                         
                         
