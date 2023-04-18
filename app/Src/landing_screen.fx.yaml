@@ -6,6 +6,7 @@
         Reset(combo_ct_8);
         Reset(combo_status_7);
         Set(areFiltersApplied, false);
+        
         // Get all countries for dropdown
         ClearCollect(
             UniqueCountriesCollection,
@@ -1297,4 +1298,24 @@
         X: =126
         Y: =73
         ZIndex: =14
+
+    ExportToExcel_button As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =37
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
+        OnSelect: |-
+            =ExportToExcel.Run(JSON(
+            , JSONFormat.IncludeBinaryData))
+        Size: =10
+        Text: ="Export to Excel"
+        Width: =118
+        X: =1206
+        Y: =434
+        ZIndex: =15
 
