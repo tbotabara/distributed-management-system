@@ -3482,7 +3482,7 @@
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
                         Width: =15
-                        X: =221
+                        X: =234
                         Y: =14
                         ZIndex: =1
 
@@ -3499,7 +3499,7 @@
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =15
-                        X: =238
+                        X: =250
                         Y: =14
                         ZIndex: =2
 
@@ -3517,6 +3517,16 @@
                         Width: =181
                         Y: =8
                         ZIndex: =3
+
+                    lnk_ViewSupportingDocs As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Text: ="View"
+                        URL: =ThisItem.'Link to item'
+                        Width: =42
+                        X: =192
+                        Y: =14
+                        ZIndex: =4
 
                 "Gallery_DamageImage As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3542,7 +3552,7 @@
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
                         Width: =15
-                        X: =221
+                        X: =234
                         Y: =14
                         ZIndex: =1
 
@@ -3559,7 +3569,7 @@
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =15
-                        X: =238
+                        X: =250
                         Y: =14
                         ZIndex: =2
 
@@ -3577,6 +3587,15 @@
                         Width: =181
                         Y: =9
                         ZIndex: =3
+
+                    lnk_ViewImageDamages As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Text: ="View"
+                        Width: =42
+                        X: =192
+                        Y: =14
+                        ZIndex: =4
 
                 "Gallery_WHReceipt As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
@@ -3617,7 +3636,7 @@
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
                         Width: =15
-                        X: =208
+                        X: =234
                         Y: =9
                         ZIndex: =3
 
@@ -3634,17 +3653,17 @@
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("distributor") And newSelectedRecord.'Claim Status'.Value = "Draft"
                         Width: =15
-                        X: =224
+                        X: =250
                         Y: =9
                         ZIndex: =4
 
-                    LinkCanvas1 As Link:
+                    lnk_ViewWHReceipt As Link:
                         DisplayMode: =DisplayMode.Edit
                         Height: =32
                         Text: ="View"
                         URL: =ThisItem.'Link to item'
                         Width: =42
-                        X: =240
+                        X: =192
                         Y: =9
                         ZIndex: =5
 
@@ -3957,7 +3976,7 @@
                             =Download("https://apcdeloitte.sharepoint.com/:x:/r/sites/Kellogg36/_layouts/download.aspx?SourceUrl="&ThisItem.'Link to item')
                         Tooltip: ="Download this file"
                         Width: =12
-                        X: =181
+                        X: =234
                         Y: =14
                         ZIndex: =1
 
@@ -3974,7 +3993,7 @@
                         Tooltip: ="Delete this file"
                         Visible: =var_current_user=Lower("gbs")
                         Width: =12
-                        X: =198
+                        X: =250
                         Y: =14
                         ZIndex: =2
 
@@ -3992,6 +4011,16 @@
                         Width: =181
                         Y: =8
                         ZIndex: =3
+
+                    LinkCanvas3 As Link:
+                        DisplayMode: =DisplayMode.Edit
+                        Height: =32
+                        Text: ="View"
+                        URL: =ThisItem.'Link to item'
+                        Width: =42
+                        X: =192
+                        Y: =14
+                        ZIndex: =4
 
     Label2 As label:
         BorderColor: =RGBA(89, 0, 0, 1)
