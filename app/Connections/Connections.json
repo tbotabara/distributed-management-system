@@ -1,38 +1,4 @@
 {
-  "1312d3a9-c99a-43a0-8ef1-7c82654f7bd8": {
-    "connectionRef": {
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "880fdbf9-a1a1-439d-8375-5d45638dbaca": {
-          "value": "shared_onedriveforbusiness"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "349becb3-ba7e-4e35-a8c3-942a434a49b3"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_onedriveforbusiness": {
-          "value": "880fdbf9-a1a1-439d-8375-5d45638dbaca"
-        },
-        "workflowEntityId": {},
-        "workflowName": {
-          "value": "349becb3-ba7e-4e35-a8c3-942a434a49b3"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "ExportToExcel"
-    ],
-    "dependencies": {
-      "shared_onedriveforbusiness": "880fdbf9-a1a1-439d-8375-5d45638dbaca"
-    },
-    "dependents": [],
-    "id": "1312d3a9-c99a-43a0-8ef1-7c82654f7bd8"
-  },
   "1390746f-2c3e-4bd4-b54c-35d18b14ab9e": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -113,6 +79,34 @@
     "dependencies": {},
     "dependents": [],
     "id": "2dbd8dad-6f1c-4c9b-9fae-345aa92406b2"
+  },
+  "34a91c35-a888-4741-a3b8-f21d9f0f6790": {
+    "connectionRef": {
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1615/1.0.1615.3163/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c9750be8-e14b-4da6-b64a-3b01264d08e8"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "c9750be8-e14b-4da6-b64a-3b01264d08e8"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ExportTableToExcel"
+    ],
+    "dependencies": {
+      "shared_onedriveforbusiness": "af623161-d0a0-4fff-b295-7312a2db5154"
+    },
+    "dependents": [],
+    "id": "34a91c35-a888-4741-a3b8-f21d9f0f6790"
   },
   "5cb34b41-1110-46e1-b6ff-b8ae909da929": {
     "connectionRef": {
@@ -237,20 +231,6 @@
     "dependents": [],
     "id": "8011ed01-664b-4730-9cc8-cc23dafdd925"
   },
-  "880fdbf9-a1a1-439d-8375-5d45638dbaca": {
-    "connectionRef": {
-      "displayName": "OneDrive for Business",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
-    },
-    "datasets": {},
-    "dataSources": [],
-    "dependencies": {},
-    "dependents": [
-      "1312d3a9-c99a-43a0-8ef1-7c82654f7bd8"
-    ],
-    "id": "880fdbf9-a1a1-439d-8375-5d45638dbaca"
-  },
   "8b52b43c-d21e-4f2a-8535-a5fa79b5befe": {
     "connectionRef": {
       "displayName": "SharePoint",
@@ -294,6 +274,20 @@
     "dependencies": {},
     "dependents": [],
     "id": "9a7984b5-a691-4ab6-8ae0-5c6c1a24fc9d"
+  },
+  "af623161-d0a0-4fff-b295-7312a2db5154": {
+    "connectionRef": {
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1546/1.0.1546.2665/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness"
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "34a91c35-a888-4741-a3b8-f21d9f0f6790"
+    ],
+    "id": "af623161-d0a0-4fff-b295-7312a2db5154"
   },
   "be4aea47-ebdc-4a92-a0c6-3f75780b5e8d": {
     "connectionRef": {
