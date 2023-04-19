@@ -10,7 +10,7 @@ superuser_screen As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        HeaderContainer1_10 As groupContainer.horizontalAutoLayoutContainer:
+        HeaderContainer1_8 As groupContainer.horizontalAutoLayoutContainer:
             BorderColor: =RGBA(166, 166, 166, 1)
             BorderThickness: =1
             Fill: =RGBA(255, 255, 255, 1)
@@ -21,9 +21,9 @@ superuser_screen As screen:
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =20
             PaddingRight: =20
-            ZIndex: =2
+            ZIndex: =1
 
-            Image2_13 As image:
+            Image2_6 As image:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
@@ -32,33 +32,11 @@ superuser_screen As screen:
                 PaddingRight: =20
                 ZIndex: =1
 
-            dashboard_btn_12 As button:
+            dashboard_btn_6 As button:
                 Align: =Align.Left
                 AlignInContainer: =AlignInContainer.Center
-                AutoDisableOnSelect: =false
                 BorderColor: =RGBA(0, 0, 0, 0)
-                BorderThickness: =0
-                Color: =RGBA(0, 0, 0, 1)
-                DisabledBorderColor: =RGBA(166, 166, 166, 1)
-                DisabledColor: =RGBA(166, 166, 166, 1)
-                DisabledFill: =RGBA(244, 244, 244, 1)
-                Fill: =RGBA(0, 0, 0, 0)
-                Font: =Font.'Segoe UI'
-                HoverColor: =RGBA(184, 0, 0, 1)
-                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(landing_screen_distributor)
-                PressedBorderColor: =RGBA(0,0,0,0)
-                PressedFill: =ColorFade(Self.Fill, -15%)
-                Size: =12
-                Text: ="Dashboard"
-                Width: =115
-                ZIndex: =2
-
-            draft_btn_12 As button:
-                Align: =Align.Left
-                AlignInContainer: =AlignInContainer.Center
-                BorderThickness: =1
-                Color: =RGBA(164, 38, 44, 1)
+                Color: =RGBA(89, 0, 0, 1)
                 DisabledBorderColor: =RGBA(166, 166, 166, 1)
                 DisabledColor: =RGBA(166, 166, 166, 1)
                 DisabledFill: =RGBA(244, 244, 244, 1)
@@ -67,22 +45,41 @@ superuser_screen As screen:
                 FontWeight: =FontWeight.Bold
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(claim_draft_screen,ScreenTransition.CoverRight)
+                OnSelect: =Navigate(superuser_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
-                Text: ="Draft"
+                Text: ="Dashboard"
+                Width: =115
+                ZIndex: =2
+
+            kpi_btn_3 As button:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BorderThickness: =1
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.'Segoe UI'
+                HoverColor: =RGBA(164, 38, 44, 1)
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
+                OnSelect: =Navigate(kpi_screen)
+                PressedFill: =ColorFade(Self.Fill, -15%)
+                Size: =12
+                Text: ="KPI"
                 Width: =115
                 ZIndex: =3
 
-            Rectangle7_12 As rectangle:
+            Rectangle7_6 As rectangle:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Fill: =RGBA(0, 0, 0, 0)
                 FillPortions: =9
                 Height: =75
-                ZIndex: =4
+                ZIndex: =5
 
-            Icon6_4 As icon.Person:
+            Icon6_10 As icon.Person:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(89, 0, 0, 1)
@@ -91,9 +88,9 @@ superuser_screen As screen:
                 Height: =20
                 Icon: =Icon.Person
                 Width: =20
-                ZIndex: =7
+                ZIndex: =6
 
-            Label5_16 As label:
+            Label5_18 As label:
                 Align: =Align.Center
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
@@ -103,9 +100,9 @@ superuser_screen As screen:
                 Size: =12
                 Text: =var_current_user_type
                 Width: =100
-                ZIndex: =8
+                ZIndex: =7
 
-            Icon5_9 As icon.Leave:
+            Icon5_12 As icon.Leave:
                 AlignInContainer: =AlignInContainer.Center
                 BorderColor: =RGBA(89, 0, 0, 1)
                 Color: =RGBA(89, 0, 0, 1)
@@ -114,7 +111,7 @@ superuser_screen As screen:
                 Height: =20
                 Icon: =Icon.Leave
                 OnSelect: =Navigate(login_screen)
-                ZIndex: =9
+                ZIndex: =8
 
         MainSectionContainer1_10 As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(243, 246, 248, 1)
@@ -124,29 +121,23 @@ superuser_screen As screen:
             LayoutMode: =LayoutMode.Auto
             PaddingLeft: =20
             PaddingTop: =20
-            ZIndex: =3
+            ZIndex: =2
 
-    Icon2_6 As icon.HorizontalLine:
-        BorderColor: =RGBA(89, 0, 0, 1)
-        Color: =RGBA(89, 0, 0, 1)
-        DisabledBorderColor: =RGBA(166, 166, 166, 1)
-        DisabledColor: =RGBA(244, 244, 244, 1)
-        Height: =13
-        Icon: =Icon.HorizontalLine
-        Visible: =var_current_user=Lower("Distributor")
-        Width: =73
-        X: =225
-        Y: =66
-        ZIndex: =2
+            Container6 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =1368
+                Width: =1360
+                ZIndex: =1
 
-    Rectangle6_12 As rectangle:
+    Rectangle6_1 As rectangle:
         BorderColor: =RGBA(89, 0, 0, 1)
         DisabledFill: =RGBA(89,0,0,1)
         DisplayMode: =DisplayMode.Disabled
         Fill: =RGBA(89, 0, 0, 1)
         Height: =2
-        Width: =40
-        X: =240
+        Width: =80
+        X: =126
         Y: =73
-        ZIndex: =3
+        ZIndex: =2
 

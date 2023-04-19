@@ -12000,49 +12000,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.AccessibleLabel"
+                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_8.Icon5_12.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "superuser_screen",
-                "type": "superuser_screen.ScreenContainer1_11.HeaderContainer1_10.Icon5_9"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_10.Icon5_9.TabIndex",
+                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_8.Icon5_12.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "superuser_screen",
-                "type": "superuser_screen.ScreenContainer1_11.HeaderContainer1_10.Icon5_9"
+                "type": "superuser_screen.ScreenContainer1_11.HeaderContainer1_8.Icon5_12"
               }
             }
           ],
@@ -12060,19 +12030,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "superuser_screen.Icon2_6.AccessibleLabel"
+                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_8.Icon5_12.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "superuser_screen.Icon2_6.AccessibleLabel",
+                  "fullyQualifiedName": "superuser_screen.ScreenContainer1_11.HeaderContainer1_8.Icon5_12.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "superuser_screen",
-                "type": "superuser_screen.Icon2_6"
+                "type": "superuser_screen.ScreenContainer1_11.HeaderContainer1_8.Icon5_12"
               }
             }
           ],
@@ -12084,36 +12054,6 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "superuser_screen.Icon2_6.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "superuser_screen.Icon2_6.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "superuser_screen",
-                "type": "superuser_screen.Icon2_6"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 9
         },
         {
           "locations": [
