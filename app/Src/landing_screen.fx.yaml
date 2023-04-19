@@ -975,7 +975,7 @@
                             DisabledColor: =RGBA(166, 166, 166, 1)
                             Height: =58
                             Size: =10
-                            Text: =ThisItem.'Quantity (cs)'
+                            Text: =ThisItem.'Approved Cases'
                             Width: =178
                             X: =839
                             ZIndex: =14
@@ -1030,25 +1030,27 @@
                     HoverColor: =RGBA(255, 255, 255, 1)
                     HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -20%)
                     OnSelect: |-
-                        =Set(ExportCSVVar, "");
-                        ForAll(Gallery4_6.AllItems, Collect(ExportCSVCol, 
-                        {DestinationCountry: lbl_tbl_country_5.Text,
-                        CIN : button_gallery_cin_5.Text,
-                        ClaimType: lbl_tbl_ct_5.Text,
-                        KelloggPO: lbl_tbl_kpo_5.Text,
-                        InvoiceNumber: lbl_tbl_in_5.Text,
-                        TotalCasesForClaim: lbl_tbl_tcfc_5.Text,
-                        FinalApprovedQuantity:lbl_faq.Text,
-                        EstimatedClaimValue:lbl_ecv.Text,
-                        FinalClaimValue:lbl_fcv.Text,
-                        ClaimDate:lbl_tbl_cd_4.Text,
-                        Status:lbl_tbl_status_4.Text,
-                        Comment:lbl_tbl_comments_4.Text}));
+                        =ClearCollect(myNewCollection, 
+                        ForAll(
+                        Gallery4_6.AllItems,
+                        {
+                        'Country': lbl_tbl_country_5.Text,
+                        'CIN' : button_gallery_cin_5.Text,
+                        'Claim Type': lbl_tbl_ct_5.Text,
+                        'Kellogg PO': Value(lbl_tbl_kpo_5.Text),
+                        'Invoice Number': lbl_tbl_in_5.Text,
+                        'Total Cases For Claim': lbl_tbl_tcfc_5.Text,
+                        'Final Approved Quantity':Value(lbl_faq.Text),
+                        'Estimated Claim Value':lbl_ecv.Text,
+                        'Final Claim Value':lbl_fcv.Text,
+                        'Claim Date':DateValue(lbl_tbl_cd_4.Text),
+                        'Status':lbl_tbl_status_4.Text,
+                        'Comment':lbl_tbl_comments_4.Text
+                        }
+                        ));
                         
-                        Set(ExportCSVVar, 
-                        Concat(ExportCSVCol, DestinationCountry & "," & CIN & "," & ClaimType & "," &
-                        KelloggPO & "," & InvoiceNumber & "," & TotalCasesForClaim & "," & FinalApprovedQuantity & "," & EstimatedClaimValue & "," & FinalClaimValue & "," & ClaimDate & "," & Status & "," & Comment &  Char(10)));
-                        Set(ExportCSVSuccess, (ExportTableToExcel.Run("",ExportCSVVar).completed));
+                        Set(ExportCSVSuccess,ExportToExcel.Run(JSON(myNewCollection, JSONFormat.IncludeBinaryData & JSONFormat.IgnoreUnsupportedTypes)).completed);
+                        
                         If(ExportCSVSuccess = "True" ,
                         Launch("https://apcdeloitte-my.sharepoint.com/:f:/r/personal/nuzamri_deloitte_com/Documents/Documents/Kellogg%27s/ExportedExcelFile?csf=1&web=1&e=IjHzLz"))
                     Size: =10
