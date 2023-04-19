@@ -102,7 +102,7 @@ login_screen As screen:
                     var_current_user_type = "Distributor",
                     Navigate(landing_screen_distributor),
                     var_current_user_type = "PIO SPOC Admin",
-                    Navigate(superuser_screen),
+                    Navigate(superuser_claims_screen),
                     Navigate(landing_screen)
                 ),
                 Notify( "Please enter valid username and password", NotificationType.Error );
