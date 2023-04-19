@@ -1052,7 +1052,7 @@
                         Set(ExportCSVSuccess,ExportToExcel.Run(JSON(myNewCollection, JSONFormat.IncludeBinaryData & JSONFormat.IgnoreUnsupportedTypes)).completed);
                         
                         If(ExportCSVSuccess = "True" ,
-                        Launch("https://apcdeloitte-my.sharepoint.com/:f:/r/personal/nuzamri_deloitte_com/Documents/Documents/Kellogg%27s/ExportedExcelFile?csf=1&web=1&e=IjHzLz"))
+                        Launch("https://apcdeloitte-my.sharepoint.com/personal/nuzamri_deloitte_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fnuzamri%5Fdeloitte%5Fcom%2FDocuments%2FDocuments%2FKellogg%27s%2FExportedExcelFile&ct=1681876342144&or=OWA%2DNT&cid=a9405c10%2D1d15%2Df1d6%2D2f91%2Df6b4b57cb5f5&ga=1"))
                     Size: =10
                     Text: ="Export to Excel"
                     Width: =118
