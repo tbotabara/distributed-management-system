@@ -3449,10 +3449,7 @@
                     PaddingLeft: =10
                     PaddingRight: =10
                     PaddingTop: =10
-                    Visible: |-
-                        =(CountRows('Gallery_Supporting Documents'.AllItems) < 1)
-                        And
-                        DataCardValue20.Selected.Value = "Draft"
+                    Visible: =var_current_user=Lower("distributor") And DataCardValue20.Selected.Value = "Draft"
                     Width: =32
                     X: =175
                     Y: =239
@@ -3460,8 +3457,8 @@
 
                 "'Gallery_Supporting Documents' As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
                     BorderColor: =RGBA(89, 0, 0, 1)
-                    Height: =61
-                    Items: =First(SortByColumns(Filter('Claim Attachment','CIN Number' = newSelectedRecord.CIN2 && 'Document Type'.Value = "Supporting Documents"),"Created",SortOrder.Descending))
+                    Height: =307
+                    Items: =SortByColumns(Filter('Claim Attachment','CIN Number' = newSelectedRecord.CIN2 && 'Document Type'.Value = "Supporting Documents"),"Created",SortOrder.Descending)
                     Layout: =Layout.Vertical
                     TemplatePadding: =0
                     TemplateSize: =51
@@ -3710,7 +3707,7 @@
                     ItemHoverColor: =RGBA(0, 0, 0, 1)
                     ItemHoverFill: =RGBA(222, 179, 184, 1)
                     Items: =
-                    MaxAttachments: =1
+                    MaxAttachments: =If(LookUp('Claim Document Type', DocType = "Supporting Documents").ID = TypeNumber, 5, 1)
                     PaddingBottom: =5
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     PaddingRight: =5
