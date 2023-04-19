@@ -48,7 +48,7 @@
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
                 OnSelect: |-
                     =If(var_current_user=Lower("distributor"), Navigate (landing_screen_distributor),
-                    var_current_user_type=("PIO SPOC Admin"),Navigate(superuser_screen),
+                    var_current_user_type=("PIO SPOC Admin"),Navigate(superuser_claims_screen),
                     Navigate(landing_screen))
                 PressedBorderColor: =RGBA(0,0,0,0)
                 PressedFill: =ColorFade(Self.Fill, -15%)

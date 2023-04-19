@@ -1,4 +1,4 @@
-superuser_screen As screen:
+superuser_claims_screen As screen:
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
     OnVisible: =
@@ -46,7 +46,7 @@ superuser_screen As screen:
                 FontWeight: =FontWeight.Bold
                 HoverColor: =RGBA(164, 38, 44, 1)
                 HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
-                OnSelect: =Navigate(superuser_screen)
+                OnSelect: =Navigate(superuser_claims_screen)
                 PressedFill: =ColorFade(Self.Fill, -15%)
                 Size: =12
                 Text: ="Dashboard"
@@ -141,15 +141,19 @@ superuser_screen As screen:
                     Y: =3
                     ZIndex: =2
 
-                    Label8 As label:
+                    Label9_7 As label:
                         BorderColor: =RGBA(89, 0, 0, 1)
                         Color: =RGBA(0, 0, 0, 1)
                         DisabledColor: =RGBA(166, 166, 166, 1)
-                        Size: =13
-                        Text: ="Text"
-                        X: =40
-                        Y: =40
-                        ZIndex: =1
+                        Font: =Font.'Segoe UI'
+                        FontWeight: =FontWeight.Bold
+                        Height: =53
+                        Size: =18
+                        Text: ="Claim List"
+                        Width: =466
+                        X: =30
+                        Y: =27
+                        ZIndex: =2
 
                 Navigation As group:
                     Height: =5
@@ -168,11 +172,15 @@ superuser_screen As screen:
 
                     Gallery1 As gallery.galleryVertical:
                         BorderColor: =RGBA(89, 0, 0, 1)
-                        DelayItemLoading: =true
                         Height: =107
                         Items: ='PIOSPOC Navigation'
                         Layout: =Layout.Vertical
-                        LoadingSpinner: =LoadingSpinner.Data
+                        OnSelect: |-
+                            =Set(_selectedNav, ThisItem);
+                            If(
+                                ThisItem.Title = "Claims", Navigate(superuser_claims_screen, BorderStyle.None),
+                                ThisItem.Title = "Users", Navigate(superuser_users_screen, BorderStyle.None)
+                            )
                         ShowScrollbar: =false
                         TemplateSize: =If(Self.Layout = Layout.Horizontal, Min(280, Self.Width - 60), Min(280, Self.Height - 60))
                         Width: =If(IsExpand, 50, 200)
@@ -212,7 +220,7 @@ superuser_screen As screen:
                             HoverBorderColor: =RGBA(0,0,0,0)
                             HoverColor: =RGBA(200, 125, 128, 1)
                             HoverFill: =RGBA(0, 0, 0, 0)
-                            OnSelect: =Navigate(draftclaimdetail_screen, ScreenTransition.None)
+                            OnSelect: =Select(Parent)
                             PaddingLeft: =20
                             PressedColor: =RGBA(89, 0, 0, 1)
                             PressedFill: =RGBA(0,0,0,0)
