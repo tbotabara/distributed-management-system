@@ -2,3 +2,151 @@ superuser_screen As screen:
     Fill: =RGBA(234, 234, 234, 1)
     LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
 
+    ScreenContainer1_11 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        HeaderContainer1_10 As groupContainer.horizontalAutoLayoutContainer:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            BorderThickness: =1
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =75
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =20
+            PaddingRight: =20
+            ZIndex: =2
+
+            Image2_13 As image:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Image: ='Kellogs.KelloggLogo650x366'
+                PaddingRight: =20
+                ZIndex: =1
+
+            dashboard_btn_12 As button:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                AutoDisableOnSelect: =false
+                BorderColor: =RGBA(0, 0, 0, 0)
+                BorderThickness: =0
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.'Segoe UI'
+                HoverColor: =RGBA(184, 0, 0, 1)
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
+                OnSelect: =Navigate(landing_screen_distributor)
+                PressedBorderColor: =RGBA(0,0,0,0)
+                PressedFill: =ColorFade(Self.Fill, -15%)
+                Size: =12
+                Text: ="Dashboard"
+                Width: =115
+                ZIndex: =2
+
+            draft_btn_12 As button:
+                Align: =Align.Left
+                AlignInContainer: =AlignInContainer.Center
+                BorderThickness: =1
+                Color: =RGBA(164, 38, 44, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                Font: =Font.'Segoe UI'
+                FontWeight: =FontWeight.Bold
+                HoverColor: =RGBA(164, 38, 44, 1)
+                HoverFill: =ColorFade(RGBA(0, 0, 0, 0), -20%)
+                OnSelect: =Navigate(claim_draft_screen,ScreenTransition.CoverRight)
+                PressedFill: =ColorFade(Self.Fill, -15%)
+                Size: =12
+                Text: ="Draft"
+                Width: =115
+                ZIndex: =3
+
+            Rectangle7_12 As rectangle:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Fill: =RGBA(0, 0, 0, 0)
+                FillPortions: =9
+                Height: =75
+                ZIndex: =4
+
+            Icon6_4 As icon.Person:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Person
+                Width: =20
+                ZIndex: =7
+
+            Label5_16 As label:
+                Align: =Align.Center
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Font: =Font.'Segoe UI'
+                Size: =12
+                Text: =var_current_user_type
+                Width: =100
+                ZIndex: =8
+
+            Icon5_9 As icon.Leave:
+                AlignInContainer: =AlignInContainer.Center
+                BorderColor: =RGBA(89, 0, 0, 1)
+                Color: =RGBA(89, 0, 0, 1)
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(244, 244, 244, 1)
+                Height: =20
+                Icon: =Icon.Leave
+                OnSelect: =Navigate(login_screen)
+                ZIndex: =9
+
+        MainSectionContainer1_10 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(243, 246, 248, 1)
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            PaddingLeft: =20
+            PaddingTop: =20
+            ZIndex: =3
+
+    Icon2_6 As icon.HorizontalLine:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        Color: =RGBA(89, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =13
+        Icon: =Icon.HorizontalLine
+        Visible: =var_current_user=Lower("Distributor")
+        Width: =73
+        X: =225
+        Y: =66
+        ZIndex: =2
+
+    Rectangle6_12 As rectangle:
+        BorderColor: =RGBA(89, 0, 0, 1)
+        DisabledFill: =RGBA(89,0,0,1)
+        DisplayMode: =DisplayMode.Disabled
+        Fill: =RGBA(89, 0, 0, 1)
+        Height: =2
+        Width: =40
+        X: =240
+        Y: =73
+        ZIndex: =3
+
