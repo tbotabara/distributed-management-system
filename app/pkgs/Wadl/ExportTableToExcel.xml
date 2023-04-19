@@ -4,9 +4,11 @@
     <jsonTypes targetNamespace="https://europe-001.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
       <string name="ManualTriggerInput_Createfile_FileName_def" />
       <string name="ManualTriggerInput_Createfile_FileContent_def" />
+      <string name="ManualTriggerInput_Compose_Inputs_def" />
       <object name="ManualTriggerInput">
         <property name="Createfile_FileName" type="string" />
         <property name="Createfile_FileContent" type="string" />
+        <property name="Compose_Inputs" type="string" />
       </object>
       <string name="ResponseActionOutput_completed_def" />
       <object name="ResponseActionOutput">
@@ -27,6 +29,7 @@
           <representation mediaType="application/json">
             <param style="plain" name="Createfile_FileName" path="/Createfile_FileName" type="xs:string" required="true" />
             <param style="plain" name="Createfile_FileContent" path="/Createfile_FileContent" type="xs:string" required="true" />
+            <param style="plain" name="Compose_Inputs" path="/Compose_Inputs" type="xs:string" required="true" />
           </representation>
         </request>
         <response>

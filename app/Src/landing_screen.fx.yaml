@@ -1034,8 +1034,8 @@
                         ForAll(
                         Gallery4_6.AllItems,
                         {
-                        'Country': lbl_tbl_country_5.Text,
-                        'CIN' : button_gallery_cin_5.Text,
+                        Country: lbl_tbl_country_5.Text,
+                        CIN : button_gallery_cin_5.Text,
                         'Claim Type': lbl_tbl_ct_5.Text,
                         'Kellogg PO': Value(lbl_tbl_kpo_5.Text),
                         'Invoice Number': lbl_tbl_in_5.Text,
@@ -1044,12 +1044,12 @@
                         'Estimated Claim Value':lbl_ecv.Text,
                         'Final Claim Value':lbl_fcv.Text,
                         'Claim Date':DateValue(lbl_tbl_cd_4.Text),
-                        'Status':lbl_tbl_status_4.Text,
-                        'Comment':lbl_tbl_comments_4.Text
+                        Status:lbl_tbl_status_4.Text,
+                        Comment:lbl_tbl_comments_4.Text
                         }
                         ));
                         
-                        Set(ExportCSVSuccess,ExportToExcel.Run(JSON(myNewCollection, JSONFormat.IncludeBinaryData & JSONFormat.IgnoreUnsupportedTypes)).completed);
+                        Set(ExportCSVSuccess,ExportTableToExcel.Run("","",JSON(myNewCollection)).completed);
                         
                         If(ExportCSVSuccess = "True" ,
                         Launch("https://apcdeloitte-my.sharepoint.com/personal/nuzamri_deloitte_com/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fnuzamri%5Fdeloitte%5Fcom%2FDocuments%2FDocuments%2FKellogg%27s%2FExportedExcelFile&ct=1681876342144&or=OWA%2DNT&cid=a9405c10%2D1d15%2Df1d6%2D2f91%2Df6b4b57cb5f5&ga=1"))
