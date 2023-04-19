@@ -8,6 +8,9 @@
     "datasets": {
       "https://apcdeloitte.sharepoint.com/sites/Kellogg36": {
         "dataSources": {
+          "PIOSPOC Navigation": {
+            "tableName": "4aa526c6-c225-4730-ad63-9bf2f8f68b72"
+          },
           "RejectReason_1": {
             "tableName": "d9085410-ae18-4ad6-a11b-6dcecb4309cd"
           }
@@ -23,7 +26,8 @@
       "users",
       "RejectReason_1",
       "Period",
-      "Market"
+      "Market",
+      "PIOSPOC Navigation"
     ],
     "dependencies": {},
     "dependents": [
